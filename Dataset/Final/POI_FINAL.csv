@@ -1,199 +1,158 @@
-poi_id,Name,Theme,Sub Theme,lat,lon
-1,Flemington Bridge Railway Station,Transport,Railway Station,-37.788164588962104,144.939277838304
-2,Council House 2 (CH2),Mixed Use,Retail/Office/Carpark,-37.814259143201106,144.966638432727
-3,The Melbourne Athenaeum Library,Place Of Assembly,Library,-37.814885575641604,144.96729128994102
-4,Carlton Gardens South,Leisure/Recreation,Informal Outdoor Facility (Park/Garden/Reserve),-37.8060684577258,144.971266479841
-5,St Francis Church,Place of Worship,Church,-37.8118847831837,144.962422614541
-6,Wesley Church,Place of Worship,Church,-37.810157644696105,144.968168215633
-7,St Augustines Church,Place of Worship,Church,-37.8169741358546,144.954862000132
-8,St James Church,Place of Worship,Church,-37.8101281201969,144.952468571683
-9,St Mary's Anglican Church,Place of Worship,Church,-37.8031663672997,144.953761537074
-10,Romanian Orthodox,Place of Worship,Church,-37.805230729746796,144.96698644459698
-11,Welsh Presbyterian Church,Place of Worship,Church,-37.8104478768313,144.959873260087
-12,Church of Christ,Place of Worship,Church,-37.8104524079085,144.96388920293998
-13,Scots Church,Place of Worship,Church,-37.8145687802664,144.96855105334998
-14,St Michael's Uniting Church,Place of Worship,Church,-37.814385132491296,144.969174036096
-15,Greek Orthodox Church,Place of Worship,Church,-37.8088064667555,144.97825908926902
-16,St Peter's Eastern Hill,Place of Worship,Church,-37.8097086714637,144.975259178609
-17,Lutheran Trinity Church,Place of Worship,Church,-37.8109757054396,144.975729473552
-18,Holy Trinity,Place of Worship,Church,-37.8140667110854,144.98319732228902
-19,St Johns Lutheran Church,Place of Worship,Church,-37.8209399677168,144.967121099857
-20,North Melbourne Uniting,Place of Worship,Church,-37.8035538471344,144.947671538375
-21,Melbourne Unitarian Church,Place of Worship,Church,-37.81144877733939,144.984664890999
-22,All Nations Uniting Church,Place of Worship,Church,-37.7959155303946,144.968981110942
-23,Our Lady of Lebanon Church,Place of Worship,Church,-37.802576653968295,144.969334720932
-24,St Michaels,Place of Worship,Church,-37.7940512679297,144.945399480629
-25,Ukranian Catholic Cathedral,Place of Worship,Church,-37.7963084580345,144.944313454028
-26,St Alban Anglican Church,Place of Worship,Church,-37.7942169477929,144.94161451392
-27,Christ Church Kensington,Place of Worship,Church,-37.7932109480553,144.92729572288
-28,Holy Rosary,Place of Worship,Church,-37.7948087414394,144.928362125005
-29,Collins Street Baptist Church,Place of Worship,Church,-37.8147011904647,144.968072486031
-30,St Thomas Aquinas Church,Place of Worship,Church,-37.8353076902578,144.97680908047198
-31,South Yarra Presbyterian Church,Place of Worship,Church,-37.8407473645397,144.98562699348
-32,The Parish of Christ Church South Yarra,Place of Worship,Church,-37.8386270533576,144.986009385387
-33,Melbourne Private Hospital,Health Services,Private Hospital,-37.79831113096979,144.95728837725
-34,East Melbourne Synagogue,Place of Worship,Synagogue,-37.809113728917,144.97422190953998
-35,State Netball Hockey Centre,Leisure/Recreation,Major Sports & Recreation Facility,-37.7857860016289,144.947580972027
-36,University Square,Leisure/Recreation,Informal Outdoor Facility (Park/Garden/Reserve),-37.800410711209004,144.96039831930202
-37,Port of Melbourne,Transport,Transport Terminal,-37.8137384362671,144.91753432375
-38,Royal Park Golf Course,Leisure/Recreation,Private Sports Club/Facility,-37.781917130855796,144.956309119368
-39,Powlett Reserve,Leisure/Recreation,Informal Outdoor Facility (Park/Garden/Reserve),-37.811692988249796,144.987275671763
-40,Carlton Football Club,Leisure/Recreation,Major Sports & Recreation Facility,-37.7840864379557,144.961967841559
-41,Visy Park,Leisure/Recreation,Major Sports & Recreation Facility,-37.7834303940347,144.96198257755302
-42,Queen Victoria Market,Retail,Retail,-37.8075002018073,144.957158515056
-43,Carlton Gardens North,Leisure/Recreation,Informal Outdoor Facility (Park/Garden/Reserve),-37.80176908474029,144.971997551189
-44,Old Melbourne Gaol Crime & Justice Experience,Place Of Assembly,Art Gallery/Museum,-37.8077644149636,144.965463853978
-45,Kings Domain,Leisure/Recreation,Informal Outdoor Facility (Park/Garden/Reserve),-37.825523979583295,144.974107925144
-46,FairFax Studio,Place Of Assembly,Theatre Live,-37.821668458188704,144.968836241692
-47,Playhouse,Place Of Assembly,Theatre Live,-37.8218124583016,144.968337832721
-48,State Theatre,Place Of Assembly,Theatre Live,-37.8212806349773,144.968469643744
-49,St Martins Youth Arts Centre,Place Of Assembly,Theatre Live,-37.8352429531289,144.98114217385
-50,Flemington Racecourse,Leisure/Recreation,Major Sports & Recreation Facility,-37.7908082646624,144.912142987372
-51,Southern Cross Railway Station,Transport,Railway Station,-37.8181633057171,144.952944748845
-52,Princess Theatre,Place Of Assembly,Theatre Live,-37.8107257091302,144.97232659620002
-53,Treasury Gardens,Leisure/Recreation,Informal Outdoor Facility (Park/Garden/Reserve),-37.8143993575938,144.975952335785
-54,State Library Victoria,Community Use,Public Buildings,-37.8099852201226,144.964330322397
-55,Regent Theatre,Place Of Assembly,Theatre Live,-37.816001474417895,144.967916735261
-56,Treasury Reserve,Mixed Use,Retail/Office,-37.8129178793082,144.975236759799
-57,Epworth Freemasons Hospital : Medical Centre,Health Services,Private Hospital,-37.8093444587231,144.982336768182
-58,Batman Park,Leisure/Recreation,Informal Outdoor Facility (Park/Garden/Reserve),-37.8218460949601,144.956665812218
-59,Flagstaff Railway Station,Transport,Railway Station,-37.8122356514626,144.956318211113
-60,Richmond Football Club,Leisure/Recreation,Informal Outdoor Facility (Park/Garden/Reserve),-37.8216740022008,144.988156318781
-61,Melbourne Cricket Ground (MCG),Leisure/Recreation,Major Sports & Recreation Facility,-37.8194921618419,144.983402879078
-62,Melbourne Zoo,Leisure/Recreation,"Outdoor Recreation Facility (Zoo, Golf Course)",-37.784444925371204,144.951371205938
-63,Melbourne Exhibition Centre,Place Of Assembly,Function/Conference/Exhibition Centre,-37.8252455123297,144.95435243249
-64,Melbourne Convention Centre,Place Of Assembly,Function/Conference/Exhibition Centre,-37.82490404846529,144.952288281644
-65,Polly Woodside,Place Of Assembly,Art Gallery/Museum,-37.8242574266145,144.95347805206399
-66,Melbourne International Shooting Club,Leisure/Recreation,Private Sports Club/Facility,-37.8292844929826,144.91341580246402
-67,Southgate Arts and Leisure Precinct,Mixed Use,Retail/Office/Carpark,-37.820224578659705,144.965989052839
-68,Australian Centre for Contemporary Art,Place Of Assembly,Art Gallery/Museum,-37.8266045432686,144.967252924593
-69,Malthouse Theatre,Place Of Assembly,Theatre Live,-37.8271768001126,144.966936821789
-70,St Patricks Cathedral,Place of Worship,Church,-37.810114095047396,144.97590152971202
-71,Victorian Arts Centre,Place Of Assembly,Art Gallery/Museum,-37.8219947335768,144.968837288153
-72,Melbourne Town Hall,Community Use,Public Buildings,-37.8150754791411,144.966542722283
-73,DFO South Wharf,Mixed Use,Retail/Office,-37.824887401234,144.949794297819
-74,Queen Victoria Gardens,Leisure/Recreation,Informal Outdoor Facility (Park/Garden/Reserve),-37.821638124489105,144.971049530478
-75,Sidney Myer Music Bowl,Community Use,Public Buildings,-37.8233471608733,144.974686151365
-76,Crown Entertainment Complex,Purpose Built,Casino,-37.8235761092516,144.957312880653
-77,The Royal Victorian Eye & Ear Hospital,Health Services,Public Hospital,-37.808752282986795,144.976268275082
-78,The Ian Potter Centre: NGV Australia,Place Of Assembly,Art Gallery/Museum,-37.8174831423197,144.969899048343
-79,Federation Square,Leisure/Recreation,Informal Outdoor Facility (Park/Garden/Reserve),-37.8178516571684,144.968963600783
-80,Thoroughbred Racing Gallery,Place Of Assembly,Art Gallery/Museum,-37.8188662730911,144.9839700954
-81,New Quay,Leisure/Recreation,Informal Outdoor Facility (Park/Garden/Reserve),-37.8152178789077,144.941617889032
-82,Central City Studios,Purpose Built,Film & RV Studio,-37.8142318521296,144.935655305362
-83,Channel 7 - Melbourne Broadcast Centre,Purpose Built,Film & RV Studio,-37.815857233348105,144.94582326909
-84,Docklands Park,Leisure/Recreation,Informal Outdoor Facility (Park/Garden/Reserve),-37.8209956785618,144.946781702342
-85,Waterfront City,Mixed Use,Retail/Office,-37.815056661803006,144.939136876334
-86,AAMI Park,Leisure/Recreation,Major Sports & Recreation Facility,-37.824725267396296,144.98380297866
-87,New Quay Marina,Transport,Marina,-37.8152925454954,144.942283726231
-88,Central Pier,Place Of Assembly,Function/Conference/Exhibition Centre,-37.8165177307702,144.94347501421498
-89,Melbourne Star Observation Wheel,Leisure/Recreation,Observation Tower/Wheel,-37.8116163666726,144.937588920436
-90,Point Park,Leisure/Recreation,Informal Outdoor Facility (Park/Garden/Reserve),-37.8233522700646,144.942102276731
-91,Newmarket Reserve,Leisure/Recreation,Informal Outdoor Facility (Park/Garden/Reserve),-37.7878473341234,144.922972125346
-92,Royal Womens Hospital,Health Services,Public Hospital,-37.7988892460088,144.954897253856
-93,Fox Classic Car Collection,Place Of Assembly,Art Gallery/Museum,-37.821374430148104,144.94849666170902
-94,Wonderland Park,Leisure/Recreation,"Outdoor Recreation Facility (Zoo, Golf Course)",-37.811694535198896,144.936833674975
-95,Rod Laver Arena,Leisure/Recreation,Major Sports & Recreation Facility,-37.822045611980705,144.97848717378702
-96,Melbourne Park,Leisure/Recreation,Major Sports & Recreation Facility,-37.8209085970021,144.978735802793
-97,Margaret Court Arena,Leisure/Recreation,Major Sports & Recreation Facility,-37.8213252086842,144.977591098955
-98,Hisense Arena,Leisure/Recreation,Major Sports & Recreation Facility,-37.823110002667,144.981834802535
-99,Melbourne Museum,Place Of Assembly,Art Gallery/Museum,-37.803551812929896,144.971690718887
-100,IMAX Melbourne,Place Of Assembly,Cinema,-37.8034315561903,144.970639929886
-101,Melbourne Theatre Company,Community Use,Public Buildings,-37.823930384815995,144.96829742989402
-102,MTC Theatre,Place Of Assembly,Theatre Live,-37.824266183290206,144.968174400274
-103,Elisabeth Murdoch Hall,Community Use,Public Buildings,-37.823973370428206,144.967450979234
-104,Melbourne Recital Centre,Community Use,Public Buildings,-37.823832788580496,144.967682729667
-105,NGV International,Community Use,Public Buildings,-37.8230135000869,144.969342535451
-106,Hamer Hall,Place Of Assembly,Theatre Live,-37.8199901009015,144.96799214425698
-107,Birrarung Marr,Leisure/Recreation,Informal Outdoor Facility (Park/Garden/Reserve),-37.81806108403,144.97314667014
-108,Artplay,Leisure/Recreation,Indoor Recreation Facility,-37.8184198800044,144.971542586509
-109,Riverslide Skate Park,Leisure/Recreation,Informal Outdoor Facility (Park/Garden/Reserve),-37.8207887122448,144.972951789291
-110,Alexandra Gardens,Leisure/Recreation,Informal Outdoor Facility (Park/Garden/Reserve),-37.8206051404251,144.971796067365
-111,Parliament Railway Station,Transport,Railway Station,-37.811606178717106,144.97301726315598
-112,Richmond Railway Station (Richmond) - Train stop,Transport,Railway Station,-37.8238992659834,144.98940075166402
-113,Jolimont-MCG Railway Station (East Melbourne) - Train stop,Transport,Railway Station,-37.816565181166794,144.983641003377
-114,North Melbourne Recreation Reserve,Leisure/Recreation,Informal Outdoor Facility (Park/Garden/Reserve),-37.7988345257153,144.941452061463
-115,J.J Holland Park,Leisure/Recreation,Informal Outdoor Facility (Park/Garden/Reserve),-37.7982358832177,144.923837074813
-116,Macaulay Railway Station (North Melbourne) - Train stop,Transport,Railway Station,-37.794964001386,144.93619075663202
-117,Kensington Railway Station,Transport,Railway Station,-37.793914012637295,144.93071020751802
-118,South Kensington Railway Station,Transport,Railway Station,-37.7997270537735,144.925837749713
-119,Royal Park,Leisure/Recreation,Informal Outdoor Facility (Park/Garden/Reserve),-37.790617425658105,144.95383424064698
-120,Royal Childrens Hospital,Health Services,Public Hospital,-37.7942060847278,144.950048264678
-121,Royal Park Railway Station,Transport,Railway Station,-37.7812684282825,144.951667833921
-122,Princes Park,Leisure/Recreation,Informal Outdoor Facility (Park/Garden/Reserve),-37.7870161727156,144.961115214367
-123,National Sports Museum,Place Of Assembly,Art Gallery/Museum,-37.818954490946204,144.98466980938102
-124,Shrine of Rembrance Reserve,Leisure/Recreation,Informal Outdoor Facility (Park/Garden/Reserve),-37.8320733992876,144.97362836446501
-125,Shrine of Remembrance,Community Use,Public Buildings,-37.8302080020387,144.97344191362302
-126,Royal Botanic Gardens,Leisure/Recreation,Informal Outdoor Facility (Park/Garden/Reserve),-37.8306631583233,144.980850432751
-127,Yarra Park,Leisure/Recreation,Informal Outdoor Facility (Park/Garden/Reserve),-37.820469374101,144.986671109615
-128,Icehouse,Leisure/Recreation,Indoor Recreation Facility,-37.8121881194053,144.93568401887302
-129,Parliament Railway Station,Transport,Railway Station,-37.8121572789173,144.973742010011
-130,Parliament Railway Station,Transport,Railway Station,-37.812762111355205,144.973433796529
-131,Parliament Railway Station,Transport,Railway Station,-37.8095762219384,144.972330132127
-132,Flagstaff Railway Station,Transport,Railway Station,-37.811638440397395,144.9561186805
-133,Melbourne Central Railway Station,Transport,Railway Station,-37.8097759325888,144.962670059539
-134,Melbourne Central Railway Station,Transport,Railway Station,-37.8105992402369,144.96169061383
-135,Melbourne Central Railway Station,Transport,Railway Station,-37.8108930047401,144.963100728702
-136,Flemington Racecourse Railway Station,Transport,Railway Station,-37.7869105822519,144.90819070606898
-137,Showgrounds Railway Station (Flemington),Transport,Railway Station,-37.783465121624396,144.914902626775
-138,Newmarket Railway Station,Transport,Railway Station,-37.787272624196504,144.92905995811398
-139,Athanaeum Theatre,Place Of Assembly,Theatre Live,-37.814954347831,144.96732254212
-140,Alfred Hospital,Health Services,Public Hospital,-37.8462631206461,144.981786260765
-141,Riverside Park,Leisure/Recreation,"Outdoor Recreation Facility (Zoo, Golf Course)",-37.7948375315825,144.915607065132
-142,Darling Square,Leisure/Recreation,Informal Outdoor Facility (Park/Garden/Reserve),-37.81299206932,144.989062559512
-143,Carlton Courthouse Theatre,Place Of Assembly,Theatre Live,-37.7976589943217,144.968750113566
-144,Flagstaff Gardens,Leisure/Recreation,Informal Outdoor Facility (Park/Garden/Reserve),-37.811122288927706,144.95469605523502
-145,Melbourne Showgrounds,Leisure/Recreation,"Outdoor Recreation Facility (Zoo, Golf Course)",-37.782309785088295,144.910822117306
-146,Her Majesty's Theatre,Place Of Assembly,Theatre Live,-37.8109975612842,144.969520183129
-147,Comedy Theatre,Place Of Assembly,Theatre Live,-37.810205394516295,144.97013311862
-148,La Mama Theatre,Place Of Assembly,Theatre Live,-37.799130495673296,144.967669503083
-149,Fawkner Park,Leisure/Recreation,Informal Outdoor Facility (Park/Garden/Reserve),-37.8413996708186,144.981625667877
-150,Fitzroy Gardens,Leisure/Recreation,Informal Outdoor Facility (Park/Garden/Reserve),-37.8129616331579,144.980455714669
-151,Sinclair's Cottage,Place Of Assembly,Art Gallery/Museum,-37.8145407488014,144.980554992725
-152,Enterprize Park,Leisure/Recreation,Informal Outdoor Facility (Park/Garden/Reserve),-37.820210269629,144.959276859602
-153,Victoria Police Museum,Place Of Assembly,Art Gallery/Museum,-37.8222182774409,144.954039975197
-154,Immigration Museum,Place Of Assembly,Art Gallery/Museum,-37.81917987980621,144.96042677712902
-155,St Pauls Cathedral,Place of Worship,Church,-37.8169549012399,144.967681647402
-156,Forum Theatre,Place Of Assembly,Theatre Live,-37.816485409696,144.96938655699802
-157,Flinders Street Railway Station,Transport,Railway Station,-37.8179063007545,144.967064817875
-158,"Melbourne Wholesale Fruit, Vegetable & Flower Market",Mixed Use,Retail/Office/Carpark,-37.80687252157,144.923287444259
-159,Fire Services Museum Victoria,Place Of Assembly,Art Gallery/Museum,-37.8085761281612,144.975373745366
-160,Royal Melbourne Hospital,Health Services,Public Hospital,-37.799307166409605,144.956389746765
-161,The Ian Potter Museum Of Art,Place Of Assembly,Art Gallery/Museum,-37.7973939595503,144.964156669702
-162,Koorie Heritage Trust Inc,Place Of Assembly,Art Gallery/Museum,-37.8133854259085,144.954027907736
-163,Melbourne Central,Mixed Use,Retail/Office/Carpark,-37.8105371797142,144.962749729496
-164,Melbourne Central Railway Station,Transport,Railway Station,-37.8100167030855,144.963789344893
-165,QV Village,Mixed Use,Retail/Office/Residential/Carpark,-37.810689189745396,144.965714574014
-166,Argyle Square,Leisure/Recreation,Informal Outdoor Facility (Park/Garden/Reserve),-37.8031480577285,144.965761295089
-167,Piazza Italia,Leisure/Recreation,Informal Outdoor Facility (Park/Garden/Reserve),-37.80251641925229,144.96586309294702
-168,Macarthur Square,Leisure/Recreation,Informal Outdoor Facility (Park/Garden/Reserve),-37.7983318676737,144.971514146104
-169,Murchinson Square,Leisure/Recreation,Informal Outdoor Facility (Park/Garden/Reserve),-37.8002735025371,144.973059252203
-170,Parliament Reserve,Leisure/Recreation,Informal Outdoor Facility (Park/Garden/Reserve),-37.809852620638,144.973462202839
-171,North Melbourne Recreation Centre (Aquatic),Leisure/Recreation,Major Sports & Recreation Facility,-37.7999470049655,144.94329080186898
-172,North Melbourne Recreation Centre (Gymnasium),Leisure/Recreation,Gymnasium/Health Club,-37.7997051197931,144.940368286395
-173,Carlton Baths,Leisure/Recreation,Indoor Recreation Facility,-37.793437704260896,144.971696548624
-174,City Baths,Leisure/Recreation,Major Sports & Recreation Facility,-37.8071585350561,144.96318978972099
-175,Westgate Park,Leisure/Recreation,Informal Outdoor Facility (Park/Garden/Reserve),-37.8314918578874,144.908824792698
-176,North Melbourne Railway Station,Transport,Railway Station,-37.8073823625058,144.942429848025
-177,Cooks' Cottage,Place Of Assembly,Art Gallery/Museum,-37.8144604899837,144.979471339826
-178,Conservatory,Community Use,Public Buildings,-37.814002127195,144.9785597431
-179,Melbourne Aquarium,Purpose Built,Aquarium,-37.8209627824685,144.958425696055
-180,Westpac Centre,Leisure/Recreation,Major Sports & Recreation Facility,-37.824245685859296,144.979720306309
-181,Royal Exhibition Building,Place Of Assembly,Art Gallery/Museum,-37.804602624320005,144.97152191495198
-182,Etihad Stadium,Leisure/Recreation,Major Sports & Recreation Facility,-37.8161760471742,144.947496254547
-183,Eureka Skydeck 88,Leisure/Recreation,Observation Tower/Wheel,-37.8216187583314,144.964622218598
-184,Eureka Tower,Mixed Use,Retail/Residential,-37.8215157539717,144.964456721965
-185,Peter Maccallum Cancer Institute,Health Services,Public Hospital,-37.8114766732026,144.977400949063
-186,Royal Dental Hospital,Health Services,Public Hospital,-37.7995065904416,144.964526842767
-187,Sandridge Rail Bridge,Leisure/Recreation,Informal Outdoor Facility (Park/Garden/Reserve),-37.8201763042794,144.96298113723998
-188,Freshwater Place,Mixed Use,Retail/Office/Residential/Carpark,-37.8219745489446,144.96246144843
-189,Australian Centre For The Moving Image (ACMI),Place Of Assembly,Art Gallery/Museum,-37.817610732720205,144.969070431323
-190,Webb Bridge,Transport,Bridge,-37.823205238450704,144.947291011905
-191,Dallas Brooks Centre,Place Of Assembly,Function/Conference/Exhibition Centre,-37.8097374138234,144.98138341159202
-192,Myer,Retail,Department Store,-37.8135911985281,144.963855087868
-193,David Jones,Retail,Department Store,-37.81331272606379,144.964373486798
-194,Lincoln Square,Leisure/Recreation,Informal Outdoor Facility (Park/Garden/Reserve),-37.8027919689732,144.962760852233
-195,Epworth Freemasons Hospital,Health Services,Private Hospital,-37.8109710654051,144.98370007659
-196,Mercy Private Hospital,Health Services,Medical Services,-37.811896809802,144.984435746587
-197,The Museum Of Australian Chinese History,Place Of Assembly,Art Gallery/Museum,-37.8107686127655,144.96923385414
-198,ANZ 'Gothic' Bank,Mixed Use,Retail/Office/Carpark,-37.816158066602895,144.96167371924201
+poi_id,Feature Name,Theme,Sub Theme,Address,lat,lon
+1,Council House 2 (CH2),Mixed Use,Retail/Office/Carpark,236 Little Collins Street  Melbourne,-37.814259143201106,144.966638432727
+2,The Melbourne Athenaeum Library,Place Of Assembly,Library,190 Collins Street  Melbourne,-37.814885575641604,144.96729128994102
+3,Carlton Gardens South,Leisure/Recreation,Informal Outdoor Facility (Park/Garden/Reserve),Carlton Gardens South Victoria Street  Carlton,-37.8060684577258,144.971266479841
+4,St Francis Church,Place of Worship,Church,274 Elizabeth Street  Melbourne,-37.8118847831837,144.962422614541
+5,Wesley Church,Place of Worship,Church,138 Lonsdale Street  Melbourne,-37.810157644696105,144.968168215633
+6,St Augustines Church,Place of Worship,Church,641 Bourke Street  Melbourne,-37.8169741358546,144.954862000132
+7,St James Church,Place of Worship,Church,427 King Street  West Melbourne,-37.8101281201969,144.952468571683
+8,St Mary's Anglican Church,Place of Worship,Church,155 Howard Street  North Melbourne,-37.8031663672997,144.953761537074
+9,Romanian Orthodox,Place of Worship,Church,59 Queensberry Street  Carlton,-37.805230729746796,144.96698644459698
+10,Welsh Presbyterian Church,Place of Worship,Church,328 La Trobe Street  Melbourne,-37.8104478768313,144.959873260087
+11,Church of Christ,Place of Worship,Church,335 Swanston Street  Melbourne,-37.8104524079085,144.96388920293998
+12,Scots Church,Place of Worship,Church,85 Russell Street  Melbourne,-37.8145687802664,144.96855105334998
+13,St Michael's Uniting Church,Place of Worship,Church,84 Russell Street  Melbourne,-37.814385132491296,144.969174036096
+14,Greek Orthodox Church,Place of Worship,Church,194 Victoria Parade  East Melbourne,-37.8088064667555,144.97825908926902
+15,St Peter's Eastern Hill,Place of Worship,Church,457 Albert Street  East Melbourne,-37.8097086714637,144.975259178609
+16,Lutheran Trinity Church,Place of Worship,Church,34 Parliament Place  East Melbourne,-37.8109757054396,144.975729473552
+17,Holy Trinity,Place of Worship,Church,207 Hotham Street  East Melbourne,-37.8140667110854,144.98319732228902
+18,St Johns Lutheran Church,Place of Worship,Church,24 City Road  Southbank,-37.8209399677168,144.967121099857
+19,North Melbourne Uniting,Place of Worship,Church,51 Curzon Street  North Melbourne,-37.8035538471344,144.947671538375
+20,Melbourne Unitarian Church,Place of Worship,Church,114 Grey Street  East Melbourne,-37.81144877733939,144.984664890999
+21,All Nations Uniting Church,Place of Worship,Church,182 Palmerston Street  Carlton,-37.7959155303946,144.968981110942
+22,Our Lady of Lebanon Church,Place of Worship,Church,185 Rathdowne Street  Carlton,-37.802576653968295,144.969334720932
+23,St Michaels,Place of Worship,Church,468 Dryburgh Street  North Melbourne,-37.7940512679297,144.945399480629
+24,Ukranian Catholic Cathedral,Place of Worship,Church,35 Canning Street  North Melbourne,-37.7963084580345,144.944313454028
+25,St Alban Anglican Church,Place of Worship,Church,55 Melrose Street  North Melbourne,-37.7942169477929,144.94161451392
+26,Christ Church Kensington,Place of Worship,Church,6 Epsom Road  Kensington,-37.7932109480553,144.92729572288
+27,Holy Rosary,Place of Worship,Church,11 Henry Street  Kensington,-37.7948087414394,144.928362125005
+28,Collins Street Baptist Church,Place of Worship,Church,162 Collins Street  Melbourne,-37.8147011904647,144.968072486031
+29,St Thomas Aquinas Church,Place of Worship,Church,46 Arnold Street  South Yarra,-37.8353076902578,144.97680908047198
+30,South Yarra Presbyterian Church,Place of Worship,Church,609 Punt Road  South Yarra,-37.8407473645397,144.98562699348
+31,The Parish of Christ Church South Yarra,Place of Worship,Church,183W Toorak Road  South Yarra,-37.8386270533576,144.986009385387
+32,East Melbourne Synagogue,Place of Worship,Synagogue,496 Albert Street  East Melbourne,-37.809113728917,144.97422190953998
+33,State Netball Hockey Centre,Leisure/Recreation,Major Sports & Recreation Facility,10 Brens Drive  Parkville,-37.7857860016289,144.947580972027
+34,University Square,Leisure/Recreation,Informal Outdoor Facility (Park/Garden/Reserve),231 Grattan Street  Carlton,-37.800410711209004,144.96039831930202
+35,Royal Park Golf Course,Leisure/Recreation,Private Sports Club/Facility,11 Old Poplar Road  Parkville,-37.781917130855796,144.956309119368
+36,Powlett Reserve,Leisure/Recreation,Informal Outdoor Facility (Park/Garden/Reserve),69 Grey Street  East Melbourne,-37.811692988249796,144.987275671763
+37,Carlton Football Club,Leisure/Recreation,Major Sports & Recreation Facility,Carlton Football Club Oval Royal Parade  Carlton North,-37.7840864379557,144.961967841559
+38,Visy Park,Leisure/Recreation,Major Sports & Recreation Facility,Carlton Football Club Oval Royal Parade  Carlton North,-37.7834303940347,144.96198257755302
+39,Queen Victoria Market,Retail,Retail,"Stall 10, Shed F, Queen Victoria Market Peel Street  Melbourne",-37.8075002018073,144.957158515056
+40,Carlton Gardens North,Leisure/Recreation,Informal Outdoor Facility (Park/Garden/Reserve),57 Carlton Street  Carlton,-37.80176908474029,144.971997551189
+41,Old Melbourne Gaol Crime & Justice Experience,Place Of Assembly,Art Gallery/Museum,377 Russell Street  Melbourne,-37.8077644149636,144.965463853978
+42,Kings Domain,Leisure/Recreation,Informal Outdoor Facility (Park/Garden/Reserve),Toilet Kings Domain Alexandra Avenue  Melbourne,-37.825523979583295,144.974107925144
+43,FairFax Studio,Place Of Assembly,Theatre Live,106 St Kilda Road  Southbank,-37.821668458188704,144.968836241692
+44,Playhouse,Place Of Assembly,Theatre Live,3 Sturt Street  Southbank,-37.8218124583016,144.968337832721
+45,State Theatre,Place Of Assembly,Theatre Live,1 Sturt Street  Southbank,-37.8212806349773,144.968469643744
+46,St Martins Youth Arts Centre,Place Of Assembly,Theatre Live,42 St Martins Lane  South Yarra,-37.8352429531289,144.98114217385
+47,Flemington Racecourse,Leisure/Recreation,Major Sports & Recreation Facility,398 Smithfield Road  Flemington,-37.7908082646624,144.912142987372
+48,Princess Theatre,Place Of Assembly,Theatre Live,9 Little Bourke Street  Melbourne,-37.8107257091302,144.97232659620002
+49,Treasury Gardens,Leisure/Recreation,Informal Outdoor Facility (Park/Garden/Reserve),322 Wellington Parade  East Melbourne,-37.8143993575938,144.975952335785
+50,State Library Victoria,Community Use,Public Buildings,318 Swanston Street  Melbourne,-37.8099852201226,144.964330322397
+51,Regent Theatre,Place Of Assembly,Theatre Live,194 Flinders Lane  Melbourne,-37.816001474417895,144.967916735261
+52,Treasury Reserve,Mixed Use,Retail/Office,1 Treasury Place  East Melbourne,-37.8129178793082,144.975236759799
+53,Batman Park,Leisure/Recreation,Informal Outdoor Facility (Park/Garden/Reserve),52 Rebecca Walk  Melbourne,-37.8218460949601,144.956665812218
+54,Richmond Football Club,Leisure/Recreation,Informal Outdoor Facility (Park/Garden/Reserve),Richmond Cricket Club Punt Road  East Melbourne,-37.8216740022008,144.988156318781
+55,Melbourne Cricket Ground (MCG),Leisure/Recreation,Major Sports & Recreation Facility,Yarra Park 120 Brunton Avenue  East Melbourne,-37.8194921618419,144.983402879078
+56,Melbourne Zoo,Leisure/Recreation,"Outdoor Recreation Facility (Zoo, Golf Course)","House 1, Melbourne Zoological Gardens Elliott Avenue  Parkville",-37.784444925371204,144.951371205938
+57,Melbourne Exhibition Centre,Place Of Assembly,Function/Conference/Exhibition Centre,2A Clarendon Street  South Wharf,-37.8252455123297,144.95435243249
+58,Melbourne Convention Centre,Place Of Assembly,Function/Conference/Exhibition Centre,Rear 30 Lorimer Street  South Wharf,-37.82490404846529,144.952288281644
+59,Polly Woodside,Place Of Assembly,Art Gallery/Museum,23 South Wharf Promenade  South Wharf,-37.8242574266145,144.95347805206399
+60,Melbourne International Shooting Club,Leisure/Recreation,Private Sports Club/Facility,134 Todd Road  Port Melbourne,-37.8292844929826,144.91341580246402
+61,Southgate Arts and Leisure Precinct,Mixed Use,Retail/Office/Carpark,1 Southgate Avenue  Southbank,-37.820224578659705,144.965989052839
+62,Australian Centre for Contemporary Art,Place Of Assembly,Art Gallery/Museum,54 Dodds Street  Southbank,-37.8266045432686,144.967252924593
+63,Malthouse Theatre,Place Of Assembly,Theatre Live,121 Sturt Street  Southbank,-37.8271768001126,144.966936821789
+64,St Patricks Cathedral,Place of Worship,Church,12 Gisborne Street  East Melbourne,-37.810114095047396,144.97590152971202
+65,Victorian Arts Centre,Place Of Assembly,Art Gallery/Museum,122 St Kilda Road  Southbank,-37.8219947335768,144.968837288153
+66,Melbourne Town Hall,Community Use,Public Buildings,102 Swanston Street  Melbourne,-37.8150754791411,144.966542722283
+67,DFO South Wharf,Mixed Use,Retail/Office,20 Convention Centre Place  South Wharf,-37.824887401234,144.949794297819
+68,Queen Victoria Gardens,Leisure/Recreation,Informal Outdoor Facility (Park/Garden/Reserve),Queen Victoria Gardens St Kilda Road  Melbourne,-37.821638124489105,144.971049530478
+69,Sidney Myer Music Bowl,Community Use,Public Buildings,Sidney Myer Music Bowl Alexandra Avenue  Melbourne,-37.8233471608733,144.974686151365
+70,Crown Entertainment Complex,Purpose Built,Casino,"Shop 38A, Ground 8 Whiteman Street  Southbank",-37.8235761092516,144.957312880653
+71,The Ian Potter Centre: NGV Australia,Place Of Assembly,Art Gallery/Museum,The Ian Potter Centre: NGV Australia 2 Swanston Street  Melbourne,-37.8174831423197,144.969899048343
+72,Federation Square,Leisure/Recreation,Informal Outdoor Facility (Park/Garden/Reserve),"Square, Federation Square 2 Swanston Street  Melbourne",-37.8178516571684,144.968963600783
+73,Thoroughbred Racing Gallery,Place Of Assembly,Art Gallery/Museum,Yarra Park 120 Brunton Avenue  East Melbourne,-37.8188662730911,144.9839700954
+74,New Quay,Leisure/Recreation,Informal Outdoor Facility (Park/Garden/Reserve),55A Newquay Promenade  Docklands,-37.8152178789077,144.941617889032
+75,Docklands Park,Leisure/Recreation,Informal Outdoor Facility (Park/Garden/Reserve),45 Navigation Drive  Docklands,-37.8209956785618,144.946781702342
+76,Waterfront City,Mixed Use,Retail/Office,2 Glenti Place  Docklands,-37.815056661803006,144.939136876334
+77,AAMI Park,Leisure/Recreation,Major Sports & Recreation Facility,82 Olympic Boulevard  Melbourne,-37.824725267396296,144.98380297866
+78,New Quay Marina,Transport,Marina,35 Newquay Promenade  Docklands,-37.8152925454954,144.942283726231
+79,Central Pier,Place Of Assembly,Function/Conference/Exhibition Centre,Shed 14 Victoria Harbour  Docklands,-37.8165177307702,144.94347501421498
+80,Melbourne Star Observation Wheel,Leisure/Recreation,Observation Tower/Wheel,101 Waterfront Way  Docklands,-37.8116163666726,144.937588920436
+81,Point Park,Leisure/Recreation,Informal Outdoor Facility (Park/Garden/Reserve),3 Point Park Crescent  Docklands,-37.8233522700646,144.942102276731
+82,Newmarket Reserve,Leisure/Recreation,Informal Outdoor Facility (Park/Garden/Reserve),417 Racecourse Road  Kensington,-37.7878473341234,144.922972125346
+83,Fox Classic Car Collection,Place Of Assembly,Art Gallery/Museum,37 Batmans Hill Drive  Docklands,-37.821374430148104,144.94849666170902
+84,Wonderland Park,Leisure/Recreation,"Outdoor Recreation Facility (Zoo, Golf Course)",14 Star Circus  Docklands,-37.811694535198896,144.936833674975
+85,Rod Laver Arena,Leisure/Recreation,Major Sports & Recreation Facility,Basement Melbourne Park Batman Avenue  Melbourne,-37.822045611980705,144.97848717378702
+86,Melbourne Park,Leisure/Recreation,Major Sports & Recreation Facility,"Corp. Box Rod Laver Arena, Melbourne Park Batman Avenue  Melbourne",-37.8209085970021,144.978735802793
+87,Margaret Court Arena,Leisure/Recreation,Major Sports & Recreation Facility,"Rod Laver Arena, Melbourne Park Batman Avenue  Melbourne",-37.8213252086842,144.977591098955
+88,Hisense Arena,Leisure/Recreation,Major Sports & Recreation Facility,"Hisense Arena, Melbourne Park Olympic Boulevard  Melbourne",-37.823110002667,144.981834802535
+89,Melbourne Museum,Place Of Assembly,Art Gallery/Museum,IMAX Theatre Rathdowne Street  Carlton,-37.803551812929896,144.971690718887
+90,IMAX Melbourne,Place Of Assembly,Cinema,IMAX Theatre Rathdowne Street  Carlton,-37.8034315561903,144.970639929886
+91,Melbourne Theatre Company,Community Use,Public Buildings,144 Southbank Boulevard  Southbank,-37.823930384815995,144.96829742989402
+92,MTC Theatre,Place Of Assembly,Theatre Live,16 Dodds Street  Southbank,-37.824266183290206,144.968174400274
+93,Elisabeth Murdoch Hall,Community Use,Public Buildings,19 Sturt Street  Southbank,-37.823973370428206,144.967450979234
+94,Melbourne Recital Centre,Community Use,Public Buildings,136 Southbank Boulevard  Southbank,-37.823832788580496,144.967682729667
+95,NGV International,Community Use,Public Buildings,180 St Kilda Road  Southbank,-37.8230135000869,144.969342535451
+96,Hamer Hall,Place Of Assembly,Theatre Live,2 St Kilda Road  Southbank,-37.8199901009015,144.96799214425698
+97,Birrarung Marr,Leisure/Recreation,Informal Outdoor Facility (Park/Garden/Reserve),Birrarung Marr Batman Avenue  Melbourne,-37.81806108403,144.97314667014
+98,Artplay,Leisure/Recreation,Indoor Recreation Facility,"Artplay, Birrarung Marr Batman Avenue  Melbourne",-37.8184198800044,144.971542586509
+99,Riverslide Skate Park,Leisure/Recreation,Informal Outdoor Facility (Park/Garden/Reserve),Residence Alexandra Gardens Alexandra Avenue  Melbourne,-37.8207887122448,144.972951789291
+100,Alexandra Gardens,Leisure/Recreation,Informal Outdoor Facility (Park/Garden/Reserve),Alexandra Gardens Alexandra Avenue  Melbourne,-37.8206051404251,144.971796067365
+101,North Melbourne Recreation Reserve,Leisure/Recreation,Informal Outdoor Facility (Park/Garden/Reserve),97 Macaulay Road  North Melbourne,-37.7988345257153,144.941452061463
+102,J.J Holland Park,Leisure/Recreation,Informal Outdoor Facility (Park/Garden/Reserve),The Bill Vanina Sports Pavilion 1A Childers Street  Kensington,-37.7982358832177,144.923837074813
+103,Royal Park,Leisure/Recreation,Informal Outdoor Facility (Park/Garden/Reserve),Royal Park Flemington Road  Parkville,-37.790617425658105,144.95383424064698
+104,Princes Park,Leisure/Recreation,Informal Outdoor Facility (Park/Garden/Reserve),Princes Park Royal Parade  Carlton North,-37.7870161727156,144.961115214367
+105,National Sports Museum,Place Of Assembly,Art Gallery/Museum,Yarra Park 120 Brunton Avenue  East Melbourne,-37.818954490946204,144.98466980938102
+106,Shrine of Rembrance Reserve,Leisure/Recreation,Informal Outdoor Facility (Park/Garden/Reserve),12 Domain Road  Melbourne,-37.8320733992876,144.97362836446501
+107,Shrine of Remembrance,Community Use,Public Buildings,Shrine of Remembrance Reserve St Kilda Road  Melbourne,-37.8302080020387,144.97344191362302
+108,Royal Botanic Gardens,Leisure/Recreation,Informal Outdoor Facility (Park/Garden/Reserve),Royal Botanic Gardens Victoria Birdwood Avenue  Melbourne,-37.8306631583233,144.980850432751
+109,Yarra Park,Leisure/Recreation,Informal Outdoor Facility (Park/Garden/Reserve),Yarra Park Brunton Avenue  East Melbourne,-37.820469374101,144.986671109615
+110,Icehouse,Leisure/Recreation,Indoor Recreation Facility,111 Pearl River Road  Docklands,-37.8121881194053,144.93568401887302
+111,Athanaeum Theatre,Place Of Assembly,Theatre Live,190 Collins Street  Melbourne,-37.814954347831,144.96732254212
+112,Riverside Park,Leisure/Recreation,"Outdoor Recreation Facility (Zoo, Golf Course)",71 Speakmen Street  Kensington,-37.7948375315825,144.915607065132
+113,Darling Square,Leisure/Recreation,Informal Outdoor Facility (Park/Garden/Reserve),13 Darling Street  East Melbourne,-37.81299206932,144.989062559512
+114,Carlton Courthouse Theatre,Place Of Assembly,Theatre Live,1 Court House Place  Carlton,-37.7976589943217,144.968750113566
+115,Flagstaff Gardens,Leisure/Recreation,Informal Outdoor Facility (Park/Garden/Reserve),Flagstaff Gardens Dudley Street  West Melbourne,-37.811122288927706,144.95469605523502
+116,Melbourne Showgrounds,Leisure/Recreation,"Outdoor Recreation Facility (Zoo, Golf Course)",16 Langs Road,-37.782309785088295,144.910822117306
+117,Her Majesty's Theatre,Place Of Assembly,Theatre Live,96 Little Bourke Street  Melbourne,-37.8109975612842,144.969520183129
+118,Comedy Theatre,Place Of Assembly,Theatre Live,79 Lonsdale Street  Melbourne,-37.810205394516295,144.97013311862
+119,La Mama Theatre,Place Of Assembly,Theatre Live,66 University Street  Carlton,-37.799130495673296,144.967669503083
+120,Fawkner Park,Leisure/Recreation,Informal Outdoor Facility (Park/Garden/Reserve),"Northern Pavilion, Fawkner Park Toorak Road  South Yarra",-37.8413996708186,144.981625667877
+121,Fitzroy Gardens,Leisure/Recreation,Informal Outdoor Facility (Park/Garden/Reserve),"The Pavilion, Fitzroy Gardens Wellington Parade  East Melbourne",-37.8129616331579,144.980455714669
+122,Sinclair's Cottage,Place Of Assembly,Art Gallery/Museum,"Sinclairs Cottage, Fitzroy Gardens Wellington Parade  East Melbourne",-37.8145407488014,144.980554992725
+123,Enterprize Park,Leisure/Recreation,Informal Outdoor Facility (Park/Garden/Reserve),479 Flinders Street  Melbourne,-37.820210269629,144.959276859602
+124,Victoria Police Museum,Place Of Assembly,Art Gallery/Museum,22 Siddeley Street  Docklands,-37.8222182774409,144.954039975197
+125,Immigration Museum,Place Of Assembly,Art Gallery/Museum,412 Flinders Street  Melbourne,-37.81917987980621,144.96042677712902
+126,St Pauls Cathedral,Place of Worship,Church,28 Swanston Street  Melbourne,-37.8169549012399,144.967681647402
+127,Forum Theatre,Place Of Assembly,Theatre Live,6 Hosier Lane  Melbourne,-37.816485409696,144.96938655699802
+128,"Melbourne Wholesale Fruit, Vegetable & Flower Market",Mixed Use,Retail/Office/Carpark,540 Footscray Road  West Melbourne,-37.80687252157,144.923287444259
+129,Fire Services Museum Victoria,Place Of Assembly,Art Gallery/Museum,114 Victoria Parade  East Melbourne,-37.8085761281612,144.975373745366
+130,The Ian Potter Museum Of Art,Place Of Assembly,Art Gallery/Museum,815 Swanston Street  Parkville,-37.7973939595503,144.964156669702
+131,Koorie Heritage Trust Inc,Place Of Assembly,Art Gallery/Museum,516 Little Lonsdale Street  Melbourne,-37.8133854259085,144.954027907736
+132,Melbourne Central,Mixed Use,Retail/Office/Carpark,"Shop 4A, Ground 300 Lonsdale Street  Melbourne",-37.8105371797142,144.962749729496
+133,Argyle Square,Leisure/Recreation,Informal Outdoor Facility (Park/Garden/Reserve),20 Argyle Place South  Carlton,-37.8031480577285,144.965761295089
+134,Piazza Italia,Leisure/Recreation,Informal Outdoor Facility (Park/Garden/Reserve),21 Argyle Place North  Carlton,-37.80251641925229,144.96586309294702
+135,Macarthur Square,Leisure/Recreation,Informal Outdoor Facility (Park/Garden/Reserve),39 MacArthur Place North  Carlton,-37.7983318676737,144.971514146104
+136,Murchinson Square,Leisure/Recreation,Informal Outdoor Facility (Park/Garden/Reserve),40 Owen Street  Carlton,-37.8002735025371,144.973059252203
+137,Parliament Reserve,Leisure/Recreation,Informal Outdoor Facility (Park/Garden/Reserve),519 Albert Street  East Melbourne,-37.809852620638,144.973462202839
+138,North Melbourne Recreation Centre (Aquatic),Leisure/Recreation,Major Sports & Recreation Facility,7 Macaulay Road  North Melbourne,-37.7999470049655,144.94329080186898
+139,North Melbourne Recreation Centre (Gymnasium),Leisure/Recreation,Gymnasium/Health Club,206 Arden Street  North Melbourne,-37.7997051197931,144.940368286395
+140,Carlton Baths,Leisure/Recreation,Indoor Recreation Facility,234 Rathdowne Street  Carlton,-37.793437704260896,144.971696548624
+141,City Baths,Leisure/Recreation,Major Sports & Recreation Facility,6 Franklin Street  Melbourne,-37.8071585350561,144.96318978972099
+142,Westgate Park,Leisure/Recreation,Informal Outdoor Facility (Park/Garden/Reserve),9 Webb Dock Drive  Port Melbourne,-37.8314918578874,144.908824792698
+143,Cooks' Cottage,Place Of Assembly,Art Gallery/Museum,"Cooks' Cottage, Fitzroy Gardens Wellington Parade  East Melbourne",-37.8144604899837,144.979471339826
+144,Conservatory,Community Use,Public Buildings,"Conservatory, Fitzroy Gardens Wellington Parade  East Melbourne",-37.814002127195,144.9785597431
+145,Melbourne Aquarium,Purpose Built,Aquarium,Sea Life Melbourne Aquarium King Street  Melbourne,-37.8209627824685,144.958425696055
+146,Westpac Centre,Leisure/Recreation,Major Sports & Recreation Facility,16 Olympic Boulevard  Melbourne,-37.824245685859296,144.979720306309
+147,Royal Exhibition Building,Place Of Assembly,Art Gallery/Museum,IMAX Theatre Rathdowne Street  Carlton,-37.804602624320005,144.97152191495198
+148,Etihad Stadium,Leisure/Recreation,Major Sports & Recreation Facility,151 Wurundjeri Way  Docklands,-37.8161760471742,144.947496254547
+149,Eureka Skydeck 88,Leisure/Recreation,Observation Tower/Wheel,5 Riverside Quay  Southbank,-37.8216187583314,144.964622218598
+150,Sandridge Rail Bridge,Leisure/Recreation,Informal Outdoor Facility (Park/Garden/Reserve),Sandridge Rail Bridge  Southbank,-37.8201763042794,144.96298113723998
+151,Australian Centre For The Moving Image (ACMI),Place Of Assembly,Art Gallery/Museum,"Alfred Deakin Building, Federation Square 2 Swanston Street  Melbourne",-37.817610732720205,144.969070431323
+152,Dallas Brooks Centre,Place Of Assembly,Function/Conference/Exhibition Centre,8 Eades Street  East Melbourne,-37.8097374138234,144.98138341159202
+153,Myer,Retail,Department Store,328 Bourke Street  Melbourne,-37.8135911985281,144.963855087868
+154,David Jones,Retail,Department Store,308 Bourke Street  Melbourne,-37.81331272606379,144.964373486798
+155,Lincoln Square,Leisure/Recreation,Informal Outdoor Facility (Park/Garden/Reserve),24 Lincoln Square South  Carlton,-37.8027919689732,144.962760852233
+156,The Museum Of Australian Chinese History,Place Of Assembly,Art Gallery/Museum,20 Cohen Place  Melbourne,-37.8107686127655,144.96923385414
+157,ANZ 'Gothic' Bank,Mixed Use,Retail/Office/Carpark,96 Queen Street  Melbourne,-37.816158066602895,144.96167371924201
