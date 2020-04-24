@@ -12,6 +12,7 @@ namespace CaringSquareApp.Models
     using System;
     using System.Collections.Generic;
     using System.ComponentModel;
+    using System.ComponentModel.DataAnnotations;
 
     public partial class POIs
     {
@@ -23,18 +24,32 @@ namespace CaringSquareApp.Models
         }
     
         public int PlaceId { get; set; }
+
+        [Required]
         [DisplayName("Place Name")]
         public string Name { get; set; }
+
+        [Required]
         [DisplayName("Theme")]
         public string Theme { get; set; }
+
+        [Required]
         [DisplayName("Sub Theme")]
         public string SubTheme { get; set; }
+
+        [Required]
         [DisplayName("Address")]
         public string Address { get; set; }
+
+        [Required]
         [DisplayName("Latitude")]
         public string Latitude { get; set; }
+
+        [Required]
         [DisplayName("Longitude")]
         public string Longitude { get; set; }
+
+        [Required]
         [DisplayName("Interest Category")]
         public string Category { get; set; }
     

@@ -12,11 +12,14 @@ namespace CaringSquareApp.Models
     using System;
     using System.Collections.Generic;
     using System.ComponentModel;
+    using System.ComponentModel.DataAnnotations;
 
     public partial class Interest
     {
         
         public int InterestId { get; set; }
+
+        [Required]
         [DisplayName("Interest Value")]
         public string InterestName { get; set; }
         [DisplayName("User Name")]

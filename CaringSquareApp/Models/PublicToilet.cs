@@ -11,15 +11,28 @@ namespace CaringSquareApp.Models
 {
     using System;
     using System.Collections.Generic;
-    
+    using System.ComponentModel.DataAnnotations;
+
     public partial class PublicToilet
     {
         public int ToiletId { get; set; }
+
+        [Required]
         public string Name { get; set; }
+
+        [Required]
         public string FemaleStatus { get; set; }
+
+        [Required]
         public string MaleStatus { get; set; }
+
+        [Required]
         public string Accessibility { get; set; }
+
+        [Required]
         public string Latitude { get; set; }
+
+        [Required]
         public string Longitude { get; set; }
         public int POIPlaceId { get; set; }
     
