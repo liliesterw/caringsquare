@@ -827,18 +827,19 @@ section {
   font-size: 16px;
 }
 
-.features .icon-box h3 a {
+/*.features .icon-box h3 a {
   color: #010483;
   transition: ease-in-out 0.3s;
 }
 
 .features .icon-box h3 a:hover {
   color: #01036f;
-}
+}*/
 
 .features .icon-box:hover {
-  background: #ebebff;
+  background: #d4d4fc;
 }
+
 
 /*--------------------------------------------------------------
 # Counts
@@ -1225,6 +1226,45 @@ section {
   padding: 1px 0 3px 0;
   background: #1acc8d;
   color: #fff;
+}
+
+.pricing .icon-boxes h3 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #010483;
+  margin-bottom: 15px;
+}
+
+.pricing .icon-box {
+  margin-top: 0px;
+}
+
+.pricing .icon-box .icon {
+  float: left;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  border: 2px solid #7ceec6;
+  border-radius: 50px;
+  transition: 0.5s;
+}
+
+.pricing .icon-box .icon i {
+  color: #1acc8d;
+  font-size: 32px;
+}
+
+.pricing .bx {
+  color: #1acc8d;
+  font-size: 50px;
+}
+
+@media (max-width: 200px) {
+    .col-6 {
+      width: 100%
+    }
 }
 
 /*--------------------------------------------------------------

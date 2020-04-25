@@ -203,8 +203,8 @@ C:\Users\Liliana\Desktop\caringsquare\CaringSquareApp\bin\Microsoft.Owin.Securit
 C:\Users\Liliana\Desktop\caringsquare\CaringSquareApp\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 C:\Users\Liliana\Desktop\caringsquare\CaringSquareApp\bin\Microsoft.Owin.Security.OAuth.xml
 C:\Users\Liliana\Desktop\caringsquare\CaringSquareApp\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\Liliana\Desktop\caringsquare\CaringSquareApp\obj\Debug\CaringSquareApp.csprojAssemblyReference.cache
 C:\Users\Liliana\Desktop\caringsquare\CaringSquareApp\obj\Debug\CaringSquareApp.csproj.CoreCompileInputs.cache
 C:\Users\Liliana\Desktop\caringsquare\CaringSquareApp\obj\Debug\CaringSquareApp.csproj.CopyComplete
 C:\Users\Liliana\Desktop\caringsquare\CaringSquareApp\obj\Debug\CaringSquareApp.dll
 C:\Users\Liliana\Desktop\caringsquare\CaringSquareApp\obj\Debug\CaringSquareApp.pdb
+C:\Users\Liliana\Desktop\caringsquare\CaringSquareApp\obj\Debug\CaringSquareApp.csprojAssemblyReference.cache
