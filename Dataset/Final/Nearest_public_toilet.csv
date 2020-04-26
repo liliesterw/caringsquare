@@ -1,0 +1,472 @@
+toilet_id,poi_id,name,female,male,wheelchair,lat,lon,distance
+1,1,Public Toilet - Town Hall Melbourne (200 Collins Street),yes,yes,yes,-37.81521576619692,144.96694328510318,6.399729737134266
+2,1,Public Toilet - Toilet 46 - Bourke Street (opposite 225 Bourke Street),yes,yes,yes,-37.81324543360198,144.96689658968143,6.669144077065045
+3,1,Public Toilet - Toilet 6 - Elizabeth Street (Toilet Adjacent 200 Elizabeth Street),yes,no,no,-37.813837792176315,144.96309721024045,22.597263069463864
+1,2,Public Toilet - Town Hall Melbourne (200 Collins Street),yes,yes,yes,-37.81521576619692,144.96694328510318,3.0488744488594883
+2,2,Public Toilet - Toilet 46 - Bourke Street (opposite 225 Bourke Street),yes,yes,yes,-37.81324543360198,144.96689658968143,10.755593738443533
+3,2,Public Toilet - Toilet 41 - Flinders Street (No 245 Flinders Street Station),yes,yes,yes,-37.817903197056154,144.9662642552638,20.316103436148026
+1,3,Public Toilet - Toilet 145 - Carlton Gardens South (Opposite 39 Rathdowne Street),yes,yes,yes,-37.80625893301874,144.9692027022002,13.143686283276848
+2,3,Public Toilet - Toilet 138 - Carlton Gardens North (Opposite 199 Rathdowne Street),yes,yes,yes,-37.802645554985105,144.969821287215,23.677584180033726
+3,3,Public Toilet - Toilet 124 - Nicholson Street (1A Nicholson Street),no,yes,no,-37.80945202894246,144.97307695563703,24.443498910689065
+1,4,Public Toilet - Toilet 6 - Elizabeth Street (Toilet Adjacent 200 Elizabeth Street),no,yes,no,-37.81343920794399,144.9629227264507,10.408335545070603
+2,4,Public Toilet - Toilet 6 - Elizabeth Street (Toilet Adjacent 200 Elizabeth Street),yes,no,no,-37.813837792176315,144.96309721024045,13.169389235185557
+3,4,Public Toilet - Toilet 36 - Lonsdale Street (Opposite 424 Lonsdale Street),yes,yes,yes,-37.8129330992456,144.9600121469519,16.674604342725623
+1,5,Public Toilet - Toilet 12 - Exhibition Street (Opposite 242 Exhibition Street),no,yes,no,-37.80954604636232,144.9694071187106,8.768734901923954
+2,5,Public Toilet - Toilet 11 - Lonsdale Street (Opposite 88 Lonsdale Street),yes,yes,yes,-37.8100356799286,144.9699024633049,11.020467096970018
+3,5,Public Toilet - Toilet 7 - Latrobe Street (Adjacent 120 La Trobe Street),no,yes,no,-37.80894206847336,144.96564884552268,17.753023393976605
+1,6,Public Toilet - Toilet 1 - Lonsdale Street (Opposite 581 Lonsdale Street),yes,yes,yes,-37.814345522392365,144.9551179464378,16.843513588883972
+2,6,Public Toilet - Toilet 169 - Batman Park (2A Spencer Street),yes,yes,yes,-37.82172068166997,144.95557809313962,30.61114960712158
+3,6,Public Toilet - Toilet 4 - Market Street (Opposite 74 Market Street),yes,yes,yes,-37.81746989209639,144.96025433528794,34.2987619155061
+1,7,Public Toilet - Toilet 154 - Flagstaff Gardens (cnr William & Dudley),yes,yes,yes,-37.80891324235132,144.95504018635694,18.049673180703017
+2,7,Public Toilet - Toilet 1 - Lonsdale Street (Opposite 581 Lonsdale Street),yes,yes,yes,-37.814345522392365,144.9551179464378,31.708484262869565
+3,7,Public Toilet - Queen Victoria Market (153 Victoria Street),yes,yes,no,-37.80612149907781,144.95653844268273,36.31585055604706
+1,8,Public Toilet - Toilet 13 - Queensberry Street (Opposite 530 Queensberry Street),,,,-37.803094275484256,144.94994632091922,24.206292456070777
+2,8,Public Toilet - Toilet 170 - Queensberry Street (Opposite 530 Queensberry Street),no,yes,no,-37.803077866412245,144.94986517956968,24.72311301184636
+3,8,Public Toilet - Queen Victoria Market (153 Victoria Street),yes,yes,no,-37.80612149907781,144.95653844268273,25.79618450954167
+1,9,Public Toilet - Toilet 145 - Carlton Gardens South (Opposite 39 Rathdowne Street),yes,yes,yes,-37.80625893301874,144.9692027022002,15.509639218340716
+2,9,Public Toilet - Toilet 178 -  Argyle Place North (Opposite 4 Argyle Place North),yes,yes,yes,-37.80207629420745,144.96642403988702,20.432824746359568
+3,9,Public Toilet - Toilet 138 - Carlton Gardens North (Opposite 199 Rathdowne Street),yes,yes,yes,-37.802645554985105,144.969821287215,24.39655607372765
+1,10,Public Toilet - Toilet 34 - Franklin Street (Opposite 80 Franklin Street),yes,yes,yes,-37.8082334704767,144.96018687493768,14.262724727584994
+2,10,Public Toilet - Toilet 36 - Lonsdale Street (Opposite 424 Lonsdale Street),yes,yes,yes,-37.8129330992456,144.9600121469519,15.875169424183744
+3,10,Public Toilet - Queen Victoria Market (465 Queen Street),yes,yes,yes,-37.807831221471965,144.95795526595654,20.648600701329507
+1,11,Public Toilet - Toilet 7 - Latrobe Street (Adjacent 120 La Trobe Street),no,yes,no,-37.80894206847336,144.96564884552268,14.738225142825616
+2,11,Public Toilet - Toilet 6 - Elizabeth Street (Toilet Adjacent 200 Elizabeth Street),no,yes,no,-37.81343920794399,144.9629227264507,20.01026601217454
+3,11,Public Toilet - Toilet 6 - Elizabeth Street (Toilet Adjacent 200 Elizabeth Street),yes,no,no,-37.813837792176315,144.96309721024045,22.16765487996819
+1,12,Public Toilet - Town Hall Melbourne (200 Collins Street),yes,yes,yes,-37.81521576619692,144.96694328510318,10.989819390402285
+2,12,Public Toilet - Toilet 46 - Bourke Street (opposite 225 Bourke Street),yes,yes,yes,-37.81324543360198,144.96689658968143,13.458309711561109
+3,12,Public Toilet - Toilet 13 - Exhibition Street (Opposite 77 Exhibition Street),yes,yes,yes,-37.81384641664995,144.97137409472109,18.470079755327834
+1,13,Public Toilet - Toilet 13 - Exhibition Street (Opposite 77 Exhibition Street),yes,yes,yes,-37.81384641664995,144.97137409472109,14.356504703803552
+2,13,Public Toilet - Town Hall Melbourne (200 Collins Street),yes,yes,yes,-37.81521576619692,144.96694328510318,15.092964236705285
+3,13,Public Toilet - Toilet 46 - Bourke Street (opposite 225 Bourke Street),yes,yes,yes,-37.81324543360198,144.96689658968143,16.157542725461195
+1,14,Public Toilet - Toilet 122 - Treasury Gardens (Store and Toilet),yes,yes,yes,-37.813418435008906,144.97746700744847,29.840457346081923
+2,14,Public Toilet - Toilet 124 - Nicholson Street (1A Nicholson Street),no,yes,no,-37.80945202894246,144.97307695563703,33.10883920748878
+3,14,Public Toilet - Toilet 125 - Gordon Reserve (74-108 Spring Street),yes,no,no,-37.812240775587135,144.97392555886628,35.13218962239875
+1,15,Public Toilet - Toilet 124 - Nicholson Street (1A Nicholson Street),no,yes,no,-37.80945202894246,144.97307695563703,13.92988664152078
+2,15,Public Toilet - Toilet 125 - Gordon Reserve (74-108 Spring Street),yes,no,no,-37.812240775587135,144.97392555886628,18.22806197771988
+3,15,Public Toilet - Toilet 122 - Treasury Gardens (Store and Toilet),yes,yes,yes,-37.813418435008906,144.97746700744847,27.488711878874998
+1,16,Public Toilet - Toilet 125 - Gordon Reserve (74-108 Spring Street),yes,no,no,-37.812240775587135,144.97392555886628,13.993136472158954
+2,16,Public Toilet - Toilet 122 - Treasury Gardens (Store and Toilet),yes,yes,yes,-37.813418435008906,144.97746700744847,19.078117749359762
+3,16,Public Toilet - Toilet 124 - Nicholson Street (1A Nicholson Street),no,yes,no,-37.80945202894246,144.97307695563703,19.419882571254302
+1,17,Public Toilet - Toilet 119 - Fitzroy Gardens Toilets (150 Clarendon Street),yes,yes,yes,-37.81203615704364,144.98307493665166,12.974072267319961
+2,17,Public Toilet - Toilet 117 - Powlett Reserve (Opposite 128 Albert Street),yes,yes,yes,-37.81094232809633,144.98685873937842,30.585218457712152
+3,17,Public Toilet - Toilet 118 - Fitzroy Gardens (2 Lansdowne Street),yes,yes,yes,-37.815278082082735,144.97758877995489,36.36296915499201
+1,18,Public Toilet - Toilet 172 - Southbank Promenade (opposite Esso House),yes,yes,yes,-37.820342128586276,144.96421972799456,18.760053097047546
+2,18,Public Toilet - Toilet 41 - Flinders Street (No 245 Flinders Street Station),yes,yes,yes,-37.817903197056154,144.9662642552638,20.114054624884993
+3,18,Public Toilet - Toilet 110 - Queen Victoria Gardens (Linlithgow Avenue),yes,yes,yes,-37.82294828867767,144.97098568179825,27.613231478754795
+1,19,Public Toilet - Toilet 170 - Queensberry Street (Opposite 530 Queensberry Street),no,yes,no,-37.803077866412245,144.94986517956968,14.242455900286512
+2,19,Public Toilet - Toilet 13 - Queensberry Street (Opposite 530 Queensberry Street),,,,-37.803094275484256,144.94994632091922,14.724545419315128
+3,19,Public Toilet - Toilet 136 - Ievers Reserve - Flemington Road,yes,yes,yes,-37.79679899805757,144.95196665126468,50.979382673123105
+1,20,Public Toilet - Toilet 119 - Fitzroy Gardens Toilets (150 Clarendon Street),yes,yes,yes,-37.81203615704364,144.98307493665166,10.75035742721049
+2,20,Public Toilet - Toilet 117 - Powlett Reserve (Opposite 128 Albert Street),yes,yes,yes,-37.81094232809633,144.98685873937842,14.27482749391675
+3,20,Public Toilet - Toilet 122 - Treasury Gardens (Store and Toilet),yes,yes,yes,-37.813418435008906,144.97746700744847,47.31193923473165
+1,21,Public Toilet - Toilet 137 - Faraday Street (Opposite 208-212 Faraday Street),yes,yes,no,-37.79870959701599,144.96759388009733,19.87718632905616
+2,21,Public Toilet - Toilet 133- Canning Street Reserve (49 Princes Street),no,yes,no,-37.793011678725755,144.97399489761827,36.82847991253724
+3,21,Public Toilet - Toilet 178 -  Argyle Place North (Opposite 4 Argyle Place North),yes,yes,yes,-37.80207629420745,144.96642403988702,42.51241250835855
+1,22,Public Toilet - Toilet 138 - Carlton Gardens North (Opposite 199 Rathdowne Street),yes,yes,yes,-37.802645554985105,144.969821287215,3.117838093414502
+2,22,Public Toilet - Toilet 178 -  Argyle Place North (Opposite 4 Argyle Place North),yes,yes,yes,-37.80207629420745,144.96642403988702,18.739263807309325
+3,22,Public Toilet - Toilet 145 - Carlton Gardens South (Opposite 39 Rathdowne Street),yes,yes,yes,-37.80625893301874,144.9692027022002,23.500498418425366
+1,23,Public Toilet - Toilet 131 - Royal Park (Flemington Rd - Near North Park Tennis Club),yes,yes,yes,-37.790174410412384,144.94366905096862,27.05849701687018
+2,23,"Public Toilet - Toilet 55 - Royal Park (Nature Play, Opposite 51 Gatehouse Street)",yes,yes,yes,-37.795523148389,144.952142962802,43.8303560384364
+3,23,Public Toilet - Toilet 136 - Ievers Reserve - Flemington Road,yes,yes,yes,-37.79679899805757,144.95196665126468,45.22487469249838
+1,24,Public Toilet - Toilet 131 - Royal Park (Flemington Rd - Near North Park Tennis Club),yes,yes,yes,-37.790174410412384,144.94366905096862,39.336350932040865
+2,24,Public Toilet - Toilet 136 - Ievers Reserve - Flemington Road,yes,yes,yes,-37.79679899805757,144.95196665126468,48.681181412982596
+3,24,"Public Toilet - Toilet 55 - Royal Park (Nature Play, Opposite 51 Gatehouse Street)",yes,yes,yes,-37.795523148389,144.952142962802,49.95454279370442
+1,25,Public Toilet - Toilet 131 - Royal Park (Flemington Rd - Near North Park Tennis Club),yes,yes,yes,-37.790174410412384,144.94366905096862,28.896462363731125
+2,25,"Public Toilet - Toilet 55 - Royal Park (Nature Play, Opposite 51 Gatehouse Street)",yes,yes,yes,-37.795523148389,144.952142962802,67.35996478795009
+3,25,Public Toilet - Toilet 136 - Ievers Reserve - Flemington Road,yes,yes,yes,-37.79679899805757,144.95196665126468,67.75133165253821
+1,26,Public Toilet - Toilet 177 - Bellair Street (Opposite 180 Bellair Street),yes,yes,yes,-37.79373229128235,144.93035186163308,19.68816186147891
+2,26,"Public Toilet - Toilet 162 - JJ Holland Park (Opposite, 48 Altona Street)",yes,yes,yes,-37.798125461506075,144.92642466756246,31.828793090707588
+3,26,Public Toilet - Newmarket Reserve (26 Smithfield Road),yes,yes,no,-37.78848882114304,144.92356372197432,38.32610228370001
+1,27,Public Toilet - Toilet 177 - Bellair Street (Opposite 180 Bellair Street),yes,yes,yes,-37.79373229128235,144.93035186163308,14.378188628324386
+2,27,"Public Toilet - Toilet 162 - JJ Holland Park (Opposite, 48 Altona Street)",yes,yes,yes,-37.798125461506075,144.92642466756246,24.469339723371256
+3,27,"Public Toilet - Toilet 173 - JJ Holland Park, Skate Park (113 Kensington Road)",yes,yes,yes,-37.798064023886866,144.92110584392117,50.52457552490989
+1,28,Public Toilet - Town Hall Melbourne (200 Collins Street),yes,yes,yes,-37.81521576619692,144.96694328510318,7.870687082245482
+2,28,Public Toilet - Toilet 46 - Bourke Street (opposite 225 Bourke Street),yes,yes,yes,-37.81324543360198,144.96689658968143,11.904494708417648
+3,28,Public Toilet - Toilet 13 - Exhibition Street (Opposite 77 Exhibition Street),yes,yes,yes,-37.81384641664995,144.97137409472109,21.61693078689581
+1,29,Public Toilet - Toilet 104 - Kings Domain South (off Birdwood Avenue),yes,yes,yes,-37.830849124048974,144.97518226820782,30.238791842188462
+2,29,Public Toilet - Toilet 103 - Kings Domain South (Opposite 169 Domain Road),yes,yes,yes,-37.83393826633729,144.98178404635058,32.630113249642825
+3,29,"Public Toilet - Toilet 102 - Fawkner Park, North Pavilion (Female)",yes,no,no,-37.84001779326322,144.9812270146221,41.00359039353521
+1,30,"Public Toilet - Toilet 44 - Fawkner Park, Opposite 150W Toorak Road",yes,yes,yes,-37.83825284124979,144.9843892199417,17.72663091361281
+2,30,"Public Toilet - Toilet 102 - Fawkner Park, North Pavilion (Male)",no,yes,no,-37.840147692965054,144.98138308753738,27.06929699166795
+3,30,"Public Toilet - Toilet 102 - Fawkner Park, North Pavilion (Female)",yes,no,no,-37.84001779326322,144.9812270146221,28.17046303669427
+1,31,"Public Toilet - Toilet 44 - Fawkner Park, Opposite 150W Toorak Road",yes,yes,yes,-37.83825284124979,144.9843892199417,10.507923888135895
+2,31,"Public Toilet - Toilet 102 - Fawkner Park, North Pavilion (Male)",no,yes,no,-37.840147692965054,144.98138308753738,30.784394884089608
+3,31,"Public Toilet - Toilet 102 - Fawkner Park, North Pavilion (Female)",yes,no,no,-37.84001779326322,144.9812270146221,31.478217647188046
+1,32,Public Toilet - Toilet 124 - Nicholson Street (1A Nicholson Street),no,yes,no,-37.80945202894246,144.97307695563703,7.572163794392427
+2,32,Public Toilet - Toilet 125 - Gordon Reserve (74-108 Spring Street),yes,no,no,-37.812240775587135,144.97392555886628,20.032561831680727
+3,32,Public Toilet - Toilet 11 - Lonsdale Street (Opposite 88 Lonsdale Street),yes,yes,yes,-37.8100356799286,144.9699024633049,28.005790861898028
+1,33,Public Toilet - Toilet 131 - Royal Park (Flemington Rd - Near North Park Tennis Club),yes,yes,yes,-37.790174410412384,144.94366905096862,37.43005416828338
+2,33,"Public Toilet - Toilet 120 - Royal Park, Wetland (off Oak Street)",yes,yes,yes,-37.78303248417686,144.94185635299425,40.3960816412439
+3,33,Public Toilet - Royal Park Brens Pavilion,yes,yes,no,-37.78622124839705,144.95500087587342,47.22726187878755
+1,34,Public Toilet - Toilet 179 - Lincoln Square (138-142 Bouverie Street),yes,yes,yes,-37.80271182455448,144.9622681269577,18.871481802636495
+2,34,Public Toilet - Toilet 140 - Queensberry Street (Opposite 286 Queensberry Street),no,yes,no,-37.803994634967296,144.95909066756946,24.317125237213414
+3,34,Public Toilet - Toilet 142 - Queensberry Street (Adjacent 179 Queensberry Street),no,yes,no,-37.80463970714722,144.96285021945613,31.13623612645353
+1,35,Public Toilet - Royal Park Golf Course Club House,yes,yes,no,-37.78187131786685,144.95614252894822,1.0984509852141615
+2,35,Public Toilet - Royal Park Brens Pavilion,yes,yes,no,-37.78622124839705,144.95500087587342,28.682996113595202
+3,35,Public Toilet - Toilet 127 - Princes Park Royal Parade (near Park Street),yes,yes,yes,-37.7789496090064,144.96046591899102,32.50349103908466
+1,36,Public Toilet - Toilet 117 - Powlett Reserve (Opposite 128 Albert Street),yes,yes,yes,-37.81094232809633,144.98685873937842,5.468531055771493
+2,36,Public Toilet - Toilet 119 - Fitzroy Gardens Toilets (150 Clarendon Street),yes,yes,yes,-37.81203615704364,144.98307493665166,26.71198223162174
+3,36,Public Toilet - Toilet 122 - Treasury Gardens (Store and Toilet),yes,yes,yes,-37.813418435008906,144.97746700744847,63.124208911097575
+1,37,Public Toilet - Toilet 128 - Princes Park South Playground (Princes Park Drive),yes,yes,yes,-37.7855983874526,144.9630353603256,11.790215870370819
+2,37,Public Toilet - Toilet 52 - Princes Park (Adjacent Southern Sports Pavilion),yes,yes,yes,-37.78790482714769,144.95949479077186,28.983092024177807
+3,37,Public Toilet - Toilet 127 - Princes Park Royal Parade (near Park Street),yes,yes,yes,-37.7789496090064,144.96046591899102,34.12527680072329
+1,38,Public Toilet - Toilet 128 - Princes Park South Playground (Princes Park Drive),yes,yes,yes,-37.7855983874526,144.9630353603256,15.360896742583579
+2,38,Public Toilet - Toilet 127 - Princes Park Royal Parade (near Park Street),yes,yes,yes,-37.7789496090064,144.96046591899102,30.160740041880025
+3,38,Public Toilet - Toilet 52 - Princes Park (Adjacent Southern Sports Pavilion),yes,yes,yes,-37.78790482714769,144.95949479077186,32.623561604678756
+1,39,Public Toilet - Queen Victoria Market (465 Queen Street),yes,yes,yes,-37.807831221471965,144.95795526595654,5.475187994936568
+2,39,Public Toilet - Queen Victoria Market (153 Victoria Street),yes,yes,no,-37.80612149907781,144.95653844268273,9.632402646802172
+3,39,"Public Toilet - Queen Victoria Market - (Meat Hall / ""H"" Shed)",yes,yes,no,-37.80682129201847,144.95874700464088,10.963619850597574
+1,40,Public Toilet - Toilet 138 - Carlton Gardens North (Opposite 199 Rathdowne Street),yes,yes,yes,-37.802645554985105,144.969821287215,14.895277924228498
+2,40,Public Toilet - Toilet 145 - Carlton Gardens South (Opposite 39 Rathdowne Street),yes,yes,yes,-37.80625893301874,144.9692027022002,33.67938029941486
+3,40,Public Toilet - Toilet 137 - Faraday Street (Opposite 208-212 Faraday Street),yes,yes,no,-37.79870959701599,144.96759388009733,34.08211449057443
+1,41,Public Toilet - Toilet 7 - Latrobe Street (Adjacent 120 La Trobe Street),no,yes,no,-37.80894206847336,144.96564884552268,7.602091442707868
+2,41,Public Toilet - Toilet 146 - Swanston Street (Opposite 475-511 Swanston Street),yes,no,no,-37.806805767380254,144.96264850030644,18.869433204202718
+3,41,Public Toilet - Toilet 145 - Carlton Gardens South (Opposite 39 Rathdowne Street),yes,yes,yes,-37.80625893301874,144.9692027022002,25.57835736439028
+1,42,Public Toilet - Toilet 106 - Kings Domain Government House Drive,yes,yes,no,-37.82691574923447,144.9746477838788,9.511107287205201
+2,42,Public Toilet - Toilet 109 - Kings Domain Myer Music Bowl Rear of,yes,yes,yes,-37.82289159858857,144.975280957334,18.35713429279387
+3,42,Public Toilet - Toilet 110 - Queen Victoria Gardens (Linlithgow Avenue),yes,yes,yes,-37.82294828867767,144.97098568179825,25.695310405700905
+1,43,Public Toilet - Toilet 110 - Queen Victoria Gardens (Linlithgow Avenue),yes,yes,yes,-37.82294828867767,144.97098568179825,15.86608909555251
+2,43,Public Toilet - Toilet 48 - Birrarung Marr (Opposite Artplay),yes,yes,yes,-37.81859887229392,144.97105956826817,24.113132244087584
+3,43,Public Toilet - Toilet 41 - Flinders Street (No 245 Flinders Street Station),yes,yes,yes,-37.817903197056154,144.9662642552638,29.015647800078938
+1,44,Public Toilet - Toilet 110 - Queen Victoria Gardens (Linlithgow Avenue),yes,yes,yes,-37.82294828867767,144.97098568179825,18.25848675691484
+2,44,Public Toilet - Toilet 48 - Birrarung Marr (Opposite Artplay),yes,yes,yes,-37.81859887229392,144.97105956826817,26.77763343182839
+3,44,Public Toilet - Toilet 172 - Southbank Promenade (opposite Esso House),yes,yes,yes,-37.820342128586276,144.96421972799456,27.705513192709333
+1,45,Public Toilet - Toilet 110 - Queen Victoria Gardens (Linlithgow Avenue),yes,yes,yes,-37.82294828867767,144.97098568179825,19.151233491664907
+2,45,Public Toilet - Toilet 48 - Birrarung Marr (Opposite Artplay),yes,yes,yes,-37.81859887229392,144.97105956826817,23.695023809844283
+3,45,Public Toilet - Toilet 41 - Flinders Street (No 245 Flinders Street Station),yes,yes,yes,-37.817903197056154,144.9662642552638,25.671400138186012
+1,46,Public Toilet - Toilet 103 - Kings Domain South (Opposite 169 Domain Road),yes,yes,yes,-37.83393826633729,144.98178404635058,9.257314841433555
+2,46,"Public Toilet - Toilet 44 - Fawkner Park, Opposite 150W Toorak Road",yes,yes,yes,-37.83825284124979,144.9843892199417,28.095256737529088
+3,46,"Public Toilet - Toilet 102 - Fawkner Park, North Pavilion (Female)",yes,no,no,-37.84001779326322,144.9812270146221,30.458645691111474
+1,47,"Public Toilet - Toilet 173 - JJ Holland Park, Skate Park (113 Kensington Road)",yes,yes,yes,-37.798064023886866,144.92110584392117,73.34720028996823
+2,47,Public Toilet - Newmarket Reserve (26 Smithfield Road),yes,yes,no,-37.78848882114304,144.92356372197432,74.03610786219024
+3,47,"Public Toilet - Toilet 162 - JJ Holland Park (Opposite, 48 Altona Street)",yes,yes,yes,-37.798125461506075,144.92642466756246,101.97977933523512
+1,48,Public Toilet - Toilet 124 - Nicholson Street (1A Nicholson Street),no,yes,no,-37.80945202894246,144.97307695563703,9.41353587486657
+2,48,Public Toilet - Toilet 125 - Gordon Reserve (74-108 Spring Street),yes,no,no,-37.812240775587135,144.97392555886628,14.00251961445451
+3,48,Public Toilet - Toilet 11 - Lonsdale Street (Opposite 88 Lonsdale Street),yes,yes,yes,-37.8100356799286,144.9699024633049,15.983356494822177
+1,49,Public Toilet - Toilet 122 - Treasury Gardens (Store and Toilet),yes,yes,yes,-37.813418435008906,144.97746700744847,11.45616912240945
+2,49,Public Toilet - Toilet 118 - Fitzroy Gardens (2 Lansdowne Street),yes,yes,yes,-37.815278082082735,144.97758877995489,11.785330610571366
+3,49,Public Toilet - Toilet 125 - Gordon Reserve (74-108 Spring Street),yes,no,no,-37.812240775587135,144.97392555886628,18.82747505689756
+1,50,Public Toilet - Toilet 7 - Latrobe Street (Adjacent 120 La Trobe Street),no,yes,no,-37.80894206847336,144.96564884552268,10.683071121591961
+2,50,Public Toilet - Toilet 146 - Swanston Street (Opposite 475-511 Swanston Street),yes,no,no,-37.806805767380254,144.96264850030644,22.910958758684902
+3,50,Public Toilet - Toilet 6 - Elizabeth Street (Toilet Adjacent 200 Elizabeth Street),no,yes,no,-37.81343920794399,144.9629227264507,23.767222495888404
+1,51,Public Toilet - Town Hall Melbourne (200 Collins Street),yes,yes,yes,-37.81521576619692,144.96694328510318,7.94602616702922
+2,51,Public Toilet - Toilet 41 - Flinders Street (No 245 Flinders Street Station),yes,yes,yes,-37.817903197056154,144.9662642552638,16.020710889311527
+3,51,Public Toilet - Toilet 46 - Bourke Street (opposite 225 Bourke Street),yes,yes,yes,-37.81324543360198,144.96689658968143,18.72856342075883
+1,52,Public Toilet - Toilet 125 - Gordon Reserve (74-108 Spring Street),yes,no,no,-37.812240775587135,144.97392555886628,9.36432244158997
+2,52,Public Toilet - Toilet 122 - Treasury Gardens (Store and Toilet),yes,yes,yes,-37.813418435008906,144.97746700744847,14.488219804022835
+3,52,Public Toilet - Toilet 118 - Fitzroy Gardens (2 Lansdowne Street),yes,yes,yes,-37.815278082082735,144.97758877995489,21.18200155111238
+1,53,Public Toilet - Toilet 169 - Batman Park (2A Spencer Street),yes,yes,yes,-37.82172068166997,144.95557809313962,6.931645685604281
+2,53,Public Toilet - Toilet 3 - Flinders Street (399 Flinders Street),yes,yes,yes,-37.81940611413847,144.96127683121782,33.08122467376491
+3,53,Public Toilet - Toilet 4 - Market Street (Opposite 74 Market Street),yes,yes,yes,-37.81746989209639,144.96025433528794,35.990463946082194
+1,54,Public Toilet - Toilet 107 - Alexandra Park,yes,yes,yes,-37.82764304616528,144.98181166075952,55.32814069309895
+2,54,Public Toilet - Toilet 117 - Powlett Reserve (Opposite 128 Albert Street),yes,yes,yes,-37.81094232809633,144.98685873937842,68.93833382245613
+3,54,Public Toilet - Toilet 119 - Fitzroy Gardens Toilets (150 Clarendon Street),yes,yes,yes,-37.81203615704364,144.98307493665166,69.3860704859444
+1,55,Public Toilet - Toilet 118 - Fitzroy Gardens (2 Lansdowne Street),yes,yes,yes,-37.815278082082735,144.97758877995489,45.58887095638937
+2,55,Public Toilet - Toilet 119 - Fitzroy Gardens Toilets (150 Clarendon Street),yes,yes,yes,-37.81203615704364,144.98307493665166,47.59975214216554
+3,55,Public Toilet - Toilet 111 - Birrarung Marr Speakers Corner,yes,yes,yes,-37.82100477977538,144.97593322373976,48.2663318820418
+1,56,Public Toilet - Royal Park Brens Pavilion,yes,yes,no,-37.78622124839705,144.95500087587342,25.696395709304703
+2,56,Public Toilet - Royal Park Golf Course Club House,yes,yes,no,-37.78187131786685,144.95614252894822,34.481649097448724
+3,56,Public Toilet - Toilet 52 - Princes Park (Adjacent Southern Sports Pavilion),yes,yes,yes,-37.78790482714769,144.95949479077186,56.135285605647724
+1,57,Public Toilet - Toilet 169 - Batman Park (2A Spencer Street),yes,yes,yes,-37.82172068166997,144.95557809313962,23.781950035678612
+2,57,Public Toilet - Toilet 182 - Docklands Park South - 25 Harbour Esplanade,yes,yes,yes,-37.82175860330799,144.9473834186781,49.39472818009269
+3,57,Public Toilet - Toilet 3 - Flinders Street (399 Flinders Street),yes,yes,yes,-37.81940611413847,144.96127683121782,57.51579875841887
+1,58,Public Toilet - Toilet 169 - Batman Park (2A Spencer Street),yes,yes,yes,-37.82172068166997,144.95557809313962,29.08156791521387
+2,58,Public Toilet - Toilet 182 - Docklands Park South - 25 Harbour Esplanade,yes,yes,yes,-37.82175860330799,144.9473834186781,36.96058906249568
+3,58,Public Toilet - Toilet 3 - Flinders Street (399 Flinders Street),yes,yes,yes,-37.81940611413847,144.96127683121782,66.8334231183935
+1,59,Public Toilet - Toilet 169 - Batman Park (2A Spencer Street),yes,yes,yes,-37.82172068166997,144.95557809313962,20.93880387415915
+2,59,Public Toilet - Toilet 182 - Docklands Park South - 25 Harbour Esplanade,yes,yes,yes,-37.82175860330799,144.9473834186781,41.73638894940637
+3,59,Public Toilet - Toilet 3 - Flinders Street (399 Flinders Street),yes,yes,yes,-37.81940611413847,144.96127683121782,58.26179106280034
+1,60,"Public Toilet - Victoria Harbour, Shed 2 (North Wharf Road)",yes,yes,yes,-37.818924455699296,144.9342385117904,147.4094463184508
+2,60,Public Toilet - Ron Barassi Senior Park Pavilion,U,U,U,-37.81722059052804,144.93400271183995,151.3152875096059
+3,60,"Public Toilet - Victoria Harbour, Shed 3 (North Wharf Road)",no,yes,no,-37.819795975740334,144.93766540530564,164.9508336754457
+1,61,Public Toilet - Toilet 172 - Southbank Promenade (opposite Esso House),yes,yes,yes,-37.820342128586276,144.96421972799456,11.227071969327556
+2,61,Public Toilet - Toilet 41 - Flinders Street (No 245 Flinders Street Station),yes,yes,yes,-37.817903197056154,144.9662642552638,14.90797214491106
+3,61,Public Toilet - Toilet 3 - Flinders Street (399 Flinders Street),yes,yes,yes,-37.81940611413847,144.96127683121782,30.289101461722034
+1,62,Public Toilet - Toilet 105 -Sturt Street Reserve (280 Sturt Street),yes,yes,no,-37.830132537548096,144.96501222835187,26.592544088280654
+2,62,Public Toilet - Toilet 110 - Queen Victoria Gardens (Linlithgow Avenue),yes,yes,yes,-37.82294828867767,144.97098568179825,33.19182641225067
+3,62,Public Toilet - Toilet 172 - Southbank Promenade (opposite Esso House),yes,yes,yes,-37.820342128586276,144.96421972799456,44.31518238842624
+1,63,Public Toilet - Toilet 105 -Sturt Street Reserve (280 Sturt Street),yes,yes,no,-37.830132537548096,144.96501222835187,22.439893074403116
+2,63,Public Toilet - Toilet 110 - Queen Victoria Gardens (Linlithgow Avenue),yes,yes,yes,-37.82294828867767,144.97098568179825,37.19794126027938
+3,63,Public Toilet - Toilet 172 - Southbank Promenade (opposite Esso House),yes,yes,yes,-37.820342128586276,144.96421972799456,46.860374407141094
+1,64,Public Toilet - Toilet 124 - Nicholson Street (1A Nicholson Street),no,yes,no,-37.80945202894246,144.97307695563703,18.39611351069724
+2,64,Public Toilet - Toilet 125 - Gordon Reserve (74-108 Spring Street),yes,no,no,-37.812240775587135,144.97392555886628,18.461417494373546
+3,64,Public Toilet - Toilet 122 - Treasury Gardens (Store and Toilet),yes,yes,yes,-37.813418435008906,144.97746700744847,23.29359643408924
+1,65,Public Toilet - Toilet 110 - Queen Victoria Gardens (Linlithgow Avenue),yes,yes,yes,-37.82294828867767,144.97098568179825,14.89639137722124
+2,65,Public Toilet - Toilet 48 - Birrarung Marr (Opposite Artplay),yes,yes,yes,-37.81859887229392,144.97105956826817,25.827534377020914
+3,65,Public Toilet - Toilet 112 - Alexandra Gardens (Riverslide Skate Park),yes,yes,yes,-37.8203552728411,144.97331290887433,30.20104810998416
+1,66,Public Toilet - Town Hall Melbourne (200 Collins Street),yes,yes,yes,-37.81521576619692,144.96694328510318,2.6907332054527036
+2,66,Public Toilet - Toilet 46 - Bourke Street (opposite 225 Bourke Street),yes,yes,yes,-37.81324543360198,144.96689658968143,11.88541388694842
+3,66,Public Toilet - Toilet 41 - Flinders Street (No 245 Flinders Street Station),yes,yes,yes,-37.817903197056154,144.9662642552638,18.121231441496523
+1,67,Public Toilet - Toilet 182 - Docklands Park South - 25 Harbour Esplanade,yes,yes,yes,-37.82175860330799,144.9473834186781,25.12032998408404
+2,67,Public Toilet - Toilet 169 - Batman Park (2A Spencer Street),yes,yes,yes,-37.82172068166997,144.95557809313962,41.80732051006637
+3,67,Public Toilet - Toilet 181 - Point Park (Point Park Crescent),yes,yes,yes,-37.82331083443533,144.94182760665478,51.40817408778721
+1,68,Public Toilet - Toilet 110 - Queen Victoria Gardens (Linlithgow Avenue),yes,yes,yes,-37.82294828867767,144.97098568179825,8.365994443864702
+2,68,Public Toilet - Toilet 112 - Alexandra Gardens (Riverslide Skate Park),yes,yes,yes,-37.8203552728411,144.97331290887433,16.500245173064087
+3,68,Public Toilet - Toilet 48 - Birrarung Marr (Opposite Artplay),yes,yes,yes,-37.81859887229392,144.97105956826817,19.38445468170493
+1,69,Public Toilet - Toilet 109 - Kings Domain Myer Music Bowl Rear of,yes,yes,yes,-37.82289159858857,144.975280957334,4.755432525988353
+2,69,Public Toilet - Toilet 111 - Birrarung Marr Speakers Corner,yes,yes,yes,-37.82100477977538,144.97593322373976,16.896890111112068
+3,69,Public Toilet - Toilet 112 - Alexandra Gardens (Riverslide Skate Park),yes,yes,yes,-37.8203552728411,144.97331290887433,20.968901280680026
+1,70,Public Toilet - Toilet 169 - Batman Park (2A Spencer Street),yes,yes,yes,-37.82172068166997,144.95557809313962,16.14327472438719
+2,70,Public Toilet - Toilet 3 - Flinders Street (399 Flinders Street),yes,yes,yes,-37.81940611413847,144.96127683121782,36.56523854872854
+3,70,Public Toilet - Toilet 4 - Market Street (Opposite 74 Market Street),yes,yes,yes,-37.81746989209639,144.96025433528794,43.16879106135994
+1,71,Public Toilet - Toilet 48 - Birrarung Marr (Opposite Artplay),yes,yes,yes,-37.81859887229392,144.97105956826817,10.23008125598515
+2,71,Public Toilet - Toilet 14 - Flinders Street (27 Flinders Street),no,yes,no,-37.815989825999864,144.97279836576897,20.68701778376134
+3,71,Public Toilet - Toilet 41 - Flinders Street (No 245 Flinders Street Station),yes,yes,yes,-37.817903197056154,144.9662642552638,23.175284636891153
+1,72,Public Toilet - Toilet 48 - Birrarung Marr (Opposite Artplay),yes,yes,yes,-37.81859887229392,144.97105956826817,14.102989816857207
+2,72,Public Toilet - Toilet 41 - Flinders Street (No 245 Flinders Street Station),yes,yes,yes,-37.817903197056154,144.9662642552638,17.09830737657194
+3,72,Public Toilet - Town Hall Melbourne (200 Collins Street),yes,yes,yes,-37.81521576619692,144.96694328510318,21.128009164569523
+1,73,Public Toilet - Toilet 119 - Fitzroy Gardens Toilets (150 Clarendon Street),yes,yes,yes,-37.81203615704364,144.98307493665166,43.9300206020424
+2,73,Public Toilet - Toilet 118 - Fitzroy Gardens (2 Lansdowne Street),yes,yes,yes,-37.815278082082735,144.97758877995489,46.44666880144765
+3,73,Public Toilet - Toilet 111 - Birrarung Marr Speakers Corner,yes,yes,yes,-37.82100477977538,144.97593322373976,52.68171585739806
+1,74,"Public Toilet - Saint Mangos Lane, The Palladio (New Quay)",yes,yes,yes,-37.81435831108069,144.94168216712015,5.497427118947852
+2,74,"Public Toilet - Victoria Harbour, Shed 3 (North Wharf Road)",no,yes,no,-37.819795975740334,144.93766540530564,38.460508549358536
+3,74,Public Toilet - Ron Barassi Senior Park Pavilion,U,U,U,-37.81722059052804,144.93400271183995,49.89947926664432
+1,75,Public Toilet - Toilet 182 - Docklands Park South - 25 Harbour Esplanade,yes,yes,yes,-37.82175860330799,144.9473834186781,6.179525721141292
+2,75,Public Toilet - Toilet 181 - Point Park (Point Park Crescent),yes,yes,yes,-37.82331083443533,144.94182760665478,34.66095797172617
+3,75,"Public Toilet - Saint Mangos Lane, The Palladio (New Quay)",yes,yes,yes,-37.81435831108069,144.94168216712015,53.24615666260989
+1,76,"Public Toilet - Saint Mangos Lane, The Palladio (New Quay)",yes,yes,yes,-37.81435831108069,144.94168216712015,16.729355919928043
+2,76,"Public Toilet - Victoria Harbour, Shed 3 (North Wharf Road)",no,yes,no,-37.819795975740334,144.93766540530564,31.63137643667254
+3,76,Public Toilet - Ron Barassi Senior Park Pavilion,U,U,U,-37.81722059052804,144.93400271183995,35.329090827116794
+1,77,Public Toilet - Toilet 107 - Alexandra Park,yes,yes,yes,-37.82764304616528,144.98181166075952,22.472918036972153
+2,77,Public Toilet - Toilet 111 - Birrarung Marr Speakers Corner,yes,yes,yes,-37.82100477977538,144.97593322373976,55.1729549463688
+3,77,Public Toilet - Toilet 109 - Kings Domain Myer Music Bowl Rear of,yes,yes,yes,-37.82289159858857,144.975280957334,55.184902203767145
+1,78,"Public Toilet - Saint Mangos Lane, The Palladio (New Quay)",yes,yes,yes,-37.81435831108069,144.94168216712015,7.073094205127154
+2,78,"Public Toilet - Victoria Harbour, Shed 3 (North Wharf Road)",no,yes,no,-37.819795975740334,144.93766540530564,40.994203221456225
+3,78,Public Toilet - Toilet 181 - Point Park (Point Park Crescent),yes,yes,yes,-37.82331083443533,144.94182760665478,51.22213476142177
+1,79,"Public Toilet - Saint Mangos Lane, The Palladio (New Quay)",yes,yes,yes,-37.81435831108069,144.94168216712015,17.851671575072075
+2,79,Public Toilet - Toilet 182 - Docklands Park South - 25 Harbour Esplanade,yes,yes,yes,-37.82175860330799,144.9473834186781,41.590880483787494
+3,79,"Public Toilet - Victoria Harbour, Shed 3 (North Wharf Road)",no,yes,no,-37.819795975740334,144.93766540530564,42.31761002816859
+1,80,"Public Toilet - Saint Mangos Lane, The Palladio (New Quay)",yes,yes,yes,-37.81435831108069,144.94168216712015,31.282504042295596
+2,80,Public Toilet - Ron Barassi Senior Park Pavilion,U,U,U,-37.81722059052804,144.93400271183995,42.35392782984017
+3,80,"Public Toilet - Victoria Harbour, Shed 2 (North Wharf Road)",yes,yes,yes,-37.818924455699296,144.9342385117904,51.21600393458479
+1,81,Public Toilet - Toilet 181 - Point Park (Point Park Crescent),yes,yes,yes,-37.82331083443533,144.94182760665478,1.758321039410442
+2,81,Public Toilet - Toilet 182 - Docklands Park South - 25 Harbour Esplanade,yes,yes,yes,-37.82175860330799,144.9473834186781,34.93803988700185
+3,81,"Public Toilet - Victoria Harbour, Shed 3 (North Wharf Road)",no,yes,no,-37.819795975740334,144.93766540530564,36.101553278046886
+1,82,Public Toilet - Newmarket Reserve (26 Smithfield Road),yes,yes,no,-37.78848882114304,144.92356372197432,5.555540917907681
+2,82,Public Toilet - Toilet 177 - Bellair Street (Opposite 180 Bellair Street),yes,yes,yes,-37.79373229128235,144.93035186163308,60.04696981859795
+3,82,"Public Toilet - Toilet 173 - JJ Holland Park, Skate Park (113 Kensington Road)",yes,yes,yes,-37.798064023886866,144.92110584392117,66.23089803699783
+1,83,Public Toilet - Toilet 182 - Docklands Park South - 25 Harbour Esplanade,yes,yes,yes,-37.82175860330799,144.9473834186781,7.460919167363079
+2,83,Public Toilet - Toilet 181 - Point Park (Point Park Crescent),yes,yes,yes,-37.82331083443533,144.94182760665478,43.982284162865774
+3,83,Public Toilet - Toilet 169 - Batman Park (2A Spencer Street),yes,yes,yes,-37.82172068166997,144.95557809313962,44.881629577976625
+1,84,"Public Toilet - Saint Mangos Lane, The Palladio (New Quay)",yes,yes,yes,-37.81435831108069,144.94168216712015,35.10788028140425
+2,84,Public Toilet - Ron Barassi Senior Park Pavilion,U,U,U,-37.81722059052804,144.93400271183995,39.54640970733672
+3,84,"Public Toilet - Victoria Harbour, Shed 2 (North Wharf Road)",yes,yes,yes,-37.818924455699296,144.9342385117904,48.95548859834413
+1,85,Public Toilet - Toilet 111 - Birrarung Marr Speakers Corner,yes,yes,yes,-37.82100477977538,144.97593322373976,17.47704309699573
+2,85,Public Toilet - Toilet 109 - Kings Domain Myer Music Bowl Rear of,yes,yes,yes,-37.82289159858857,144.975280957334,20.99891135276747
+3,85,Public Toilet - Toilet 112 - Alexandra Gardens (Riverslide Skate Park),yes,yes,yes,-37.8203552728411,144.97331290887433,34.48438188531163
+1,86,Public Toilet - Toilet 111 - Birrarung Marr Speakers Corner,yes,yes,yes,-37.82100477977538,144.97593322373976,17.752928827062387
+2,86,Public Toilet - Toilet 109 - Kings Domain Myer Music Bowl Rear of,yes,yes,yes,-37.82289159858857,144.975280957334,25.26299386821366
+3,86,Public Toilet - Toilet 112 - Alexandra Gardens (Riverslide Skate Park),yes,yes,yes,-37.8203552728411,144.97331290887433,34.51306008986423
+1,87,Public Toilet - Toilet 111 - Birrarung Marr Speakers Corner,yes,yes,yes,-37.82100477977538,144.97593322373976,10.69239452344594
+2,87,Public Toilet - Toilet 109 - Kings Domain Myer Music Bowl Rear of,yes,yes,yes,-37.82289159858857,144.975280957334,17.709722147749073
+3,87,Public Toilet - Toilet 112 - Alexandra Gardens (Riverslide Skate Park),yes,yes,yes,-37.8203552728411,144.97331290887433,27.781891563845335
+1,88,Public Toilet - Toilet 107 - Alexandra Park,yes,yes,yes,-37.82764304616528,144.98181166075952,28.912122208415397
+2,88,Public Toilet - Toilet 111 - Birrarung Marr Speakers Corner,yes,yes,yes,-37.82100477977538,144.97593322373976,39.695952743363776
+3,88,Public Toilet - Toilet 109 - Kings Domain Myer Music Bowl Rear of,yes,yes,yes,-37.82289159858857,144.975280957334,41.503430126664924
+1,89,Public Toilet - Toilet 138 - Carlton Gardens North (Opposite 199 Rathdowne Street),yes,yes,yes,-37.802645554985105,144.969821287215,13.19247955520408
+2,89,Public Toilet - Toilet 145 - Carlton Gardens South (Opposite 39 Rathdowne Street),yes,yes,yes,-37.80625893301874,144.9692027022002,23.390568455582173
+3,89,Public Toilet - Toilet 178 -  Argyle Place North (Opposite 4 Argyle Place North),yes,yes,yes,-37.80207629420745,144.96642403988702,34.71051961770669
+1,90,Public Toilet - Toilet 138 - Carlton Gardens North (Opposite 199 Rathdowne Street),yes,yes,yes,-37.802645554985105,144.969821287215,7.21802882732307
+2,90,Public Toilet - Toilet 145 - Carlton Gardens South (Opposite 39 Rathdowne Street),yes,yes,yes,-37.80625893301874,144.9692027022002,20.20595790670825
+3,90,Public Toilet - Toilet 178 -  Argyle Place North (Opposite 4 Argyle Place North),yes,yes,yes,-37.80207629420745,144.96642403988702,28.106814360683174
+1,91,Public Toilet - Toilet 110 - Queen Victoria Gardens (Linlithgow Avenue),yes,yes,yes,-37.82294828867767,144.97098568179825,18.12977144712241
+2,91,Public Toilet - Toilet 172 - Southbank Promenade (opposite Esso House),yes,yes,yes,-37.820342128586276,144.96421972799456,34.49597432941353
+3,91,Public Toilet - Toilet 48 - Birrarung Marr (Opposite Artplay),yes,yes,yes,-37.81859887229392,144.97105956826817,38.23670304236867
+1,92,Public Toilet - Toilet 110 - Queen Victoria Gardens (Linlithgow Avenue),yes,yes,yes,-37.82294828867767,144.97098568179825,19.677226928408142
+2,92,Public Toilet - Toilet 172 - Southbank Promenade (opposite Esso House),yes,yes,yes,-37.820342128586276,144.96421972799456,35.397305869154586
+3,92,Public Toilet - Toilet 48 - Birrarung Marr (Opposite Artplay),yes,yes,yes,-37.81859887229392,144.97105956826817,40.49836932486669
+1,93,Public Toilet - Toilet 110 - Queen Victoria Gardens (Linlithgow Avenue),yes,yes,yes,-37.82294828867767,144.97098568179825,23.3060835918677
+2,93,Public Toilet - Toilet 172 - Southbank Promenade (opposite Esso House),yes,yes,yes,-37.820342128586276,144.96421972799456,30.898501605723872
+3,93,Public Toilet - Toilet 41 - Flinders Street (No 245 Flinders Street Station),yes,yes,yes,-37.817903197056154,144.9662642552638,39.43776645377235
+1,94,Public Toilet - Toilet 110 - Queen Victoria Gardens (Linlithgow Avenue),yes,yes,yes,-37.82294828867767,144.97098568179825,21.651594220600472
+2,94,Public Toilet - Toilet 172 - Southbank Promenade (opposite Esso House),yes,yes,yes,-37.820342128586276,144.96421972799456,31.24349519982994
+3,94,Public Toilet - Toilet 41 - Flinders Street (No 245 Flinders Street Station),yes,yes,yes,-37.817903197056154,144.9662642552638,38.87046356199415
+1,95,Public Toilet - Toilet 110 - Queen Victoria Gardens (Linlithgow Avenue),yes,yes,yes,-37.82294828867767,144.97098568179825,10.408003729317882
+2,95,Public Toilet - Toilet 48 - Birrarung Marr (Opposite Artplay),yes,yes,yes,-37.81859887229392,144.97105956826817,30.181952828010903
+3,95,Public Toilet - Toilet 112 - Alexandra Gardens (Riverslide Skate Park),yes,yes,yes,-37.8203552728411,144.97331290887433,30.316891843440295
+1,96,Public Toilet - Toilet 41 - Flinders Street (No 245 Flinders Street Station),yes,yes,yes,-37.817903197056154,144.9662642552638,17.230161260156084
+2,96,Public Toilet - Toilet 48 - Birrarung Marr (Opposite Artplay),yes,yes,yes,-37.81859887229392,144.97105956826817,21.353782935668384
+3,96,Public Toilet - Toilet 172 - Southbank Promenade (opposite Esso House),yes,yes,yes,-37.820342128586276,144.96421972799456,23.989691551457874
+1,97,Public Toilet - Toilet 14 - Flinders Street (27 Flinders Street),no,yes,no,-37.815989825999864,144.97279836576897,13.393415476701842
+2,97,Public Toilet - Toilet 48 - Birrarung Marr (Opposite Artplay),yes,yes,yes,-37.81859887229392,144.97105956826817,13.654866759866824
+3,97,Public Toilet - Toilet 112 - Alexandra Gardens (Riverslide Skate Park),yes,yes,yes,-37.8203552728411,144.97331290887433,14.670149992233187
+1,98,Public Toilet - Toilet 48 - Birrarung Marr (Opposite Artplay),yes,yes,yes,-37.81859887229392,144.97105956826817,3.264854958906222
+2,98,Public Toilet - Toilet 112 - Alexandra Gardens (Riverslide Skate Park),yes,yes,yes,-37.8203552728411,144.97331290887433,16.674129300132453
+3,98,Public Toilet - Toilet 14 - Flinders Street (27 Flinders Street),no,yes,no,-37.815989825999864,144.97279836576897,17.420526852518137
+1,99,Public Toilet - Toilet 112 - Alexandra Gardens (Riverslide Skate Park),yes,yes,yes,-37.8203552728411,144.97331290887433,3.5873779029495694
+2,99,Public Toilet - Toilet 48 - Birrarung Marr (Opposite Artplay),yes,yes,yes,-37.81859887229392,144.97105956826817,18.401485298512487
+3,99,Public Toilet - Toilet 110 - Queen Victoria Gardens (Linlithgow Avenue),yes,yes,yes,-37.82294828867767,144.97098568179825,18.563583244895423
+1,100,Public Toilet - Toilet 112 - Alexandra Gardens (Riverslide Skate Park),yes,yes,yes,-37.8203552728411,144.97331290887433,9.734584281919709
+2,100,Public Toilet - Toilet 48 - Birrarung Marr (Opposite Artplay),yes,yes,yes,-37.81859887229392,144.97105956826817,13.619241410700191
+3,100,Public Toilet - Toilet 110 - Queen Victoria Gardens (Linlithgow Avenue),yes,yes,yes,-37.82294828867767,144.97098568179825,15.800503683582603
+1,101,Public Toilet - Toilet 131 - Royal Park (Flemington Rd - Near North Park Tennis Club),yes,yes,yes,-37.790174410412384,144.94366905096862,56.99948984031863
+2,101,Public Toilet - Toilet 170 - Queensberry Street (Opposite 530 Queensberry Street),no,yes,no,-37.803077866412245,144.94986517956968,59.84955729335088
+3,101,Public Toilet - Toilet 13 - Queensberry Street (Opposite 530 Queensberry Street),,,,-37.803094275484256,144.94994632091922,60.356195624736095
+1,102,"Public Toilet - Toilet 162 - JJ Holland Park (Opposite, 48 Altona Street)",yes,yes,yes,-37.798125461506075,144.92642466756246,16.437837949592538
+2,102,"Public Toilet - Toilet 173 - JJ Holland Park, Skate Park (113 Kensington Road)",yes,yes,yes,-37.798064023886866,144.92110584392117,17.36905015050507
+3,102,Public Toilet - Toilet 177 - Bellair Street (Opposite 180 Bellair Street),yes,yes,yes,-37.79373229128235,144.93035186163308,50.352953889650344
+1,103,Public Toilet - Toilet 100 - Royal Park - Native Garden (off Gatehouse Street),yes,yes,yes,-37.79251146448698,144.95685172084129,22.653092002492972
+2,103,Public Toilet - Royal Park Brens Pavilion,yes,yes,no,-37.78622124839705,144.95500087587342,29.001729949928116
+3,103,"Public Toilet - Toilet 55 - Royal Park (Nature Play, Opposite 51 Gatehouse Street)",yes,yes,yes,-37.795523148389,144.952142962802,33.08046235903636
+1,104,Public Toilet - Toilet 52 - Princes Park (Adjacent Southern Sports Pavilion),yes,yes,yes,-37.78790482714769,144.95949479077186,11.751864355118746
+2,104,Public Toilet - Toilet 128 - Princes Park South Playground (Princes Park Drive),yes,yes,yes,-37.7855983874526,144.9630353603256,15.18595473709667
+3,104,Public Toilet - Royal Park Brens Pavilion,yes,yes,no,-37.78622124839705,144.95500087587342,39.17748065156361
+1,105,Public Toilet - Toilet 119 - Fitzroy Gardens Toilets (150 Clarendon Street),yes,yes,yes,-37.81203615704364,144.98307493665166,45.26702286501983
+2,105,Public Toilet - Toilet 118 - Fitzroy Gardens (2 Lansdowne Street),yes,yes,yes,-37.815278082082735,144.97758877995489,50.60850294660046
+3,105,Public Toilet - Toilet 117 - Powlett Reserve (Opposite 128 Albert Street),yes,yes,yes,-37.81094232809633,144.98685873937842,52.94974615329063
+1,106,Public Toilet - Toilet 104 - Kings Domain South (off Birdwood Avenue),yes,yes,yes,-37.830849124048974,144.97518226820782,12.549300417349755
+2,106,Public Toilet - Toilet 106 - Kings Domain Government House Drive,yes,yes,no,-37.82691574923447,144.9746477838788,33.52123000938508
+3,106,Public Toilet - Toilet 103 - Kings Domain South (Opposite 169 Domain Road),yes,yes,yes,-37.83393826633729,144.98178404635058,52.90569326041292
+1,107,Public Toilet - Toilet 104 - Kings Domain South (off Birdwood Avenue),yes,yes,yes,-37.830849124048974,144.97518226820782,11.739441111828722
+2,107,Public Toilet - Toilet 106 - Kings Domain Government House Drive,yes,yes,no,-37.82691574923447,144.9746477838788,22.340140084084485
+3,107,Public Toilet - Toilet 109 - Kings Domain Myer Music Bowl Rear of,yes,yes,yes,-37.82289159858857,144.975280957334,48.092486676534435
+1,108,Public Toilet - Toilet 107 - Alexandra Park,yes,yes,yes,-37.82764304616528,144.98181166075952,20.19873334391398
+2,108,Public Toilet - Toilet 103 - Kings Domain South (Opposite 169 Domain Road),yes,yes,yes,-37.83393826633729,144.98178404635058,21.70638252963871
+3,108,Public Toilet - Toilet 104 - Kings Domain South (off Birdwood Avenue),yes,yes,yes,-37.830849124048974,144.97518226820782,35.85836904910563
+1,109,Public Toilet - Toilet 107 - Alexandra Park,yes,yes,yes,-37.82764304616528,144.98181166075952,55.127832294800534
+2,109,Public Toilet - Toilet 119 - Fitzroy Gardens Toilets (150 Clarendon Street),yes,yes,yes,-37.81203615704364,144.98307493665166,58.41178474619493
+3,109,Public Toilet - Toilet 117 - Powlett Reserve (Opposite 128 Albert Street),yes,yes,yes,-37.81094232809633,144.98685873937842,60.77512293244253
+1,110,Public Toilet - Ron Barassi Senior Park Pavilion,U,U,U,-37.81722059052804,144.93400271183995,33.818409138075715
+2,110,"Public Toilet - Saint Mangos Lane, The Palladio (New Quay)",yes,yes,yes,-37.81435831108069,144.94168216712015,40.44911306494634
+3,110,"Public Toilet - Victoria Harbour, Shed 2 (North Wharf Road)",yes,yes,yes,-37.818924455699296,144.9342385117904,43.92933100746339
+1,111,Public Toilet - Town Hall Melbourne (200 Collins Street),yes,yes,yes,-37.81521576619692,144.96694328510318,2.924502815309549
+2,111,Public Toilet - Toilet 46 - Bourke Street (opposite 225 Bourke Street),yes,yes,yes,-37.81324543360198,144.96689658968143,11.228604123585674
+3,111,Public Toilet - Toilet 41 - Flinders Street (No 245 Flinders Street Station),yes,yes,yes,-37.817903197056154,144.9662642552638,19.966642621114985
+1,112,"Public Toilet - Toilet 173 - JJ Holland Park, Skate Park (113 Kensington Road)",yes,yes,yes,-37.798064023886866,144.92110584392117,40.51973542686958
+2,112,Public Toilet - Newmarket Reserve (26 Smithfield Road),yes,yes,no,-37.78848882114304,144.92356372197432,64.75273917124859
+3,112,"Public Toilet - Toilet 162 - JJ Holland Park (Opposite, 48 Altona Street)",yes,yes,yes,-37.798125461506075,144.92642466756246,71.79853021077328
+1,113,Public Toilet - Toilet 117 - Powlett Reserve (Opposite 128 Albert Street),yes,yes,yes,-37.81094232809633,144.98685873937842,19.13045409605665
+2,113,Public Toilet - Toilet 119 - Fitzroy Gardens Toilets (150 Clarendon Street),yes,yes,yes,-37.81203615704364,144.98307493665166,38.43045894488049
+3,113,Public Toilet - Toilet 122 - Treasury Gardens (Store and Toilet),yes,yes,yes,-37.813418435008906,144.97746700744847,73.5258954133714
+1,114,Public Toilet - Toilet 137 - Faraday Street (Opposite 208-212 Faraday Street),yes,yes,no,-37.79870959701599,144.96759388009733,9.937330699733357
+2,114,Public Toilet - Toilet 178 -  Argyle Place North (Opposite 4 Argyle Place North),yes,yes,yes,-37.80207629420745,144.96642403988702,31.80595893275775
+3,114,Public Toilet - Toilet 138 - Carlton Gardens North (Opposite 199 Rathdowne Street),yes,yes,yes,-37.802645554985105,144.969821287215,32.522499253644305
+1,115,Public Toilet - Toilet 154 - Flagstaff Gardens (cnr William & Dudley),yes,yes,yes,-37.80891324235132,144.95504018635694,14.25716592825646
+2,115,Public Toilet - Toilet 1 - Lonsdale Street (Opposite 581 Lonsdale Street),yes,yes,yes,-37.814345522392365,144.9551179464378,20.730892096450027
+3,115,Public Toilet - Queen Victoria Market (465 Queen Street),yes,yes,yes,-37.807831221471965,144.95795526595654,29.452764387872563
+1,116,Public Toilet - Newmarket Reserve (26 Smithfield Road),yes,yes,no,-37.78848882114304,144.92356372197432,90.04567440613867
+2,116,"Public Toilet - Toilet 173 - JJ Holland Park, Skate Park (113 Kensington Road)",yes,yes,yes,-37.798064023886866,144.92110584392117,119.84431071213622
+3,116,"Public Toilet - Toilet 162 - JJ Holland Park (Opposite, 48 Altona Street)",yes,yes,yes,-37.798125461506075,144.92642466756246,141.4068863872256
+1,117,Public Toilet - Toilet 11 - Lonsdale Street (Opposite 88 Lonsdale Street),yes,yes,yes,-37.8100356799286,144.9699024633049,6.596059732762162
+2,117,Public Toilet - Toilet 12 - Exhibition Street (Opposite 242 Exhibition Street),no,yes,no,-37.80954604636232,144.9694071187106,9.285460794338876
+3,117,Public Toilet - Toilet 13 - Exhibition Street (Opposite 77 Exhibition Street),yes,yes,yes,-37.81384641664995,144.97137409472109,21.637333821404454
+1,118,Public Toilet - Toilet 11 - Lonsdale Street (Opposite 88 Lonsdale Street),yes,yes,yes,-37.8100356799286,144.9699024633049,1.8191505205019065
+2,118,Public Toilet - Toilet 12 - Exhibition Street (Opposite 242 Exhibition Street),no,yes,no,-37.80954604636232,144.9694071187106,6.234069197180673
+3,118,Public Toilet - Toilet 124 - Nicholson Street (1A Nicholson Street),no,yes,no,-37.80945202894246,144.97307695563703,19.269517126944585
+1,119,Public Toilet - Toilet 137 - Faraday Street (Opposite 208-212 Faraday Street),yes,yes,no,-37.79870959701599,144.96759388009733,2.727053620293569
+2,119,Public Toilet - Toilet 178 -  Argyle Place North (Opposite 4 Argyle Place North),yes,yes,yes,-37.80207629420745,144.96642403988702,20.38265833342511
+3,119,Public Toilet - Toilet 138 - Carlton Gardens North (Opposite 199 Rathdowne Street),yes,yes,yes,-37.802645554985105,144.969821287215,26.24918280292651
+1,120,"Public Toilet - Toilet 102 - Fawkner Park, North Pavilion (Male)",no,yes,no,-37.840147692965054,144.98138308753738,8.130688626350361
+2,120,"Public Toilet - Toilet 102 - Fawkner Park, North Pavilion (Female)",yes,no,no,-37.84001779326322,144.9812270146221,9.16601999384592
+3,120,"Public Toilet - Toilet 42 - Fawkner Park, Opposite 55 Commercial Road",yes,yes,yes,-37.845206563009405,144.9826144313013,25.06959205925221
+1,121,Public Toilet - Toilet 119 - Fitzroy Gardens Toilets (150 Clarendon Street),yes,yes,yes,-37.81203615704364,144.98307493665166,17.616453982766743
+2,121,Public Toilet - Toilet 122 - Treasury Gardens (Store and Toilet),yes,yes,yes,-37.813418435008906,144.97746700744847,19.160872410393132
+3,121,Public Toilet - Toilet 118 - Fitzroy Gardens (2 Lansdowne Street),yes,yes,yes,-37.815278082082735,144.97758877995489,23.414305430592673
+1,122,Public Toilet - Toilet 118 - Fitzroy Gardens (2 Lansdowne Street),yes,yes,yes,-37.815278082082735,144.97758877995489,19.371305640067572
+2,122,Public Toilet - Toilet 122 - Treasury Gardens (Store and Toilet),yes,yes,yes,-37.813418435008906,144.97746700744847,20.83368937837753
+3,122,Public Toilet - Toilet 119 - Fitzroy Gardens Toilets (150 Clarendon Street),yes,yes,yes,-37.81203615704364,144.98307493665166,22.586290012458008
+1,123,Public Toilet - Toilet 3 - Flinders Street (399 Flinders Street),yes,yes,yes,-37.81940611413847,144.96127683121782,13.662274322291047
+2,123,Public Toilet - Toilet 4 - Market Street (Opposite 74 Market Street),yes,yes,yes,-37.81746989209639,144.96025433528794,18.541775233592574
+3,123,Public Toilet - Toilet 169 - Batman Park (2A Spencer Street),yes,yes,yes,-37.82172068166997,144.95557809313962,25.320001774753788
+1,124,Public Toilet - Toilet 169 - Batman Park (2A Spencer Street),yes,yes,yes,-37.82172068166997,144.95557809313962,10.240371330520674
+2,124,Public Toilet - Toilet 182 - Docklands Park South - 25 Harbour Esplanade,yes,yes,yes,-37.82175860330799,144.9473834186781,42.237283233123165
+3,124,Public Toilet - Toilet 3 - Flinders Street (399 Flinders Street),yes,yes,yes,-37.81940611413847,144.96127683121782,49.20098872741723
+1,125,Public Toilet - Toilet 3 - Flinders Street (399 Flinders Street),yes,yes,yes,-37.81940611413847,144.96127683121782,5.572588612837926
+2,125,Public Toilet - Toilet 4 - Market Street (Opposite 74 Market Street),yes,yes,yes,-37.81746989209639,144.96025433528794,10.960836637532456
+3,125,Public Toilet - Toilet 43 - Queen Street (opposite 113 Queen Street),yes,yes,yes,-37.815838165017645,144.9610620730027,21.689914463891988
+1,126,Public Toilet - Toilet 41 - Flinders Street (No 245 Flinders Street Station),yes,yes,yes,-37.817903197056154,144.9662642552638,10.824336672650707
+2,126,Public Toilet - Town Hall Melbourne (200 Collins Street),yes,yes,yes,-37.81521576619692,144.96694328510318,12.037947141549195
+3,126,Public Toilet - Toilet 48 - Birrarung Marr (Opposite Artplay),yes,yes,yes,-37.81859887229392,144.97105956826817,23.82425604236585
+1,127,Public Toilet - Toilet 48 - Birrarung Marr (Opposite Artplay),yes,yes,yes,-37.81859887229392,144.97105956826817,17.14557231659297
+2,127,Public Toilet - Town Hall Melbourne (200 Collins Street),yes,yes,yes,-37.81521576619692,144.96694328510318,17.467556089927154
+3,127,Public Toilet - Toilet 13 - Exhibition Street (Opposite 77 Exhibition Street),yes,yes,yes,-37.81384641664995,144.97137409472109,21.01995833094155
+1,128,"Public Toilet - Toilet 173 - JJ Holland Park, Skate Park (113 Kensington Road)",yes,yes,yes,-37.798064023886866,144.92110584392117,57.86020870071481
+2,128,"Public Toilet - Toilet 162 - JJ Holland Park (Opposite, 48 Altona Street)",yes,yes,yes,-37.798125461506075,144.92642466756246,59.232475336105296
+3,128,Public Toilet - Ron Barassi Senior Park Pavilion,U,U,U,-37.81722059052804,144.93400271183995,94.69563262237304
+1,129,Public Toilet - Toilet 124 - Nicholson Street (1A Nicholson Street),no,yes,no,-37.80945202894246,144.97307695563703,15.595460712084778
+2,129,Public Toilet - Toilet 125 - Gordon Reserve (74-108 Spring Street),yes,no,no,-37.812240775587135,144.97392555886628,25.111030131342584
+3,129,Public Toilet - Toilet 122 - Treasury Gardens (Store and Toilet),yes,yes,yes,-37.813418435008906,144.97746700744847,33.613360521179644
+1,130,Public Toilet - Toilet 137 - Faraday Street (Opposite 208-212 Faraday Street),yes,yes,no,-37.79870959701599,144.96759388009733,23.37346840812269
+2,130,Public Toilet - Toilet 178 -  Argyle Place North (Opposite 4 Argyle Place North),yes,yes,yes,-37.80207629420745,144.96642403988702,33.14924541591691
+3,130,Public Toilet - Toilet 179 - Lincoln Square (138-142 Bouverie Street),yes,yes,yes,-37.80271182455448,144.9622681269577,35.97217795041236
+1,131,Public Toilet - Toilet 1 - Lonsdale Street (Opposite 581 Lonsdale Street),yes,yes,yes,-37.814345522392365,144.9551179464378,9.23024991114681
+2,131,Public Toilet - Toilet 154 - Flagstaff Gardens (cnr William & Dudley),yes,yes,yes,-37.80891324235132,144.95504018635694,29.236242206554042
+3,131,Public Toilet - Toilet 36 - Lonsdale Street (Opposite 424 Lonsdale Street),yes,yes,yes,-37.8129330992456,144.9600121469519,38.02911251786734
+1,132,Public Toilet - Toilet 6 - Elizabeth Street (Toilet Adjacent 200 Elizabeth Street),no,yes,no,-37.81343920794399,144.9629227264507,18.541577770469683
+2,132,Public Toilet - Toilet 7 - Latrobe Street (Adjacent 120 La Trobe Street),no,yes,no,-37.80894206847336,144.96564884552268,21.005618926265853
+3,132,Public Toilet - Toilet 6 - Elizabeth Street (Toilet Adjacent 200 Elizabeth Street),yes,no,no,-37.813837792176315,144.96309721024045,21.166167406429746
+1,133,Public Toilet - Toilet 178 -  Argyle Place North (Opposite 4 Argyle Place North),yes,yes,yes,-37.80207629420745,144.96642403988702,8.02518491528362
+2,133,Public Toilet - Toilet 142 - Queensberry Street (Adjacent 179 Queensberry Street),no,yes,no,-37.80463970714722,144.96285021945613,20.771800958826212
+3,133,Public Toilet - Toilet 179 - Lincoln Square (138-142 Bouverie Street),yes,yes,yes,-37.80271182455448,144.9622681269577,22.333454283932344
+1,134,Public Toilet - Toilet 178 -  Argyle Place North (Opposite 4 Argyle Place North),yes,yes,yes,-37.80207629420745,144.96642403988702,4.532569476763436
+2,134,Public Toilet - Toilet 179 - Lincoln Square (138-142 Bouverie Street),yes,yes,yes,-37.80271182455448,144.9622681269577,22.840016355457415
+3,134,Public Toilet - Toilet 142 - Queensberry Street (Adjacent 179 Queensberry Street),no,yes,no,-37.80463970714722,144.96285021945613,23.423026742335185
+1,135,Public Toilet - Toilet 137 - Faraday Street (Opposite 208-212 Faraday Street),yes,yes,no,-37.79870959701599,144.96759388009733,24.996382807695475
+2,135,Public Toilet - Toilet 138 - Carlton Gardens North (Opposite 199 Rathdowne Street),yes,yes,yes,-37.802645554985105,144.969821287215,29.53524564501542
+3,135,Public Toilet - Toilet 133- Canning Street Reserve (49 Princes Street),no,yes,no,-37.793011678725755,144.97399489761827,37.408653814822244
+1,136,Public Toilet - Toilet 138 - Carlton Gardens North (Opposite 199 Rathdowne Street),yes,yes,yes,-37.802645554985105,144.969821287215,25.513278057231368
+2,136,Public Toilet - Toilet 137 - Faraday Street (Opposite 208-212 Faraday Street),yes,yes,no,-37.79870959701599,144.96759388009733,36.08850258851075
+3,136,Public Toilet - Toilet 178 -  Argyle Place North (Opposite 4 Argyle Place North),yes,yes,yes,-37.80207629420745,144.96642403988702,43.641118714029396
+1,137,Public Toilet - Toilet 124 - Nicholson Street (1A Nicholson Street),no,yes,no,-37.80945202894246,144.97307695563703,3.534372992446755
+2,137,Public Toilet - Toilet 125 - Gordon Reserve (74-108 Spring Street),yes,no,no,-37.812240775587135,144.97392555886628,15.512187544924858
+3,137,Public Toilet - Toilet 11 - Lonsdale Street (Opposite 88 Lonsdale Street),yes,yes,yes,-37.8100356799286,144.9699024633049,22.594901214118654
+1,138,Public Toilet - Toilet 170 - Queensberry Street (Opposite 530 Queensberry Street),no,yes,no,-37.803077866412245,144.94986517956968,46.24514226385455
+2,138,Public Toilet - Toilet 13 - Queensberry Street (Opposite 530 Queensberry Street),,,,-37.803094275484256,144.94994632091922,46.7548171908667
+3,138,Public Toilet - Toilet 136 - Ievers Reserve - Flemington Road,yes,yes,yes,-37.79679899805757,144.95196665126468,58.60859820382436
+1,139,Public Toilet - Toilet 170 - Queensberry Street (Opposite 530 Queensberry Street),no,yes,no,-37.803077866412245,144.94986517956968,63.9793490755283
+2,139,Public Toilet - Toilet 131 - Royal Park (Flemington Rd - Near North Park Tennis Club),yes,yes,yes,-37.790174410412384,144.94366905096862,64.29759223754593
+3,139,Public Toilet - Toilet 13 - Queensberry Street (Opposite 530 Queensberry Street),,,,-37.803094275484256,144.94994632091922,64.49937507745669
+1,140,Public Toilet - Toilet 133- Canning Street Reserve (49 Princes Street),no,yes,no,-37.793011678725755,144.97399489761827,14.844794976671855
+2,140,Public Toilet - Toilet 137 - Faraday Street (Opposite 208-212 Faraday Street),yes,yes,no,-37.79870959701599,144.96759388009733,42.53076468350512
+3,140,Public Toilet - Toilet 138 - Carlton Gardens North (Opposite 199 Rathdowne Street),yes,yes,yes,-37.802645554985105,144.969821287215,59.92156957575599
+1,141,Public Toilet - Toilet 146 - Swanston Street (Opposite 475-511 Swanston Street),yes,no,no,-37.806805767380254,144.96264850030644,4.103999822716008
+2,141,Public Toilet - Toilet 142 - Queensberry Street (Adjacent 179 Queensberry Street),no,yes,no,-37.80463970714722,144.96285021945613,16.208770691019975
+3,141,Public Toilet - Toilet 7 - Latrobe Street (Adjacent 120 La Trobe Street),no,yes,no,-37.80894206847336,144.96564884552268,19.299606550086466
+1,142,"Public Toilet - Victoria Harbour, Shed 2 (North Wharf Road)",yes,yes,yes,-37.818924455699296,144.9342385117904,179.67092132823996
+2,142,Public Toilet - Ron Barassi Senior Park Pavilion,U,U,U,-37.81722059052804,144.93400271183995,183.49286227548458
+3,142,"Public Toilet - Victoria Harbour, Shed 3 (North Wharf Road)",no,yes,no,-37.819795975740334,144.93766540530564,197.13259060579458
+1,143,Public Toilet - Toilet 118 - Fitzroy Gardens (2 Lansdowne Street),yes,yes,yes,-37.815278082082735,144.97758877995489,13.0167632506728
+2,143,Public Toilet - Toilet 122 - Treasury Gardens (Store and Toilet),yes,yes,yes,-37.813418435008906,144.97746700744847,14.333465717404916
+3,143,Public Toilet - Toilet 119 - Fitzroy Gardens Toilets (150 Clarendon Street),yes,yes,yes,-37.81203615704364,144.98307493665166,27.576909673287272
+1,144,Public Toilet - Toilet 122 - Treasury Gardens (Store and Toilet),yes,yes,yes,-37.813418435008906,144.97746700744847,7.861139889380798
+2,144,Public Toilet - Toilet 118 - Fitzroy Gardens (2 Lansdowne Street),yes,yes,yes,-37.815278082082735,144.97758877995489,10.201417341438889
+3,144,Public Toilet - Toilet 119 - Fitzroy Gardens Toilets (150 Clarendon Street),yes,yes,yes,-37.81203615704364,144.98307493665166,31.238287619295768
+1,145,Public Toilet - Toilet 169 - Batman Park (2A Spencer Street),yes,yes,yes,-37.82172068166997,144.95557809313962,18.663370596227253
+2,145,Public Toilet - Toilet 3 - Flinders Street (399 Flinders Street),yes,yes,yes,-37.81940611413847,144.96127683121782,20.60163918666978
+3,145,Public Toilet - Toilet 4 - Market Street (Opposite 74 Market Street),yes,yes,yes,-37.81746989209639,144.96025433528794,25.10712982650388
+1,146,Public Toilet - Toilet 107 - Alexandra Park,yes,yes,yes,-37.82764304616528,144.98181166075952,25.38879372411028
+2,146,Public Toilet - Toilet 109 - Kings Domain Myer Music Bowl Rear of,yes,yes,yes,-37.82289159858857,144.975280957334,29.392600939027364
+3,146,Public Toilet - Toilet 111 - Birrarung Marr Speakers Corner,yes,yes,yes,-37.82100477977538,144.97593322373976,31.651700508440705
+1,147,Public Toilet - Toilet 138 - Carlton Gardens North (Opposite 199 Rathdowne Street),yes,yes,yes,-37.802645554985105,144.969821287215,16.497679000800154
+2,147,Public Toilet - Toilet 145 - Carlton Gardens South (Opposite 39 Rathdowne Street),yes,yes,yes,-37.80625893301874,144.9692027022002,18.10895366868885
+3,147,Public Toilet - Toilet 124 - Nicholson Street (1A Nicholson Street),no,yes,no,-37.80945202894246,144.97307695563703,32.4632179332489
+1,148,Public Toilet - Toilet 182 - Docklands Park South - 25 Harbour Esplanade,yes,yes,yes,-37.82175860330799,144.9473834186781,35.61271133665031
+2,148,"Public Toilet - Saint Mangos Lane, The Palladio (New Quay)",yes,yes,yes,-37.81435831108069,144.94168216712015,38.61389602147949
+3,148,Public Toilet - Toilet 1 - Lonsdale Street (Opposite 581 Lonsdale Street),yes,yes,yes,-37.814345522392365,144.9551179464378,49.675095263239605
+1,149,Public Toilet - Toilet 172 - Southbank Promenade (opposite Esso House),yes,yes,yes,-37.820342128586276,144.96421972799456,8.531723701041399
+2,149,Public Toilet - Toilet 3 - Flinders Street (399 Flinders Street),yes,yes,yes,-37.81940611413847,144.96127683121782,25.450754858587157
+3,149,Public Toilet - Toilet 41 - Flinders Street (No 245 Flinders Street Station),yes,yes,yes,-37.817903197056154,144.9662642552638,25.87819498470044
+1,150,Public Toilet - Toilet 172 - Southbank Promenade (opposite Esso House),yes,yes,yes,-37.820342128586276,144.96421972799456,7.912831404365556
+2,150,Public Toilet - Toilet 3 - Flinders Street (399 Flinders Street),yes,yes,yes,-37.81940611413847,144.96127683121782,11.856485236317544
+3,150,Public Toilet - Toilet 4 - Market Street (Opposite 74 Market Street),yes,yes,yes,-37.81746989209639,144.96025433528794,24.41538327046042
+1,151,Public Toilet - Toilet 48 - Birrarung Marr (Opposite Artplay),yes,yes,yes,-37.81859887229392,144.97105956826817,14.085601039887196
+2,151,Public Toilet - Toilet 41 - Flinders Street (No 245 Flinders Street Station),yes,yes,yes,-37.817903197056154,144.9662642552638,17.869592205678867
+3,151,Public Toilet - Town Hall Melbourne (200 Collins Street),yes,yes,yes,-37.81521576619692,144.96694328510318,20.368340088667633
+1,152,Public Toilet - Toilet 119 - Fitzroy Gardens Toilets (150 Clarendon Street),yes,yes,yes,-37.81203615704364,144.98307493665166,18.163170299642424
+2,152,Public Toilet - Toilet 122 - Treasury Gardens (Store and Toilet),yes,yes,yes,-37.813418435008906,144.97746700744847,34.16544621157846
+3,152,Public Toilet - Toilet 117 - Powlett Reserve (Opposite 128 Albert Street),yes,yes,yes,-37.81094232809633,144.98685873937842,35.54650121186671
+1,153,Public Toilet - Toilet 6 - Elizabeth Street (Toilet Adjacent 200 Elizabeth Street),yes,no,no,-37.813837792176315,144.96309721024045,5.053035202016548
+2,153,Public Toilet - Toilet 6 - Elizabeth Street (Toilet Adjacent 200 Elizabeth Street),no,yes,no,-37.81343920794399,144.9629227264507,5.986734139327909
+3,153,Public Toilet - Toilet 46 - Bourke Street (opposite 225 Bourke Street),yes,yes,yes,-37.81324543360198,144.96689658968143,19.397869091487742
+1,154,Public Toilet - Toilet 6 - Elizabeth Street (Toilet Adjacent 200 Elizabeth Street),yes,no,no,-37.813837792176315,144.96309721024045,8.752809603491341
+2,154,Public Toilet - Toilet 6 - Elizabeth Street (Toilet Adjacent 200 Elizabeth Street),no,yes,no,-37.81343920794399,144.9629227264507,9.227938902473696
+3,154,Public Toilet - Toilet 46 - Bourke Street (opposite 225 Bourke Street),yes,yes,yes,-37.81324543360198,144.96689658968143,15.993348722368335
+1,155,Public Toilet - Toilet 179 - Lincoln Square (138-142 Bouverie Street),yes,yes,yes,-37.80271182455448,144.9622681269577,3.167259214460229
+2,155,Public Toilet - Toilet 142 - Queensberry Street (Adjacent 179 Queensberry Street),no,yes,no,-37.80463970714722,144.96285021945613,11.798499771694884
+3,155,Public Toilet - Toilet 178 -  Argyle Place North (Opposite 4 Argyle Place North),yes,yes,yes,-37.80207629420745,144.96642403988702,23.683248508740082
+1,156,Public Toilet - Toilet 11 - Lonsdale Street (Opposite 88 Lonsdale Street),yes,yes,yes,-37.8100356799286,144.9699024633049,6.309756248387853
+2,156,Public Toilet - Toilet 12 - Exhibition Street (Opposite 242 Exhibition Street),no,yes,no,-37.80954604636232,144.9694071187106,7.874494194602069
+3,156,Public Toilet - Toilet 46 - Bourke Street (opposite 225 Bourke Street),yes,yes,yes,-37.81324543360198,144.96689658968143,21.65527196604966
+1,157,Public Toilet - Toilet 43 - Queen Street (opposite 113 Queen Street),yes,yes,yes,-37.815838165017645,144.9610620730027,4.3788587230706
+2,157,Public Toilet - Toilet 4 - Market Street (Opposite 74 Market Street),yes,yes,yes,-37.81746989209639,144.96025433528794,12.28117765224041
+3,157,Public Toilet - Toilet 6 - Elizabeth Street (Toilet Adjacent 200 Elizabeth Street),yes,no,no,-37.813837792176315,144.96309721024045,17.329987220748833

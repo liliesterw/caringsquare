@@ -1,0 +1,472 @@
+water_id,poi_id,Description,lat,lon,distance
+1,1,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type - Bottle Refill Tap,-37.81437201868546,144.96613327636362,3.280500101652516
+2,1,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type - Bottle Refill Tap,-37.813314693754506,144.9666513135716,6.0242514376113165
+3,1,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type,-37.815447719564624,144.96705501075527,8.0270028598792
+4,2,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type,-37.815447719564624,144.96705501075527,3.885270521374765
+5,2,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type - Bottle Refill Tap,-37.81437201868546,144.96613327636362,8.034561673627609
+6,2,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type - Bottle Refill Tap,-37.813314693754506,144.9666513135716,10.808495232100832
+7,3,Drinking Fountain - Leaf Type - With Bottle Refill Tap - Carlton Gardens South,-37.80596124931496,144.97143107579004,1.2478249366860132
+8,3,Drinking Fountain - Treated Timber Drinking Fountain - Carlton Gardens South,-37.80696316737549,144.97097533310077,5.997686508354389
+9,3,Drinking Fountain - Treated Timber Drinking Fountain - Carlton Gardens South,-37.80719483579952,144.97264821832775,11.330498932420664
+10,4,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type - Bottle Refill Tap,-37.81211636429392,144.96242655579448,1.4772354960783218
+11,4,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type - Bottle Refill Tap,-37.811468256332006,144.9617506772221,5.019196783786834
+12,4,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type - Bottle Refill Tap,-37.81027785022815,144.9610923413044,13.271400385850498
+13,5,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type - Bottle Refill Tap,-37.81056708776496,144.96772094101254,3.8545098640674578
+14,5,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type - Bottle Refill Tap,-37.811050947085775,144.96714245008525,8.644857923350779
+15,5,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type,-37.811115148970096,144.96662794395766,11.51554124526728
+16,6,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type - Bottle Refill Tap,-37.8163642527943,144.95539891425878,5.166843459889694
+17,6,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type - Bottle Refill Tap,-37.81803793542333,144.9566252834487,13.067055402009958
+18,6,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type - Bottle Refill Tap,-37.81906773607154,144.95451978482612,13.527714017262378
+19,7,Drinking Fountain - Leaf Type - Dog Bowl  - Flagstaff Gardens,-37.81010993947886,144.95363625566398,7.402557583201005
+20,7,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type - Bottle Refill Tap,-37.809316361164214,144.95453335359068,14.075494384641557
+21,7,Drinking Fountain - Treated Timber Drinking Fountain - Flagstaff Gardens,-37.809792956338455,144.95510199726527,16.829221621367065
+22,8,Drinking Fountain - Drinking Fountain - Type 1,-37.8060370483463,144.95639004511094,24.762135759545288
+23,8,Drinking Fountain - Ornamental Drinking Fountain - Errol St North Melbourne,-37.80333644461803,144.94973046402842,25.593893550247433
+24,8,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type,-37.802013714097406,144.95783228776227,26.85040497861411
+25,9,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type - Bottle Refill Tap,-37.803371100927336,144.96636401763814,12.500495504486938
+26,9,Drinking Fountain - Drinking Fountain - Monument Style Type 2 - Argyle Square,-37.80282308235531,144.96630068198394,15.96014528869185
+27,9,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type - Bottle Refill Tap,-37.80530265416531,144.96955831322754,16.317490684400934
+28,10,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type - Bottle Refill Tap,-37.81027785022815,144.9610923413044,7.802955664035754
+29,10,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type - Bottle Refill Tap,-37.811005097961136,144.95862163735288,8.69286488730478
+30,10,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type - Bottle Refill Tap,-37.811468256332006,144.9617506772221,13.56275394595694
+31,11,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type,-37.810438177722986,144.96409803572945,1.3267971748222809
+32,11,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type - Bottle Refill Tap,-37.81047950700537,144.9643462282214,2.9020053948982323
+33,11,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type - Bottle Refill Tap,-37.80959362303089,144.9642403876143,5.912413630877763
+34,12,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type,-37.81506309138496,144.9689920380753,4.212470707554074
+35,12,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type,-37.815447719564624,144.96705501075527,11.011519103438141
+36,12,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type - Bottle Refill Tap,-37.81261776692698,144.9683505786709,12.508229949007323
+37,13,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type,-37.81506309138496,144.9689920380753,4.4751148554123406
+38,13,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type - Bottle Refill Tap,-37.81261776692698,144.9683505786709,12.421274006797885
+39,13,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type,-37.815447719564624,144.96705501075527,15.038304627528738
+40,14,Drinking Fountain - Leaf Type - With Bottle Refill Tap - Fitzroy Gardens,-37.810303046806325,144.9786636062916,9.883632448293291
+41,14,Drinking Fountain - Drinking Fountain - Monument Style Type 3,-37.808763201408944,144.97559991595182,16.86056774073256
+42,14,Drinking Fountain - Leaf Type - Dog Bowl  - Fitzroy Gardens,-37.81047413141583,144.98106657764444,20.73310664522122
+43,15,Drinking Fountain - Drinking Fountain - Monument Style Type 3,-37.808763201408944,144.97559991595182,6.40540869788156
+44,15,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type - Parliament Reserve,-37.80980631970157,144.97383443627947,9.052888058712712
+45,15,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type,-37.81118440260836,144.9751861982011,9.42357389452318
+46,16,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type,-37.81118440260836,144.9751861982011,3.6916325421576803
+47,16,Drinking Fountain - Drinking Fountain - Monument Style Type 3,-37.808763201408944,144.97559991595182,14.135228284447667
+48,16,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type - Parliament Reserve,-37.80980631970157,144.97383443627947,14.138952150395264
+49,17,Drinking Fountain - Leaf Type - With Bottle Refill Tap - Fitzroy Gardens,-37.81367564418339,144.9826852058486,4.092657655894646
+50,17,Drinking Fountain - Leaf Type - Dog Bowl  - Fitzroy Gardens,-37.815691536791896,144.98226715782863,11.921436559593355
+51,17,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type - Bottle Refill Tap,-37.81276680167682,144.9815543655956,13.308421065015924
+52,18,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type - Bottle Refill Tap,-37.820099609077104,144.96520412105647,13.267327710862952
+53,18,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type - Queen Victoria Gardens,-37.8212095645359,144.9694728091101,14.986752103718551
+54,18,Drinking Fountain - Leaf Type - With Bottle Refill Tap - Queen Victoria Gardens,-37.82168006484173,144.97003703369418,19.0531249512265
+55,19,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type - Bottle Refill Tap,-37.805018324001324,144.94911036775298,13.058721455019933
+56,19,Drinking Fountain - Ornamental Drinking Fountain - Errol St North Melbourne,-37.80333644461803,144.94973046402842,13.133819105635597
+57,19,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type - Bottle Refill Tap,-37.80725891583743,144.94696422855037,24.052916551023113
+58,20,Drinking Fountain - Leaf Type - With Bottle Refill Tap - Fitzroy Gardens,-37.810693329155406,144.983071937749,11.18703262281228
+59,20,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type - Powlett Reserve,-37.81108547106561,144.986823716213,13.877301604016449
+60,20,Drinking Fountain - Leaf Type - With Bottle Refill Tap - Fitzroy Gardens,-37.81367564418339,144.9826852058486,18.950131995009496
+61,21,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type - Neill Street Reserve,-37.795594738274296,144.9691367333386,2.2720403792591886
+62,21,Drinking Fountain - Leaf Type - Dog Bowl  - Neill Street Reserve,-37.795835011774024,144.96807205336754,5.79365197119863
+63,21,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type - Neill Street Reserve,-37.794860401126186,144.97032531494713,10.867867793056655
+64,22,Drinking Fountain - Leaf Type - With Bottle Refill Tap - Carlton Gardens North,-37.801543240735214,144.9707469410421,11.122701746170755
+65,22,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type - Bottle Refill Tap,-37.80218636204077,144.97111015985016,11.535214857664227
+66,22,Drinking Fountain - Leaf Type - With Bottle Refill Tap - Carlton Gardens North,-37.80241728553811,144.97202290316704,17.083944540070544
+67,23,Drinking Fountain - Treated Timber Drinking Fountain - Pleasance Gardens,-37.796300658626926,144.9450285729346,14.53857413275637
+68,23,Drinking Fountain - Drinking Fountain - Type 1,-37.79639356481317,144.9464489931069,16.357658108177674
+69,23,Drinking Fountain - Leaf Type - Dog Bowl  - Royal Park,-37.79028778877907,144.94509842701018,24.079484925384943
+70,24,Drinking Fountain - Treated Timber Drinking Fountain - Pleasance Gardens,-37.796300658626926,144.9450285729346,4.539775181512903
+71,24,Drinking Fountain - Drinking Fountain - Type 1,-37.79639356481317,144.9464489931069,13.566988272702027
+72,24,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type - Gardiner Reserve,-37.79889823757444,144.94401837483926,16.623456305211935
+73,25,Drinking Fountain - Urban design stainless steel,-37.79337819173264,144.9400483085651,11.292094274575685
+74,25,Drinking Fountain - Leaf Type - Dog Bowl  - Clayton Reserve,-37.79581789599728,144.93892278396697,19.90713201389851
+75,25,Drinking Fountain - Leaf Type - Dog Bowl  - Clayton Reserve,-37.79690982991828,144.93887017448856,24.46456602186574
+76,26,Drinking Fountain - Drinking Fountain - Type 1,-37.79206873155685,144.9297513827727,17.211535315201488
+77,26,Drinking fountain - Historic or Heritage Drinking Fountains - Warun Biik Park,-37.79622591094481,144.9267532371567,19.53544017062032
+78,26,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type,-37.794314385646345,144.93029591804668,20.308042355064302
+79,27,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type,-37.794314385646345,144.93029591804668,12.675986826808769
+80,27,Drinking fountain - Historic or Heritage Drinking Fountains - Warun Biik Park,-37.79622591094481,144.9267532371567,13.638940679308543
+81,27,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type - Bellair Street Reserve,-37.795526766864704,144.93075415955866,15.861558843008444
+82,28,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type,-37.81506309138496,144.9689920380753,6.26625343253801
+83,28,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type,-37.815447719564624,144.96705501075527,8.013729078808598
+84,28,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type - Bottle Refill Tap,-37.81437201868546,144.96613327636362,12.46406951597283
+85,29,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type - Bottle Refill Tap,-37.83463602099828,144.97488441712127,12.894785753710785
+86,29,Drinking Fountain - Treated Timber Drinking Fountain - Shrine Gardens,-37.832100018272406,144.975544260503,21.964893449321305
+87,29,Drinking Fountain - Leaf Type - Dog Bowl  - Fawkner Park,-37.8386331437282,144.97805941362762,22.632869202304473
+88,30,Drinking fountain - unspecified type - Fawkner Park,-37.84105383065132,144.98474159117373,5.9222871950769935
+89,30,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type - Fawkner Park,-37.8405910312944,144.9842020334054,9.052568350473903
+90,30,Drinking Fountain - Leaf Type - With Bottle Refill Tap - Fawkner Park,-37.84249232047023,144.9843961780638,13.573636109068287
+91,31,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type,-37.83822661704696,144.98457571177818,9.408649720019255
+92,31,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type - Fawkner Park,-37.8405910312944,144.9842020334054,16.946375029842294
+93,31,Drinking fountain - unspecified type - Fawkner Park,-37.84105383065132,144.98474159117373,17.42598355580319
+94,32,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type - Parliament Reserve,-37.80980631970157,144.97383443627947,5.054325632834141
+95,32,Drinking Fountain - Old Style Steel Drinking Fountain,-37.80831892386757,144.97445245211898,5.275762705304956
+96,32,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type - Bottle Refill Tap,-37.808993687538326,144.9728686722591,8.612934373100515
+97,33,Drinking Fountain - Leaf Type - Dog Bowl  - Royal Park,-37.79028778877907,144.94509842701018,32.75865219529788
+98,33,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type - Bottle Refill Tap,-37.78533232662653,144.9534737646951,37.55551738746278
+99,33,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type - Royal Park,-37.786152011088284,144.95349293828525,37.63684250161326
+100,34,Drinking Fountain - Leaf Type - Dog Bowl  - University Square,-37.80089398503696,144.96074870882546,3.800479465162424
+101,34,Drinking fountain - Historic or Heritage fountains - University Square,-37.8020146095429,144.96057239486782,10.28911439351696
+102,34,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type,-37.802013714097406,144.95783228776227,19.224917768610638
+103,35,Drinking Fountain - Treated Timber Drinking Fountain - Royal Park,-37.781971287851476,144.95606844481355,1.5682709539460433
+104,35,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type - Royal Park,-37.78144167402145,144.95595472988092,3.777568529994183
+105,35,Drinking fountain - Historic or Heritage fountains - Royal Park,-37.78205389103602,144.95697021635436,4.291582521291658
+106,36,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type - Powlett Reserve,-37.81108547106561,144.986823716213,4.818564230519161
+107,36,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type - Bottle Refill Tap,-37.81232314728076,144.98893301349375,11.245955282189636
+108,36,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type,-37.81328717472797,144.98924115987992,16.078539993969155
+109,37,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type - Princes Park,-37.784936952994926,144.96233927588727,5.9158676190890995
+110,37,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type - Princes Park,-37.78516928275589,144.9629960270774,9.507298484576255
+111,37,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type - Princes Park,-37.78468825615886,144.9603937391861,10.714297115745385
+112,38,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type - Princes Park,-37.784936952994926,144.96233927588727,9.872589780923004
+113,38,Drinking fountain - unspecified type - Princes Park,-37.7836624497961,144.9599986352006,12.69507697295175
+114,38,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type - Princes Park,-37.78516928275589,144.9629960270774,12.824979964878208
+115,39,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type - Bottle Refill Tap,-37.80726039782801,144.95788106825034,4.830016281454869
+116,39,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type,-37.80711563980322,144.95593164435638,8.15673061858926
+117,39,Drinking Fountain - Drinking Fountain - Type 1,-37.80611690395517,144.95713339672042,8.82411130104075
+118,40,Drinking Fountain - Leaf Type - With Bottle Refill Tap - Carlton Gardens North,-37.80241728553811,144.97202290316704,4.137352139258177
+119,40,Drinking Fountain - Leaf Type - With Bottle Refill Tap - Carlton Gardens North,-37.80211398428,144.97283100368062,5.727001768637115
+120,40,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type - Bottle Refill Tap,-37.80218636204077,144.97111015985016,6.227229839819496
+121,41,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type,-37.807299202453336,144.9638063589646,10.92025469168892
+122,41,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type - Bottle Refill Tap,-37.80959362303089,144.9642403876143,14.009801601246979
+123,41,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type - Bottle Refill Tap,-37.80774274876369,144.96308654177773,15.073736885938063
+124,42,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type - Bottle Refill Tap,-37.82469655350015,144.97211741415782,13.655770982612783
+125,42,Drinking Fountain - Leaf Type - Dog Bowl  - Kings Domain,-37.824245337341495,144.97698410547824,19.943024847414485
+126,42,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type - Bottle Refill Tap,-37.82435043745128,144.9771113193355,20.42505870000317
+127,43,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type - Queen Victoria Gardens,-37.8212095645359,144.9694728091101,4.980429803591718
+128,43,Drinking Fountain - Leaf Type - With Bottle Refill Tap - Queen Victoria Gardens,-37.82168006484173,144.97003703369418,7.601561422467796
+129,43,Drinking fountain - Historic or Heritage Drinking Fountains - Queen Victoria Gardens,-37.82123671455052,144.97077057669242,12.550780932135494
+130,44,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type - Queen Victoria Gardens,-37.8212095645359,144.9694728091101,8.149001713460502
+131,44,Drinking Fountain - Leaf Type - With Bottle Refill Tap - Queen Victoria Gardens,-37.82168006484173,144.97003703369418,10.789206158224305
+132,44,Drinking fountain - Historic or Heritage Drinking Fountains - Queen Victoria Gardens,-37.82123671455052,144.97077057669242,15.831683546959274
+133,45,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type - Queen Victoria Gardens,-37.8212095645359,144.9694728091101,6.366685382915713
+134,45,Drinking Fountain - Leaf Type - With Bottle Refill Tap - Queen Victoria Gardens,-37.82168006484173,144.97003703369418,10.24389353446934
+135,45,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type - Alexandra Gardens,-37.82072500491043,144.97068041637496,14.437379384661513
+136,46,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type - Kings Domain South,-37.8334339089649,144.98151523466336,11.776499233941236
+137,46,Drinking Fountain - Leaf Type - Dog Bowl  - Fawkner Park,-37.837913044811074,144.9818740242421,17.646367219943894
+138,46,Drinking Fountain - Leaf Type - Dog Bowl  - Kings Domain South,-37.83352412979703,144.98347223277543,18.357991308545238
+139,47,Drinking Fountain- Wooden Slat Supports,-37.794514550170504,144.91591225394643,33.640508285312755
+140,47,Drinking Fountain - Leaf Type - Dog Bowl - Stockmans Way,-37.79403468455117,144.91961812395766,51.737454483765774
+141,47,Drinking Fountain - Treated Timber Drinking Fountain - Peppercorn Park,-37.79256416270773,144.922630804458,67.53982336583591
+142,48,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type,-37.81033905955521,144.9724239787079,2.5421271190351584
+143,48,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type - Bottle Refill Tap,-37.811526410682276,144.9728037168352,5.935045825155823
+144,48,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type - Parliament Reserve,-37.80980631970157,144.97383443627947,11.213103167862723
+145,49,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type - Bottle Refill Tap,-37.81437973339851,144.97601583515225,0.42133110106573124
+146,49,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type - Bottle Refill Tap,-37.813705889407565,144.97490272787442,7.986733587623036
+147,49,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type - Bottle Refill Tap,-37.81443644404849,144.97774297882825,11.347348963488074
+148,50,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type - Bottle Refill Tap,-37.80959362303089,144.9642403876143,2.5618439941959097
+149,50,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type - Bottle Refill Tap,-37.81047950700537,144.9643462282214,3.1541735085982237
+150,50,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type,-37.810438177722986,144.96409803572945,3.2425366631026806
+151,51,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type,-37.815447719564624,144.96705501075527,6.501686333165865
+152,51,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type,-37.81506309138496,144.9689920380753,9.067617661612026
+153,51,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type,-37.81678974689995,144.96933696934119,10.305591904515337
+154,52,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type - Bottle Refill Tap,-37.813705889407565,144.97490272787442,5.453426465358484
+155,52,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type,-37.81319698844885,144.97374469190206,9.62082439678928
+156,52,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type - Bottle Refill Tap,-37.81243580767888,144.97368439844226,10.306486112507354
+157,53,Drinking Fountain - Treated Timber Drinking Fountain - Batman Park,-37.82220232720067,144.956603131736,2.3064315061399143
+158,53,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type - Bottle Refill Tap,-37.821867236140854,144.9572554993872,3.735162581630978
+159,53,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type - Bottle Refill Tap,-37.82024273028082,144.95962780503942,21.358572557995497
+160,54,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type - Bottle Refill Tap,-37.81734781558377,144.9877967436974,27.686191633360956
+161,54,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type - Bottle Refill Tap,-37.81649090115357,144.98515748991457,38.12351781211601
+162,54,Drinking fountain - Historic or Heritage Drinking Fountains - Alexandra Park,-37.827087271632976,144.98504460154422,39.74629892482803
+163,55,Drinking Fountain - Old Style Steel Drinking Fountain,-37.816927072109706,144.9837045105586,16.471279052502364
+164,55,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type - Bottle Refill Tap,-37.81649090115357,144.98515748991457,22.133514792429025
+165,55,Drinking Fountain - Leaf Type - Dog Bowl  - Fitzroy Gardens,-37.815691536791896,144.98226715782863,25.285041876773263
+166,56,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type - Bottle Refill Tap,-37.78533232662653,144.9534737646951,14.510177530053808
+167,56,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type - Royal Park,-37.786152011088284,144.95349293828525,17.329545719243434
+168,56,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type,-37.780733628029004,144.95109029065011,23.737895222933254
+169,57,Drinking Fountain - Treated Timber Drinking Fountain - Batman Park,-37.82220232720067,144.956603131736,24.075040615473743
+170,57,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type - Bottle Refill Tap,-37.821867236140854,144.9572554993872,28.316233305589765
+171,57,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type - Bottle Refill Tap,-37.81906773607154,144.95451978482612,39.416093831435
+172,58,Drinking Fountain - Treated Timber Drinking Fountain - Batman Park,-37.82220232720067,144.956603131736,32.289560531491865
+173,58,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type,-37.82468831500921,144.94695310036425,33.7874067129355
+174,58,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type - Bottle Refill Tap,-37.821867236140854,144.9572554993872,36.92435969720722
+175,59,Drinking Fountain - Treated Timber Drinking Fountain - Batman Park,-37.82220232720067,144.956603131736,23.72742353364069
+176,59,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type - Bottle Refill Tap,-37.821867236140854,144.9572554993872,28.354500156593907
+177,59,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type - Bottle Refill Tap,-37.81906773607154,144.95451978482612,33.75033407257809
+178,60,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type - Ron Barassi Senior Park,-37.817146670578076,144.93410355599931,152.10511366629328
+179,60,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type - Wharfs Landing Park,-37.82210994675337,144.93666205920204,154.03191362753864
+180,60,Drinking Fountain - Unknown,-37.82217774773881,144.93826895163244,163.64655158305467
+181,61,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type - Bottle Refill Tap,-37.820099609077104,144.96520412105647,5.033172475050847
+182,61,Drinking Fountain - Stainless Steel Drinking Fountain - Northbank Type,-37.819334137771285,144.96443696866604,11.350230990868976
+183,61,Drinking Fountain - Stainless Steel Drinking Fountain - Northbank Type,-37.819376190936254,144.96425791163875,12.223768753096861
+184,62,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type - Grant Street Reserve,-37.826019122772884,144.96821302911962,7.129917990394616
+185,62,Drinking Fountain - Treated Timber Drinking Fountain - Miles & Dodds Street Reserve,-37.82867398659136,144.96722649718032,13.199968031470668
+186,62,Drinking Fountain - Treated Timber Drinking Fountain - Sturt Street Reserve,-37.829762043290245,144.96502390662388,24.5830402678339
+187,63,Drinking Fountain - Treated Timber Drinking Fountain - Miles & Dodds Street Reserve,-37.82867398659136,144.96722649718032,9.723248990960728
+188,63,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type - Grant Street Reserve,-37.826019122772884,144.96821302911962,10.940815337750307
+189,63,Drinking Fountain - Treated Timber Drinking Fountain - Sturt Street Reserve,-37.829762043290245,144.96502390662388,20.451247532678853
+190,64,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type,-37.81118440260836,144.9751861982011,8.19496785242348
+191,64,Drinking Fountain - Drinking Fountain - Monument Style Type 3,-37.808763201408944,144.97559991595182,8.825598046697019
+192,64,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type - Parliament Reserve,-37.80980631970157,144.97383443627947,13.249231112875062
+193,65,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type - Queen Victoria Gardens,-37.8212095645359,144.9694728091101,6.42359175659515
+194,65,Drinking Fountain - Leaf Type - With Bottle Refill Tap - Queen Victoria Gardens,-37.82168006484173,144.97003703369418,7.85513540885134
+195,65,Drinking fountain - Historic or Heritage Drinking Fountains - Queen Victoria Gardens,-37.82123671455052,144.97077057669242,13.158458996170356
+196,66,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type,-37.815447719564624,144.96705501075527,4.021063663156998
+197,66,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type - Bottle Refill Tap,-37.81437201868546,144.96613327636362,5.182578337488141
+198,66,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type - Bottle Refill Tap,-37.81600551227767,144.9651330881475,10.720382909836479
+199,67,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type,-37.82468831500921,144.94695310036425,18.02302366304323
+200,67,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type,-37.82449321904346,144.94569811634702,26.041359413367932
+201,67,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type - Docklands Park,-37.82089072956917,144.94692985249003,31.280402037958915
+202,68,Drinking fountain - Historic or Heritage Drinking Fountains - Queen Victoria Gardens,-37.82123671455052,144.97077057669242,3.1101272904587765
+203,68,Drinking Fountain - Leaf Type - With Bottle Refill Tap - Queen Victoria Gardens,-37.82249308106257,144.97114401537564,5.485613410379123
+204,68,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type - Alexandra Gardens,-37.82072500491043,144.97068041637496,6.275162633580242
+205,69,Drinking Fountain - Leaf Type - Dog Bowl  - Kings Domain,-37.824245337341495,144.97698410547824,15.630193153570042
+206,69,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type - Bottle Refill Tap,-37.82435043745128,144.9771113193355,16.628077824477305
+207,69,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type - Bottle Refill Tap,-37.82469655350015,144.97211741415782,18.393484945302276
+208,70,Drinking Fountain - Treated Timber Drinking Fountain - Batman Park,-37.82220232720067,144.956603131736,9.846405330265547
+209,70,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type - Bottle Refill Tap,-37.821867236140854,144.9572554993872,10.905242090713205
+210,70,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type - Bottle Refill Tap,-37.82024273028082,144.95962780503942,25.820963134879754
+211,71,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type,-37.81678974689995,144.96933696934119,5.677313971133269
+212,71,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type - Bottle Refill Tap,-37.81818027452629,144.97128244641144,9.82488657846065
+213,71,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type,-37.81506309138496,144.9689920380753,16.469661742725116
+214,72,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type,-37.81678974689995,144.96933696934119,7.173814384986258
+215,72,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type - Bottle Refill Tap,-37.817751132891175,144.96687276249168,13.25706046149541
+216,72,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type - Bottle Refill Tap,-37.81818027452629,144.97128244641144,14.833986132015891
+217,73,Drinking Fountain - Old Style Steel Drinking Fountain,-37.816927072109706,144.9837045105586,12.482065648744246
+218,73,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type - Bottle Refill Tap,-37.81649090115357,144.98515748991457,16.91381270362996
+219,73,Drinking Fountain - Leaf Type - Dog Bowl  - Fitzroy Gardens,-37.815691536791896,144.98226715782863,22.941869546311967
+220,74,Drinking Fountain - Stainless Steel Drinking Fountain - Old Docklands Type,-37.815397268276,144.94056198429413,6.786293145741015
+221,74,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type,-37.81378184056998,144.94225864282328,10.018393089257005
+222,74,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type,-37.815558943545426,144.93989772357784,11.112131218869127
+223,75,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type - Docklands Park,-37.82089072956917,144.94692985249003,1.1522592233233901
+224,75,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type - Bottle Refill Tap,-37.82120300569749,144.94644008125582,2.5348953509821435
+225,75,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type,-37.82139165761971,144.94536775680646,9.300498469379777
+226,76,Drinking Fountain - Leaf Type - Dog Bowl  - New Quay Central Park,-37.81472791168905,144.93868934270515,3.5263482652000624
+227,76,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type,-37.814695182979264,144.93847737611912,4.772025744008121
+228,76,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type,-37.815558943545426,144.93989772357784,5.787467320795804
+229,77,Drinking fountain - Historic or Heritage Drinking Fountains - Alexandra Park,-37.827087271632976,144.98504460154422,16.989965738231742
+230,77,Drinking fountain - unspecified type - Alexandra Park,-37.82792492555463,144.98354503295144,20.47256265607631
+231,77,Drinking Fountain - Treated Timber Drinking Fountain - Alexandra Park,-37.827601958389536,144.9819469602272,21.783316501374046
+232,78,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type,-37.81378184056998,144.94225864282328,9.636586460941992
+233,78,Drinking Fountain - Stainless Steel Drinking Fountain - Old Docklands Type,-37.815397268276,144.94056198429413,10.927605967604357
+234,78,Drinking Fountain - Stainless Steel Drinking Fountain - Old Docklands Type,-37.81342794663863,144.94277418583766,12.291679434517082
+235,79,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type,-37.81600813034881,144.94552203541383,13.367566311693446
+236,79,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type,-37.81839331290141,144.94467796351668,14.182587770573033
+237,79,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type,-37.8188136383738,144.94290389203502,15.083409167104788
+238,80,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type,-37.814695182979264,144.93847737611912,20.42777000470921
+239,80,Drinking Fountain - Leaf Type - Dog Bowl  - New Quay Central Park,-37.81472791168905,144.93868934270515,21.034789881637582
+240,80,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type,-37.81515985140142,144.93712549711364,22.79031077893562
+241,81,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type - Bottle Refill Tap,-37.82317712092532,144.94186784766944,1.857207957594717
+242,81,Drinking Fountain - Stainless Steel Drinking Fountain - Northbank Type,-37.823409470860675,144.94065316721642,9.178401379747
+243,81,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type,-37.824161294600366,144.94386411864073,12.285939346512437
+244,82,Drinking Fountain - Leaf Type - Dog Bowl  - Newmarket Reserve,-37.787849483788314,144.92456233354102,10.102452031555083
+245,82,Drinking Fountain - Treated Timber Drinking Fountain - Stock Bridge (KENSINGTON),-37.79016688522425,144.92406824328086,16.350719352489218
+246,82,Drinking Fountain - Drinking Fountain - Type 1,-37.78942634033224,144.92521601291634,17.452944848046734
+247,83,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type - Docklands Park,-37.82089072956917,144.94692985249003,10.3875033083046
+248,83,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type - Bottle Refill Tap,-37.82120300569749,144.94644008125582,13.06492177415176
+249,83,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type,-37.81884561014748,144.94837757274016,16.14642838841084
+250,84,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type,-37.814695182979264,144.93847737611912,21.788715119716542
+251,84,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type,-37.81515985140142,144.93712549711364,22.179001786609955
+252,84,Drinking Fountain - Leaf Type - Dog Bowl  - New Quay Central Park,-37.81472791168905,144.93868934270515,22.639867318838355
+253,85,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type - Bottle Refill Tap,-37.82337609495653,144.9798517032086,12.107832017818243
+254,85,Drinking Fountain - Leaf Type - Dog Bowl  - Kings Domain,-37.824245337341495,144.97698410547824,16.950879130484168
+255,85,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type - Bottle Refill Tap,-37.82435043745128,144.9771113193355,17.0856578677764
+256,86,Drinking Fountain - Drinking Fountain - Monument Style Type 3,-37.81840304050843,144.9788593480922,15.999573793607636
+257,86,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type - Bottle Refill Tap,-37.82337609495653,144.9798517032086,17.250132763524466
+258,86,Drinking Fountain - Leaf Type - Dog Bowl  - Kings Domain,-37.824245337341495,144.97698410547824,23.99665993999094
+259,87,Drinking Fountain - Leaf Type - Dog Bowl  - Kings Domain,-37.824245337341495,144.97698410547824,19.01669501478855
+260,87,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type - Bottle Refill Tap,-37.82337609495653,144.9798517032086,19.38664589007851
+261,87,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type - Bottle Refill Tap,-37.82435043745128,144.9771113193355,19.532401468820904
+262,88,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type - Bottle Refill Tap,-37.82337609495653,144.9798517032086,12.665111205647232
+263,88,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type - Kings Domain South,-37.82514308986054,144.97830100199906,25.850210096687864
+264,88,Drinking Fountain - Treated Timber Drinking Fountain - Alexandra Park,-37.827601958389536,144.9819469602272,28.658481187570416
+265,89,Drinking Fountain - Leaf Type - With Bottle Refill Tap - Carlton Gardens North,-37.80241728553811,144.97202290316704,7.5366062137632
+266,89,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type - Bottle Refill Tap,-37.80218636204077,144.97111015985016,9.455563762282429
+267,89,Drinking Fountain - Leaf Type - With Bottle Refill Tap - Carlton Gardens North,-37.80211398428,144.97283100368062,11.68003601274214
+268,90,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type - Bottle Refill Tap,-37.80218636204077,144.97111015985016,8.483592324668184
+269,90,Drinking Fountain - Leaf Type - With Bottle Refill Tap - Carlton Gardens North,-37.80241728553811,144.97202290316704,10.900264115620875
+270,90,Drinking Fountain - Leaf Type - With Bottle Refill Tap - Carlton Gardens North,-37.801543240735214,144.9707469410421,12.062794040811609
+271,91,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type - Grant Street Reserve,-37.826019122772884,144.96821302911962,13.332670861435945
+272,91,Drinking Fountain - Leaf Type - With Bottle Refill Tap - Queen Victoria Gardens,-37.82168006484173,144.97003703369418,18.089355460458155
+273,91,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type - Queen Victoria Gardens,-37.8212095645359,144.9694728091101,18.88084957418795
+274,92,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type - Grant Street Reserve,-37.826019122772884,144.96821302911962,11.182919442448705
+275,92,Drinking Fountain - Leaf Type - With Bottle Refill Tap - Queen Victoria Gardens,-37.82168006484173,144.97003703369418,20.27407120960639
+276,92,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type - Queen Victoria Gardens,-37.8212095645359,144.9694728091101,21.15645918061558
+277,93,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type - Grant Street Reserve,-37.826019122772884,144.96821302911962,13.910282573534245
+278,93,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type - Queen Victoria Gardens,-37.8212095645359,144.9694728091101,21.782905608227836
+279,93,Drinking Fountain - Leaf Type - With Bottle Refill Tap - Queen Victoria Gardens,-37.82168006484173,144.97003703369418,21.950967996421628
+280,94,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type - Grant Street Reserve,-37.826019122772884,144.96821302911962,14.342484991111643
+281,94,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type - Queen Victoria Gardens,-37.8212095645359,144.9694728091101,20.206417802746525
+282,94,Drinking Fountain - Leaf Type - With Bottle Refill Tap - Queen Victoria Gardens,-37.82168006484173,144.97003703369418,20.262232672113104
+283,95,Drinking Fountain - Leaf Type - With Bottle Refill Tap - Queen Victoria Gardens,-37.82168006484173,144.97003703369418,9.573565503540491
+284,95,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type - Queen Victoria Gardens,-37.8212095645359,144.9694728091101,11.535013235050346
+285,95,Drinking Fountain - Leaf Type - With Bottle Refill Tap - Queen Victoria Gardens,-37.82249308106257,144.97114401537564,11.875428469306165
+286,96,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type - Queen Victoria Gardens,-37.8212095645359,144.9694728091101,12.180578538748891
+287,96,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type - Bottle Refill Tap,-37.817751132891175,144.96687276249168,15.94258579950167
+288,96,Drinking Fountain - Leaf Type - With Bottle Refill Tap - Queen Victoria Gardens,-37.82168006484173,144.97003703369418,16.845526949645585
+289,97,Drinking Fountain - Drinking Fountain - Type 2 - Birrarung Marr,-37.81846601245542,144.97388211503446,5.325548092956973
+290,97,Drinking fountain - Historic or Heritage Drinking Fountains - Birrarung Marr,-37.81890778973109,144.9730193824463,5.460115307249604
+291,97,Drinking Fountain - Leaf Type - With Bottle Refill Tap - Birrarung Marr,-37.81877097793573,144.97408155357158,7.4531919796334245
+292,98,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type - Bottle Refill Tap,-37.81818027452629,144.97128244641144,2.2470740304852668
+293,98,Drinking fountain - unspecified type - Alexandra Park,-37.819571118805214,144.9718246487501,7.556710578495991
+294,98,Drinking fountain - Historic or Heritage Drinking Fountains - Birrarung Marr,-37.81890778973109,144.9730193824463,9.8559377383007
+295,99,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type - Alexandra Gardens,-37.820877968772116,144.97293196853022,0.582943555235895
+296,99,Drinking Fountain - Leaf Type - With Bottle Refill Tap - Alexandra Gardens,-37.82051807391301,144.97318526962457,2.272545429449594
+297,99,Drinking Fountain - Leaf Type - Dog Bowl  - Alexandra Gardens,-37.821103585220605,144.97249534473832,3.5189533471287646
+298,100,Drinking Fountain - Leaf Type - Dog Bowl  - Alexandra Gardens,-37.821103585220605,144.97249534473832,5.450202939972142
+299,100,Drinking fountain - unspecified type - Alexandra Park,-37.819571118805214,144.9718246487501,6.59747209924992
+300,100,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type - Alexandra Gardens,-37.82072500491043,144.97068041637496,7.104372521155952
+301,101,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type - North Melbourne Recreation Reserve,-37.79922710932603,144.94028139112405,7.83989274951675
+302,101,Drinking fountain - unspecified type - Gardiner Reserve,-37.7989933421049,144.94335952463908,12.147567454477256
+303,101,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type - Gardiner Reserve,-37.79889823757444,144.94401837483926,16.291644252662188
+304,102,Drinking Fountain - Leaf Type - Dog Bowl  - JJ Holland Park,-37.79841970759794,144.92421993826412,2.6979588687567557
+305,102,Drinking fountain - Historic or Heritage Drinking Fountains - JJ Holland Park,-37.797455162858206,144.92349296059965,5.437364762503838
+306,102,Drinking Fountain - Treated Timber Drinking Fountain - JJ Holland Park,-37.798130093325604,144.92171759711218,13.46865390006803
+307,103,Drinking Fountain - Leaf Type - Dog Bowl  - Royal Park,-37.78972452756684,144.95542692736785,11.60891065239877
+308,103,Drinking Fountain - Leaf Type - Dog Bowl  - Royal Park,-37.79166434549512,144.95175691050537,14.78664238416412
+309,103,Drinking Fountain - Treated Timber Drinking Fountain - Royal Park,-37.79148137934659,144.95640337310826,17.22204539910592
+310,104,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type - Princes Park,-37.787145044550506,144.95944649397603,10.633758367283724
+311,104,Drinking Fountain - Leaf Type - With Bottle Refill Tap - Princes Park,-37.7881098191695,144.95949172029708,12.451365574673328
+312,104,Drinking Fountain - Treated Timber Drinking Fountain - Princes Park,-37.78866797179563,144.96246173875772,13.570804820099243
+313,105,Drinking Fountain - Old Style Steel Drinking Fountain,-37.816927072109706,144.9837045105586,14.303129799253178
+314,105,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type - Bottle Refill Tap,-37.81649090115357,144.98515748991457,16.01345044773408
+315,105,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type - Bottle Refill Tap,-37.81734781558377,144.9877967436974,22.296762911395543
+316,106,Drinking fountain - Historic or Heritage Drinking Fountains - Shrine Gardens,-37.832243003760865,144.97302849826244,3.9434044659409087
+317,106,Drinking fountain - Historic or Heritage Drinking Fountains - Shrine Gardens,-37.83249800027375,144.97285892460977,5.567105002541791
+318,106,Drinking Fountain - Leaf Type - With Bottle Refill Tap - Shrine of Remembrance Reserve,-37.83081555124981,144.97427512305256,9.004497758267766
+319,107,Drinking Fountain - Leaf Type - With Bottle Refill Tap - Shrine of Remembrance Reserve,-37.83028525455125,144.97264952949166,5.03460269709887
+320,107,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type - Kings Domain South,-37.829394894475676,144.97402641133462,6.368360395843649
+321,107,Drinking Fountain - Leaf Type - With Bottle Refill Tap - Shrine of Remembrance Reserve,-37.83081555124981,144.97427512305256,6.539973118042266
+322,108,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type - Kings Domain South,-37.8334339089649,144.98151523466336,18.16471407652357
+323,108,Drinking Fountain - Treated Timber Drinking Fountain - Alexandra Park,-37.827601958389536,144.9819469602272,20.71927858042364
+324,108,Drinking fountain - unspecified type - Alexandra Park,-37.82792492555463,144.98354503295144,24.400684994357345
+325,109,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type - Bottle Refill Tap,-37.81734781558377,144.9877967436974,21.146779715977868
+326,109,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type - Bottle Refill Tap,-37.81649090115357,144.98515748991457,27.12472641245481
+327,109,Drinking Fountain - Old Style Steel Drinking Fountain,-37.816927072109706,144.9837045105586,29.38268146716073
+328,110,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type,-37.81515985140142,144.93712549711364,21.039568352420318
+329,110,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type,-37.814695182979264,144.93847737611912,23.85291716701498
+330,110,Drinking Fountain - Leaf Type - Dog Bowl  - New Quay Central Park,-37.81472791168905,144.93868934270515,25.000565281406512
+331,111,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type,-37.815447719564624,144.96705501075527,3.5741190606373574
+332,111,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type - Bottle Refill Tap,-37.81437201868546,144.96613327636362,8.400238912339283
+333,111,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type,-37.81506309138496,144.9689920380753,10.599328541186168
+334,112,Drinking Fountain- Wooden Slat Supports,-37.794514550170504,144.91591225394643,2.828045661877148
+335,112,Drinking Fountain - Leaf Type - Dog Bowl - Stockmans Way,-37.79403468455117,144.91961812395766,25.97608752818739
+336,112,Drinking Fountain - Treated Timber Drinking Fountain - JJ Holland Park,-37.798130093325604,144.92171759711218,44.10820590432786
+337,113,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type,-37.81328717472797,144.98924115987992,2.1962218410090832
+338,113,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type - Bottle Refill Tap,-37.81232314728076,144.98893301349375,4.3446467222939145
+339,113,Drinking Fountain - Drinking Fountain - Type 1,-37.810999491972076,144.99096539168528,17.51941575154078
+340,114,Drinking Fountain - Drinking Fountain - Lygon St Type,-37.79775185327968,144.96744736482995,8.289763441707779
+341,114,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type,-37.79701104423778,144.96719442537858,10.704273031560163
+342,114,Drinking Fountain - Drinking Fountain - Monument Style Type 2,-37.79825505675542,144.97056606707608,12.136418388058514
+343,115,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type - Bottle Refill Tap,-37.81144127333385,144.9551162672695,3.351435898905691
+344,115,Drinking Fountain - Leaf Type - With Bottle Refill Tap - Flagstaff Gardens,-37.81043106640399,144.95558395492208,7.1489528734119965
+345,115,Drinking Fountain - Treated Timber Drinking Fountain - Flagstaff Gardens,-37.809792956338455,144.95510199726527,8.860324016551738
+346,116,Drinking Fountain- Wooden Slat Supports,-37.794514550170504,144.91591225394643,84.29085912385545
+347,116,Drinking Fountain - Leaf Type - Dog Bowl - Stockmans Way,-37.79403468455117,144.91961812395766,93.35223038358512
+348,116,Drinking Fountain - Leaf Type - Dog Bowl  - Newmarket Reserve,-37.787849483788314,144.92456233354102,94.18936049163634
+349,117,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type - Bottle Refill Tap,-37.81191194838843,144.97076931535327,9.832933562635922
+350,117,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type - Bottle Refill Tap,-37.81056708776496,144.96772094101254,11.729933357470522
+351,117,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type - Bottle Refill Tap,-37.81261776692698,144.9683505786709,12.717259042852932
+352,118,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type - Bottle Refill Tap,-37.81191194838843,144.97076931535327,11.607296137734934
+353,118,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type,-37.81033905955521,144.9724239787079,14.545930321277607
+354,118,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type - Bottle Refill Tap,-37.81056708776496,144.96772094101254,15.462768423092552
+355,119,Drinking Fountain - Drinking Fountain - Lygon St Type,-37.79775185327968,144.96744736482995,8.905284610809348
+356,119,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type - Bottle Refill Tap,-37.80056485451508,144.9668454274885,10.53744762763914
+357,119,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type,-37.79701104423778,144.96719442537858,13.85005880148488
+358,120,Drinking Fountain - Leaf Type - Dog Bowl - Fawkner Park,-37.83991852159856,144.9812959600913,9.673444928533947
+359,120,Drinking Fountain - Leaf Type - Dog Bowl - Fawkner Park,-37.84340547205925,144.98237034518792,13.629346369918377
+360,120,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type - Fawkner Park,-37.83912302483119,144.98029597307354,16.773305497851972
+361,121,Drinking Fountain - Leaf Type - With Bottle Refill Tap - Fitzroy Gardens,-37.813586967977756,144.98034053985918,4.05460619772275
+362,121,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type - Bottle Refill Tap,-37.81276680167682,144.9815543655956,7.071939141902311
+363,121,Drinking Fountain - Leaf Type - With Bottle Refill Tap - Fitzroy Gardens,-37.81165168802,144.98072416956458,8.526278744955514
+364,122,Drinking Fountain - Leaf Type - With Bottle Refill Tap - Fitzroy Gardens,-37.813586967977756,144.98034053985918,6.2331135416567545
+365,122,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type,-37.81536210793982,144.97970486535712,7.51330738672717
+366,122,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type,-37.8148665286666,144.97934123758301,7.965449025629937
+367,123,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type - Bottle Refill Tap,-37.82024273028082,144.95962780503942,2.2315578994345806
+368,123,Drinking Fountain - Drinking Fountain - Type 1,-37.82018203006011,144.96060794598628,8.429434143172756
+369,123,Drinking Fountain - Drinking Fountain - Type 1,-37.819560089031846,144.96060041327846,9.350028466417573
+370,124,Drinking Fountain - Treated Timber Drinking Fountain - Batman Park,-37.82220232720067,144.956603131736,16.224426520990246
+371,124,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type - Bottle Refill Tap,-37.81906773607154,144.95451978482612,20.322458352305897
+372,124,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type - Bottle Refill Tap,-37.821867236140854,144.9572554993872,20.476617433585655
+373,125,Drinking Fountain - Drinking Fountain - Type 1,-37.819560089031846,144.96060041327846,2.6625735591149486
+374,125,Drinking Fountain - Drinking Fountain - Type 1,-37.82018203006011,144.96060794598628,6.493832850945846
+375,125,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type - Bottle Refill Tap,-37.82024273028082,144.95962780503942,8.458411144153086
+376,126,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type - Bottle Refill Tap,-37.817751132891175,144.96687276249168,7.213556000114496
+377,126,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type,-37.815447719564624,144.96705501075527,10.400073736809443
+378,126,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type,-37.817906690815356,144.96632571147111,10.516636721884579
+379,127,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type,-37.81678974689995,144.96933696934119,1.96631021551309
+380,127,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type,-37.81506309138496,144.9689920380753,9.409497304704265
+381,127,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type - Bottle Refill Tap,-37.81818027452629,144.97128244641144,16.15657071069873
+382,128,Drinking Fountain - Treated Timber Drinking Fountain - JJ Holland Park,-37.79892449188125,144.9259559284791,53.44425971934532
+383,128,Drinking Fountain - Leaf Type - Dog Bowl  - JJ Holland Park,-37.79841970759794,144.92421993826412,54.23562447209969
+384,128,Drinking Fountain - Treated Timber Drinking Fountain - JJ Holland Park,-37.798130093325604,144.92171759711218,56.64159790268658
+385,129,Drinking Fountain - Drinking Fountain - Monument Style Type 3,-37.808763201408944,144.97559991595182,1.8653660130946794
+386,129,Drinking Fountain - Old Style Steel Drinking Fountain,-37.80831892386757,144.97445245211898,6.0669133127409145
+387,129,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type - Parliament Reserve,-37.80980631970157,144.97383443627947,12.521440523716915
+388,130,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type - Bottle Refill Tap,-37.799615873678334,144.96425054146184,14.183885524867506
+389,130,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type,-37.79701104423778,144.96719442537858,19.435722566152027
+390,130,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type - Bottle Refill Tap,-37.80049198107528,144.96374391208968,19.932054908578966
+391,131,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type - Bottle Refill Tap,-37.81144127333385,144.9551162672695,14.18888452482816
+392,131,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type,-37.815185695578855,144.95257756009232,14.7063717911553
+393,131,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type - Bottle Refill Tap,-37.812622318799654,144.95695726799045,19.189890003423407
+394,132,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type,-37.810438177722986,144.96409803572945,8.569510633745516
+395,132,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type - Bottle Refill Tap,-37.811468256332006,144.9617506772221,8.68103029287104
+396,132,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type - Bottle Refill Tap,-37.81047950700537,144.9643462282214,10.126039299833305
+397,133,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type - Argyle Square,-37.802621217998535,144.96563804631614,3.4499460189657434
+398,133,Drinking Fountain - Drinking Fountain - Monument Style Type 2 - Argyle Square,-37.80282308235531,144.96630068198394,4.000482411852097
+399,133,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type - Bottle Refill Tap,-37.803371100927336,144.96636401763814,4.079410963141786
+400,134,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type - Argyle Square,-37.802621217998535,144.96563804631614,1.576393542865388
+401,134,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type - Argyle Square,-37.80225790808832,144.96613628041044,2.3921006345654723
+402,134,Drinking Fountain - Drinking Fountain - Monument Style Type 2 - Argyle Square,-37.80282308235531,144.96630068198394,3.3958297094068954
+403,135,Drinking Fountain - Drinking Fountain - Monument Style Type 2,-37.79825505675542,144.97056606707608,6.037041294523222
+404,135,Drinking Fountain - Drinking Fountain - Type 1,-37.80037327256486,144.97278944216202,15.330337115975368
+405,135,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type - Station Street Park,-37.79735923804568,144.9739862970034,16.872376650956237
+406,136,Drinking Fountain - Drinking Fountain - Type 1,-37.80037327256486,144.97278944216202,1.8264741143044956
+407,136,Drinking Fountain - Leaf Type - With Bottle Refill Tap - Carlton Gardens North,-37.80211398428,144.97283100368062,11.827586844123939
+408,136,Drinking Fountain - Leaf Type - With Bottle Refill Tap - Carlton Gardens North,-37.80241728553811,144.97202290316704,15.171917688710343
+409,137,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type - Parliament Reserve,-37.80980631970157,144.97383443627947,2.377975906992217
+410,137,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type - Bottle Refill Tap,-37.808993687538326,144.9728686722591,6.645910352706675
+411,137,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type,-37.81033905955521,144.9724239787079,7.27570046146879
+412,138,Drinking fountain - unspecified type - Gardiner Reserve,-37.7989933421049,144.94335952463908,6.098076019219276
+413,138,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type - Gardiner Reserve,-37.79889823757444,144.94401837483926,8.127801194424295
+414,138,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type - North Melbourne Recreation Reserve,-37.79922710932603,144.94028139112405,19.641424792678094
+415,139,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type - North Melbourne Recreation Reserve,-37.79922710932603,144.94028139112405,3.098218167005534
+416,139,Drinking fountain - unspecified type - Gardiner Reserve,-37.7989933421049,144.94335952463908,19.517652908004557
+417,139,Drinking Fountain - Leaf Type - Dog Bowl  - Clayton Reserve,-37.79690982991828,144.93887017448856,20.205250149479582
+418,140,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type - Reeves Street Park,-37.79376491305337,144.97024082502696,9.475855475631944
+419,140,Drinking Fountain - Drinking Fountain - Type 1,-37.79515817674436,144.97103807920558,11.742607941063264
+420,140,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type - Neill Street Reserve,-37.794860401126186,144.97032531494713,12.575203672894512
+421,141,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type - Bottle Refill Tap,-37.80774274876369,144.96308654177773,3.783187251838964
+422,141,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type,-37.807299202453336,144.9638063589646,4.01114069337702
+423,141,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type,-37.807863918393416,144.96107434937468,14.147483375686814
+424,142,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type - Ron Barassi Senior Park,-37.817146670578076,144.93410355599931,184.28148047852278
+425,142,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type - Wharfs Landing Park,-37.82210994675337,144.93666205920204,185.98853215397872
+426,142,Drinking Fountain - Unknown,-37.82217774773881,144.93826895163244,195.50807708446905
+427,143,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type,-37.8148665286666,144.97934123758301,2.7177241193427832
+428,143,Drinking Fountain - Leaf Type - With Bottle Refill Tap - Fitzroy Gardens,-37.81426414724787,144.97865144245154,5.343426592921053
+429,143,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type,-37.81536210793982,144.97970486535712,5.9377813090661204
+430,144,Drinking Fountain - Leaf Type - With Bottle Refill Tap - Fitzroy Gardens,-37.81426414724787,144.97865144245154,1.7692774521581531
+431,144,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type - Bottle Refill Tap,-37.81443644404849,144.97774297882825,5.8696142517349825
+432,144,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type,-37.8148665286666,144.97934123758301,7.410119272029997
+433,145,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type - Bottle Refill Tap,-37.82024273028082,144.95962780503942,8.888828464765847
+434,145,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type - Bottle Refill Tap,-37.821867236140854,144.9572554993872,9.388917592645825
+435,145,Drinking Fountain - Treated Timber Drinking Fountain - Batman Park,-37.82220232720067,144.956603131736,13.98606394844315
+436,146,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type - Bottle Refill Tap,-37.82337609495653,144.9798517032086,5.608240356484237
+437,146,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type - Kings Domain South,-37.82514308986054,144.97830100199906,10.649838678274206
+438,146,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type - Bottle Refill Tap,-37.82435043745128,144.9771113193355,16.523413051223432
+439,147,Drinking Fountain - Leaf Type - With Bottle Refill Tap - Carlton Gardens South,-37.80596124931496,144.97143107579004,8.684440321926084
+440,147,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type - Bottle Refill Tap,-37.80530265416531,144.96955831322754,13.229917583322147
+441,147,Drinking Fountain - Leaf Type - With Bottle Refill Tap - Carlton Gardens North,-37.80241728553811,144.97202290316704,14.295784536583952
+442,148,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type,-37.817671389742316,144.9462535088493,12.365968339216046
+443,148,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type,-37.81600813034881,144.94552203541383,12.551289255109277
+444,148,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type,-37.81841607031649,144.94658139539987,15.417137377370391
+445,149,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type - Bottle Refill Tap,-37.820099609077104,144.96520412105647,10.365830808942471
+446,149,Drinking Fountain - Stainless Steel Drinking Fountain - Northbank Type,-37.819376190936254,144.96425791163875,14.487865394968578
+447,149,Drinking Fountain - Stainless Steel Drinking Fountain - Northbank Type,-37.819334137771285,144.96443696866604,14.618433917955674
+448,150,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type - Bottle Refill Tap,-37.820991914185974,144.96174237939658,9.410973889067643
+449,150,Drinking Fountain - Stainless Steel Drinking Fountain - Northbank Type,-37.819376190936254,144.96425791163875,9.560011929090305
+450,150,Drinking Fountain - Stainless Steel Drinking Fountain - Northbank Type,-37.819334137771285,144.96443696866604,10.668605217325903
+451,151,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type,-37.81678974689995,144.96933696934119,5.501645741837108
+452,151,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type - Bottle Refill Tap,-37.817751132891175,144.96687276249168,13.947095669615878
+453,151,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type - Bottle Refill Tap,-37.81818027452629,144.97128244641144,14.472122363540855
+454,152,Drinking Fountain - Leaf Type - Dog Bowl  - Fitzroy Gardens,-37.81047413141583,144.98106657764444,5.1099879009716425
+455,152,Drinking Fountain - Leaf Type - With Bottle Refill Tap - Fitzroy Gardens,-37.810693329155406,144.983071937749,12.317707793939968
+456,152,Drinking Fountain - Leaf Type - With Bottle Refill Tap - Fitzroy Gardens,-37.81165168802,144.98072416956458,12.904471960398007
+457,153,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type,-37.813892178607055,144.96411208684842,2.5172779159611385
+458,153,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type - Bottle Refill Tap,-37.81402271325769,144.96377589639772,2.797566409297217
+459,153,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type,-37.81386555249958,144.96475087670643,5.9394634420352945
+460,154,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type,-37.813892178607055,144.96411208684842,4.049921586071956
+461,154,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type,-37.81386555249958,144.96475087670643,4.260302934906182
+462,154,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type - Bottle Refill Tap,-37.81402271325769,144.96377589639772,5.902769646104932
+463,155,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type - Bottle Refill Tap,-37.80221537212749,144.96301319081624,4.0108464058379845
+464,155,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type - Bottle Refill Tap,-37.804437684218314,144.9634305261689,11.32335171425457
+465,155,Drinking fountain - Historic or Heritage fountains - University Square,-37.8020146095429,144.96057239486782,14.742311246851434
+466,156,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type - Bottle Refill Tap,-37.81056708776496,144.96772094101254,9.675137077119139
+467,156,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type - Bottle Refill Tap,-37.81191194838843,144.97076931535327,12.160567606075922
+468,156,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type - Bottle Refill Tap,-37.81261776692698,144.9683505786709,13.05497264158888
+469,157,Drinking Fountain - Drinking Fountain - Type 1,-37.81522141134258,144.96172628554172,5.983260606104657
+470,157,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type,-37.81496922834551,144.9603504203926,11.3033135904683
+471,157,Drinking Fountain - Stainless Steel Drinking Fountain - Leaf Type,-37.8175239427856,144.96013037555608,13.093811399229514
