@@ -2,7 +2,7 @@
 * This is a simple JavaScript demonstration of how to call MapBox API to load the maps.
 * I have set the default configuration to enable the geocoder and the navigation control.
 * https://www.mapbox.com/mapbox-gl-js/example/popup-on-click/
-*
+* Copyrights Holder - Credits for the code
 * @author Jian Liew <jian.liew@monash.edu>
 */
 const TOKEN = "pk.eyJ1IjoiaGFyaXNoMTE1MCIsImEiOiJjazFndDJxMHMwMXBtM2JqdWNqMmpkdWozIn0.yspP5Uu6LV65-0HgIpNVUw";
