@@ -54,9 +54,9 @@ namespace CaringSquareApp
             //   consumerKey: "",
             //   consumerSecret: "");
 
-            app.UseFacebookAuthentication(
+            /*app.UseFacebookAuthentication(
                appId: "2547898805469848",
-               appSecret: "1d7af8f7eaff90d18ac1c471d20e69dd");
+               appSecret: "1d7af8f7eaff90d18ac1c471d20e69dd");*/
 
             //app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
             //{
