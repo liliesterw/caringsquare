@@ -1,23 +1,23 @@
 ,0
-0,Function/Conference/Exhibition Centre
-1,Art Gallery/Museum
-2,Synagogue
-3,"Outdoor Recreation Facility (Zoo, Golf Course)"
-4,Theatre Live
-5,Retail
-6,Department Store
-7,Informal Outdoor Facility (Park/Garden/Reserve)
-8,Library
-9,Gymnasium/Health Club
-10,Church
+0,Cinema
+1,Church
+2,Retail/Office
+3,Retail/Office/Carpark
+4,Aquarium
+5,Department Store
+6,Function/Conference/Exhibition Centre
+7,Synagogue
+8,Informal Outdoor Facility (Park/Garden/Reserve)
+9,Private Sports Club/Facility
+10,Public Buildings
 11,Marina
-12,Major Sports & Recreation Facility
-13,Private Sports Club/Facility
-14,Public Buildings
-15,Observation Tower/Wheel
-16,Indoor Recreation Facility
-17,Aquarium
-18,Retail/Office
-19,Casino
-20,Cinema
-21,Retail/Office/Carpark
+12,Theatre Live
+13,Art Gallery/Museum
+14,Gymnasium/Health Club
+15,Library
+16,Casino
+17,Retail
+18,Observation Tower/Wheel
+19,Indoor Recreation Facility
+20,"Outdoor Recreation Facility (Zoo, Golf Course)"
+21,Major Sports & Recreation Facility
