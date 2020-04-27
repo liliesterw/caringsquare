@@ -62,20 +62,29 @@
 
             <nav class="nav-menu d-none d-lg-block">
                 <ul>
-                    @if (!User.Identity.IsAuthenticated){
+                    @if (!User.Identity.IsAuthenticated)
+                    {
                         <li>@Html.ActionLink("Home", "Index", "Home")</li>
                     }
-                    
+
                     @if (User.Identity.IsAuthenticated)
                     {
                         <li>@Html.ActionLink("Dashboard", "Dashboard", "Home")</li>
                     }
-                  
-                        <li>@Html.ActionLink("Knowledge Hub", "About", "Home")</li>
-                    
+
+                    <li>@Html.ActionLink("Knowledge Hub", "About", "Home")</li>
                     @if (User.Identity.IsAuthenticated)
                     {
                         <li>@Html.ActionLink("Event Spots", "Index", "POIs")</li>
+                    }
+                    else{
+                        <li>@Html.ActionLink("Event Spots", "Category", "POIs")</li>
+                     }
+                    
+
+                    @if (User.Identity.IsAuthenticated)
+                    {
+
                         <li>@Html.ActionLink("Friends List", "Index", "FriendLists")</li>
                         <li>@Html.ActionLink("Events List", "Index", "SocialEvents")</li>
                         <li>@Html.ActionLink("Participant List", "Index", "Participants")</li>
@@ -102,10 +111,17 @@
                 <ul class="nav navbar-nav">
                     <li>@Html.ActionLink("Knowledge Hub", "About", "Home")</li>
                     <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
-                    <li>@Html.ActionLink("Event Spots", "Index", "POIs")</li>
                     @if (User.Identity.IsAuthenticated)
                     {
 
+                    }
+                    else
+                    {
+                        <li>@Html.ActionLink("Event Spots", "Category", "POIs")</li>
+                    }
+                    @if (User.Identity.IsAuthenticated)
+                    {
+                        <li>@Html.ActionLink("Event Spots", "Index", "POIs")</li>
                         <li>@Html.ActionLink("Friends List", "Index", "FriendLists")</li>
                         <li>@Html.ActionLink("Events List", "Index", "SocialEvents")</li>
                         <li>@Html.ActionLink("Participant List", "Index", "Participants")</li>
@@ -145,16 +161,13 @@
 
 
     @Scripts.Render("~/bundles/jquery")
-    @Scripts.Render("~/bundles/jquery-3.5.0.js")
+    @Scripts.Render("~/Scripts/jquery-3.5.0.js")
     @Scripts.Render("~/Scripts/jquery.dataTables.min.js")
     @Scripts.Render("~/Scripts/dataTables.bootstrap4.min.js")
     @Scripts.Render("~/Scripts/jquery-ui-1.12.1.min.js")
     @Scripts.Render("~/bundles/bootstrap")
     @Scripts.Render("~/Scripts/bootstrap.bundle.js")
     @Scripts.Render("~/Scripts/jquery.easing.min.js")
-
-    <script src='http://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js'></script>
-    <link href='https://cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css' rel='stylesheet' />
 
 
     @Scripts.Render("~/Scripts/caringsquare.js")

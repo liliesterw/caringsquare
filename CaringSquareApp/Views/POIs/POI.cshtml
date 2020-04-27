@@ -1,4 +1,4 @@
-﻿@model IEnumerable<CaringSquareApp.Models.POIs>
+@model IEnumerable<CaringSquareApp.Models.POIs>
 
 @{
     ViewBag.Title = "Index";
@@ -43,9 +43,7 @@
                 @Html.DisplayNameFor(model => model.Longitude)
             </th>
 
-            <th>
-                @Html.DisplayNameFor(model => model.Category)
-            </th>
+           
             <th></th>
         </tr>
     </thead>
@@ -56,6 +54,7 @@
             <tr class="coordinates">
                 <td class="description">
                     @Html.DisplayFor(modelItem => item.Name)
+
                 </td>
                 <td>
                     @Html.DisplayFor(modelItem => item.Theme)
@@ -74,11 +73,18 @@
                     @Html.DisplayFor(modelItem => item.Longitude)
                 </td>
 
+              
                 <td>
-                    @Html.DisplayFor(modelItem => item.Category)
-                </td>
-                <td>
-                    @Html.ActionLink("Details", "Details", new { id = item.PlaceId, style = "font-weight: bold;" })
+                    @if (User.Identity.IsAuthenticated)
+                    {
+                        @Html.ActionLink("Details", "Details", new { id = item.PlaceId, style = "font-weight: bold;" })
+                    }
+                    else
+                    {
+                        @Html.ActionLink("Create Event", "Login", "Account", routeValues: null, htmlAttributes: new { id = "loginLink" })
+                    }
+
+
                 </td>
             </tr>
         }

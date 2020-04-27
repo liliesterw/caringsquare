@@ -1634,11 +1634,11 @@ section {
   background: #149f6e;
 }
 
-#footer .copyright {
-  border-top: 1px solid #010479;
-  text-align: center;
-  padding-top: 30px;
-}
+    #footer .copyright {
+        border-top: 1px solid #94d16a;
+        text-align: center;
+        padding-top: 30px;
+    }
 
 #footer .credits {
   padding-top: 10px;

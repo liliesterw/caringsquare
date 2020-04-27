@@ -1,0 +1,10 @@
+CaringSquareApp/App_Data
+CaringSquareApp/App_Start
+CaringSquareApp/bin
+CaringSquareApp/obj
+CaringSquareApp/packages
+CaringSquareApp/Properties
+
+CaringSquareApp/Web.config
+CaringSquareApp/Web.Debug.config
+CaringSquareApp/Web.Release.config

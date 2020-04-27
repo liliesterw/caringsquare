@@ -26,6 +26,55 @@ namespace CaringSquareApp.Controllers
             return View(shoppingLists);
         }
 
+        public ActionResult Category()
+        {
+            return View();
+        }
+        public ActionResult POI(int? id)
+        {
+            //{ "library", "cinema", "sport","hangout","religious","museum","park","shopping","bbq" }
+            var tempString = "";
+            if (id == 1)
+            {
+                tempString = "library";
+            }
+            else if(id == 2)
+            {
+                tempString = "cinema";
+            }
+            else if (id == 3)
+            {
+                tempString = "sport";
+            }
+            else if (id == 4)
+            {
+                tempString = "hangout";
+            }
+            else if (id == 5)
+            {
+                tempString = "religious";
+            }
+            else if (id == 6)
+            {
+                tempString = "museum";
+            }
+            else if (id == 7)
+            {
+                tempString = "park";
+            }
+            else if (id == 8)
+            {
+                tempString = "shopping";
+            }
+            else if (id == 9)
+            {
+                tempString = "bbq";
+            }
+
+            var poi_list = db.POIs.Where(s => s.Category.Contains(tempString)).ToList();
+            return View(poi_list);
+        }
+
         // GET: POIs/Details/5
         public ActionResult Details(int? id)
         {

@@ -181,39 +181,39 @@
                 weather_id = response.weather[0].id;
                 if (parseInt(weather_id / 100) == 8) {
                     if (weather_id == 801) {
-                        document.getElementById("icon-weather").className = "icofont-sunny";
+                        document.getElementById("icon-weather").className = "ri-sun-line";
                     }
                     else if (weather_id == 800) {
-                        document.getElementById("icon-weather").className = "icofont-sun";
+                        document.getElementById("icon-weather").className = "ri-sun-line";
                     }
                     else {
-                        document.getElementById("icon-weather").className = "icofont-cloudy";
+                        document.getElementById("icon-weather").className = "ri-cloudy-2-line";
                     }
                 }
                 else if (parseInt(weather_id / 100) == 7) {
                     if (response.weather[0].id == 781) {
-                        document.getElementById("icon-weather").className = "icofont-tornado";
+                        document.getElementById("icon-weather").className = "ri-tornado-line";
                     }
                     else {
-                        document.getElementById("icon-weather").className = "icofont-dust";
+                        document.getElementById("icon-weather").className = "ri-haze-2-fill";
                     }
                 }
                 else if (parseInt(weather_id / 100) == 6) {
                     if (response.weather[0].id < 615) {
-                        document.getElementById("icon-weather").className = "icofont-snow-flake";
+                        document.getElementById("icon-weather").className = "ri-snowy-fill";
                     }
                     else {
-                        document.getElementById("icon-weather").className = "icofont-hail-thunder";
+                        document.getElementById("icon-weather").className = "ri-thunderstorms-line";
                     }
                 }
                 else if (parseInt(weather_id / 100) == 5) {
-                    document.getElementById("icon-weather").className = "icofont-rainy";
+                    document.getElementById("icon-weather").className = "ri-showers-fill";
                 }
                 else if (parseInt(weather_id / 100) == 3) {
-                    document.getElementById("icon-weather").className = "icofont-rainy";
+                    document.getElementById("icon-weather").className = "ri-showers-fill";
                 }
                 else if (parseInt(weather_id / 100) == 2) {
-                    document.getElementById("icon-weather").className = "icofont-rainy-thunder";
+                    document.getElementById("icon-weather").className = "ri-thunderstorms-fill";
                 }
 
                 document.getElementById("weather-temp").innerHTML = parseInt(response.main.temp) + '<sup> o</sup> C';
