@@ -24,7 +24,7 @@ a:hover {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Montserrat", sans-serif;
-}
+}nn
 
 /*--------------------------------------------------------------
 # Preloader
@@ -307,7 +307,7 @@ h1, h2, h3, h4, h5, h6 {
   position: fixed;
   top: 55px;
   right: 15px;
-  bottom: 300px;
+  bottom: 250px;
   left: 15px;
   z-index: 9999;
   overflow-y: auto;

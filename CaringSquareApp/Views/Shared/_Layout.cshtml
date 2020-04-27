@@ -9,7 +9,7 @@
 
     @Styles.Render("~/Content/icofont.min.css")
     @Styles.Render("~/Content/boxicons.min.css")
-    @Styles.Render("~/Content/fonts/remixicon.css")
+    @Styles.Render("~/fonts/remixicon.css")
     @Styles.Render("~/Content/venobox.css")
     @Styles.Render("~/Content/aos.css")
     @Styles.Render("~/Content/owl.carousel.min.css")
@@ -62,16 +62,17 @@
 
             <nav class="nav-menu d-none d-lg-block">
                 <ul>
-                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                    @if (!User.Identity.IsAuthenticated){
+                        <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                    }
+                    
                     @if (User.Identity.IsAuthenticated)
                     {
                         <li>@Html.ActionLink("Dashboard", "Dashboard", "Home")</li>
                     }
-                    else
-                    {
+                  
                         <li>@Html.ActionLink("Knowledge Hub", "About", "Home")</li>
-                    }
-
+                    
                     @if (User.Identity.IsAuthenticated)
                     {
                         <li>@Html.ActionLink("Event Spots", "Index", "POIs")</li>
