@@ -22,7 +22,15 @@ namespace CaringSquareApp.Controllers
             //var userId = User.Identity.GetUserId();
             //var friendLists = db.FriendLists.Where(s => s.UserUserId == userId).ToList();
             //var friendLists = db.FriendLists.Include(f => f.AspNetUser);
-            return View(db.FriendLists.Where(x => x.UserUserId == x.AspNetUser.Id ).ToList());
+
+            var current_friend = (db.FriendLists.AsEnumerable().Select(p => p.UserUserId));
+            var data_temp = db.AspNetUsers.Where(x => !current_friend.Contains(x.Id)).ToList();
+
+            var userId = User.Identity.GetUserId();
+            var data = data_temp.Where(x => x.Id != userId);
+            ViewBag.UserUserId = new SelectList(data, "Id", "Email");
+
+            return View(db.FriendLists.ToList());
 
             //return View(friendLists);
         }
@@ -45,7 +53,12 @@ namespace CaringSquareApp.Controllers
         // GET: FriendLists/Create
         public ActionResult Create()
         {
-            ViewBag.UserUserId = new SelectList(db.AspNetUsers, "Id", "Email");
+            var current_friend = (db.FriendLists.AsEnumerable().Select(p => p.UserUserId));
+            var data_temp = db.AspNetUsers.Where(x => !current_friend.Contains(x.Id)).ToList();
+
+            var userId = User.Identity.GetUserId();
+            var data = data_temp.Where(x => x.Id != userId);
+            ViewBag.UserUserId = new SelectList(data, "Id", "Email");
             return View();
         }
 

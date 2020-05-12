@@ -30,7 +30,7 @@
                         <div class="box" data-aos="zoom-in" data-aos-delay="100">
 
                             <i id="icon-weather" class="icofont-sunny" style="font-size:100px"></i>
-
+                            
                             <h3 style="background-color:white">
                                 <span id="weather-temp" style="font-size:33px"></span><br />
                                 <br />
@@ -81,7 +81,7 @@
                         <div class="box" data-aos="zoom-in" data-aos-delay="100">
                             <div class="container">
                                 <div class="section-title" data-aos="fade-right">
-                                    <p style="font-size:24px"> <i class="ri-lightbulb-line"></i> Tip of the day </p>
+                                    <p style="font-size:24px"> <i class="ri-lightbulb-line"></i> Quote for the day! </p>
                                 </div>
                             </div>
                             <p>
@@ -104,24 +104,20 @@
                 <p>UP COMING EVENT</p>
             </div>
         </div>
-        
+
         <section id="testimonials" class="testimonials">
             <div class="container">
 
                 <div class="owl-carousel testimonials-carousel" data-aos="zoom-in">
                     @foreach (var item in Model)
                     {
-                    <div class="testimonial-item">
-                        <h3>@Html.DisplayFor(modelItem => item.EventName)</h3>
-                        <h4>@Html.DisplayFor(modelItem => item.EventDate)</h4>
-                        <h4>@Html.DisplayFor(modelItem => item.POIs.Address)</h4>
-                        <p>
-                            <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                            Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam
-                            <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                        </p>
-                    </div>
-                        
+                        <div class="testimonial-item">
+                            <h3>@Html.DisplayFor(modelItem => item.EventName)</h3>
+                            <h4>@Html.DisplayFor(modelItem => item.EventDate)</h4>
+                            <h4>@Html.DisplayFor(modelItem => item.POIs.Address)</h4>
+
+                        </div>
+
                     }
 
 
@@ -156,14 +152,14 @@
                     </div>
                     <div class="col-lg-6 col-md-6">
                         <br />
-                        <div class="icon-box" data-aos="zoom-in" data-aos-delay="150">
+                        <div class="icon-box" data-aos="zoom-in" data-aos-delay="150" onclick="window.location = '../Participants';">
                             <i class="ri-checkbox-circle-line" style="color: #e80368;"></i>
-                            <h3>Getting Started</h3>
+                            <h3>Join Event</h3>
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-6">
                         <br />
-                        <div class="icon-box" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="icon-box" data-aos="zoom-in" data-aos-delay="200" onclick="window.location = '../Home/About';">
                             <i class="ri-lightbulb-flash-line" style="color: #28a745;"></i>
                             <h3>Knowledge Hub</h3>
                         </div>
@@ -185,39 +181,39 @@
                 weather_id = response.weather[0].id;
                 if (parseInt(weather_id / 100) == 8) {
                     if (weather_id == 801) {
-                        document.getElementById("icon-weather").className = "icofont-sunny";
+                        document.getElementById("icon-weather").className = "ri-sun-line";
                     }
                     else if (weather_id == 800) {
-                        document.getElementById("icon-weather").className = "icofont-sun";
+                        document.getElementById("icon-weather").className = "ri-sun-line";
                     }
                     else {
-                        document.getElementById("icon-weather").className = "icofont-cloudy";
+                        document.getElementById("icon-weather").className = "ri-cloudy-2-line";
                     }
                 }
                 else if (parseInt(weather_id / 100) == 7) {
                     if (response.weather[0].id == 781) {
-                        document.getElementById("icon-weather").className = "icofont-tornado";
+                        document.getElementById("icon-weather").className = "ri-tornado-line";
                     }
                     else {
-                        document.getElementById("icon-weather").className = "icofont-dust";
+                        document.getElementById("icon-weather").className = "ri-haze-2-fill";
                     }
                 }
                 else if (parseInt(weather_id / 100) == 6) {
                     if (response.weather[0].id < 615) {
-                        document.getElementById("icon-weather").className = "icofont-snow-flake";
+                        document.getElementById("icon-weather").className = "ri-snowy-fill";
                     }
                     else {
-                        document.getElementById("icon-weather").className = "icofont-hail-thunder";
+                        document.getElementById("icon-weather").className = "ri-thunderstorms-line";
                     }
                 }
                 else if (parseInt(weather_id / 100) == 5) {
-                    document.getElementById("icon-weather").className = "icofont-rainy";
+                    document.getElementById("icon-weather").className = "ri-showers-fill";
                 }
                 else if (parseInt(weather_id / 100) == 3) {
-                    document.getElementById("icon-weather").className = "icofont-rainy";
+                    document.getElementById("icon-weather").className = "ri-showers-fill";
                 }
                 else if (parseInt(weather_id / 100) == 2) {
-                    document.getElementById("icon-weather").className = "icofont-rainy-thunder";
+                    document.getElementById("icon-weather").className = "ri-thunderstorms-fill";
                 }
 
                 document.getElementById("weather-temp").innerHTML = parseInt(response.main.temp) + '<sup> o</sup> C';
@@ -227,7 +223,6 @@
                 document.getElementById("weather-humidity").innerHTML = ' ' + response.main.humidity + '%';
                 document.getElementById("weather-pressure").innerHTML = response.main.pressure;
                 document.getElementById("weather-wind").innerHTML = ' ' + response.wind.speed;
-                console.log(response);
             })
         }
 

@@ -5,12 +5,13 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>Details</h2>
 
-<div>
-    <h4>POIs</h4>
+
+<div style = "margin-top:80px;margin-left:80px;margin-right:80px;">
+    <h2><strong>Details Page</strong></h2>
+    <h4><strong>Places of Interest in Melbourne</strong></h4>
     <hr />
-    <dl class="dl-horizontal"  id="detailslist">
+    <dl class="dl-horizontal" id="detailslist">
         <dt>
             @Html.DisplayNameFor(model => model.Name)
         </dt>
@@ -42,7 +43,7 @@
         <dd>
             @Html.DisplayFor(model => model.Address)
         </dd>
-
+        <!--
         <dt>
             @Html.DisplayNameFor(model => model.Latitude)
         </dt>
@@ -51,14 +52,14 @@
             @Html.DisplayFor(model => model.Latitude)
         </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Longitude)
-        </dt>
+    <dt>
+        @Html.DisplayNameFor(model => model.Longitude)
+    </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.Longitude)
-        </dd>
-
+    <dd>
+        @Html.DisplayFor(model => model.Longitude)
+    </dd>
+        -->
         <dt>
             @Html.DisplayNameFor(model => model.Category)
         </dt>
@@ -69,7 +70,7 @@
 
     </dl>
 </div>
-<p>
+<p style = "margin-bottom:80px;margin-left:80px;margin-right:80px;">
     @Html.ActionLink("Edit", "Edit", new { id = Model.PlaceId }) |
     @Html.ActionLink("Back to List", "Index")
 </p>

@@ -12,8 +12,8 @@
 {
     @Html.AntiForgeryToken()
     
-    <div class="form-horizontal">
-        <h4>SocialEvent</h4>
+    <div class="form-horizontal" style = "font-weight: bold;margin-top:80px;margin-left:80px;margin-right:80px;">
+        <h4><strong>SocialEvent</strong></h4>
         <hr />
         @Html.ValidationSummary(true, "", new { @class = "text-danger" })
         @Html.HiddenFor(model => model.EventId)
@@ -23,6 +23,9 @@
             <div class="col-md-10">
                 @Html.EditorFor(model => model.EventName, new { htmlAttributes = new { @class = "form-control" } })
                 @Html.ValidationMessageFor(model => model.EventName, "", new { @class = "text-danger" })
+                <p style="color:#31943b;margin-top:5px;font-weight: normal;">
+                    <strong>Tips:</strong>Type a name for your event eg.Shopping at Melbourne Central
+                </p>
             </div>
         </div>
 
@@ -31,6 +34,9 @@
             <div class="col-md-10">
                 @Html.EditorFor(model => model.EventDate, new { htmlAttributes = new { @class = "form-control" } })
                 @Html.ValidationMessageFor(model => model.EventDate, "", new { @class = "text-danger" })
+                <p style="color:#31943b;margin-top:5px;font-weight: normal;">
+                    <strong>Tips:</strong>Choose a date for your Event
+                </p>
             </div>
         </div>
 
@@ -39,11 +45,14 @@
             <div class="col-md-10">
                 @Html.EditorFor(model => model.EventTime, new { htmlAttributes = new { @class = "form-control" } })
                 @Html.ValidationMessageFor(model => model.EventTime, "", new { @class = "text-danger" })
+                <p style="color:#31943b;margin-top:5px;font-weight: normal;">
+                    <strong>Tips:</strong>Decide on the time
+                </p>
             </div>
         </div>
 
         <div class="form-group">
-            @Html.LabelFor(model => model.UserUserId, "UserUserId", htmlAttributes: new { @class = "control-label col-md-2" })
+            @Html.LabelFor(model => model.UserUserId, "User Name", htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
                 @Html.DropDownList("UserUserId", null, htmlAttributes: new { @class = "form-control" })
                 @Html.ValidationMessageFor(model => model.UserUserId, "", new { @class = "text-danger" })
@@ -51,22 +60,25 @@
         </div>
 
         <div class="form-group">
-            @Html.LabelFor(model => model.POIPlaceId, "POIPlaceId", htmlAttributes: new { @class = "control-label col-md-2" })
+            @Html.LabelFor(model => model.POIPlaceId, "Place Name", htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
                 @Html.DropDownList("POIPlaceId", null, htmlAttributes: new { @class = "form-control" })
                 @Html.ValidationMessageFor(model => model.POIPlaceId, "", new { @class = "text-danger" })
+                <p style="color:#31943b;margin-top:5px;font-weight: normal;">
+                    <strong>Tips:</strong>Decide on a Place, use Event Spots Menu option for an idea
+                </p>
             </div>
         </div>
 
         <div class="form-group">
             <div class="col-md-offset-2 col-md-10">
-                <input type="submit" value="Save" class="btn btn-default" />
+                <input type="submit" value="Save" id="buttonedit" class="btn btn-default" />
             </div>
         </div>
     </div>
 }
 
-<div>
+<div style = "margin-left:80px;margin-right:80px;">
     @Html.ActionLink("Back to List", "Index")
 </div>
 

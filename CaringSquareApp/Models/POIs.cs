@@ -34,7 +34,7 @@ namespace CaringSquareApp.Models
         public string Theme { get; set; }
 
         [Required]
-        [DisplayName("Sub Theme")]
+        [DisplayName("Place Theme")]
         public string SubTheme { get; set; }
 
         [Required]
@@ -50,12 +50,14 @@ namespace CaringSquareApp.Models
         public string Longitude { get; set; }
 
         [Required]
-        [DisplayName("Interest Category")]
+        [DisplayName("Interest ")]
         public string Category { get; set; }
-    
+
+
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<PublicToilet> PublicToilets { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<SocialEvent> SocialEvents { get; set; }
     }
+
 }

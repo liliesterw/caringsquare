@@ -17,6 +17,7 @@ namespace CaringSquareApp.Controllers
         // GET: POIs
         public ActionResult Index()
         {
+
             return View(db.POIs.ToList());
         }
 
@@ -39,6 +40,99 @@ namespace CaringSquareApp.Controllers
                 return HttpNotFound();
             }
             return View(pOIs);
+        }
+
+        public ActionResult Category()
+        {
+            return View();
+        }
+        public ActionResult POI(int? id)
+        {
+            //{ "library", "cinema", "sport","hangout","religious","museum","park","shopping","bbq" }
+            var tempString = "";
+            if (id == 1)
+            {
+                tempString = "cinema";
+            }
+            else if (id == 2)
+            {
+                tempString = "shopping";
+            }
+            else if (id == 3)
+            {
+                tempString = "sport";
+            }
+            else if (id == 4)
+            {
+                tempString = "hangout";
+            }
+            else if (id == 5)
+            {
+                tempString = "religious";
+            }
+            else if (id == 6)
+            {
+                tempString = "museum";
+            }
+            else if (id == 7)
+            {
+                tempString = "park";
+            }
+            else if (id == 8)
+            {
+                tempString = "library";
+            }
+            else if (id == 9)
+            {
+                tempString = "bbq";
+            }
+
+            var poi_list = db.POIs.Where(s => s.Category.Contains(tempString)).ToList();
+            return View(poi_list);
+        }
+
+        public ActionResult POICheckbox(string id)
+        {
+            var tempString = "";
+            if (id == "1")
+            {
+                tempString = "cinema";
+            }
+            else if (id == "2")
+            {
+                tempString = "shopping";
+            }
+            else if (id == "3")
+            {
+                tempString = "sport";
+            }
+            else if (id == "4")
+            {
+                tempString = "hangout";
+            }
+            else if (id == "5")
+            {
+                tempString = "religious";
+            }
+            else if (id == "6")
+            {
+                tempString = "museum";
+            }
+            else if (id == "7")
+            {
+                tempString = "park";
+            }
+            else if (id == "8")
+            {
+                tempString = "library";
+            }
+            else if (id == "9")
+            {
+                tempString = "bbq";
+            }
+
+            var poi_list = db.POIs.Where(s => s.Category.Contains(tempString)).ToList();
+            return View(poi_list);
         }
 
         // GET: POIs/Create
