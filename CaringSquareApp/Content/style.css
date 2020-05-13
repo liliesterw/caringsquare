@@ -177,7 +177,7 @@ h1, h2, h3, h4, h5, h6 {
   color: rgba(255, 255, 255, 0.7);
   padding: 10px 0 10px 25px;
   transition: 0.3s;
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 500;
   font-family: "Poppins", sans-serif;
 }
@@ -304,19 +304,19 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .mobile-nav {
-  position: fixed;
-  top: 55px;
-  right: 15px;
-  bottom: 300px;
-  left: 15px;
-  z-index: 9999;
-  overflow-y: auto;
-  background: #fff;
-  transition: ease-in-out 0.2s;
-  opacity: 0;
-  visibility: hidden;
-  border-radius: 10px;
-  padding: 10px 0;
+    position: fixed;
+    top: 55px;
+    right: 15px;
+    bottom: 250px;
+    left: 15px;
+    z-index: 9999;
+    overflow-y: auto;
+    background: #fff;
+    transition: ease-in-out 0.2s;
+    opacity: 0;
+    visibility: hidden;
+    border-radius: 10px;
+    padding: 10px 0;
 }
 
 .mobile-nav * {
@@ -1634,11 +1634,11 @@ section {
   background: #149f6e;
 }
 
-#footer .copyright {
-  border-top: 1px solid #010479;
-  text-align: center;
-  padding-top: 30px;
-}
+    #footer .copyright {
+        border-top: 1px solid #94d16a;
+        text-align: center;
+        padding-top: 30px;
+    }
 
 #footer .credits {
   padding-top: 10px;

@@ -11,7 +11,7 @@
 <div class="container">
     <h2>Details</h2>
 
-    <div>
+    <div id="element">
         <h4>SocialEvent</h4>
         <hr />
         <dl class="dl-horizontal" id="detailslist">
@@ -52,10 +52,22 @@
             </dt>
 
             <dd>
-                @Html.DisplayFor(model => model.POIs.Name)
+                @Html.DisplayFor(model => model.POIs.Name, new { id = "PlaceName" })
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.POIs.Address)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.POIs.Address, new { id = "PlaceAddress" })
             </dd>
 
         </dl>
+    </div>
+
+    <div>
+        <a href="/SocialEvents/Send_Email" id="share-event">Share Event with Friend</a>
     </div>
     <p>
         @Html.ActionLink("Edit", "Edit", new { id = Model.EventId }) |
@@ -64,3 +76,44 @@
 
 
 </div>
+
+<script>
+
+    function init() {
+            document.getElementById('share-event').addEventListener('click', event => {
+                event.preventDefault();
+
+                const dd = [...document.querySelectorAll('dl')].map(el => el.textContent).filter(Boolean).map(s => s.trim());
+
+                console.log(dd);
+
+                localStorage.setItem('__pageCache', JSON.stringify(dd));
+
+                document.location.href = event.target.getAttribute('href')
+            });
+    }
+
+    window.addEventListener('DOMContentLoaded', event => {
+        init();
+    });
+
+</script>
+<script src="jquery.js"></script>
+<script src="html2canvas.min.js"></script>
+<script src="canvas2image.js"></script>
+<script>
+    var tempElement = $('#element').get(0);
+    var lebar = "600";
+    var tinggi = "400";
+    var type = "png";
+    var fileName = "htmltoimage";
+    html2canvas(tempElement).then(function (canvas) {
+        var canWidth = canvas.width;
+        var canHeight = canvas.height;
+        var img = Canvas2Image.convertToImage(canvas, canWidth, canHeight);
+        $('#preview').after(img);
+        Canvas2Image.saveAsImage(canvas, lebar, tinggi, type, fileName);
+
+    });
+
+</script>

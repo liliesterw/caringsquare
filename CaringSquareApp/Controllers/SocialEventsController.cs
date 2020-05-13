@@ -7,6 +7,7 @@ using System.Net;
 using System.Web;
 using System.Web.Mvc;
 using CaringSquareApp.Models;
+using CaringSquareApp.Utils;
 using Microsoft.AspNet.Identity;
 
 namespace CaringSquareApp.Controllers
@@ -126,6 +127,73 @@ namespace CaringSquareApp.Controllers
             db.SocialEvents.Remove(socialEvent);
             db.SaveChanges();
             return RedirectToAction("Index");
+        }
+
+        public ActionResult Send_Email()
+        {
+            return View(new SendEmailViewModel());
+        }
+
+        [HttpPost]
+        public ActionResult Send_Email(SendEmailViewModel model)
+        {
+            if (ModelState.IsValid)
+            {
+                try
+                {
+                    String toEmail = model.ToEmail;
+                    String subject = model.Subject;
+                    String contents = model.Contents;
+
+
+                    EmailSender es = new EmailSender();
+                    es.Send(toEmail, subject, contents);
+
+                    ViewBag.Result = "Email has been send.";
+
+                    ModelState.Clear();
+
+                    return View(new SendEmailViewModel());
+                }
+                catch
+                {
+                    return View();
+                }
+            }
+
+            return View();
+        }
+
+        public ActionResult Send_Bulk_Email()
+        {
+            return View(new SendEmailViewModelMultipleRecepients());
+        }
+
+        [HttpPost]
+        public ActionResult Send_Bulk_Email(SendEmailViewModelMultipleRecepients model)
+        {
+            
+            if (ModelState.IsValid)
+            {
+                try
+                {
+                    var emails = model.ToEmail;
+                    List<String> toEmail = emails.ToList();
+                    String subject = model.Subject;
+                    String contents = model.Contents;
+                    EmailSender es = new EmailSender();
+                    es.SendBulkEmail(toEmail, subject, contents);
+                    ViewBag.Result = "Emails has been send.";
+                    ModelState.Clear();
+                    return View(new SendEmailViewModelMultipleRecepients());
+                }
+                catch
+                {
+                    return View();
+                }
+            }
+
+            return View();
         }
 
         protected override void Dispose(bool disposing)

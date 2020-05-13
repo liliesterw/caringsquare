@@ -40,7 +40,7 @@
                 @if (User.Identity.IsAuthenticated)
                 {
                     <h1 class="text-light">
-                        <a href="/Home/Dashboard">                           
+                        <a href="/Home/Dashboard">
                             <span><img style="height: 28px; width: 30px; border-radius: 30%;margin-right:5px;" src="~/img/CaringSquareLogo.png" />CaringSquare</span>
                         </a>
                     </h1>
@@ -78,7 +78,7 @@
                     }
                     else
                     {
-                        <li>@Html.ActionLink("Places List", "Category", "POIs")</li>
+                        <li>@Html.ActionLink("Places List", "Index", "POIs")</li>
                     }
 
 
@@ -94,43 +94,6 @@
 
         </div>
     </header><!-- End Header -->
-    <!--
-    <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                @Html.ActionLink("Caring Square", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
-            </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Knowledge Hub", "About", "Home")</li>
-                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
-                    @if (User.Identity.IsAuthenticated)
-                    {
-
-                    }
-                    else
-                    {
-                        <li>@Html.ActionLink("Event Spots", "Category", "POIs")</li>
-                    }
-                    @if (User.Identity.IsAuthenticated)
-                    {
-                        <li>@Html.ActionLink("Event Spots", "Index", "POIs")</li>
-                        <li>@Html.ActionLink("Friends List", "Index", "FriendLists")</li>
-                        <li>@Html.ActionLink("Events List", "Index", "SocialEvents")</li>
-                        <li>@Html.ActionLink("Participant List", "Index", "Participants")</li>
-                    }
-
-                    @Html.Partial("_LoginPartial")
-                </ul>
-            </div>
-        </div>
-    </div>
-    -->
 
     <div>
         @RenderBody()
@@ -167,7 +130,7 @@
     @Scripts.Render("~/Scripts/bootstrap.bundle.js")
     @Scripts.Render("~/Scripts/jquery.easing.min.js")
 
-
+    <script src="~/Scripts/tinymce/tinymce.min.js"></script>
     @Scripts.Render("~/Scripts/caringsquare.js")
     @Scripts.Render("~/Scripts/venobox.min.js")
     @Scripts.Render("~/Scripts/jquery.waypoints.min.js")

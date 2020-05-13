@@ -3,7 +3,6 @@
 @{
     ViewBag.Title = "Index";
     Layout = "~/Views/Shared/_Layout.cshtml";
-    ViewBag.Name = "Category";
 }
 <br />
 <br />
@@ -24,6 +23,47 @@
         </div>
     }
 
+    @using (Html.BeginForm("AddFilter", "POIs", FormMethod.Post))
+    {
+        @Html.AntiForgeryToken()
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="true" name="category1">
+            <label class="form-check-label" for="inlineCheckbox1">Cinema</label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="true" name="category2">
+            <label class="form-check-label" for="inlineCheckbox2">Shopping</label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="true" name="category3">
+            <label class="form-check-label" for="inlineCheckbox3">Sports</label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="true" name="category4">
+            <label class="form-check-label" for="inlineCheckbox4">Hangout</label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox5" value="true" name="category5">
+            <label class="form-check-label" for="inlineCheckbox5">Religious</label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox6" value="true" name="category6">
+            <label class="form-check-label" for="inlineCheckbox6">Museum</label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox7" value="true" name="category7">
+            <label class="form-check-label" for="inlineCheckbox7">Park</label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox8" value="true" name="category8">
+            <label class="form-check-label" for="inlineCheckbox8">Library</label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox9" value="true" name="category9">
+            <label class="form-check-label" for="inlineCheckbox9">Barbecue</label>
+        </div>
+        <input type="submit" value="Add Filters" />
+    }
     <table class="table" id="myTable">
         <thead>
             <tr>
@@ -89,17 +129,8 @@
 <script>
     window.onload = function () {
         $('#myTable').DataTable();
+        $('#myTable tbody tr:even').css('background-color', '#94d16a');
     };
-
-    function onSubmit() {
-        debugger;
-        var selected = $('input[name="category[]"]:checked').map(function () {
-            return $(this).val();
-        });
-
-        var selectedString = Array.from(selected).join(', ')
-        console.log(selectedString);
-    }
 
 </script>
 
