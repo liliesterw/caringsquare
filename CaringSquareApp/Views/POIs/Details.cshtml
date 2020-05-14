@@ -7,69 +7,75 @@
 
 
 
-<div style = "margin-top:80px;margin-left:80px;margin-right:80px;">
-    <h2><strong>Details Page</strong></h2>
-    <h4><strong>Places of Interest in Melbourne</strong></h4>
-    <hr />
-    <dl class="dl-horizontal" id="detailslist">
+    <div style="margin-top:80px;margin-left:80px;margin-right:80px;">
+        <h2><strong>Details Page</strong></h2>
+        <h4><strong>Places of Interest in Melbourne</strong></h4>
+        <hr />
+        <dl class="dl-horizontal" id="detailslist">
+            <dt>
+                @Html.DisplayNameFor(model => model.Name)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Name)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Theme)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Theme)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.SubTheme)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.SubTheme)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Address)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Address)
+            </dd>
+            <!--
+            <dt>
+                @Html.DisplayNameFor(model => model.Latitude)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Latitude)
+            </dd>
+
         <dt>
-            @Html.DisplayNameFor(model => model.Name)
+            @Html.DisplayNameFor(model => model.Longitude)
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.Name)
+            @Html.DisplayFor(model => model.Longitude)
         </dd>
+            -->
+            <dt>
+                @Html.DisplayNameFor(model => model.Category)
+            </dt>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Theme)
-        </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Category)
+            </dd>
 
-        <dd>
-            @Html.DisplayFor(model => model.Theme)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.SubTheme)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.SubTheme)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Address)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Address)
-        </dd>
-        <!--
-        <dt>
-            @Html.DisplayNameFor(model => model.Latitude)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Latitude)
-        </dd>
-
-    <dt>
-        @Html.DisplayNameFor(model => model.Longitude)
-    </dt>
-
-    <dd>
-        @Html.DisplayFor(model => model.Longitude)
-    </dd>
-        -->
-        <dt>
-            @Html.DisplayNameFor(model => model.Category)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Category)
-        </dd>
-
-    </dl>
-</div>
+        </dl>
+        @foreach (var item in Model.PublicToilets)
+        {
+            <p>@item.Name</p>
+            @item.Latitude
+            @item.Longitude
+        }
+    </div>
 <p style = "margin-bottom:80px;margin-left:80px;margin-right:80px;">
     @Html.ActionLink("Edit", "Edit", new { id = Model.PlaceId }) |
     @Html.ActionLink("Back to List", "Index")

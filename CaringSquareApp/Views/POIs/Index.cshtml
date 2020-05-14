@@ -131,20 +131,28 @@
     window.onload = function () {
         $('#myTable').DataTable();
         $('#myTable tbody tr:even').css('background-color', '#94d16a');
-
+        
         $('.mapcentre').on('click', function (e) {
             var placeName = $(this).closest('.coordinates').find('td').first().text().trim();
             var loc = locations.find(item => item.description === placeName) || { longitude: 0, latitude: 0};
-
-            console.log(placeName,loc)
 
             map.flyTo({
                 center: [
                     loc.longitude,
                     loc.latitude
                 ],
-                essential: true // this animation is considered essential with respect to prefers-reduced-motion
-             });
+                essential: true // this animation is considered essential with respect to prefers-reduced-motion 
+            });
+          
+            var coordinates = [loc.longitude, loc.latitude];
+            new mapboxgl.Popup()
+                .setLngLat(coordinates)
+                .setHTML(placeName)
+                .addTo(map);       
+            
+
+         
+            
 
         $('html,body').animate({ scrollTop: 0 })
 
