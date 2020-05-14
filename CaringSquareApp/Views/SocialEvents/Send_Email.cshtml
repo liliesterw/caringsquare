@@ -75,10 +75,10 @@
         function init() {
             var result = document.getElementById('Contents');
 
-            result.value = `Hello Friend,
-     Please find the details of the created Event. I would be happy if you could join me for the same.
-     Regards,
-     User`;
+            result.value = `Dear [Recipient Name],<br/>
+     Please find below the details of the Social Event. I would like to invite you to join me for the same.<br/>
+     Regards,<br/>
+     [Sender Name]<br/><br/>`;
 
             var text = "";
 
@@ -87,16 +87,12 @@
                 textArray = textArray[0].split('\n').map(g => g.trim()).filter(Boolean);
 
 
-                for (var i = 0; i <= textArray.length; i += 2) {
-                    text += `${textArray[i]}:  ${textArray[i + 1]} \n`
+                for (var i = 0; i < textArray.length; i += 2) {
+                    text += `<strong>${textArray[i]}</strong>:  ${textArray[i + 1]} <br/>\n`
 
                 }
             } catch (err) {
             }
-            // console.log(textArray);
-            // var tempHtml = textArray.map(text => `${text}`).join('');
-            // var textHtml = textArray.map(text => `<p>${text}</p>`).join('');
-            //console.log(tempHtml);
 
             console.log(text)
 

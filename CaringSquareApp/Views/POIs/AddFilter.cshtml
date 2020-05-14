@@ -38,7 +38,9 @@
                 <th style="display: none;">
                     @Html.DisplayNameFor(model => model.Longitude)
                 </th>
-
+                <th>
+                    @Html.DisplayNameFor(model => model.Category)
+                </th>
 
                 <th></th>
             </tr>
@@ -47,39 +49,42 @@
             @foreach (var item in Model)
             {
 
-                <tr class="coordinates">
-                    <td class="description">
-                        @Html.DisplayFor(modelItem => item.Name)
+            <tr class="coordinates">
+                <td class="description">
+                    @Html.DisplayFor(modelItem => item.Name)
 
-                    </td>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.SubTheme)
-                    </td>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.Address)
-                    </td>
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.SubTheme)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Address)
+                </td>
 
-                    <td class="latitude" style="display: none;">
-                        @Html.DisplayFor(modelItem => item.Latitude)
-                    </td>
-                    <td class="longitude" style="display: none;">
-                        @Html.DisplayFor(modelItem => item.Longitude)
-                    </td>
-
-
-                    <td>
-                        @if (User.Identity.IsAuthenticated)
-                        {
-                            @Html.ActionLink("Details", "Details", new { id = item.PlaceId, style = "font-weight: bold;" })
-                        }
-                        else
-                        {
-                            @Html.ActionLink("Create Event", "Login", "Account", routeValues: null, htmlAttributes: new { id = "loginLink" })
-                        }
+                <td class="latitude" style="display: none;">
+                    @Html.DisplayFor(modelItem => item.Latitude)
+                </td>
+                <td class="longitude" style="display: none;">
+                    @Html.DisplayFor(modelItem => item.Longitude)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Category)
+                </td>
 
 
-                    </td>
-                </tr>
+                <td>
+                    @if (User.Identity.IsAuthenticated)
+                    {
+                        @Html.ActionLink("Details", "Details", new { id = item.PlaceId, style = "font-weight: bold;" })
+                    }
+                    else
+                    {
+                        @Html.ActionLink("Create Event", "Login", "Account", routeValues: null, htmlAttributes: new { id = "loginLink" })
+                    }
+
+
+                </td>
+            </tr>
             }
         </tbody>
 
@@ -90,6 +95,7 @@
 <script>
     window.onload = function () {
         $('#myTable').DataTable();
+        $('#myTable tbody tr:even').css('background-color', '#94d16a');
     };
 </script>
 
