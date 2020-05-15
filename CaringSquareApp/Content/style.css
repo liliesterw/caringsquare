@@ -396,7 +396,7 @@ h1, h2, h3, h4, h5, h6 {
 --------------------------------------------------------------*/
 #hero {
   width: 100%;
-  background: url("../img/hero-bg.jpg");
+  background: url("../img/front2.jpg");
   position: relative;
   padding: 120px 0 0 0;
 }
@@ -404,7 +404,7 @@ h1, h2, h3, h4, h5, h6 {
     #hero:before {
         content: "";
         /*background: rgba(2, 5, 161, 0.91);*/
-        background: #94D16A;
+        background: rgba(148,209,106,0.3);
         position: absolute;
         bottom: 0;
         top: 0;
@@ -422,15 +422,19 @@ h1, h2, h3, h4, h5, h6 {
 
     #hero h1 span {
         color: #fff;
-        border-bottom: 4px solid #336699;
+        border-bottom: 4px solid #669966;
     }
+
+    
 
 #hero h2 {
   color: rgba(255, 255, 255, 0.8);
   margin-bottom: 40px;
   font-size: 24px;
 }
-
+    #hero h2 span {
+        border-bottom: 2px solid #669966;
+    }
 #hero .btn-get-started {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
@@ -467,7 +471,8 @@ h1, h2, h3, h4, h5, h6 {
     animation: none;
   }
   #hero .hero-img {
-    text-align: center;
+    text-align: right;
+    padding-left: 2em;
   }
   #hero .hero-img img {
     max-width: 50%;
@@ -767,7 +772,7 @@ section {
 }
 
 .about .play-btn:hover::before {
-  content: '';
+  content: 'D';
   position: absolute;
   left: 50%;
   top: 50%;
