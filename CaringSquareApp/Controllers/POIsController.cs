@@ -236,6 +236,12 @@ namespace CaringSquareApp.Controllers
             return View(newList);
         }
 
+        public ActionResult Login(string returnUrl)
+        {
+            ViewBag.ReturnUrl = returnUrl;
+            return View();
+        }
+
         protected override void Dispose(bool disposing)
         {
             if (disposing)

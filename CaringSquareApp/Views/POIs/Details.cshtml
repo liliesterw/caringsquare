@@ -111,11 +111,12 @@ Layout = "~/Views/Shared/_Layout.cshtml";
             <br /><br />
             @if (User.Identity.IsAuthenticated)
             {
-                <a href="/SocialEvents/Create" class="btn" style="background-color: #94d16a; margin-left:10px;font-weight:bold;">Create Event</a>
+
+                <a href="/SocialEvents/Create?place=@Html.DisplayFor(model => model.PlaceId)" class="btn" style="background-color: #94d16a; margin-left:10px;font-weight:bold;">Create Event</a>
             }
             else
             {
-                <a href="/Account/Login" class="btn" style="background-color: #94d16a; margin-left:10px;font-weight:bold;">Create Event</a>
+                <a href="/POIs/Login?place=@Html.DisplayFor(model => model.PlaceId)" class="btn" style="background-color: #94d16a; margin-left:10px;font-weight:bold;">Create Event</a>
             }
             <a href="/POIs" class="btn" style="color:#010483;background-color: #f7f7f7;border-color:#000000; margin-left:10px;font-weight:bold;">Back to List</a>
 

@@ -55,7 +55,7 @@
             <div class="form-group">
                 @Html.LabelFor(model => model.POIPlaceId, "Place Name", htmlAttributes: new { @class = "control-label col-md-2" })
                 <div class="col-md-10">
-                    @Html.DropDownList("POIPlaceId", null, htmlAttributes: new { @class = "form-control" })
+                    @Html.DropDownList("POIPlaceId", null, htmlAttributes: new { @class = "form-control", @id="place-drop-down" })
                     @Html.ValidationMessageFor(model => model.POIPlaceId, "", new { @class = "text-danger" })
                 </div>
             </div>
@@ -81,7 +81,11 @@
 </div>
 <script>
     window.onload = function () {
-   
+        var place = new URL(location.href).searchParams.get('place');
+
+        if (typeof place === 'string') {
+            document.getElementById('place-drop-down').value = place; 
+        }
 
             var date = new Date();
             var today = new Date(date.getFullYear(), date.getMonth(), date.getDate());
