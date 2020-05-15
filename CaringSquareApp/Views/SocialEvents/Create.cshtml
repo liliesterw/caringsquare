@@ -35,7 +35,10 @@
             <div class="form-group">
                 @Html.LabelFor(model => model.EventDate, htmlAttributes: new { @class = "control-label col-md-2" })
                 <div class="col-md-10">
-                    @Html.EditorFor(model => model.EventDate, new { htmlAttributes = new { @class = "form-control", id = "dateValue", type = "date" } })
+                   
+
+
+                    @Html.EditorFor(model => model.EventDate, new { htmlAttributes = new { @class = "form-control", id = "datepicker1" } })
                     @Html.ValidationMessageFor(model => model.EventDate, "", new { @class = "text-danger" })
                     <p style="color:#31943b;margin-top:5px;font-weight: normal;">
                         <strong>Tips:</strong>Choose a date for your Event
@@ -46,7 +49,7 @@
             <div class="form-group">
                 @Html.LabelFor(model => model.EventTime, htmlAttributes: new { @class = "control-label col-md-2" })
                 <div class="col-md-10">
-                    @Html.EditorFor(model => model.EventTime, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.EditorFor(model => model.EventTime, new { htmlAttributes = new { @class = "form-control", id = "timepicker1" } })
                     @Html.ValidationMessageFor(model => model.EventTime, "", new { @class = "text-danger" })
                     <p style="color:#31943b;margin-top:5px;font-weight: normal;">
                         <strong>Tips:</strong>Decide on the time
@@ -88,3 +91,34 @@
         @Scripts.Render("~/bundles/jqueryval")
     }
 </div>
+<script>
+    window.onload = function () {
+   
+
+            var date = new Date();
+            var today = new Date(date.getFullYear(), date.getMonth(), date.getDate());
+            var end = new Date(date.getFullYear(), date.getMonth(), date.getDate());
+
+            $('#datepicker1').datepicker({
+                format: "mm/dd/yyyy",
+                todayHighlight: true,
+                startDate: today,
+                endDate: end,
+                minDate:0,
+                autoclose: true
+            });
+
+            $('#datepicker1').datepicker('setDate', today);
+
+        $('#timepicker1').timepicker({
+            timeFormat: "h:i A",
+            step: 60,
+            minTime: '6',
+            maxTime: '11:00pm',
+            'forceRoundTime': false
+     
+        });
+   
+
+    }
+</script>
