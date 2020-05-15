@@ -22,6 +22,7 @@ $(".coordinates").each(function () {
     // Push them all into an array.
     locations.push(point);
 });
+console.log(locations);
 var data = [];
 for (i = 0; i < locations.length; i++) {
     var feature = {
