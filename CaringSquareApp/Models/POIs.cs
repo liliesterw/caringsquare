@@ -50,7 +50,7 @@ namespace CaringSquareApp.Models
         public string Longitude { get; set; }
 
         [Required]
-        [DisplayName("Interest ")]
+        [DisplayName("Category ")]
         public string Category { get; set; }
 
 

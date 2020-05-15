@@ -224,6 +224,18 @@ namespace CaringSquareApp.Controllers
             return View(newList);
         }
 
+        public ActionResult AdvancedSearch(string PlaceName, string StreetName)
+        {
+            Console.WriteLine("Our total" + PlaceName);
+            Console.WriteLine("Our total" + StreetName);
+            var poi_list1 = db.POIs.Where(s => s.Name.Contains(PlaceName)).ToList();
+            //var poi_list2 = 
+            var newList = poi_list1;
+            if(StreetName != "")
+                newList = db.POIs.Where(s => s.Address.Contains(StreetName)).ToList();
+            return View(newList);
+        }
+
         protected override void Dispose(bool disposing)
         {
             if (disposing)

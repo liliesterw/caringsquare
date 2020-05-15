@@ -4,82 +4,82 @@
     ViewBag.Title = "Details";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-<br />
-<br />
-<br />
-<br />
-<div class="container">
-    <h2>Details</h2>
 
-    <div id="element">
-        <h4>SocialEvent</h4>
-        <hr />
-        <dl class="dl-horizontal" id="detailslist">
-            <dt>
-                @Html.DisplayNameFor(model => model.EventName)
-            </dt>
+<section id="contact" class="contact">
+    <div class="container">
+        <h2 id="freshtitle">Details of your Social Event</h2>
 
-            <dd>
-                @Html.DisplayFor(model => model.EventName)
-            </dd>
+        <div id="element">
+            <hr />
+            <dl class="dl-horizontal" id="detailslist">
+                <dt style="padding: 0 0 0 60px;font-size: 22px;font-weight: 600;margin-bottom: 5px;color: #010483;">
+                    @Html.DisplayNameFor(model => model.EventName)
+                </dt>
 
-            <dt>
-                @Html.DisplayNameFor(model => model.EventDate)
-            </dt>
+                <dd style="color: #444;font-weight:bold;padding: 0 0 0 70px;">
+                    @Html.DisplayFor(model => model.EventName)
+                </dd>
 
-            <dd>
-                @Html.DisplayFor(model => model.EventDate)
-            </dd>
+                <dt style="padding: 0 0 0 60px;font-size: 22px;font-weight: 600;margin-bottom: 5px;color: #010483;">
+                    @Html.DisplayNameFor(model => model.EventDate)
+                </dt>
 
-            <dt>
-                @Html.DisplayNameFor(model => model.EventTime)
-            </dt>
+                <dd style="color: #444;font-weight:bold;padding: 0 0 0 70px;">
+                    @Html.DisplayFor(model => model.EventDate)
+                </dd>
 
-            <dd>
-                @Html.DisplayFor(model => model.EventTime)
-            </dd>
+                <dt style="padding: 0 0 0 60px;font-size: 22px;font-weight: 600;margin-bottom: 5px;color: #010483;">
+                    @Html.DisplayNameFor(model => model.EventTime)
+                </dt>
 
-            <dt>
-                @Html.DisplayNameFor(model => model.AspNetUser.Email)
-            </dt>
+                <dd style="color: #444;font-weight:bold;padding: 0 0 0 70px;">
+                    @Html.DisplayFor(model => model.EventTime)
+                </dd>
 
-            <dd>
-                @Html.DisplayFor(model => model.AspNetUser.Email)
-            </dd>
+                <dt style="padding: 0 0 0 60px;font-size: 22px;font-weight: 600;margin-bottom: 5px;color: #010483;">
+                    @Html.DisplayNameFor(model => model.AspNetUser.Email)
+                </dt>
 
-            <dt>
-                @Html.DisplayNameFor(model => model.POIs.Name)
-            </dt>
+                <dd style="color: #444;font-weight:bold;padding: 0 0 0 70px;">
+                    @Html.DisplayFor(model => model.AspNetUser.Email)
+                </dd>
 
-            <dd>
-                @Html.DisplayFor(model => model.POIs.Name, new { id = "PlaceName" })
-            </dd>
+                <dt style="padding: 0 0 0 60px;font-size: 22px;font-weight: 600;margin-bottom: 5px;color: #010483;">
+                    @Html.DisplayNameFor(model => model.POIs.Name)
+                </dt>
 
-            <dt>
-                @Html.DisplayNameFor(model => model.POIs.Address)
-            </dt>
+                <dd style="color: #444;font-weight:bold;padding: 0 0 0 70px;">
+                    @Html.DisplayFor(model => model.POIs.Name, new { id = "PlaceName" })
+                </dd>
 
-            <dd>
-                @Html.DisplayFor(model => model.POIs.Address, new { id = "PlaceAddress" })
-            </dd>
+                <dt style="padding: 0 0 0 60px;font-size: 22px;font-weight: 600;margin-bottom: 5px;color: #010483;">
+                    @Html.DisplayNameFor(model => model.POIs.Address)
+                </dt>
 
-        </dl>
+                <dd style="color: #444;font-weight:bold;padding: 0 0 0 70px;">
+                    @Html.DisplayFor(model => model.POIs.Address, new { id = "PlaceAddress" })
+                </dd>
+
+            </dl>
+        </div>
+
+        <div>
+            <a href="/SocialEvents/Send_Email" id="share-event" class="btn" style="background-color: #94d16a; margin-left:60px;font-weight:bold;">Share Event By Email</a>
+            <br/><br/>
+
+        </div>
+        <p>
+            @Html.ActionLink("Edit This Event", "Edit", new { id = Model.EventId }, new { @class = "btn", @style = "color:#010483;background-color: #f7f7f7; border-color:#000000;margin-left:10px;font-weight:bold;" })
+            <a href="/SocialEvents" class="btn" style="color:#010483; background-color:#f7f7f7; border-color:#000000;margin-left:10px;font-weight:bold;">Back to Event List</a>
+        </p>
+
+
     </div>
+    </section>
 
-    <div>
-        <a href="/SocialEvents/Send_Email" id="share-event" style="background-color: #94d16a; margin-left:10px;">Share Event with Friend</a>
-    </div>
-    <p>
-        @Html.ActionLink("Edit", "Edit", new { id = Model.EventId }) |
-        @Html.ActionLink("Back to List", "Index")
-    </p>
+    <script>
 
-
-</div>
-
-<script>
-
-    function init() {
+        function init() {
             document.getElementById('share-event').addEventListener('click', event => {
                 event.preventDefault();
 
@@ -91,29 +91,29 @@
 
                 document.location.href = event.target.getAttribute('href')
             });
-    }
+        }
 
-    window.addEventListener('DOMContentLoaded', event => {
-        init();
-    });
+        window.addEventListener('DOMContentLoaded', event => {
+            init();
+        });
 
-</script>
-<script src="jquery.js"></script>
-<script src="html2canvas.min.js"></script>
-<script src="canvas2image.js"></script>
-<script>
-    var tempElement = $('#element').get(0);
-    var lebar = "600";
-    var tinggi = "400";
-    var type = "png";
-    var fileName = "htmltoimage";
-    html2canvas(tempElement).then(function (canvas) {
-        var canWidth = canvas.width;
-        var canHeight = canvas.height;
-        var img = Canvas2Image.convertToImage(canvas, canWidth, canHeight);
-        $('#preview').after(img);
-        Canvas2Image.saveAsImage(canvas, lebar, tinggi, type, fileName);
+    </script>
+    <script src="jquery.js"></script>
+    <script src="html2canvas.min.js"></script>
+    <script src="canvas2image.js"></script>
+    <script>
+        var tempElement = $('#element').get(0);
+        var lebar = "600";
+        var tinggi = "400";
+        var type = "png";
+        var fileName = "htmltoimage";
+        html2canvas(tempElement).then(function (canvas) {
+            var canWidth = canvas.width;
+            var canHeight = canvas.height;
+            var img = Canvas2Image.convertToImage(canvas, canWidth, canHeight);
+            $('#preview').after(img);
+            Canvas2Image.saveAsImage(canvas, lebar, tinggi, type, fileName);
 
-    });
+        });
 
-</script>
+    </script>

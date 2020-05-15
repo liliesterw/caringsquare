@@ -42,7 +42,7 @@ mapboxgl.accessToken = TOKEN;
 var map = new mapboxgl.Map({
     container: 'map',
     style: 'mapbox://styles/mapbox/streets-v10',
-    zoom: 11,
+    zoom: 13,
     center: [locations[0].longitude, locations[0].latitude]
 });
 map.on('load', function () {

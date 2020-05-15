@@ -62,7 +62,7 @@ Layout = "~/Views/Shared/_Layout.cshtml";
                                                 }
                                                 else
                                                 {
-                                                        <span style="display:inline; color:white" class="icofont-wheelchair"></span>  
+                                                    <span style="display:inline; color:white" class="icofont-wheelchair"></span>
                                                 }
 
                                                 @final_name
@@ -86,13 +86,13 @@ Layout = "~/Views/Shared/_Layout.cshtml";
                                     if (feature_name[0] != "Public Toilet ")
                                     {
                                         final_name = feature_name[1];
-                                    <div class="coordinates">
-                                        <p><span style="display:inline; color:green" class="icofont-caret-right"></span>@final_name</p>
-                                        <p hidden class="toilet_name">W- @final_name </p>
-                                        <p hidden class="latitude">@item.Latitude</p>
-                                        <p hidden class="longitude"> @item.Longitude</p>
+                                        <div class="coordinates">
+                                            <p><span style="display:inline; color:green" class="icofont-caret-right"></span>@final_name</p>
+                                            <p hidden class="toilet_name">W- @final_name </p>
+                                            <p hidden class="latitude">@item.Latitude</p>
+                                            <p hidden class="longitude"> @item.Longitude</p>
                                         </div>
-                                }
+                                    }
 
 
                                 }
@@ -108,14 +108,19 @@ Layout = "~/Views/Shared/_Layout.cshtml";
 
 
             </div>
-
+            <br /><br />
+            @if (User.Identity.IsAuthenticated)
+            {
+                <a href="/SocialEvents/Create" class="btn" style="background-color: #94d16a; margin-left:10px;font-weight:bold;">Create Event</a>
+            }
+            else
+            {
+                <a href="/Account/Login" class="btn" style="background-color: #94d16a; margin-left:10px;font-weight:bold;">Create Event</a>
+            }
+            <a href="/POIs" class="btn" style="color:#010483;background-color: #f7f7f7;border-color:#000000; margin-left:10px;font-weight:bold;">Back to List</a>
 
         </div>
-    <br /><br />
-        <p style="margin-bottom:80px;margin-left:80px;margin-right:80px;">
-            @Html.ActionLink("Edit", "Edit", new { id = Model.PlaceId }) |
-            @Html.ActionLink("Back to List", "Index")
-        </p>
+    
     </section><!-- End Contact Section -->
 
 

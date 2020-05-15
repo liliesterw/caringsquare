@@ -11,7 +11,7 @@
 <br />
 <br />
 <div class="container">
-    <h2>@ViewBag.Title</h2>
+    <h2 id="freshtitle">@ViewBag.Title</h2>
 
 
     @using (Html.BeginForm())
@@ -24,25 +24,16 @@
             <div class="form-group">
                 @Html.LabelFor(model => model.EventName, htmlAttributes: new { @class = "control-label col-md-2" })
                 <div class="col-md-10">
-                    @Html.EditorFor(model => model.EventName, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.EditorFor(model => model.EventName, new { htmlAttributes = new { @class = "form-control", placeholder="eg. Yoga at Park, Visit to Museum" } })
                     @Html.ValidationMessageFor(model => model.EventName, "", new { @class = "text-danger" })
-                    <p style="color:#31943b;margin-top:5px;font-weight: normal;">
-                        <strong>Tips:</strong>Type a name for your event eg.Shopping at Melbourne Central
-                    </p>
                 </div>
             </div>
 
             <div class="form-group">
                 @Html.LabelFor(model => model.EventDate, htmlAttributes: new { @class = "control-label col-md-2" })
                 <div class="col-md-10">
-                   
-
-
                     @Html.EditorFor(model => model.EventDate, new { htmlAttributes = new { @class = "form-control", id = "datepicker1" } })
                     @Html.ValidationMessageFor(model => model.EventDate, "", new { @class = "text-danger" })
-                    <p style="color:#31943b;margin-top:5px;font-weight: normal;">
-                        <strong>Tips:</strong>Choose a date for your Event
-                    </p>
                 </div>
             </div>
 
@@ -51,9 +42,6 @@
                 <div class="col-md-10">
                     @Html.EditorFor(model => model.EventTime, new { htmlAttributes = new { @class = "form-control", id = "timepicker1" } })
                     @Html.ValidationMessageFor(model => model.EventTime, "", new { @class = "text-danger" })
-                    <p style="color:#31943b;margin-top:5px;font-weight: normal;">
-                        <strong>Tips:</strong>Decide on the time
-                    </p>
                 </div>
             </div>
 
@@ -69,23 +57,23 @@
                 <div class="col-md-10">
                     @Html.DropDownList("POIPlaceId", null, htmlAttributes: new { @class = "form-control" })
                     @Html.ValidationMessageFor(model => model.POIPlaceId, "", new { @class = "text-danger" })
-                    <p style="color:#31943b;margin-top:5px;font-weight: normal;">
-                        <strong>Tips:</strong>Decide on a Place, use Event Spots Menu option for an idea
-                    </p>
                 </div>
             </div>
 
             <div class="form-group">
                 <div class="col-md-offset-2 col-md-10">
-                    <input type="submit" value="Create" id="buttonedit" class="btn btn-default" />
+                    <input style="background-color:#94d16a;font-weight:bold;color:#000000" type="submit" id="buttonedit" class="btn btn-default" value="Create" />
+                    <br /><br />
                 </div>
             </div>
         </div>
     }
 
-    <div>
-        @Html.ActionLink("Back to List", "Index")
-    </div>
+<div>
+    <a href="/POIs" class="btn btn-default" style="color:#010483;background-color: #f7f7f7;border-color:#000000; margin-left:10px;margin-right:10px;font-weight:bold;">Explore Places</a>
+    @Html.ActionLink("Back to List", "Index", new { }, new { @class = "btn", @style = "color:#010483;background-color: #f7f7f7; border-color:#000000;font-weight:bold;" })
+
+</div>
 
     @section Scripts {
         @Scripts.Render("~/bundles/jqueryval")

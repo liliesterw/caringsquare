@@ -10,11 +10,22 @@
 <br />
 <br />
 <div class="container">
-    <h2>Create Social Events</h2>
-
+    <h2 id="freshtitle">Your Social Events Page</h2>
+    <hr />
     <p>
-        @Html.ActionLink("Create New Social Event", "Create")
+        <div class="text-center text-lg-left">
+            <h5 style="font-weight:bold;margin-bottom:20px;">
+                
+            </h5>
+            <a href="/SocialEvents/Create" class="btn" style="background-color: #94d16a;font-weight:bold;">Create New Social Event</a>
+            <a href="/POIs" class="btn" style="color:#010483;background-color: #f7f7f7;border-color:#000000; margin-left:10px;font-weight:bold;">Explore Places</a>
+        </div>
     </p>
+    <div class="text-center text-lg-left">
+        <h5 style="font-weight:bold;margin-bottom:10px;margin-top:40px;">
+            View Your Personal Social Events:
+        </h5>
+    </div>
     <table class="table" id="myTable">
         <thead>
             <tr>
@@ -50,9 +61,9 @@
                         @Html.DisplayFor(modelItem => item.POIs.Name)
                     </td>
                     <td>
-                        @Html.ActionLink("Edit", "Edit", new { id = item.EventId }) |
-                        @Html.ActionLink("Share Event", "Details", new { id = item.EventId }) |
-                        @Html.ActionLink("Delete", "Delete", new { id = item.EventId })
+                        @Html.ActionLink("Edit", "Edit", new { id = item.EventId }, new { @style = "font-weight:bold;" }) |
+                        @Html.ActionLink("Share Event", "Details", new { id = item.EventId }, new { @style = "font-weight:bold;" }) |
+                        @Html.ActionLink("Delete", "Delete", new { id = item.EventId }, new { @style = "font-weight:bold;" })
                     </td>
                 </tr>
             }
