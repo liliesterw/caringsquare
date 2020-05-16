@@ -29,13 +29,15 @@
     <table class="table" id="myTable">
         <thead>
             <tr>
-                <th>
+                <th hidden ></th>
+                <th >
                     @Html.DisplayNameFor(model => model.Name)
                 </th>
-                <th>
+                
+                <th hidden>
                     @Html.DisplayNameFor(model => model.SubTheme)
                 </th>
-                <th>
+                <th hidden>
                     @Html.DisplayNameFor(model => model.Address)
                 </th>
 
@@ -49,49 +51,44 @@
                     @Html.DisplayNameFor(model => model.Category)
                 </th>
 
-                <th></th>
+                <th>Action</th>
             </tr>
         </thead>
         <tbody>
             @foreach (var item in Model)
             {
+            <tr class="coordinates">
+                <td class="description" hidden>
+                    @Html.DisplayFor(modelItem => item.Name)
+                </td>
+                <td hidden>
+                    @Html.DisplayFor(modelItem => item.SubTheme)
+                </td>
+                <td hidden>
+                    @Html.DisplayFor(modelItem => item.Address)
+                </td>
 
-                <tr class="coordinates">
-                    <td class="description">
-                        @Html.DisplayFor(modelItem => item.Name)
+                <td class="latitude" hidden>
+                    @Html.DisplayFor(modelItem => item.Latitude)
+                </td>
+                <td class="longitude" hidden>
+                    @Html.DisplayFor(modelItem => item.Longitude)
+                </td>
+                <td>
+                    <strong style="font-size:1.2em">@Html.DisplayFor(modelItem => item.Name)</strong> <br />
+                    <i class="ri-information-line"></i>  @Html.DisplayFor(modelItem => item.SubTheme) <br />
+                    <i class="ri-map-pin-2-fill"></i>  @Html.DisplayFor(modelItem => item.Address) <br /><br />
+                </td>
+                
 
-                    </td>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.SubTheme)
-                    </td>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.Address)
-                    </td>
-
-                    <td class="latitude" style="display: none;">
-                        @Html.DisplayFor(modelItem => item.Latitude)
-                    </td>
-                    <td class="longitude" style="display: none;">
-                        @Html.DisplayFor(modelItem => item.Longitude)
-                    </td>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.Category)
-                    </td>
-
-
-                    <td>
-                        @if (User.Identity.IsAuthenticated)
-                        {
-                            @Html.ActionLink("Details", "Details", new { id = item.PlaceId, style = "font-weight: bold;" })
-                        }
-                        else
-                        {
-                            @Html.ActionLink("Create Event", "Login", "Account", routeValues: null, htmlAttributes: new { id = "loginLink" })
-                        }
-
-
-                    </td>
-                </tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Category)
+                </td>
+                <td>
+                    <a href="/POIs/Details/@item.PlaceId" style="background-color: #31943b; color: #ffffff; border-radius:50px" class="btn btn-default"><i class="ri-information-line"></i> View Detail</a>
+                    <a style="background-color: #0f15a3; color: #ffffff;  border-radius:50px" class="mapcentre btn"><i class="ri-road-map-fill"></i> Pin on Map</a>
+                </td>
+            </tr>
             }
         </tbody>
 
@@ -103,6 +100,42 @@
     window.onload = function () {
         $('#myTable').DataTable();
         $('#myTable tbody tr:even').css('background-color', '#94d16a');
+        var prevMapbox = null;
+
+        $('.mapcentre').on('click', function (e) {
+            var elementExists = document.getElementById("find-me");
+            var trsText = Array.from($(this).closest('tr').find('td').map((i, el) => $(el).text().trim()).slice(0, 3));
+            var placeName = trsText[0];
+            console.log(trsText);
+            var placeName = $(this).closest('.coordinates').find('td').first().text().trim();
+            console.log(placeName);
+            var loc = locations.find(item => item.description === placeName) || { longitude: 0, latitude: 0 };
+
+            prevMapbox?.remove()
+
+            console.log(trsText)
+
+            map.flyTo({
+                center: [
+                    loc.longitude,
+                    loc.latitude
+                ],
+                essential: true // this animation is considered essential with respect to prefers-reduced-motion 
+            });
+
+            var coordinates = [loc.longitude, loc.latitude];
+
+            var mapboxHTML = trsText.map(t => `<p>${t}</p>`).join('');
+
+            prevMapbox = new mapboxgl.Popup()
+
+            prevMapbox.setLngLat(coordinates)
+                .setHTML(mapboxHTML)
+                .addTo(map);
+
+            $('html,body').animate({ scrollTop: 0 })
+
+        })
     };
 </script>
 

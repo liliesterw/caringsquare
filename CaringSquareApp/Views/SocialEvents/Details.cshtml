@@ -90,13 +90,13 @@
             <div class="col-lg-7" data-aos="fade-right" data-aos-delay="100">
                 <div class="section-title" data-aos="fade-up">
 
-                    <p class="main_name">@Html.DisplayFor(model => model.EventName)</p>
+                    <p >@Html.DisplayFor(model => model.EventName)</p>
                     <p style="font-size:1em">By: @Html.DisplayFor(model => model.AspNetUser.Email.Split('@')[0])</p>
                 </div>
                 <div class="info">
                     <div class="address">
                         <i class="ri-map-2-fill"></i>
-                        <h4>@Html.DisplayFor(model => model.POIs.Name)</h4>
+                        <h4 class="main_name">@Html.DisplayFor(model => model.POIs.Name)</h4>
                         <h4 style="font-size:1em">@Html.DisplayFor(model => model.POIs.Address)</h4>
                         <p hidden class="main_lat">@Html.DisplayFor(model => model.POIs.Latitude)</p>
                         <p hidden class="main_lon">@Html.DisplayFor(model => model.POIs.Longitude)</p>

@@ -11,7 +11,7 @@ Layout = "~/Views/Shared/_Layout.cshtml";
 
             <div class="section-title" data-aos="fade-up">
                 <h2>Name of Place</h2>
-                <p class="main_name">@Html.DisplayFor(model => model.Name)</p>
+                <p >@Html.DisplayFor(model => model.Name)</p>
                 <h5>@Html.DisplayFor(model => model.SubTheme)</h5>
             </div>
 
@@ -36,7 +36,7 @@ Layout = "~/Views/Shared/_Layout.cshtml";
 
                         <div class="coordinates">
                             <div class="phone">
-                                <i class="ri-men-fill"></i>
+                                <i class="fas fa-toilet"></i>
                                 <h4>Toilets:</h4>
 
                                 @foreach (var item in Model.PublicToilets)
@@ -58,11 +58,13 @@ Layout = "~/Views/Shared/_Layout.cshtml";
                                             <p>
                                                 @if (item.Accessibility == "yes")
                                                 {
-                                                    <span style="display:inline; color:green" class="icofont-wheelchair"></span>
+                                                    <span style="display:inline; color:green" class="fas fa-wheelchair"></span>
+                                                    
                                                 }
                                                 else
                                                 {
-                                                    <span style="display:inline; color:white" class="icofont-wheelchair"></span>
+                                                    <span style="display:inline; color:white" class="fas fa-wheelchair"></span>
+                                                   
                                                 }
 
                                                 @final_name
