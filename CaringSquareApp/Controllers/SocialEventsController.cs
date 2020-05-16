@@ -44,8 +44,10 @@ namespace CaringSquareApp.Controllers
         // GET: SocialEvents/Create
         public ActionResult Create()
         {
+            
             ViewBag.UserUserId = new SelectList(db.AspNetUsers, "Id", "Email");
             ViewBag.POIPlaceId = new SelectList(db.POIs, "PlaceId", "Name");
+
             return View();
         }
 

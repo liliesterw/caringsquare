@@ -244,8 +244,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .nav-menu .drop-down > a:after {
-  content: "\ea99";
-  font-family: IcoFont;
+  content: "\ea4c";
+  font-family: Remixicon;
   padding-left: 5px;
 }
 
@@ -959,9 +959,21 @@ section {
   right: 0;
   top: 0;
   bottom: 0;
-  background: rgba(1, 3, 111, 0.8);
+  background: rgba(49, 148, 59, 0.85);
 }
 
+    .testimonials .btn-event {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 300;
+        font-size: 12px;
+        letter-spacing: 1px;
+        display: inline-block;
+        padding: 10px 30px;
+        border-radius: 7em;
+        transition: 0.5s;
+        color: #fff;
+        background: #1acc8d;
+    }
 .testimonials .section-header {
   margin-bottom: 40px;
 }
@@ -1130,6 +1142,8 @@ section {
 /*--------------------------------------------------------------
 # Pricing
 --------------------------------------------------------------*/
+
+
 .pricing .box {
   padding: 20px;
   background: #fff;
@@ -1139,6 +1153,7 @@ section {
   position: relative;
   overflow: hidden;
 }
+
 
 .pricing h3 {
   font-weight: 400;

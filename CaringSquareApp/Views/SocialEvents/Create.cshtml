@@ -12,68 +12,72 @@
 <br />
 <div class="container">
     <h2 id="freshtitle">@ViewBag.Title</h2>
+    <div class="row">
+        <div class="col-lg-7 pt-6 pt-lg-0 order-0 order-lg-0 d-flex align-items-center">
+            @using (Html.BeginForm())
+            {
+                @Html.AntiForgeryToken()
+
+                <div class="form-horizontal" style="font-weight: bold;margin-right:80px;">
+                    <hr />
+                    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.EventName, htmlAttributes: new { @class = "control-label col-md-10" })
+                        <div class="col-md-10">
+                            @Html.EditorFor(model => model.EventName, new { htmlAttributes = new { @class = "form-control", placeholder = "eg. Yoga at Park, Visit to Museum" } })
+                            @Html.ValidationMessageFor(model => model.EventName, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="row" style="padding:0px 15px">
+                            <div class="col-md-6">
+                                @Html.LabelFor(model => model.EventDate, htmlAttributes: new { @class = "control-label col-md-10", style = "padding:0px" })
+                                @Html.EditorFor(model => model.EventDate, new { htmlAttributes = new { @class = "form-control", id = "datepicker1" } })
+                                @Html.ValidationMessageFor(model => model.EventDate, "", new { @class = "text-danger" })
+                            </div>
+                            <div class="col-md-4">
+                                @Html.LabelFor(model => model.EventTime, htmlAttributes: new { @class = "control-label col-md-10", style = "padding:0px" })
+                                @Html.EditorFor(model => model.EventTime, new { htmlAttributes = new { @class = "form-control", id = "timepicker1" } })
+                                @Html.ValidationMessageFor(model => model.EventTime, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                    </div>
 
 
-    @using (Html.BeginForm())
-    {
-        @Html.AntiForgeryToken()
 
-        <div class="form-horizontal" style = "font-weight: bold;margin-right:80px;">
-            <hr />
-            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
-            <div class="form-group">
-                @Html.LabelFor(model => model.EventName, htmlAttributes: new { @class = "control-label col-md-2" })
-                <div class="col-md-10">
-                    @Html.EditorFor(model => model.EventName, new { htmlAttributes = new { @class = "form-control", placeholder="eg. Yoga at Park, Visit to Museum" } })
-                    @Html.ValidationMessageFor(model => model.EventName, "", new { @class = "text-danger" })
+                    <div class="form-group" hidden>
+                        @Html.LabelFor(model => model.UserUserId, "UserUserId", htmlAttributes: new { @class = "control-label col-md-2" })
+                        <div class="col-md-10">
+                            <input class="form-control text-box single-line" data-val- id="UserUserId" name="UserUserId" type="text" value=@User.Identity.GetUserId()>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.POIPlaceId, "Place Name", htmlAttributes: new { @class = "control-label col-md-10" })
+                        <div class="col-md-10">
+                            @Html.DropDownList("POIPlaceId", null, htmlAttributes: new { @class = "form-control", @id = "place-drop-down" })
+                            @Html.ValidationMessageFor(model => model.POIPlaceId, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-md-offset-2 col-md-10">
+                            <input style="background-color:#94d16a;font-weight:bold;color:#000000" type="submit" id="buttonedit" class="btn btn-default" value="Create" />
+                            <br /><br />
+                        </div>
+                    </div>
                 </div>
-            </div>
-
-            <div class="form-group">
-                @Html.LabelFor(model => model.EventDate, htmlAttributes: new { @class = "control-label col-md-2" })
-                <div class="col-md-10">
-                    @Html.EditorFor(model => model.EventDate, new { htmlAttributes = new { @class = "form-control", id = "datepicker1" } })
-                    @Html.ValidationMessageFor(model => model.EventDate, "", new { @class = "text-danger" })
-                </div>
-            </div>
-
-            <div class="form-group">
-                @Html.LabelFor(model => model.EventTime, htmlAttributes: new { @class = "control-label col-md-2" })
-                <div class="col-md-10">
-                    @Html.EditorFor(model => model.EventTime, new { htmlAttributes = new { @class = "form-control", id = "timepicker1" } })
-                    @Html.ValidationMessageFor(model => model.EventTime, "", new { @class = "text-danger" })
-                </div>
-            </div>
-
-            <div class="form-group" hidden>
-                @Html.LabelFor(model => model.UserUserId, "UserUserId", htmlAttributes: new { @class = "control-label col-md-2" })
-                <div class="col-md-10">
-                    <input class="form-control text-box single-line" data-val- id="UserUserId" name="UserUserId" type="text" value=@User.Identity.GetUserId()>
-                </div>
-            </div>
-
-            <div class="form-group">
-                @Html.LabelFor(model => model.POIPlaceId, "Place Name", htmlAttributes: new { @class = "control-label col-md-2" })
-                <div class="col-md-10">
-                    @Html.DropDownList("POIPlaceId", null, htmlAttributes: new { @class = "form-control", @id="place-drop-down" })
-                    @Html.ValidationMessageFor(model => model.POIPlaceId, "", new { @class = "text-danger" })
-                </div>
-            </div>
-
-            <div class="form-group">
-                <div class="col-md-offset-2 col-md-10">
-                    <input style="background-color:#94d16a;font-weight:bold;color:#000000" type="submit" id="buttonedit" class="btn btn-default" value="Create" />
-                    <br /><br />
-                </div>
-            </div>
+            }
         </div>
-    }
+       
+    </div>
 
-<div>
-    <a href="/POIs" class="btn btn-default" style="color:#010483;background-color: #f7f7f7;border-color:#000000; margin-left:10px;margin-right:10px;font-weight:bold;">Explore Places</a>
-    @Html.ActionLink("Back to List", "Index", new { }, new { @class = "btn", @style = "color:#010483;background-color: #f7f7f7; border-color:#000000;font-weight:bold;" })
+    <div>
+        <a href="/POIs" class="btn btn-default" style="color:#010483;background-color: #f7f7f7;border-color:#000000; margin-left:10px;margin-right:10px;font-weight:bold;">Explore Places</a>
+        @Html.ActionLink("Back to List", "Index", new { }, new { @class = "btn", @style = "color:#010483;background-color: #f7f7f7; border-color:#000000;font-weight:bold;" })
 
-</div>
+    </div>
 
     @section Scripts {
         @Scripts.Render("~/bundles/jqueryval")
@@ -96,6 +100,7 @@
                 todayHighlight: true,
                 startDate: today,
                 endDate: end,
+                defaultDate: new Date(),
                 minDate:0,
                 autoclose: true
             });
@@ -103,8 +108,9 @@
             $('#datepicker1').datepicker('setDate', today);
 
         $('#timepicker1').timepicker({
-            timeFormat: "h:i A",
+            timeFormat: "h:i  A",
             step: 60,
+
             minTime: '6',
             maxTime: '11:00pm',
             'forceRoundTime': false

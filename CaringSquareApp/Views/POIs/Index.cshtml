@@ -17,6 +17,7 @@
     @using (Html.BeginForm("AddFilter", "POIs", FormMethod.Post))
     {
         @Html.AntiForgeryToken()
+       
         <div class="text-center text-lg-left">
             <h5 style="font-weight:bold;margin-bottom:20px;">
                 Choose from below Categories to Filter your options:
@@ -84,14 +85,14 @@
     <table class="table" id="myTable">
         <thead>
             <tr>
-                <th>
+                <th hidden>
+                </th>
+                <th hidden>
+                </th>
+                <th hidden>
+                </th>
+                <th style="width:60%">
                     @Html.DisplayNameFor(model => model.Name)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.SubTheme)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.Address)
                 </th>
 
                 <th style="display: none;">
@@ -101,42 +102,50 @@
                     @Html.DisplayNameFor(model => model.Longitude)
                 </th>
 
-                <th style="width:200px;">
+                <th style="width:10%;">
                     @Html.DisplayNameFor(model => model.Category)
                 </th>
-                <th></th>
+                <th> Action</th>
             </tr>
         </thead>
         <tbody>
             @foreach (var item in Model)
             {
 
-                <tr class="coordinates">
-                    <td class="description">
-                        @Html.DisplayFor(modelItem => item.Name)
-                    </td>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.SubTheme)
-                    </td>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.Address)
-                    </td>
+            <tr class="coordinates">
+                <td class="description" hidden>
+                    @Html.DisplayFor(modelItem => item.Name)
 
-                    <td class="latitude" style="display: none;">
-                        @Html.DisplayFor(modelItem => item.Latitude)
-                    </td>
-                    <td class="longitude" style="display: none;">
-                        @Html.DisplayFor(modelItem => item.Longitude)
-                    </td>
+                </td>
+                <td hidden>
+                    @Html.DisplayFor(modelItem => item.SubTheme)
 
-                    <td>
-                        @Html.DisplayFor(modelItem => item.Category)
-                    </td>
-                    <td style="width:200px;">
-                        @Html.ActionLink("View More", "Details", new { id = item.PlaceId }, new { @style = "font-weight:bold;" }) |
-                        <button style="background-color: #4d4c4c; color: #ffffff;" class="mapcentre btn btn-default">See Map</button>
-                    </td>
-                </tr>
+                </td>
+                <td  hidden>
+                    @Html.DisplayFor(modelItem => item.Address)
+
+                </td>
+                <td>
+                    <strong style="font-size:1.2em">@Html.DisplayFor(modelItem => item.Name)</strong> <br />
+                    <i class="ri-information-line"></i>  @Html.DisplayFor(modelItem => item.SubTheme) <br />
+                    <i class="ri-map-pin-2-fill"></i>  @Html.DisplayFor(modelItem => item.Address) <br /><br />
+                </td>
+
+                <td class="latitude" style="display: none;">
+                    @Html.DisplayFor(modelItem => item.Latitude)
+                </td>
+                <td class="longitude" style="display: none;">
+                    @Html.DisplayFor(modelItem => item.Longitude)
+                </td>
+
+                <td>
+                    @Html.DisplayFor(modelItem => item.Category)
+                </td>
+                <td>
+                    <a href="/POIs/Details/@item.PlaceId" style="background-color: #31943b; color: #ffffff; border-radius:50px" class="btn btn-default"><i class="ri-information-line"></i> View Detail</a>
+                    <a style="background-color: #0f15a3; color: #ffffff;  border-radius:50px" class="mapcentre btn"><i class="ri-road-map-fill"></i> Pin on Map</a>
+                </td>
+            </tr>
             }
         </tbody>
 
@@ -147,7 +156,7 @@
 <script>
     window.onload = function () {
         $('#myTable').DataTable();
-        $('#myTable tbody tr:even').css('background-color', '#94d16a');
+        $('#myTable tbody tr:even').css('background-color', '#aecb91');
 
         var prevMapbox = null;
 

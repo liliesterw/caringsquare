@@ -20,7 +20,7 @@ Layout = "~/Views/Shared/_Layout.cshtml";
                 <div class="col-lg-5" data-aos="fade-right" data-aos-delay="100">
                     <div class="info">
                         <div class="address">
-                            <i class="icofont-google-map"></i>
+                            <i class="ri-map-pin-2-fill"></i>
                             <h4>Address:</h4>
                             <p style="color: #444"><b>@Html.DisplayFor(model => model.Address)</b></p>
                             <p hidden class="main_lat">@Html.DisplayFor(model => model.Latitude)</p>
@@ -28,7 +28,7 @@ Layout = "~/Views/Shared/_Layout.cshtml";
                         </div>
 
                         <div class="email">
-                            <i class="icofont-ui-love"></i>
+                            <i class="ri-heart-fill"></i>
                             <h4>Category:</h4>
                             <p style="color: #444"><b>@Html.DisplayFor(model => model.Category)</b></p>
 
@@ -36,7 +36,7 @@ Layout = "~/Views/Shared/_Layout.cshtml";
 
                         <div class="coordinates">
                             <div class="phone">
-                                <i class="icofont-group-students"></i>
+                                <i class="ri-men-fill"></i>
                                 <h4>Toilets:</h4>
 
                                 @foreach (var item in Model.PublicToilets)
@@ -77,7 +77,7 @@ Layout = "~/Views/Shared/_Layout.cshtml";
                                 }
                             </div>
                             <div class="phone">
-                                <i class="icofont-water-bottle"></i>
+                                <i class="ri-drop-fill"></i>
                                 <h4>Water Fountains:</h4>
                                 @foreach (var item in Model.PublicToilets)
                                 {
