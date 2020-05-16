@@ -165,13 +165,14 @@
         </div>
         <br /><br />
         <br /><br />
-              <div class="fb-share-button" data-href=" " data-layout="button" data-size="large"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>
-
         <p>
             @Html.ActionLink("Edit This Event", "Edit", new { id = Model.EventId }, new { @class = "btn", @style = "color:#010483;background-color: #f7f7f7; border-color:#000000;margin-left:10px;font-weight:bold;" })
             <a href="/SocialEvents" class="btn" style="color:#010483; background-color:#f7f7f7; border-color:#000000;margin-left:10px;font-weight:bold;">Back to Event List</a>
         </p>
     </div>
+    <div class="fb-share-button" data-href=" " data-layout="button" data-size="large"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">
+        Share</a></div>
+
 </section>
 <script>
 
@@ -193,27 +194,10 @@
         init();
     });
 
-</script>
-<script src="jquery.js"></script>
-<script src="html2canvas.min.js"></script>
-<script src="canvas2image.js"></script>
-<script>
-    var tempElement = $('#element').get(0);
-    var lebar = "600";
-    var tinggi = "400";
-    var type = "png";
-    var fileName = "htmltoimage";
-    html2canvas(tempElement).then(function (canvas) {
-        var canWidth = canvas.width;
-        var canHeight = canvas.height;
-        var img = Canvas2Image.convertToImage(canvas, canWidth, canHeight);
-        $('#preview').after(img);
-        Canvas2Image.saveAsImage(canvas, lebar, tinggi, type, fileName);
+    </script>
 
-    });
-
-</script>
 <script>
+
     window.onload = function () {
         /**
     * This is a simple JavaScript demonstration of how to call MapBox API to load the maps.
@@ -351,14 +335,11 @@
                 map.getCanvas().style.cursor = '';
             });
         });
-    }
-</script>
-
-<script>
-    //initated the facebook share button
-    window.onload = function () {
         shareFacebook();
     }
+
+
+    
 
     function shareFacebook() {
 
