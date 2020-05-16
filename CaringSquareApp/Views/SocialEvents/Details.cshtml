@@ -5,7 +5,10 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<section id="contact" class="contact" hidden >
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v7.0&appId=576187129689734&autoLogAppEvents=1"></script>
+
+<section id="contact" class="contact" hidden>
     <div class="container">
         <h2 id="freshtitle">Details of your Social Event</h2>
 
@@ -65,9 +68,10 @@
 
         <div>
             <a href="/SocialEvents/Send_Email" id="share-event" class="btn" style="background-color: #94d16a; margin-left:60px;font-weight:bold;">Share Event By Email</a>
-            <br/><br/>
+            <br /><br />
 
         </div>
+
         <p>
             @Html.ActionLink("Edit This Event", "Edit", new { id = Model.EventId }, new { @class = "btn", @style = "color:#010483;background-color: #f7f7f7; border-color:#000000;margin-left:10px;font-weight:bold;" })
             <a href="/SocialEvents" class="btn" style="color:#010483; background-color:#f7f7f7; border-color:#000000;margin-left:10px;font-weight:bold;">Back to Event List</a>
@@ -75,7 +79,7 @@
 
 
     </div>
-    </section>
+</section>
 <section id="contact" class="contact">
     <div class="container">
         <div class="section-title" data-aos="fade-up">
@@ -90,7 +94,7 @@
             <div class="col-lg-7" data-aos="fade-right" data-aos-delay="100">
                 <div class="section-title" data-aos="fade-up">
 
-                    <p >@Html.DisplayFor(model => model.EventName)</p>
+                    <p>@Html.DisplayFor(model => model.EventName)</p>
                     <p style="font-size:1em">By: @Html.DisplayFor(model => model.AspNetUser.Email.Split('@')[0])</p>
                 </div>
                 <div class="info">
@@ -161,189 +165,204 @@
         </div>
         <br /><br />
         <br /><br />
+              <div class="fb-share-button" data-href=" " data-layout="button" data-size="large"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>
+
         <p>
             @Html.ActionLink("Edit This Event", "Edit", new { id = Model.EventId }, new { @class = "btn", @style = "color:#010483;background-color: #f7f7f7; border-color:#000000;margin-left:10px;font-weight:bold;" })
             <a href="/SocialEvents" class="btn" style="color:#010483; background-color:#f7f7f7; border-color:#000000;margin-left:10px;font-weight:bold;">Back to Event List</a>
         </p>
-        </div>
+    </div>
 </section>
-        <script>
+<script>
 
-            function init() {
-                document.getElementById('share-event').addEventListener('click', event => {
-                    event.preventDefault();
+    function init() {
+        document.getElementById('share-event').addEventListener('click', event => {
+            event.preventDefault();
 
-                    const dd = [...document.querySelectorAll('dl')].map(el => el.textContent).filter(Boolean).map(s => s.trim());
+            const dd = [...document.querySelectorAll('dl')].map(el => el.textContent).filter(Boolean).map(s => s.trim());
 
-                    console.log(dd);
+            console.log(dd);
 
-                    localStorage.setItem('__pageCache', JSON.stringify(dd));
+            localStorage.setItem('__pageCache', JSON.stringify(dd));
 
-                    document.location.href = event.target.getAttribute('href')
-                });
+            document.location.href = event.target.getAttribute('href')
+        });
+    }
+
+    window.addEventListener('DOMContentLoaded', event => {
+        init();
+    });
+
+</script>
+<script src="jquery.js"></script>
+<script src="html2canvas.min.js"></script>
+<script src="canvas2image.js"></script>
+<script>
+    var tempElement = $('#element').get(0);
+    var lebar = "600";
+    var tinggi = "400";
+    var type = "png";
+    var fileName = "htmltoimage";
+    html2canvas(tempElement).then(function (canvas) {
+        var canWidth = canvas.width;
+        var canHeight = canvas.height;
+        var img = Canvas2Image.convertToImage(canvas, canWidth, canHeight);
+        $('#preview').after(img);
+        Canvas2Image.saveAsImage(canvas, lebar, tinggi, type, fileName);
+
+    });
+
+</script>
+<script>
+    window.onload = function () {
+        /**
+    * This is a simple JavaScript demonstration of how to call MapBox API to load the maps.
+    * I have set the default configuration to enable the geocoder and the navigation control.
+    * https://www.mapbox.com/mapbox-gl-js/example/popup-on-click/
+    * Copyrights Holder - Credits for the code
+    * author Jian Liew <jian.liew@monash.edu>
+    */
+        const TOKEN = "pk.eyJ1IjoiaGFyaXNoMTE1MCIsImEiOiJjazFndDJxMHMwMXBtM2JqdWNqMmpkdWozIn0.yspP5Uu6LV65-0HgIpNVUw";
+        var locations = [];
+        // The first step is obtain all the latitude and longitude from the HTML
+        // The below is a simple jQuery selector
+        $(".coordinates").each(function () {
+            var longitude = $(".longitude", this).text().trim();
+            var latitude = $(".latitude", this).text().trim();
+            var description_obj = $(".toilet_name", this).text().trim().split(/-(.+)/);
+            console.log("d:", description_obj);
+            var description = description_obj[1];
+            var item_icon = "circle-15";
+            if (description_obj[0] == "W") {
+                item_icon = "drinking-water-15";
             }
+            else if (description_obj[0] == "T") {
+                item_icon = "toilet-15";
+            }
+            // Create a point data structure to hold the values.
+            var point = {
+                "latitude": latitude,
+                "longitude": longitude,
+                "description": description,
+                "item_icon": item_icon
+            };
+            // Push them all into an array.
+            locations.push(point);
+        });
 
-            window.addEventListener('DOMContentLoaded', event => {
-                init();
-            });
+        var sum_lat = 0;
+        var sum_lon = 0;
 
-        </script>
-        <script src="jquery.js"></script>
-        <script src="html2canvas.min.js"></script>
-        <script src="canvas2image.js"></script>
-        <script>
-            var tempElement = $('#element').get(0);
-            var lebar = "600";
-            var tinggi = "400";
-            var type = "png";
-            var fileName = "htmltoimage";
-            html2canvas(tempElement).then(function (canvas) {
-                var canWidth = canvas.width;
-                var canHeight = canvas.height;
-                var img = Canvas2Image.convertToImage(canvas, canWidth, canHeight);
-                $('#preview').after(img);
-                Canvas2Image.saveAsImage(canvas, lebar, tinggi, type, fileName);
+        for (var i = 0; i < locations.length; i++) {
+            sum_lat += parseFloat(locations[i].latitude, 10);
+            sum_lon += parseFloat(locations[i].longitude, 10);
+        };
+        var map_center_lat = parseFloat(sum_lat / locations.length)
+        var map_center_lon = parseFloat(sum_lon / locations.length)
 
-            });
-
-        </script>
-        <script>
-            window.onload = function () {
-                /**
-            * This is a simple JavaScript demonstration of how to call MapBox API to load the maps.
-            * I have set the default configuration to enable the geocoder and the navigation control.
-            * https://www.mapbox.com/mapbox-gl-js/example/popup-on-click/
-            * Copyrights Holder - Credits for the code
-            * author Jian Liew <jian.liew@monash.edu>
-            */
-                const TOKEN = "pk.eyJ1IjoiaGFyaXNoMTE1MCIsImEiOiJjazFndDJxMHMwMXBtM2JqdWNqMmpkdWozIn0.yspP5Uu6LV65-0HgIpNVUw";
-                var locations = [];
-                // The first step is obtain all the latitude and longitude from the HTML
-                // The below is a simple jQuery selector
-                $(".coordinates").each(function () {
-                    var longitude = $(".longitude", this).text().trim();
-                    var latitude = $(".latitude", this).text().trim();
-                    var description_obj = $(".toilet_name", this).text().trim().split(/-(.+)/);
-                    console.log("d:", description_obj);
-                    var description = description_obj[1];
-                    var item_icon = "circle-15";
-                    if (description_obj[0] == "W") {
-                        item_icon = "drinking-water-15";
-                    }
-                    else if (description_obj[0] == "T") {
-                        item_icon = "toilet-15";
-                    }
-                    // Create a point data structure to hold the values.
-                    var point = {
-                        "latitude": latitude,
-                        "longitude": longitude,
-                        "description": description,
-                        "item_icon": item_icon
-                    };
-                    // Push them all into an array.
-                    locations.push(point);
-                });
-
-                var sum_lat = 0;
-                var sum_lon = 0;
-
-                for (var i = 0; i < locations.length; i++) {
-                    sum_lat += parseFloat(locations[i].latitude, 10);
-                    sum_lon += parseFloat(locations[i].longitude, 10);
-                };
-                var map_center_lat = parseFloat(sum_lat / locations.length)
-                var map_center_lon = parseFloat(sum_lon / locations.length)
-
-                var data = [];
+        var data = [];
 
 
-                for (i = 0; i < locations.length; i++) {
-                    var feature = {
-                        "type": "Feature",
-                        "properties": {
-                            "description": locations[i].description,
-                            "icon": locations[i].item_icon
-                        },
-                        "geometry": {
-                            "type": "Point",
-                            "coordinates": [locations[i].longitude, locations[i].latitude]
-                        }
-                    };
-                    data.push(feature)
-
+        for (i = 0; i < locations.length; i++) {
+            var feature = {
+                "type": "Feature",
+                "properties": {
+                    "description": locations[i].description,
+                    "icon": locations[i].item_icon
+                },
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [locations[i].longitude, locations[i].latitude]
                 }
-                // Add the POI
-                var main_feature = {
-                    "type": "Feature",
-                    "properties": {
-                        "description": $(".main_name").text(),
-                        "icon": "circle-15"
-                    },
-                    "geometry": {
-                        "type": "Point",
-                        "coordinates": [$(".main_lon").text(), $(".main_lat").text()]
-                    }
-                };
-                data.push(main_feature);
+            };
+            data.push(feature)
 
-                console.log(data);
-
-
-                mapboxgl.accessToken = TOKEN;
-                var map = new mapboxgl.Map({
-                    container: 'map',
-                    style: 'mapbox://styles/mapbox/streets-v10',
-                    zoom: 14,
-                    center: [map_center_lon, map_center_lat]
-                });
-                map.on('load', function () {
-                    // Add a layer showing the places.
-                    map.addLayer({
-                        "id": "places",
-                        "type": "symbol",
-                        "source": {
-                            "type": "geojson",
-                            "data": {
-                                "type": "FeatureCollection",
-                                "features": data
-                            }
-                        },
-                        "layout": {
-                            "icon-image": "{icon}",
-                            "icon-allow-overlap": true
-                        }
-                    });
-
-                    map.addControl(new MapboxGeocoder({
-                        accessToken: mapboxgl.accessToken
-                    }));;
-                    map.addControl(new mapboxgl.NavigationControl());
-                    // When a click event occurs on a feature in the places layer, open a popup at the
-                    // location of the feature, with description HTML from its properties.
-                    map.on('click', 'places', function (e) {
-
-                        var coordinates = e.features[0].geometry.coordinates.slice();
-                        var description = e.features[0].properties.description;
-
-                        // Ensure that if the map is zoomed out such that multiple
-                        // copies of the feature are visible, the popup appears
-                        // over the copy being pointed to.
-                        while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
-                            coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
-                        }
-                        new mapboxgl.Popup()
-                            .setLngLat(coordinates)
-                            .setHTML(description)
-                            .addTo(map);
-                    });
-                    // Change the cursor to a pointer when the mouse is over the places layer.
-                    map.on('mouseenter', 'places', function () {
-                        map.getCanvas().style.cursor = 'pointer';
-                    });
-                    // Change it back to a pointer when it leaves.
-                    map.on('mouseleave', 'places', function () {
-                        map.getCanvas().style.cursor = '';
-                    });
-                });
+        }
+        // Add the POI
+        var main_feature = {
+            "type": "Feature",
+            "properties": {
+                "description": $(".main_name").text(),
+                "icon": "circle-15"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [$(".main_lon").text(), $(".main_lat").text()]
             }
-        </script>
+        };
+        data.push(main_feature);
+
+        console.log(data);
+
+
+        mapboxgl.accessToken = TOKEN;
+        var map = new mapboxgl.Map({
+            container: 'map',
+            style: 'mapbox://styles/mapbox/streets-v10',
+            zoom: 14,
+            center: [map_center_lon, map_center_lat]
+        });
+        map.on('load', function () {
+            // Add a layer showing the places.
+            map.addLayer({
+                "id": "places",
+                "type": "symbol",
+                "source": {
+                    "type": "geojson",
+                    "data": {
+                        "type": "FeatureCollection",
+                        "features": data
+                    }
+                },
+                "layout": {
+                    "icon-image": "{icon}",
+                    "icon-allow-overlap": true
+                }
+            });
+
+            map.addControl(new MapboxGeocoder({
+                accessToken: mapboxgl.accessToken
+            }));;
+            map.addControl(new mapboxgl.NavigationControl());
+            // When a click event occurs on a feature in the places layer, open a popup at the
+            // location of the feature, with description HTML from its properties.
+            map.on('click', 'places', function (e) {
+
+                var coordinates = e.features[0].geometry.coordinates.slice();
+                var description = e.features[0].properties.description;
+
+                // Ensure that if the map is zoomed out such that multiple
+                // copies of the feature are visible, the popup appears
+                // over the copy being pointed to.
+                while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
+                    coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
+                }
+                new mapboxgl.Popup()
+                    .setLngLat(coordinates)
+                    .setHTML(description)
+                    .addTo(map);
+            });
+            // Change the cursor to a pointer when the mouse is over the places layer.
+            map.on('mouseenter', 'places', function () {
+                map.getCanvas().style.cursor = 'pointer';
+            });
+            // Change it back to a pointer when it leaves.
+            map.on('mouseleave', 'places', function () {
+                map.getCanvas().style.cursor = '';
+            });
+        });
+    }
+</script>
+
+<script>
+    //initated the facebook share button
+    window.onload = function () {
+        shareFacebook();
+    }
+
+    function shareFacebook() {
+
+        var x = document.URL;
+        $('.fb-share-button').attr("data-href", x);
+    }
+</script>
