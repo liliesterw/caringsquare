@@ -4,110 +4,228 @@
     ViewBag.Title = "Edit";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
+    <style>
+        table, td, th {
+            border: 1px solid black;
+            padding: 3px;
+        }
 
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th {
+            height: 50px;
+        }
+        </style>
 <br />
 <br />
 <br />
 <br />
 <div class="container">
-    @using (Html.BeginForm())
-    {
-        @Html.AntiForgeryToken()
 
-    <div class="form-horizontal" style="font-weight: bold;margin-right:80px;">
-        <h2 id="freshtitle">Edit Social Event</h2>
-        <hr />
-        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
-        @Html.HiddenFor(model => model.EventId)
+    <div class="row">
+        <div class="col-lg-6 pt-6 pt-lg-0 order-0 order-lg-0 d-flex align-items-center">
+            @using (Html.BeginForm())
+            {
+                @Html.AntiForgeryToken()
 
-        <div class="form-group">
-            @Html.LabelFor(model => model.EventName, htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                @Html.EditorFor(model => model.EventName, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(model => model.EventName, "", new { @class = "text-danger" })
-            </div>
-        </div>
+                <div class="form-horizontal" style="font-weight: bold;margin-right:80px;">
+                    <h2 id="freshtitle">Edit Social Event</h2>
+                    <hr />
+                    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                    @Html.HiddenFor(model => model.EventId)
 
-        <div class="form-group">
-            <div class="row" style="padding:0px 15px">
-                <div class="col-md-6">
-                    @Html.LabelFor(model => model.EventDate, htmlAttributes: new { @class = "control-label col-md-10", style = "padding:0px" })
-                    @Html.EditorFor(model => model.EventDate, new { htmlAttributes = new { @class = "form-control", id = "datepicker1" } })
-                    @Html.ValidationMessageFor(model => model.EventDate, "", new { @class = "text-danger" })
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.EventName, htmlAttributes: new { @class = "control-label col-md-12" })
+                        <div class="col-md-12">
+                            @Html.EditorFor(model => model.EventName, new { htmlAttributes = new { @class = "form-control" } })
+                            @Html.ValidationMessageFor(model => model.EventName, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="row" style="padding:0px 15px">
+                            <div class="col-md-7">
+                                @Html.LabelFor(model => model.EventDate, htmlAttributes: new { @class = "control-label col-md-12", style = "padding:0px" })
+                                @Html.EditorFor(model => model.EventDate, new { htmlAttributes = new { @class = "form-control", id = "datepicker1" } })
+                                @Html.ValidationMessageFor(model => model.EventDate, "", new { @class = "text-danger" })
+                            </div>
+                            <div class="col-md-5">
+                                @Html.LabelFor(model => model.EventTime, htmlAttributes: new { @class = "control-label col-md-12", style = "padding:0px" })
+                                @Html.EditorFor(model => model.EventTime, new { htmlAttributes = new { @class = "form-control", id = "timepicker1" } })
+                                @Html.ValidationMessageFor(model => model.EventTime, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="form-group" hidden>
+                        @Html.LabelFor(model => model.UserUserId, "User Name", htmlAttributes: new { @class = "control-label col-md-12" })
+                        <div class="col-md-12">
+                            @Html.DropDownList("UserUserId", null, htmlAttributes: new { @class = "form-control" })
+                            @Html.ValidationMessageFor(model => model.UserUserId, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.POIPlaceId, "Place Name", htmlAttributes: new { @class = "control-label col-md-12" })
+                        <div class="col-md-12">
+                            @Html.DropDownList("POIPlaceId", null, htmlAttributes: new { @class = "form-control" })
+                            @Html.ValidationMessageFor(model => model.POIPlaceId, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-md-offset-2 col-md-12">
+                            <input style="background-color:#94d16a;font-weight:bold;color:#000000" type="submit" id="buttonedit" class="btn btn-default" value="Save Changes" />
+                            <br /><br />
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-4">
-                    @Html.LabelFor(model => model.EventTime, htmlAttributes: new { @class = "control-label col-md-10", style = "padding:0px" })
-                    @Html.EditorFor(model => model.EventTime, new { htmlAttributes = new { @class = "form-control", id = "timepicker1" } })
-                    @Html.ValidationMessageFor(model => model.EventTime, "", new { @class = "text-danger" })
+            }
+            </div>
+            <div class="col-lg-6 pt-6 pt-lg-0 order-0 d-flex align-items-center">
+                <div id="divResults">
                 </div>
             </div>
-        </div>
-
-   
-
-        <div class="form-group" hidden>
-            @Html.LabelFor(model => model.UserUserId, "User Name", htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                @Html.DropDownList("UserUserId", null, htmlAttributes: new { @class = "form-control" })
-                @Html.ValidationMessageFor(model => model.UserUserId, "", new { @class = "text-danger" })
+            <div>
+                <a href="/POIs" class="btn btn-default" style="color:#010483;background-color: #f7f7f7;border-color:#000000; margin-left:10px;margin-right:10px;font-weight:bold;">Explore Places</a>
+                @Html.ActionLink("Back to List", "Index", new { }, new { @class = "btn", @style = "color:#010483;background-color: #f7f7f7; border-color:#000000;font-weight:bold;" })
+            </div>
             </div>
         </div>
-
-        <div class="form-group">
-            @Html.LabelFor(model => model.POIPlaceId, "Place Name", htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                @Html.DropDownList("POIPlaceId", null, htmlAttributes: new { @class = "form-control" })
-                @Html.ValidationMessageFor(model => model.POIPlaceId, "", new { @class = "text-danger" })
-            </div>
-        </div>
-
-        <div class="form-group">
-            <div class="col-md-offset-2 col-md-10">
-                <input style="background-color:#94d16a;font-weight:bold;color:#000000" type="submit" id="buttonedit" class="btn btn-default" value="Save Changes" />
-                <br /><br />
-            </div>
-        </div>
-    </div>
-    }
-
-    <div>
-        <a href="/POIs" class="btn btn-default" style="color:#010483;background-color: #f7f7f7;border-color:#000000; margin-left:10px;margin-right:10px;font-weight:bold;">Explore Places</a>
-        @Html.ActionLink("Back to List", "Index", new { }, new { @class = "btn", @style = "color:#010483;background-color: #f7f7f7; border-color:#000000;font-weight:bold;" })
-    </div>
-
-</div>
-    @section Scripts {
-        @Scripts.Render("~/bundles/jqueryval")
-    }
-
-    <script>
-        window.onload = function () {
-
-
-            var date = new Date();
-            var today = new Date(date.getFullYear(), date.getMonth(), date.getDate());
-            var end = new Date(date.getFullYear(), date.getMonth(), date.getDate());
-
-            $('#datepicker1').datepicker({
-                format: "mm/dd/yyyy",
-                todayHighlight: true,
-                startDate: today,
-                endDate: end,
-                minDate: 0,
-                autoclose: true
-            });
-
-            $('#datepicker1').datepicker('setDate', today);
-
-            $('#timepicker1').timepicker({
-                timeFormat: "h:i A",
-                step: 60,
-                minTime: '6',
-                maxTime: '11:00pm',
-                'forceRoundTime': false
-
-            });
-
-
+        @section Scripts {
+            @Scripts.Render("~/bundles/jqueryval")
         }
-    </script>
+
+        <script>
+            window.onload = function () {
+                function weather_to_icon(weather_id) {
+                    var icon_text = "";
+                    if (parseInt(weather_id / 100) == 8) {
+                        if (weather_id == 801) {
+                            icon_text = "fas fa-sun";
+                        }
+                        else if (weather_id == 800) {
+                            icon_text = "fas fa-sun";
+                        }
+                        else {
+                            icon_text = "fas fa-cloud";
+                        }
+                    }
+                    else if (parseInt(weather_id / 100) == 7) {
+                        if (response.weather[0].id == 781) {
+                            icon_text = "ri-tornado-line";
+                        }
+                        else {
+                            icon_text = "ri-haze-2-fill";
+                        }
+                    }
+                    else if (parseInt(weather_id / 100) == 6) {
+                        if (response.weather[0].id < 615) {
+                            icon_text = "ri-snowy-fill";
+                        }
+                        else {
+                            icon_text = "fas fa-poo-storm";
+                        }
+                    }
+                    else if (parseInt(weather_id / 100) == 5) {
+                        icon_text = "fas fa-cloud-showers-heavy";
+                    }
+                    else if (parseInt(weather_id / 100) == 3) {
+                        icon_text = "fas fa-cloud-showers-heavy";
+                    }
+                    else if (parseInt(weather_id / 100) == 2) {
+                        icon_text = "ri-thunderstorms-fill";
+                    }
+                    return icon_text;
+                }
+                function get_weather() {
+                    $.get("https://api.openweathermap.org/data/2.5/forecast?q=Melbourne,AU&appid=45b1b01ef280889b43b44defbb0933ad&units=metric", function (response) {
+                        //console.log(response.list);
+
+                        var data = response.list;
+                        //console.log(data.length);
+
+                        var table_string = "<table style=' border: 1px solid black;'><tr><td colspan=9><b>Forecast for the next 5 days:</b></td></tr><tr'><th>Date</th><th>00:00</th><th>03:00</th><th>06:00</th><th>09:00</th><th>12:00</th><th>15:00</th><th>18:00</th><th>21:00</th></tr>";
+                        var cur_date = "";
+                        var new_tr = false;
+                        var itr = 100;
+                        for (var i = 0; i < data.length; i++) {
+                            var data_date = data[i].dt_txt.split(' ')[0];
+                            if (cur_date != data_date) {
+                                cur_date = data_date;
+                                new_tr = false;
+                                if (itr != 100) {
+                                    table_string += "</tr>";
+                                }
+                                table_string += "<tr>";
+                                var temp_text = "<td><b>" + data_date + "</b></td>";
+                                table_string += temp_text;
+
+                                if (itr == 100) {
+                                    // For the first data; need to adjust the table
+                                    if (data[i].dt_txt.split(' ')[1] !== '00:00:00') {
+                                        table_string += "<td></td>";
+                                    }
+                                    if (data[i].dt_txt.split(' ')[1] !== '03:00:00') {
+                                        table_string += "<td></td>";
+                                    }
+                                    if (data[i].dt_txt.split(' ')[1] !== '06:00:00') {
+                                        table_string += "<td></td>";
+                                    }
+                                    if (data[i].dt_txt.split(' ')[1] !== '09:00:00') {
+                                        table_string += "<td></td>";
+                                    }
+                                    if (data[i].dt_txt.split(' ')[1] !== '12:00:00') {
+                                        table_string += "<td></td>";
+                                    }
+                                }
+                                itr = 1;
+                            }
+
+                            itr += 1;
+                            var time = data[i].dt_txt.split(' ')[1].substring(0, 5);
+                            time = '<td><i style="font-size:1.5em" class="' + weather_to_icon(data[i].weather[0].id) + '"></i><br><i class="fas fa-temperature-low"></i> :' + parseInt(data[i].main.temp) + '</td>';
+                            table_string += time;
+                        };
+                        while (itr <= 8) {
+                            table_string += "<td></td>";
+                            itr += 1;
+                        }
+                        table_string += '</tr></table>';
+                        $('#divResults').html(table_string);
+                    });
+                }
+
+                get_weather();
+
+                var date = new Date();
+                var today = new Date(date.getFullYear(), date.getMonth(), date.getDate());
+                var end = new Date(date.getFullYear(), date.getMonth(), date.getDate());
+
+                $('#datepicker1').datepicker({
+                    format: "mm/dd/yyyy",
+                    todayHighlight: true,
+                    startDate: today,
+                    endDate: end,
+                    minDate: 0,
+                    autoclose: true
+                });
+
+                $('#datepicker1').datepicker('setDate', today);
+
+                $('#timepicker1').timepicker({
+                    timeFormat: "h:i A",
+                    step: 60,
+                    minTime: '6',
+                    maxTime: '11:00pm',
+                    'forceRoundTime': false
+
+                });
+
+
+            }
+        </script>
