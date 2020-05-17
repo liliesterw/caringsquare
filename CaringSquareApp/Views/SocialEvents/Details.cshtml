@@ -4,25 +4,23 @@
     ViewBag.Title = "Details";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-    <style>
-        .button {
-            background-color: #4CAF50; /* Green */
-            border: none;
-            color: white;
-            padding: 15px 32px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 16px;
-            margin: 4px 2px;
-            cursor: pointer;
-        }
-    </style>
 
+<style>
+    .button {
+        background-color: #4CAF50; 
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+    }
+</style>
 <div id="fb-root"></div>
 <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v7.0&appId=576187129689734&autoLogAppEvents=1"></script>
-
-
 
 <section id="contact" class="contact" hidden>
     <div class="container">
@@ -83,7 +81,7 @@
         </div>
 
         <div>
-            <a href="/SocialEvents/Send_Email" id="share-event" class="btn" style="background-color: #94d16a; margin-left:60px;font-weight:bold;">Share Event By Email</a>
+            <a href="/SocialEvents/Send_Email" id="share-event1" class="btn" style="background-color: #94d16a; margin-left:60px;font-weight:bold;">Share Event By Email</a>
             <br /><br />
 
         </div>
@@ -179,7 +177,6 @@
                         Facebook Share
                     </a>
                 </div>
-                
             </div>
 
 
@@ -191,32 +188,11 @@
             <a href="/SocialEvents" class="btn" style="color:#010483; background-color:#f7f7f7; border-color:#000000;margin-left:10px;font-weight:bold;">Back to Event List</a>
         </p>
     </div>
-    
 
 </section>
-<script>
-
-    function init() {
-        document.getElementById('share-event').addEventListener('click', event => {
-            event.preventDefault();
-
-            const dd = [...document.querySelectorAll('dl')].map(el => el.textContent).filter(Boolean).map(s => s.trim());
-
-            console.log(dd);
-
-            localStorage.setItem('__pageCache', JSON.stringify(dd));
-
-            document.location.href = event.target.getAttribute('href')
-        });
-    }
-
-    window.addEventListener('DOMContentLoaded', event => {
-        init();
-    });
-
-    </script>
 
 <script>
+
 
     window.onload = function () {
         /**
@@ -356,7 +332,26 @@
             });
         });
         shareFacebook();
+        init();
+
     }
+
+    function init() {
+        document.getElementById('share-event').addEventListener('click', event => {
+            event.preventDefault();
+
+            const dd = [...document.querySelectorAll('dl')].map(el => el.textContent).filter(Boolean).map(s => s.trim());
+
+            console.log(dd);
+
+            localStorage.setItem('__pageCache', JSON.stringify(dd));
+
+            document.location.href = event.target.getAttribute('href')
+        });
+    }
+
+    window.addEventListener('DOMContentLoaded', event => {
+    });
 
     // function of share this page via facebook
     function shareFacebook() {
@@ -365,5 +360,4 @@
         var currentURL = 'https://www.facebook.com/sharer/sharer.php?app_id=550318795683234&sdk=joey&u=' + x + '&display=popup&ref=plugin&src=share_button';
         document.getElementById("fb_btn").href = currentURL;
     }
-
 </script>
