@@ -25,6 +25,8 @@
 <br />
 <div class="container">
     <h2 id="freshtitle">@ViewBag.Title</h2>
+
+
     <div class="row">
         <div class="col-lg-6 pt-6 pt-lg-0 order-0 order-lg-0 d-flex align-items-center">
             @using (Html.BeginForm())
@@ -95,6 +97,8 @@
         @Html.ActionLink("Back to List", "Index", new { }, new { @class = "btn", @style = "color:#010483;background-color: #f7f7f7; border-color:#000000;font-weight:bold;" })
 
     </div>
+
+
 
     @section Scripts {
         @Scripts.Render("~/bundles/jqueryval")
@@ -199,6 +203,7 @@
                     itr += 1;
                 }
                 table_string += '</tr></table>';
+
                 $('#divResults').html(table_string);
             });
         }

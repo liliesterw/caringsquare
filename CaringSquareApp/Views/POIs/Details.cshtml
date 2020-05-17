@@ -33,7 +33,9 @@ Layout = "~/Views/Shared/_Layout.cshtml";
                             <p style="color: #444"><b>@Html.DisplayFor(model => model.Category)</b></p>
 
                         </div>
+                        <br /><br />
 
+                        <h6 id="freshtitle">Nearby Facilities:</h6>
                         <div class="coordinates">
                             <div class="phone">
                                 <i class="fas fa-toilet"></i>
@@ -59,12 +61,12 @@ Layout = "~/Views/Shared/_Layout.cshtml";
                                                 @if (item.Accessibility == "yes")
                                                 {
                                                     <span style="display:inline; color:green" class="fas fa-wheelchair"></span>
-                                                    
+
                                                 }
                                                 else
                                                 {
                                                     <span style="display:inline; color:white" class="fas fa-wheelchair"></span>
-                                                   
+
                                                 }
 
                                                 @final_name

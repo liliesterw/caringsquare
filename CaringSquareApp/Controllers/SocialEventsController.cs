@@ -41,6 +41,7 @@ namespace CaringSquareApp.Controllers
             return View(socialEvent);
         }
 
+        [Authorize]
         // GET: SocialEvents/Create
         public ActionResult Create()
         {
@@ -70,6 +71,7 @@ namespace CaringSquareApp.Controllers
             return View(socialEvent);
         }
 
+        [Authorize]
         // GET: SocialEvents/Edit/5
         public ActionResult Edit(int? id)
         {
@@ -105,6 +107,7 @@ namespace CaringSquareApp.Controllers
             return View(socialEvent);
         }
 
+        [Authorize]
         // GET: SocialEvents/Delete/5
         public ActionResult Delete(int? id)
         {
@@ -131,6 +134,7 @@ namespace CaringSquareApp.Controllers
             return RedirectToAction("Index");
         }
 
+        [Authorize]
         public ActionResult Send_Email()
         {
             return View(new SendEmailViewModel());

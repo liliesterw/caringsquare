@@ -5,9 +5,11 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
+@using Microsoft.AspNet.Identity
+
 <style>
     .button {
-        background-color: #4CAF50; 
+        background-color: #4CAF50;
         border: none;
         color: white;
         padding: 15px 32px;
@@ -170,23 +172,84 @@
                     }
                 </div>
                 <br />
-                <div>
-                    <a href="/SocialEvents/Send_Email" id="share-event" class="btn" style="background-color: #94d16a; margin-left:60px;font-weight:bold;"> <i class="ri-share-line"></i> Share by Email</a>
-                    <a id="fb_btn" class="btn" style="background-color: #1977F3; margin-left:60px; font-weight:bold;color:white; width:170px; height:40px;" href=" " onclick="return !window.open(this.href, 'Facebook', 'width=640,height=580')">
-                        <img src="~/img/fb.jpg" style="width:5%; margin-right:5px">
-                        Facebook Share
-                    </a>
-                </div>
+                @if (User.Identity.IsAuthenticated)
+                {
+                    <div>
+                        <a href="/SocialEvents/Send_Email" id="share-event" class="btn" style="background-color: #94d16a; margin-right:20px;margin-left:60px;font-weight:bold;"> <i class="ri-share-line"></i> Share by Email</a>
+                        <div class="fb-share-button" data-href=" " data-layout="button" data-size="large">
+                            <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">
+                                <img src="~/img/fb.jpg" style="width:5%; margin-right:5px">
+                                Facebook Share
+                            </a>
+                        </div>
+
+                    </div>
+                }
+
             </div>
 
 
         </div>
         <br /><br />
         <br /><br />
-        <p>
-            @Html.ActionLink("Edit This Event", "Edit", new { id = Model.EventId }, new { @class = "btn", @style = "color:#010483;background-color: #f7f7f7; border-color:#000000;margin-left:10px;font-weight:bold;" })
-            <a href="/SocialEvents" class="btn" style="color:#010483; background-color:#f7f7f7; border-color:#000000;margin-left:10px;font-weight:bold;">Back to Event List</a>
-        </p>
+        @if (User.Identity.IsAuthenticated)
+        {
+            <p>
+                @Html.ActionLink("Edit This Event", "Edit", new { id = Model.EventId }, new { @class = "btn", @style = "color:#010483;background-color: #f7f7f7; border-color:#000000;margin-left:10px;font-weight:bold;" })
+                <a href="/SocialEvents" class="btn" style="color:#010483; background-color:#f7f7f7; border-color:#000000;margin-left:10px;font-weight:bold;">Back to Event List</a>
+            </p>
+        }
+        else
+        {
+            <main id="main">
+                <section id="pricing" class="pricing" style="padding:50px">
+                    <div class="container">
+                        <div class="section-title" style="padding:0px">
+                            <h2>How can we help</h2>
+                            <p>Our Features</p>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-6 ">
+                                <div class="box" style="margin-top: 30px">
+
+                                    <h2 id="headingedit2">Dashboards</h2>
+                                    <br />
+                                    <img style="width:200px;" src="~/img/Dashboard.jpg" />
+                                    <p id="paragraphedit2">Keep track of upcoming Events so you don't miss them.</p>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 col-md-6 ">
+                                <div class="box" style="margin-top: 30px">
+
+                                    <h2 id="headingedit2">Create Events</h2>
+                                    <br />
+                                    <img style="width:200px;" src="~/img/Events.jpg" />
+                                    <p id="paragraphedit2">Create Social Events and share the same with your friends.    </p>
+
+
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 col-md-6 ">
+                                <div class="box" style="margin-top: 30px">
+
+                                    <h2 id="headingedit2">Share Events</h2>
+                                    <br />
+                                    <img style="width:200px;" src="~/img/Friends.jpg" />
+                                    <p id="paragraphedit2">Share your Social Events with friends. Invite them to your Events.        </p>
+
+                                </div>
+                            </div>
+
+
+                            </div>
+                        </div>
+                </section>
+            </main>
+        }
     </div>
 
 </section>
@@ -357,7 +420,9 @@
     function shareFacebook() {
 
         var x = document.URL;
-        var currentURL = 'https://www.facebook.com/sharer/sharer.php?app_id=550318795683234&sdk=joey&u=' + x + '&display=popup&ref=plugin&src=share_button';
-        document.getElementById("fb_btn").href = currentURL;
+        $('.fb-share-button').attr("data-href", x);
+        //var x = document.URL;
+        //var currentURL = 'https://www.facebook.com/sharer/sharer.php?app_id=550318795683234&sdk=joey&u=' + x + '&display=popup&ref=plugin&src=share_button';
+        //document.getElementById("fb_btn").href = currentURL;
     }
 </script>
