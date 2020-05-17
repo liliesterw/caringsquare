@@ -28,7 +28,7 @@
 
 
     <div class="row">
-        <div class="col-lg-6 pt-6 pt-lg-0 order-0 order-lg-0 d-flex align-items-center">
+        <div class="col-lg-12 pt-6 pt-lg-0 order-0 order-lg-0 d-flex align-items-center">
             @using (Html.BeginForm())
             {
                 @Html.AntiForgeryToken()
@@ -85,11 +85,6 @@
                 </div>
             }
         </div>
-
-        <div class="col-lg-6 pt-6 pt-lg-0 order-0 d-flex align-items-center">
-            <div id="divResults">
-            </div>
-        </div>
     </div>
 
     <div>
@@ -97,6 +92,15 @@
         @Html.ActionLink("Back to List", "Index", new { }, new { @class = "btn", @style = "color:#010483;background-color: #f7f7f7; border-color:#000000;font-weight:bold;" })
 
     </div>
+    <hr/>
+    <h2 id="freshtitle" style="margin-top:30px;margin-bottom:-10px;">Check the Weather Forecast:</h2>
+    <section id="pricing" class="pricing">
+        <div class="container" style="margin-top:-90px;">
+            <div id="date-data"></div>
+            <div class="row aos-init aos-animate" data-aos="fade-left" id="weather-data">
+            </div>
+        </div>
+    </section>
 
 
 
@@ -104,9 +108,6 @@
         @Scripts.Render("~/bundles/jqueryval")
     }
 </div>
-<script>
-    
-</script>
 <script>
     window.onload = function () {
         function weather_to_icon(weather_id) {
@@ -154,9 +155,52 @@
                 //console.log(response.list);
                 
                 var data = response.list;
-                //console.log(data.length);
+
+                var dates = Array.from(new Set(data.map(item => item.dt_txt.slice(0, 10))));
+
+                console.log(dates)
+                var dateStr = '';
+                for (var i = 0; i < dates.length; i++) {
+
+                    dateStr += `
+ <button class="btn btn-primary date-btn col-lg-2" style="margin-right:20px;margin-bottom:30px;background-color:#94d16a;font-weight:bold;color:#000000"  data-filter-date="${dates[i]}" > ${dates[i]}</button>
+`
+                }
+
+                $('#date-data').html(dateStr)
+
+                var str = '';
+
+                for (var i = 0; i < data.length; i++) {
+                    var obj = data[i];
+                    var icon = weather_to_icon(obj.weather[0].id);
+                    var date = new Date(obj.dt_txt);
+                    var dataString= obj.dt_txt.slice(0, 10) 
+
+                    if (date.getHours() < 6 || date.getHours() > 18) {
+                        continue;
+                    }
+
+                    console.log(obj)
+                    str += `                <div class="col-lg-2 col-md-6 col-sm-6 col-6 d-none" style="margin-right:30px;" data-date="${dataString}" >
+                        <div class="box aos-init aos-animate" data-aos="zoom-in" data-aos-delay="100">
+                            <i id="icon-weather" class="${icon}" style="font-size:100px"></i>
+                            <h3 style="background-color:white">
+                                <span id="weather-temp" style="font-size:33px"></span><br>
+                                <br>
+                                Temperature<br>
+                                <span id="weather-temp-like">${obj.main.temp}<sup>o</sup>C</span><br>
+                                <soan>Time ${date.getHours()}:00 </span>
+                            </h3>
+                        </div>
+                    </div>`
+                }
+
+                $('#weather-data').html(str)
                 
-                var table_string = "<table style=' border: 1px solid black;'><tr><td colspan=9><b>Forecast for the next 5 days:</b></td></tr><tr'><th>Date</th><th>00:00</th><th>03:00</th><th>06:00</th><th>09:00</th><th>12:00</th><th>15:00</th><th>18:00</th><th>21:00</th></tr>";
+                
+                
+               /* var table_string = "<table style=' border: 1px solid black;'><tr><td colspan=9><b>Forecast for the next 5 days:</b></td></tr><tr'><th>Date</th><th>00:00</th><th>03:00</th><th>06:00</th><th>09:00</th><th>12:00</th><th>15:00</th><th>18:00</th><th>21:00</th></tr>";
                 var cur_date = "";
                 var new_tr = false;
                 var itr = 100;
@@ -202,13 +246,19 @@
                     table_string += "<td></td>";
                     itr += 1;
                 }
-                table_string += '</tr></table>';
+                table_string += '</tr></table>'; 
 
-                $('#divResults').html(table_string);
+                $('#divResults').html(table_string);  */
             });
         }
 
         get_weather();
+
+        $(document).on('click', '.date-btn', event => {
+            var date = $(event.target).data().filterDate;
+            $('#weather-data').children().addClass('d-none');
+            $('#weather-data').children().filter(`[data-date=${date}]`).removeClass('d-none');
+        })
 
         var place = new URL(location.href).searchParams.get('place');
 
@@ -230,6 +280,8 @@
             autoclose: true
         });
 
+
+
         $('#datepicker1').datepicker('setDate', today);
 
         $('#timepicker1').timepicker({
@@ -245,5 +297,6 @@
 
     }
 </script>
+
 
 
