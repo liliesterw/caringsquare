@@ -32,8 +32,11 @@
 
                     @if (Model.Count() != 0)
                     {
-                        <div class="owl-carousel testimonials-carousel" data-aos="zoom-in">
-                            @foreach (var item in Model)
+                    <div class="owl-carousel testimonials-carousel" data-aos="zoom-in">
+                        @{var idx = 0;}
+                        @foreach (var item in Model)
+                        {
+                            if (idx < 3)
                             {
                                 <div class="testimonial-item">
                                     <h3>@Html.DisplayFor(modelItem => item.EventName)</h3>
@@ -41,7 +44,10 @@
                                     <h4>@Html.DisplayFor(modelItem => item.POIs.Address)</h4>
                                 </div>
                             }
-                        </div>
+                            idx = idx + 1;
+
+                        }
+                    </div>
                     }
                     else
                     {

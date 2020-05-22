@@ -5,7 +5,51 @@
 <!-- ======= Hero Section ======= -->
 <section id="hero">
     <div class="container">
-        <div class="row">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="container" style="font-family: sans-serif;margin:0% 25% 0% 15%  ;text-align:justify;color: #fff;font-weight: bold;background-size: cover;">
+                        <br />
+                        <h2 style="margin:0 ;">
+                            Looking for a <br />
+                            <b style="color:#AECB91">perfect</b>  place to <br />
+                            plan your own <br />
+                            <b style="color:#AECB91">social events ?</b> <br /><br />
+                        </h2>
+
+                        <a href="/POIs" class="btn-get-started scrollto " style="background-color: #31943b;">Explore places here</a>
+                        <br /><br /><br />
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="container" style="font-family: sans-serif;margin:0% -10%  ;text-align:right;color: #fff;font-weight: bold;background-size: cover;">
+                        <br />
+                        <h2 style="margin:0 ;">
+                            <b>1 in 4</b><br />
+                            Elders experiences <br />
+                            high level of social <br />
+                            interaction anxiety <br /><br />
+                        </h2>
+
+                        <a href="/Home/About/" class="btn-get-started scrollto " style="background-color: #31943b;">Other Facts</a>
+                        <br /><br /><br />
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+        <div class="row" hidden>
             <div class="col-lg-6 pt-6 pt-lg-0 order-1 order-lg-1 d-flex align-items-center">
                 <div data-aos="zoom-out">
                     <h1 style="font-family: sans-serif;margin-top:30px;text-align: left;color: #fff;font-weight: bold;font-size: 4em;background-size: cover;text-shadow: 2px 2px 8px #404040;"><span>Caring Square</span></h1>
@@ -49,9 +93,71 @@
     </svg>
 
 </section><!-- End Hero -->
+<!-- ======= Team Section ======= -->
+<section id="team" class="team" style="padding:6    0px 0">
+    <div class="container">
 
+        <div class="section-title" data-aos="fade-up">
+   
+            <p>HOW IT WORKS</p>
+        </div>
 
-<main id="main">
+        <div class="row" data-aos="fade-left">
+
+            <div class="col-lg-4 col-md-6">
+                <div class="member" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="pic"><img src="../../img/explore.jpg" class="img-fluid" alt=""></div>
+                    <div class="member-info">
+                        <h4>EXPLORE PLACES</h4>
+                        <span>Chief Executive Officer</span>
+                        <div class="social">
+                            <a href=""><i class="icofont-twitter"></i></a>
+                            <a href=""><i class="icofont-facebook"></i></a>
+                            <a href=""><i class="icofont-instagram"></i></a>
+                            <a href=""><i class="icofont-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mt-5 mt-md-0">
+                <div class="member" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="pic"><img src="../../img/create.jpg" class="img-fluid" alt=""></div>
+                    <div class="member-info">
+                        <h4>CREATE EVENT</h4>
+                        <span>Product Manager</span>
+                        <div class="social">
+                            <a href=""><i class="icofont-twitter"></i></a>
+                            <a href=""><i class="icofont-facebook"></i></a>
+                            <a href=""><i class="icofont-instagram"></i></a>
+                            <a href=""><i class="icofont-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mt-5 mt-lg-0">
+                <div class="member" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="pic"><img src="../../img/envelope.jpg" class="img-fluid" alt=""></div>
+                    <div class="member-info">
+                        <h4>Share</h4>
+                        <span>CTO</span>
+                        <div class="social">
+                            <a href=""><i class="icofont-twitter"></i></a>
+                            <a href=""><i class="icofont-facebook"></i></a>
+                            <a href=""><i class="icofont-instagram"></i></a>
+                            <a href=""><i class="icofont-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section><!-- End Team Section -->
+
+<main id="main" hidden>
     <section id="pricing" class="pricing" style="padding:50px">
         <div class="container">
             <div class="section-title" data-aos="fade-right" style="padding:0px">
@@ -63,7 +169,6 @@
             <div class="row" data-aos="fade-left">
                 <div class="col-lg-4 col-md-6 ">
                     <div class="box" data-aos="zoom-in" data-aos-delay="100" style="margin-top: 30px">
-
                         <h2 id="headingedit2">Dashboards</h2>
                         <br />
                         <img style="width:200px;" src="~/img/Dashboard.jpg" />
@@ -73,7 +178,6 @@
 
                 <div class="col-lg-4 col-md-6 ">
                     <div class="box" data-aos="zoom-in" data-aos-delay="100" style="margin-top: 30px">
-
                         <h2 id="headingedit2">Create Events</h2>
                         <br />
                         <img style="width:200px;" src="~/img/Events.jpg" />
@@ -100,6 +204,23 @@
         </div>
     </section>
 </main>
+<script>
+    window.onload = function () {
+        var idx = 1
+        $('#carouselExampleIndicators').bind('slide.bs.carousel', function (e) {
+            if (idx % 2 == 0) {
+                document.getElementById("hero").style.backgroundImage = "url('/img/homepage_explore.png')";
+            }
+            if (idx % 2 == 1) {
+                document.getElementById("hero").style.backgroundImage = "url('/img/home_facts.png')";
+            }
+            idx = idx + 1;
+
+        });
+
+        // document.body.style.backgroundImage = "url('home_facts.png')";
+    }
+</script>
 <!--
 <script>
     var password;
