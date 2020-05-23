@@ -39,7 +39,7 @@ namespace CaringSquareApp.Controllers
             DateTime dtFrom = DateTime.ParseExact(DateTime.Now.ToString("MM/dd/yyyy"), "MM/dd/yyyy", CultureInfo.InvariantCulture);
 
             var userId = User.Identity.GetUserId();
-            var eventLists = db.SocialEvents.ToList().Where(s => s.UserUserId == userId && DateTime.ParseExact(s.EventDate.ToString(), "MM/dd/yyyy", CultureInfo.InvariantCulture) >= dtFrom );
+            var eventLists = db.SocialEvents.ToList().Where(s => s.UserUserId == userId && DateTime.ParseExact(s.EventDate.ToString(), "MM/dd/yyyy", CultureInfo.InvariantCulture) >= dtFrom);
 
             //var socialEvents = db.SocialEvents.Include(s => s.AspNetUser).Include(s => s.POIs);
             return View(eventLists.OrderBy(s => s.EventDate));

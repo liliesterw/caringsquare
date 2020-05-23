@@ -8,6 +8,12 @@
     text-shadow: 2px 2px 8px #404040;
 }
 
+.required::after {
+    content: "*";
+    font-weight: bold;
+    font-size: 1.4em;
+    color: #7d0800;
+}
 input[type="checkbox"] {
     width: 20px; 
     height: 20px; 

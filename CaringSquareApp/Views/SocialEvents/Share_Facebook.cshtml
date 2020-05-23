@@ -1,0 +1,148 @@
+﻿
+@{
+    ViewBag.Title = "Share_Facebook";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+
+
+<div class="container">
+    <div>
+        <h2 id="freshtitle">Share on Facebook</h2>
+    </div>
+
+    <style>
+        .button {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+    </style>
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v7.0&appId=576187129689734&autoLogAppEvents=1"></script>
+
+    <strong id="Contents">
+    </strong>
+
+
+
+    <div class="fb-share-button" data-href=" " data-layout="button" data-size="large">
+        <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">
+            <img src="~/img/fb.jpg" style="width:5%; margin-right:5px">
+            Facebook Share
+        </a>
+    </div>
+</div>
+
+<main id="main">
+    <section id="team" class="team" style="padding:6    0px 0">
+        <div class="container">
+
+            <div class="section-title" data-aos="fade-up">
+
+                <p>HOW IT WORKS</p>
+            </div>
+
+            <div class="row" data-aos="fade-left">
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="member" data-aos="zoom-in" data-aos-delay="100">
+                        <div class="pic"><img src="../../img/explore.jpg" class="img-fluid" alt=""></div>
+                        <div class="member-info">
+                            <h4>EXPLORE PLACES</h4>
+                            <div class="social">
+                                <p id="paragraphedit2" style="color:#01036f;">Explore places all over Melbourne along with nearest facilities.    </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mt-5 mt-md-0">
+                    <div class="member" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="pic"><img src="../../img/create.jpg" class="img-fluid" alt=""></div>
+                        <div class="member-info">
+                            <h4>CREATE EVENTS</h4>
+                            <p id="paragraphedit2" style="color:#01036f;">Create Social Events or activities based on your interest.    </p>
+                            <div class="social">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mt-5 mt-lg-0">
+                    <div class="member" data-aos="zoom-in" data-aos-delay="300">
+                        <div class="pic"><img src="../../img/envelope.jpg" class="img-fluid" alt=""></div>
+                        <div class="member-info">
+                            <h4>SHARE EVENTS</h4>
+                            <div class="social">
+                                <p id="paragraphedit2" style="color:#01036f;">Share your Social Events with friends. Invite them to your Events.        </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+</main>
+
+<script>
+    window.onload = function () {
+        shareFacebook();
+
+    }
+    function init() {
+        var result = document.getElementById('Contents');
+        var text = "";
+        try {
+            var sp = new URL(location.href);
+            var decode = atob(sp.searchParams.get('data'));
+            var textArray = JSON.parse(decode);
+
+            console.log(textArray)
+            textArray = textArray[0].split('\n').map(g => g.trim()).filter(Boolean);
+
+
+            for (var i = 0; i < textArray.length; i += 2) {
+                text += `<strong>${textArray[i]}</strong>:  ${textArray[i + 1]} <br/>\n`
+
+            }
+        } catch (err) {
+        }
+
+        result.innerHTML += `\n ${text}`
+
+    }
+
+
+    window.addEventListener('DOMContentLoaded', event => {
+        init();
+    });
+
+    function shareFacebook() {
+
+        var x = document.URL;
+        $('.fb-share-button').attr("data-href", x);
+        document.getElementById("url").content = x;
+
+    }
+</script>
+
+
+

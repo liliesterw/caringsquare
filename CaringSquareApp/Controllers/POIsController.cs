@@ -91,6 +91,7 @@ namespace CaringSquareApp.Controllers
             return View(poi_list);
         }
 
+        [Authorize(Roles = "Administrator")]
         // GET: POIs/Create
         public ActionResult Create()
         {
@@ -114,6 +115,7 @@ namespace CaringSquareApp.Controllers
             return View(pOIs);
         }
 
+        [Authorize(Roles = "Administrator")]
         // GET: POIs/Edit/5
         public ActionResult Edit(int? id)
         {
@@ -145,6 +147,7 @@ namespace CaringSquareApp.Controllers
             return View(pOIs);
         }
 
+        [Authorize(Roles = "Administrator")]
         // GET: POIs/Delete/5
         public ActionResult Delete(int? id)
         {
@@ -171,10 +174,10 @@ namespace CaringSquareApp.Controllers
             return RedirectToAction("Index");
         }
 
-        public ActionResult AddFilter(bool category1 = false, bool category2 = false, bool category3 = false, bool category4 = false, bool category5 = false, bool category6 = false, bool category7 = false, bool category8 = false, bool category9 = false)
+        public ActionResult AddFilter(bool category1 = false, bool category2 = false, bool category3 = false, bool category4 = false, bool category5 = false, bool category6 = false, bool category7 = false, bool category8 = false, bool category9 = false, bool category10 = false)
         {
             
-            var tempString1 = "exception"; var tempString2 = "exception"; var tempString3 = "exception"; var tempString4 = "exception"; var tempString5 = "exception"; var tempString6 = "exception"; var tempString7 = "exception"; var tempString8 = "exception"; var tempString9 = "exception";
+            var tempString1 = "exception"; var tempString2 = "exception"; var tempString3 = "exception"; var tempString4 = "exception"; var tempString5 = "exception"; var tempString6 = "exception"; var tempString7 = "exception"; var tempString8 = "exception"; var tempString9 = "exception"; var tempString10 = "exception";
             if (category1 == true)
             {
                 tempString1 = "cinema";
@@ -211,6 +214,10 @@ namespace CaringSquareApp.Controllers
             {
                 tempString9 = "bbq";
             }
+            if (category10 == true)
+            {
+                tempString9 = "pets friendly";
+            }
             var poi_list1 = db.POIs.Where(s => s.Category.Contains(tempString1)).ToList();
             var poi_list2 = db.POIs.Where(s => s.Category.Contains(tempString2)).ToList();
             var poi_list3 = db.POIs.Where(s => s.Category.Contains(tempString3)).ToList();
@@ -220,8 +227,9 @@ namespace CaringSquareApp.Controllers
             var poi_list7 = db.POIs.Where(s => s.Category.Contains(tempString7)).ToList();
             var poi_list8 = db.POIs.Where(s => s.Category.Contains(tempString8)).ToList();
             var poi_list9 = db.POIs.Where(s => s.Category.Contains(tempString9)).ToList();
-            var newList = poi_list1.Concat(poi_list2).Concat(poi_list3).Concat(poi_list4).Concat(poi_list5).Concat(poi_list6).Concat(poi_list7).Concat(poi_list8).Concat(poi_list9);
-            return View(newList);
+            var poi_list10 = db.POIs.Where(s => s.Category.Contains(tempString10)).ToList();
+            var newList = poi_list1.Concat(poi_list2).Concat(poi_list3).Concat(poi_list4).Concat(poi_list5).Concat(poi_list6).Concat(poi_list7).Concat(poi_list8).Concat(poi_list9).Concat(poi_list10);
+            return PartialView(newList);
         }
 
         public ActionResult AdvancedSearch(string PlaceName, string StreetName)

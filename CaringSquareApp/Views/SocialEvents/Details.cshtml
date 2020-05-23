@@ -7,22 +7,6 @@
 
 @using Microsoft.AspNet.Identity
 
-<style>
-    .button {
-        background-color: #4CAF50;
-        border: none;
-        color: white;
-        padding: 15px 32px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 16px;
-        margin: 4px 2px;
-        cursor: pointer;
-    }
-</style>
-<div id="fb-root"></div>
-<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v7.0&appId=576187129689734&autoLogAppEvents=1"></script>
 
 <section id="contact" class="contact" hidden>
     <div class="container">
@@ -174,16 +158,11 @@
                 <br />
                 @if (User.Identity.IsAuthenticated)
                 {
-                    <div>
-                        <a href="/SocialEvents/Send_Email" id="share-event" class="btn" style="background-color: #94d16a; margin-right:20px;margin-left:60px;font-weight:bold;"> <i class="ri-share-line"></i> Share by Email</a>
-                        <div class="fb-share-button" data-href=" " data-layout="button" data-size="large">
-                            <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">
-                                <img src="~/img/fb.jpg" style="width:5%; margin-right:5px">
-                                Facebook Share
-                            </a>
-                        </div>
+            <div>
+                <a href="/SocialEvents/Send_Email" id="share-event" class="btn" style="background-color: #94d16a; margin-right:20px;margin-left:60px;font-weight:bold;"> <i class="ri-share-line"></i> Share by Email</a>
+                <a href="/SocialEvents/Share_Facebook" id="share-event-fb" class="btn" style="background-color: #4267B2;color:aliceblue; margin-right:20px;margin-left:60px;font-weight:bold;"> <i class="ri-share-line"></i> Share by Facebook</a>
 
-                    </div>
+            </div>
                 }
 
             </div>
@@ -245,8 +224,8 @@
                             </div>
 
 
-                            </div>
                         </div>
+                    </div>
                 </section>
             </main>
         }
@@ -394,12 +373,13 @@
                 map.getCanvas().style.cursor = '';
             });
         });
-        shareFacebook();
-        init();
+
+        init1();
+        init2();
 
     }
 
-    function init() {
+    function init1() {
         document.getElementById('share-event').addEventListener('click', event => {
             event.preventDefault();
 
@@ -407,22 +387,31 @@
 
             console.log(dd);
 
-            localStorage.setItem('__pageCache', JSON.stringify(dd));
+            localStorage.setItem('__pageCache1', JSON.stringify(dd));
 
             document.location.href = event.target.getAttribute('href')
+        });
+    }
+
+    function init2() {
+        document.getElementById('share-event-fb').addEventListener('click', event => {
+            event.preventDefault();
+
+            const dd = [...document.querySelectorAll('dl')].map(el => el.textContent).filter(Boolean).map(s => s.trim());
+
+            var str = JSON.stringify(dd);
+            var base64Str = btoa(str);
+
+            console.log(str);
+            console.log(btoa(str));
+
+           // localStorage.setItem('__pageCache2', JSON.stringify(dd));
+
+            document.location.href = event.target.getAttribute('href') + `?data=${base64Str}`
         });
     }
 
     window.addEventListener('DOMContentLoaded', event => {
     });
 
-    // function of share this page via facebook
-    function shareFacebook() {
-
-        var x = document.URL;
-        $('.fb-share-button').attr("data-href", x);
-        //var x = document.URL;
-        //var currentURL = 'https://www.facebook.com/sharer/sharer.php?app_id=550318795683234&sdk=joey&u=' + x + '&display=popup&ref=plugin&src=share_button';
-        //document.getElementById("fb_btn").href = currentURL;
-    }
 </script>

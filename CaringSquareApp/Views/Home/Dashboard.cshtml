@@ -27,11 +27,11 @@
             </div>
         </section>
 
-            <section id="testimonials" class="testimonials">
-                <div class="container">
+        <section id="testimonials" class="testimonials">
+            <div class="container">
 
-                    @if (Model.Count() != 0)
-                    {
+                @if (Model.Count() != 0)
+                {
                     <div class="owl-carousel testimonials-carousel" data-aos="zoom-in">
                         @{var idx = 0;}
                         @foreach (var item in Model)
@@ -48,105 +48,105 @@
 
                         }
                     </div>
-                    }
-                    else
-                    {
-                        <div class="owl-carousel testimonials-carousel" data-aos="zoom-in">
-                            <div class="testimonial-item">
-                                <p> You have no upcoming event</p>
-                                <a href="/POIs/" class="btn-event" style="background-color: #94d16a">Create Event</a>
-                            </div>
-                            </div>
-                            }
-
-
+                }
+                else
+                {
+                    <div class="owl-carousel testimonials-carousel" data-aos="zoom-in">
+                        <div class="testimonial-item">
+                            <p> You have no upcoming event</p>
+                            <a href="/POIs/" class="btn-event" style="background-color: #94d16a">Create Event</a>
                         </div>
-</section>
-            <!-- End UPCOMING EVENT Section -->
-            <!-- WEATHER SECTION-->
-            <section id="pricing" class="pricing" hidden>
-                <div class="container">
-                    
-                    <div class="row" data-aos="fade-left">
-                        <div class="col-lg-6 col-md-6 col-sm-6 col-6">
-                            <div class="box" data-aos="zoom-in" data-aos-delay="100">
-
-                                <i id="icon-weather" class="icofont-sunny" style="font-size:100px"></i>
-
-                                <h3 style="background-color:white">
-                                    <span id="weather-temp" style="font-size:33px"></span><br />
-                                    <br />
-                                    Feels Like<br />
-                                    <span id="weather-temp-like">22<sup>o</sup>C</span><br />
-
-                                </h3>
-                            </div>
-                        </div>
-
                     </div>
-                    <br />
+                }
 
-                    <div class="row" data-aos="fade-left">
-                        <div class="col-lg-12">
-                            <div class="box" data-aos="zoom-in" data-aos-delay="100">
-                                <div class="container">
-                                    <div class="section-title" data-aos="fade-right">
-                                        <p style="font-size:24px"> <i class="ri-lightbulb-line"></i> Quote for the day! </p>
-                                    </div>
+
+            </div>
+        </section>
+        <!-- End UPCOMING EVENT Section -->
+        <!-- WEATHER SECTION-->
+        <section id="pricing" class="pricing" hidden>
+            <div class="container">
+
+                <div class="row" data-aos="fade-left">
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-6">
+                        <div class="box" data-aos="zoom-in" data-aos-delay="100">
+
+                            <i id="icon-weather" class="icofont-sunny" style="font-size:100px"></i>
+
+                            <h3 style="background-color:white">
+                                <span id="weather-temp" style="font-size:33px"></span><br />
+                                <br />
+                                Feels Like<br />
+                                <span id="weather-temp-like">22<sup>o</sup>C</span><br />
+
+                            </h3>
+                        </div>
+                    </div>
+
+                </div>
+                <br />
+
+                <div class="row" data-aos="fade-left">
+                    <div class="col-lg-12">
+                        <div class="box" data-aos="zoom-in" data-aos-delay="100">
+                            <div class="container">
+                                <div class="section-title" data-aos="fade-right">
+                                    <p style="font-size:24px"> <i class="ri-lightbulb-line"></i> Quote for the day! </p>
                                 </div>
-                                <p>
-                                    “In order to "be a light" we need to "plug into" The Light!”
-                                    ― Evinda Lepins, Back to Single
-                                </p>
                             </div>
+                            <p>
+                                “In order to "be a light" we need to "plug into" The Light!”
+                                ― Evinda Lepins, Back to Single
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- END CARD SECTION-->
+        <!-- ======= Features Section ======= -->
+        <section id="features" class="features" style="padding:50px 0">
+            <div class="container">
+                <div class="section-title" style="padding-bottom:5px">
+                    <h2>Explore More</h2>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 col-md-6">
+                        <br />
+                        <div class="icon-box"
+                             onclick="window.location = '../SocialEvents/Create';">
+                            <i class="ri-calendar-todo-line" style="color: #ffbb2c;"></i>
+                            <h3>Create Event</h3>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <br />
+                        <div class="icon-box" onclick="window.location = '../SocialEvents';">
+                            <i class="fa fa-share-alt-square" style="color: #e80368;"></i>
+                            <h3>Share Event</h3>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <br />
+                        <div class="icon-box"
+                             onclick="window.location = '../POIs';">
+                            <i class="fa fa-map-marker" style="color: #5578ff;"></i>
+                            <h3>Explore Places</h3>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <br />
+                        <div class="icon-box" onclick="window.location = '../Home/About';">
+                            <i class="ri-lightbulb-flash-line" style="color: #28a745;"></i>
+                            <h3>Knowledge Hub</h3>
                         </div>
                     </div>
 
                 </div>
-            </section>
-            <!-- END CARD SECTION-->
-            <!-- ======= Features Section ======= -->
-            <section id="features" class="features"   style="padding:50px 0">
-                <div class="container">
-                    <div class="section-title" data-aos="fade-right" style="padding-bottom:5px">
-                        <h2>Explore More</h2>
-                    </div>
-                    <div class="row" data-aos="fade-left">
-                        <div class="col-lg-6 col-md-6">
-                            <br />
-                            <div class="icon-box" data-aos="zoom-in" data-aos-delay="50"
-                                 onclick="window.location = '../SocialEvents';">
-                                <i class="ri-calendar-todo-line" style="color: #ffbb2c;"></i>
-                                <h3>Create Event</h3>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-md-6">
-                            <br />
-                            <div class="icon-box" data-aos="zoom-in" data-aos-delay="150" onclick="window.location = '../SocialEvents';">
-                                <i class="ri-checkbox-circle-line" style="color: #e80368;"></i>
-                                <h3>Share Event</h3>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-md-6">
-                            <br />
-                            <div class="icon-box" data-aos="zoom-in" data-aos-delay="100"
-                                 onclick="window.location = '../POIs';">
-                                <i class="ri-team-fill" style="color: #5578ff;"></i>
-                                <h3>Explore Places</h3>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-md-6">
-                            <br />
-                            <div class="icon-box" data-aos="zoom-in" data-aos-delay="200" onclick="window.location = '../Home/About';">
-                                <i class="ri-lightbulb-flash-line" style="color: #28a745;"></i>
-                                <h3>Knowledge Hub</h3>
-                            </div>
-                        </div>
 
-                    </div>
-
-                </div>
-            </section><!-- End Features Section -->
+            </div>
+        </section><!-- End Features Section -->
 
     </main>
     <script>

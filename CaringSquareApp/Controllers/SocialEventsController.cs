@@ -29,6 +29,8 @@ namespace CaringSquareApp.Controllers
         // GET: SocialEvents/Details/5
         public ActionResult Details(int? id)
         {
+            var userId = User.Identity.GetUserId();
+            var eventLists = db.SocialEvents.Where(s => s.UserUserId == userId).ToList();
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
@@ -38,7 +40,21 @@ namespace CaringSquareApp.Controllers
             {
                 return HttpNotFound();
             }
-            return View(socialEvent);
+            bool alreadyExist = eventLists.Contains(socialEvent);
+            if(alreadyExist == true)
+            {
+                return View(socialEvent);
+            }
+            else
+            {
+                return RedirectToAction("AccessDenied");
+            }
+
+        }
+
+        public ActionResult AccessDenied()
+        {
+            return View();
         }
 
         [Authorize]
@@ -75,6 +91,9 @@ namespace CaringSquareApp.Controllers
         // GET: SocialEvents/Edit/5
         public ActionResult Edit(int? id)
         {
+            var userId = User.Identity.GetUserId();
+            var eventLists = db.SocialEvents.Where(s => s.UserUserId == userId).ToList();
+           
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
@@ -82,11 +101,21 @@ namespace CaringSquareApp.Controllers
             SocialEvent socialEvent = db.SocialEvents.Find(id);
             if (socialEvent == null)
             {
+
                 return HttpNotFound();
             }
-            ViewBag.UserUserId = new SelectList(db.AspNetUsers, "Id", "Email", socialEvent.UserUserId);
-            ViewBag.POIPlaceId = new SelectList(db.POIs, "PlaceId", "Name", socialEvent.POIPlaceId);
-            return View(socialEvent);
+            bool alreadyExist = eventLists.Contains(socialEvent);
+            if (alreadyExist == true)
+            {
+                ViewBag.UserUserId = new SelectList(db.AspNetUsers, "Id", "Email", socialEvent.UserUserId);
+                ViewBag.POIPlaceId = new SelectList(db.POIs, "PlaceId", "Name", socialEvent.POIPlaceId);
+                return View(socialEvent);
+            }
+            else
+            {
+                return RedirectToAction("AccessDenied");
+            }
+            
         }
 
         // POST: SocialEvents/Edit/5
@@ -96,6 +125,7 @@ namespace CaringSquareApp.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Edit([Bind(Include = "EventId,EventName,EventDate,EventTime,UserUserId,POIPlaceId")] SocialEvent socialEvent)
         {
+            
             if (ModelState.IsValid)
             {
                 db.Entry(socialEvent).State = EntityState.Modified;
@@ -111,6 +141,8 @@ namespace CaringSquareApp.Controllers
         // GET: SocialEvents/Delete/5
         public ActionResult Delete(int? id)
         {
+            var userId = User.Identity.GetUserId();
+            var eventLists = db.SocialEvents.Where(s => s.UserUserId == userId).ToList();
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
@@ -120,7 +152,16 @@ namespace CaringSquareApp.Controllers
             {
                 return HttpNotFound();
             }
-            return View(socialEvent);
+            bool alreadyExist = eventLists.Contains(socialEvent);
+            if (alreadyExist == true)
+            {
+                return View(socialEvent);
+            }
+            else
+            {
+                return RedirectToAction("AccessDenied");
+            }
+            
         }
 
         // POST: SocialEvents/Delete/5
@@ -138,6 +179,11 @@ namespace CaringSquareApp.Controllers
         public ActionResult Send_Email()
         {
             return View(new SendEmailViewModel());
+        }
+
+        public ActionResult Share_Facebook()
+        {
+            return View();
         }
 
         [HttpPost]

@@ -17,7 +17,6 @@
     @using (Html.BeginForm("AddFilter", "POIs", FormMethod.Post))
     {
         @Html.AntiForgeryToken()
-       
         <div class="text-center text-lg-left">
             <h5 style="font-weight:bold;margin-bottom:20px;">
                 Choose from below Categories to Filter your options:
@@ -59,6 +58,10 @@
             <input class="form-check-input" type="checkbox" id="inlineCheckbox9" value="true" name="category9">
             <label class="form-check-label" for="inlineCheckbox9"><strong>Barbecue</strong></label>
         </div>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox10" value="true" name="category10">
+            <label class="form-check-label" for="inlineCheckbox10"><strong>Pet Friendly</strong></label>
+        </div>
         <br />
         <input class="btn btn-default" style="background-color: #94d16a;margin-top:20px; color: #000000;font-weight:bold;" type="submit" value="Apply Filters" />
     }
@@ -82,6 +85,12 @@
 
         <input class="btn btn-default" style="background-color: #94d16a;margin-top:20px;margin-bottom:15px; color: #000000;font-weight:bold;" type="submit" value="Search" />
     }
+
+    <style>
+        table.dataTable tbody tr:nth-child(even) {
+            background: #aecb91
+        }
+    </style>
     <table class="table" id="myTable">
         <thead>
             <tr>
@@ -112,40 +121,41 @@
             @foreach (var item in Model)
             {
 
-            <tr class="coordinates">
-                <td class="description" hidden>
-                    @Html.DisplayFor(modelItem => item.Name)
 
-                </td>
-                <td hidden>
-                    @Html.DisplayFor(modelItem => item.SubTheme)
+                <tr class="coordinates" date-type="@(item.Category)">
+                    <td class="description" hidden>
+                        @Html.DisplayFor(modelItem => item.Name)
 
-                </td>
-                <td  hidden>
-                    @Html.DisplayFor(modelItem => item.Address)
+                    </td>
+                    <td hidden>
+                        @Html.DisplayFor(modelItem => item.SubTheme)
 
-                </td>
-                <td>
-                    <strong style="font-size:1.2em">@Html.DisplayFor(modelItem => item.Name)</strong> <br />
-                    <i class="ri-information-line"></i>  @Html.DisplayFor(modelItem => item.SubTheme) <br />
-                    <i class="ri-map-pin-2-fill"></i>  @Html.DisplayFor(modelItem => item.Address) <br /><br />
-                </td>
+                    </td>
+                    <td hidden>
+                        @Html.DisplayFor(modelItem => item.Address)
 
-                <td class="latitude" style="display: none;">
-                    @Html.DisplayFor(modelItem => item.Latitude)
-                </td>
-                <td class="longitude" style="display: none;">
-                    @Html.DisplayFor(modelItem => item.Longitude)
-                </td>
+                    </td>
+                    <td>
+                        <strong style="font-size:1.2em">@Html.DisplayFor(modelItem => item.Name)</strong> <br />
+                        <i class="ri-information-line"></i>  @Html.DisplayFor(modelItem => item.SubTheme) <br />
+                        <i class="ri-map-pin-2-fill"></i>  @Html.DisplayFor(modelItem => item.Address) <br /><br />
+                    </td>
 
-                <td>
-                    @Html.DisplayFor(modelItem => item.Category)
-                </td>
-                <td>
-                    <a href="/POIs/Details/@item.PlaceId" style="background-color: #31943b; color: #ffffff; border-radius:50px" class="btn btn-default"><i class="ri-information-line"></i> View Detail</a>
-                    <a style="background-color: #0f15a3; color: #ffffff;  border-radius:50px" class="mapcentre btn"><i class="ri-road-map-fill"></i> Pin on Map</a>
-                </td>
-            </tr>
+                    <td class="latitude" style="display: none;">
+                        @Html.DisplayFor(modelItem => item.Latitude)
+                    </td>
+                    <td class="longitude" style="display: none;">
+                        @Html.DisplayFor(modelItem => item.Longitude)
+                    </td>
+
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Category)
+                    </td>
+                    <td>
+                        <a href="/POIs/Details/@item.PlaceId" style="background-color: #31943b; color: #ffffff; border-radius:50px" class="btn btn-default"><i class="ri-information-line"></i> View Detail</a>
+                        <a style="background-color: #0f15a3; color: #ffffff;  border-radius:50px" class="mapcentre btn"><i class="ri-road-map-fill"></i> Pin on Map</a>
+                    </td>
+                </tr>
             }
         </tbody>
 
@@ -155,10 +165,50 @@
 
 <script>
     window.onload = function () {
-        $('#myTable').DataTable();
-        $('#myTable tbody tr:even').css('background-color', '#aecb91');
+       var table =  $('#myTable').DataTable();
+       // $('#myTable tbody tr:even').css('background-color', '#aecb91');
+
 
         var prevMapbox = null;
+
+        $('#categories-form').on('submit', event => {
+            event.preventDefault();
+
+            var selectedValues = $(event.target).serializeArray().map(el => el.name);
+
+            console.log(selectedValues)
+
+            table.destroy();
+
+            $(`#myTable tr[data-type="cinema"] `).hide();
+      // var table =  $('#myTable').DataTable();
+
+
+
+
+    /*        var filteredData = table
+    .rows()
+    .indexes()
+                .filter(function (value, index) {
+        console.log(table.row(value).data()[6])
+       return table.row(value).data()[6].includes('sport'); 
+    } );*/
+
+         /*       table
+    .columns( 6 )
+    .data()
+   // .flatten()
+                 .filter(function (value, index) {
+                     console.log(value, selectedValues.some(sv => sv.includes(value)))
+                     return selectedValues.some(sv => sv.includes(value))//value?.contains('park') ? true : false;
+                 });*/
+
+     /*       console.log(filteredData)
+
+            table.rows( filteredData )
+.remove()
+.draw();*/
+        })
 
         $('.mapcentre').on('click', function (e) {
             var elementExists = document.getElementById("find-me");
