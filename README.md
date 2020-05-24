@@ -12,7 +12,9 @@ isolation and loneliness.</b> We will be developing an application, that will al
 elderly web users to plan social events by themselves 
 <br>
 <br>
-Build using <b>asp.net</b>
+Build using <b>asp.net</b> with MVC structure
+
+Complete Data preparation code can be access under Dataset folder
 
 
 Have a look at our complete idea [here](bit.ly/CaringSquare)
