@@ -14,7 +14,8 @@ elderly web users to plan social events by themselves
 <br>
 Build using <b>asp.net</b> with MVC structure
 
-Complete Data preparation code can be access under Dataset folder
+Complete Data preparation code can be access from the jupyter notebook code (.ipynb)
+Also, provided the complete dataset file under Dataset folder
 
 
 Have a look at our complete idea [here](bit.ly/CaringSquare)
