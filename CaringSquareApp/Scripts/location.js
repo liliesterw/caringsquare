@@ -2,7 +2,7 @@
 * This is a simple JavaScript demonstration of how to call MapBox API to load the maps.
 * I have set the default configuration to enable the geocoder and the navigation control.
 * https://www.mapbox.com/mapbox-gl-js/example/popup-on-click/
-*
+* Copyrights Holder - Credits for the code
 * @author Jian Liew <jian.liew@monash.edu>
 */
 const TOKEN = "pk.eyJ1IjoiaGFyaXNoMTE1MCIsImEiOiJjazFndDJxMHMwMXBtM2JqdWNqMmpkdWozIn0.yspP5Uu6LV65-0HgIpNVUw";
@@ -22,6 +22,7 @@ $(".coordinates").each(function () {
     // Push them all into an array.
     locations.push(point);
 });
+console.log(locations);
 var data = [];
 for (i = 0; i < locations.length; i++) {
     var feature = {
@@ -41,7 +42,7 @@ mapboxgl.accessToken = TOKEN;
 var map = new mapboxgl.Map({
     container: 'map',
     style: 'mapbox://styles/mapbox/streets-v10',
-    zoom: 11,
+    zoom: 13,
     center: [locations[0].longitude, locations[0].latitude]
 });
 map.on('load', function () {
@@ -69,8 +70,10 @@ map.on('load', function () {
     // When a click event occurs on a feature in the places layer, open a popup at the
     // location of the feature, with description HTML from its properties.
     map.on('click', 'places', function (e) {
+
         var coordinates = e.features[0].geometry.coordinates.slice();
         var description = e.features[0].properties.description;
+        
         // Ensure that if the map is zoomed out such that multiple
         // copies of the feature are visible, the popup appears
         // over the copy being pointed to.

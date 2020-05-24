@@ -1,7 +1,7 @@
 ﻿@model IEnumerable<CaringSquareApp.Models.POIs>
 
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Explore Places";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 <br />
@@ -9,80 +9,213 @@
 <br />
 <br />
 <div class="container">
-<h2>List of Attractions around Melbourne CBD</h2>
-<div id="map" style="height:300px"></div>
-<br />
-<br />
+    <h2 id="freshtitle">List of Attractions around Melbourne CBD</h2>
+    <div id="map" style="height:300px"></div>
+    <br />
+    <br />
 
-<!--<strong class="s">Categories:</strong>
-<div class="col-md-3">
-    <strong>Shopping </strong>
-    @Html.ActionLink("Shopping Filter", "Shopping")
-</div>-->
-<p>
-    @Html.ActionLink("Create New", "Create")
-</p>
-<table class="table">
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.Name)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Theme)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.SubTheme)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Address)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Latitude)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Longitude)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Category)
-        </th>
-        <th></th>
-    </tr>
-
-    @foreach (var item in Model)
+    @using (Html.BeginForm("AddFilter", "POIs", FormMethod.Post))
     {
-        <tr class="coordinates">
-            <td class="description">
-                @Html.DisplayFor(modelItem => item.Name)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Theme)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.SubTheme)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Address)
-            </td>
-            <td class="latitude">
-                @Html.DisplayFor(modelItem => item.Latitude)
-            </td>
-            <td class="longitude">
-                @Html.DisplayFor(modelItem => item.Longitude)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Category)
-            </td>
-            <td>
-                @Html.ActionLink("Edit", "Edit", new { id = item.PlaceId }) |
-                @Html.ActionLink("Details", "Details", new { id = item.PlaceId }) |
-                @Html.ActionLink("Delete", "Delete", new { id = item.PlaceId })
-            </td>
-        </tr>
+        @Html.AntiForgeryToken()
+        <div class="text-center text-lg-left">
+            <h5 style="font-weight:bold;margin-bottom:20px;">
+                Choose from below Categories to Filter your options:
+            </h5>
+        </div>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="true" name="category1">
+            <label class="form-check-label" for="inlineCheckbox1"><strong>Cinema</strong></label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="true" name="category2">
+            <label class="form-check-label" for="inlineCheckbox2"><strong>Shopping</strong></label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="true" name="category3">
+            <label class="form-check-label" for="inlineCheckbox3"><strong>Sports</strong></label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="true" name="category4">
+            <label class="form-check-label" for="inlineCheckbox4"><strong>Hangout</strong></label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox5" value="true" name="category5">
+            <label class="form-check-label" for="inlineCheckbox5"><strong>Religious</strong></label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox6" value="true" name="category6">
+            <label class="form-check-label" for="inlineCheckbox6"><strong>Museum</strong></label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox7" value="true" name="category7">
+            <label class="form-check-label" for="inlineCheckbox7"><strong>Park</strong></label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox8" value="true" name="category8">
+            <label class="form-check-label" for="inlineCheckbox8"><strong>Library</strong></label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox9" value="true" name="category9">
+            <label class="form-check-label" for="inlineCheckbox9"><strong>Barbecue</strong></label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox10" value="true" name="category10">
+            <label class="form-check-label" for="inlineCheckbox10"><strong>Pet Friendly</strong></label>
+        </div>
+        <br />
+        <input class="btn btn-default" style="background-color: #94d16a;margin-top:20px; color: #000000;font-weight:bold;" type="submit" value="Apply Filters" />
+    }
+    @using (Html.BeginForm("AdvancedSearch", "POIs", FormMethod.Post))
+    {
+        @Html.AntiForgeryToken()
+        <div class="text-center text-lg-left">
+            <h5 style="font-weight:bold;margin-bottom:15px;margin-top:15px;">
+                Search for Places of Interest:
+            </h5>
+        </div>
+        <div class="form-row">
+            <div class="col">
+                <input class="form-control" id="PlaceName" name="PlaceName" placeholder="Enter a Place name eg. Eureka, Zoo, Garden" type="text" />
+            </div>
+            <h5 style="margin-top:5px;">OR</h5>
+            <div class="col">
+                <input class="form-control" id="StreetName" name="StreetName" placeholder="Enter a Street name eg. Bourke St, Swanston St" type="text" />
+            </div>
+        </div>
+
+        <input class="btn btn-default" style="background-color: #94d16a;margin-top:20px;margin-bottom:15px; color: #000000;font-weight:bold;" type="submit" value="Search" />
     }
 
-</table>
-    </div>
+    <style>
+        table.dataTable tbody tr:nth-child(even) {
+            background: #aecb91
+        }
+    </style>
+    <table class="table" id="myTable">
+        <thead>
+            <tr>
+                <th hidden>
+                </th>
+                <th hidden>
+                </th>
+                <th hidden>
+                </th>
+                <th style="width:60%">
+                    @Html.DisplayNameFor(model => model.Name)
+                </th>
 
+                <th style="display: none;">
+                    @Html.DisplayNameFor(model => model.Latitude)
+                </th>
+                <th style="display: none;">
+                    @Html.DisplayNameFor(model => model.Longitude)
+                </th>
+
+                <th style="width:10%;">
+                    @Html.DisplayNameFor(model => model.Category)
+                </th>
+                <th> Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+
+
+                <tr class="coordinates" date-type="@(item.Category)">
+                    <td class="description" hidden>
+                        @Html.DisplayFor(modelItem => item.Name)
+
+                    </td>
+                    <td hidden>
+                        @Html.DisplayFor(modelItem => item.SubTheme)
+
+                    </td>
+                    <td hidden>
+                        @Html.DisplayFor(modelItem => item.Address)
+
+                    </td>
+                    <td>
+                        <strong style="font-size:1.2em">@Html.DisplayFor(modelItem => item.Name)</strong> <br />
+                        <i class="ri-information-line"></i>  @Html.DisplayFor(modelItem => item.SubTheme) <br />
+                        <i class="ri-map-pin-2-fill"></i>  @Html.DisplayFor(modelItem => item.Address) <br /><br />
+                    </td>
+
+                    <td class="latitude" style="display: none;">
+                        @Html.DisplayFor(modelItem => item.Latitude)
+                    </td>
+                    <td class="longitude" style="display: none;">
+                        @Html.DisplayFor(modelItem => item.Longitude)
+                    </td>
+
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Category)
+                    </td>
+                    <td>
+                        <a href="/POIs/Details/@item.PlaceId" style="background-color: #31943b; color: #ffffff; border-radius:50px" class="btn btn-default"><i class="ri-information-line"></i> View Detail</a>
+                        <a style="background-color: #0f15a3; color: #ffffff;  border-radius:50px" class="mapcentre btn"><i class="ri-road-map-fill"></i> Pin on Map</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+
+
+    </table>
+</div>
+
+<script>
+    window.onload = function () {
+       var table =  $('#myTable').DataTable();
+
+
+        var prevMapbox = null;
+
+        $('#categories-form').on('submit', event => {
+            event.preventDefault();
+
+            var selectedValues = $(event.target).serializeArray().map(el => el.name);
+
+            table.destroy();
+
+            $(`#myTable tr[data-type="cinema"] `).hide();
+     
+        })
+
+        $('.mapcentre').on('click', function (e) {
+            var elementExists = document.getElementById("find-me");
+            var trsText = Array.from($(this).closest('tr').find('td').map((i, el) => $(el).text().trim()).slice(0, 3));
+            var placeName = trsText[0];
+            var loc = locations.find(item => item.description === placeName) || { longitude: 0, latitude: 0 };
+                
+            prevMapbox?.remove()
+
+            map.flyTo({
+                center: [
+                    loc.longitude,
+                    loc.latitude
+                ],
+                essential: true // this animation is considered essential with respect to prefers-reduced-motion 
+            });
+          
+            var coordinates = [loc.longitude, loc.latitude];
+
+            var mapboxHTML =  trsText.map(t => `<p>${t}</p>`).join('');
+
+            prevMapbox = new mapboxgl.Popup()
+
+                prevMapbox.setLngLat(coordinates)
+                .setHTML(mapboxHTML)
+                .addTo(map);          
+
+        $('html,body').animate({ scrollTop: 0 })
+
+        })
+    
+    };
+
+
+
+</script>
 
 @section Scripts {
     @Scripts.Render("~/bundles/mapbox")

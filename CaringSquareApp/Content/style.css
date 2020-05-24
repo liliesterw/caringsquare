@@ -177,7 +177,7 @@ h1, h2, h3, h4, h5, h6 {
   color: rgba(255, 255, 255, 0.7);
   padding: 10px 0 10px 25px;
   transition: 0.3s;
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 500;
   font-family: "Poppins", sans-serif;
 }
@@ -244,8 +244,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .nav-menu .drop-down > a:after {
-  content: "\ea99";
-  font-family: IcoFont;
+  content: "\ea4c";
+  font-family: Remixicon;
   padding-left: 5px;
 }
 
@@ -304,19 +304,19 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .mobile-nav {
-  position: fixed;
-  top: 55px;
-  right: 15px;
-  bottom: 300px;
-  left: 15px;
-  z-index: 9999;
-  overflow-y: auto;
-  background: #fff;
-  transition: ease-in-out 0.2s;
-  opacity: 0;
-  visibility: hidden;
-  border-radius: 10px;
-  padding: 10px 0;
+    position: fixed;
+    top: 55px;
+    right: 15px;
+    bottom: 250px;
+    left: 15px;
+    z-index: 9999;
+    overflow-y: auto;
+    background: #fff;
+    transition: ease-in-out 0.2s;
+    opacity: 0;
+    visibility: hidden;
+    border-radius: 10px;
+    padding: 10px 0;
 }
 
 .mobile-nav * {
@@ -396,7 +396,7 @@ h1, h2, h3, h4, h5, h6 {
 --------------------------------------------------------------*/
 #hero {
   width: 100%;
-  background: url("../img/hero-bg.jpg");
+  background: url("../img/homepage_explore.png");
   position: relative;
   padding: 120px 0 0 0;
 }
@@ -404,7 +404,7 @@ h1, h2, h3, h4, h5, h6 {
     #hero:before {
         content: "";
         /*background: rgba(2, 5, 161, 0.91);*/
-        background: #94D16A;
+        background: rgba(148,209,106,0);
         position: absolute;
         bottom: 0;
         top: 0;
@@ -422,15 +422,19 @@ h1, h2, h3, h4, h5, h6 {
 
     #hero h1 span {
         color: #fff;
-        border-bottom: 4px solid #336699;
+        border-bottom: 4px solid #669966;
     }
+
+    
 
 #hero h2 {
   color: rgba(255, 255, 255, 0.8);
   margin-bottom: 40px;
-  font-size: 24px;
+  font-size: 2.5em;
 }
-
+    #hero h2 span {
+        border-bottom: 2px solid #669966;
+    }
 #hero .btn-get-started {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
@@ -444,8 +448,24 @@ h1, h2, h3, h4, h5, h6 {
   background: #1acc8d;
 }
 
+.btn-get-started {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 10px 30px;
+    border-radius: 50px;
+    transition: 0.5s;
+    color: #fff;
+    background: #1acc8d;
+}
+
 #hero .btn-get-started:hover {
   background: #17b57d;
+}
+.btn-get-started:hover {
+    background: #17b57d;
 }
 
 #hero .animated {
@@ -467,7 +487,8 @@ h1, h2, h3, h4, h5, h6 {
     animation: none;
   }
   #hero .hero-img {
-    text-align: center;
+    text-align: right;
+    padding-left: 2em;
   }
   #hero .hero-img img {
     max-width: 50%;
@@ -478,7 +499,7 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 10px;
   }
   #hero h2 {
-    font-size: 18px;
+    font-size: 1.5em;
     line-height: 24px;
     margin-bottom: 30px;
   }
@@ -767,7 +788,7 @@ section {
 }
 
 .about .play-btn:hover::before {
-  content: '';
+  content: 'D';
   position: absolute;
   left: 50%;
   top: 50%;
@@ -895,9 +916,9 @@ section {
 }
 
 .details .content h3 {
-  font-weight: 600;
-  font-size: 26px;
-  color: #010483;
+    font-weight: 600;
+    font-size: 26px;
+    color: #31943b;
 }
 
 .details .content ul {
@@ -954,9 +975,21 @@ section {
   right: 0;
   top: 0;
   bottom: 0;
-  background: rgba(1, 3, 111, 0.8);
+  background: rgba(49, 148, 59, 0.85);
 }
 
+    .testimonials .btn-event {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 300;
+        font-size: 12px;
+        letter-spacing: 1px;
+        display: inline-block;
+        padding: 10px 30px;
+        border-radius: 7em;
+        transition: 0.5s;
+        color: #fff;
+        background: #1acc8d;
+    }
 .testimonials .section-header {
   margin-bottom: 40px;
 }
@@ -1125,6 +1158,8 @@ section {
 /*--------------------------------------------------------------
 # Pricing
 --------------------------------------------------------------*/
+
+
 .pricing .box {
   padding: 20px;
   background: #fff;
@@ -1134,6 +1169,7 @@ section {
   position: relative;
   overflow: hidden;
 }
+
 
 .pricing h3 {
   font-weight: 400;
@@ -1634,11 +1670,11 @@ section {
   background: #149f6e;
 }
 
-#footer .copyright {
-  border-top: 1px solid #010479;
-  text-align: center;
-  padding-top: 30px;
-}
+    #footer .copyright {
+        border-top: 1px solid #94d16a;
+        text-align: center;
+        padding-top: 30px;
+    }
 
 #footer .credits {
   padding-top: 10px;
