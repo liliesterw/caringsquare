@@ -12,9 +12,9 @@ isolation and loneliness.</b> We will be developing an application, that will al
 elderly web users to plan social events by themselves 
 <br>
 <br>
-Build using <b>asp.net</b> with MVC structure
+Build using <b>asp.net</b> with MVC structure and <b>MySQL</b> databse
 
-Complete Data preparation code can be access from the jupyter notebook code (.ipynb)
+Complete Data preparation code can be access from the jupyter notebook code (.ipynb).
 Also, provided the complete dataset file under Dataset folder
 
 
