@@ -154,13 +154,11 @@
         }
         function get_weather() {
             $.get("https://api.openweathermap.org/data/2.5/forecast?q=Melbourne,AU&appid=45b1b01ef280889b43b44defbb0933ad&units=metric", function (response) {
-                //console.log(response.list);
 
                 var data = response.list;
 
                 var dates = Array.from(new Set(data.map(item => item.dt_txt.slice(0, 10))));
 
-                console.log(dates)
                 var dateStr = '';
                 for (var i = 0; i < dates.length; i++) {
 
@@ -183,7 +181,6 @@
                         continue;
                     }
 
-                    console.log(obj)
                     str += `                <div class="col-lg-2 col-md-6 col-sm-6 col-6 d-none" style="margin-right:30px;" data-date="${dataString}" >
                         <div class="box aos-init aos-animate" data-aos="zoom-in" data-aos-delay="100">
                             <i id="icon-weather" class="${icon}" style="font-size:100px"></i>
@@ -200,57 +197,6 @@
 
                 $('#weather-data').html(str)
 
-
-
-                /* var table_string = "<table style=' border: 1px solid black;'><tr><td colspan=9><b>Forecast for the next 5 days:</b></td></tr><tr'><th>Date</th><th>00:00</th><th>03:00</th><th>06:00</th><th>09:00</th><th>12:00</th><th>15:00</th><th>18:00</th><th>21:00</th></tr>";
-                 var cur_date = "";
-                 var new_tr = false;
-                 var itr = 100;
-                 for (var i = 0; i < data.length; i++) {
-                     var data_date = data[i].dt_txt.split(' ')[0];
-                     if (cur_date != data_date) {
-                         cur_date = data_date;
-                         new_tr = false;
-                         if (itr != 100) {
-                             table_string += "</tr>";
-                         }
-                         table_string += "<tr>";
-                         var temp_text = "<td><b>" + data_date + "</b></td>";
-                         table_string += temp_text;
-
-                         if (itr == 100) {
-                             // For the first data; need to adjust the table
-                             if (data[i].dt_txt.split(' ')[1] !== '00:00:00') {
-                                 table_string += "<td></td>";
-                             }
-                             if (data[i].dt_txt.split(' ')[1] !== '03:00:00') {
-                                 table_string += "<td></td>";
-                             }
-                             if (data[i].dt_txt.split(' ')[1] !== '06:00:00') {
-                                 table_string += "<td></td>";
-                             }
-                             if (data[i].dt_txt.split(' ')[1] !== '09:00:00') {
-                                 table_string += "<td></td>";
-                             }
-                             if (data[i].dt_txt.split(' ')[1] !== '12:00:00') {
-                                 table_string += "<td></td>";
-                             }
-                         }
-                         itr = 1;
-                     }
-
-                     itr += 1;
-                     var time = data[i].dt_txt.split(' ')[1].substring(0, 5);
-                     time = '<td><i style="font-size:1.5em" class="' + weather_to_icon(data[i].weather[0].id) + '"></i><br><i class="fas fa-temperature-low"></i> :' + parseInt(data[i].main.temp) + '</td>';
-                     table_string += time ;
-                 };
-                 while (itr <= 8) {
-                     table_string += "<td></td>";
-                     itr += 1;
-                 }
-                 table_string += '</tr></table>';
-
-                 $('#divResults').html(table_string);  */
             });
         }
 

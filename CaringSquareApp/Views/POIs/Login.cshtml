@@ -11,7 +11,7 @@
         <div class="row">
             <div class="col-md-8">
                 <section id="loginForm">
-                    @using (Html.BeginForm("Login", "Account", new { ReturnUrl =   "/SocialEvents/Create?place=" + HttpContext.Current.Request.QueryString["place"] }, FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+                    @using (Html.BeginForm("Login", "Account", new { ReturnUrl = "/SocialEvents/Create?place=" + HttpContext.Current.Request.QueryString["place"] }, FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
                     {
                         @Html.AntiForgeryToken()
                         <h2 id="freshtitle">Log in with Caring Square account</h2>
@@ -44,12 +44,15 @@
                                 <input style="background-color:#94d16a;font-weight:bold;color:#000000;margin-bottom:20px;" type="submit" id="buttonedit" value="Log in" class="btn btn-default" />
                             </div>
                         </div>
-                        @* Enable this once you have account confirmation enabled for password reset functionality
                         <p>
-                            @Html.ActionLink("Forgot your password?", "ForgotPassword")
-                        </p>*@
-                    }
-                </section>
+                            <a href="/Account/Register" style="font-weight:bold;">Register as a new user</a>
+                        </p>
+                            @* Enable this once you have account confirmation enabled for password reset functionality
+                <p>
+                    @Html.ActionLink("Forgot your password?", "ForgotPassword")
+                </p>*@
+                            }
+                    </section>
             </div>
     </div>
     </div>

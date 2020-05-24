@@ -1,7 +1,7 @@
 ﻿﻿#headingedit1 {
     font-family: sans-serif;
     text-align: left;
-    color: #fff;
+    color: darkred;
     font-weight: bold;
     font-size: 4em;
     background-size: cover;
@@ -26,6 +26,11 @@ input[type="checkbox"] {
     text-transform: uppercase;
     font-family: "Poppins", sans-serif;
     color: #010483;
+}
+
+.jumbotron {
+  background-image: url("../img/access_denied.jpg");
+  background-size: cover;
 }
 
 

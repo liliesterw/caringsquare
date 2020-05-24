@@ -1,6 +1,6 @@
 ﻿
 @{
-    ViewBag.Title = "Share_Facebook";
+    ViewBag.Title = "Share on Facebook";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 <br />
@@ -8,15 +8,23 @@
 <br />
 <br />
 <br />
-<br />
-<br />
-<br />
+@using Microsoft.AspNet.Identity
 
 
 <div class="container">
-    <div>
-        <h2 id="freshtitle">Share on Facebook</h2>
-    </div>
+    @if (Request.IsAuthenticated)
+    {
+        <div>
+            <h2 id="freshtitle">Share on Facebook</h2>
+        </div>
+    }
+    else
+    {
+        <div>
+            <h2 id="freshtitle">Event Details</h2>
+        </div>
+    }
+    <br />
 
     <style>
         .button {
@@ -32,75 +40,24 @@
             cursor: pointer;
         }
     </style>
-    <div id="fb-root"></div>
-    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v7.0&appId=576187129689734&autoLogAppEvents=1"></script>
+    @if (Request.IsAuthenticated)
+    {
+        <div id="fb-root"></div>
+        <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v7.0&appId=576187129689734&autoLogAppEvents=1"></script>
 
+        <div class="fb-share-button" data-href=" " data-layout="button" data-size="large" style="align-content:center;">
+            <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">
+                Facebook Share
+            </a>
+        </div>
+        <br />
+        <br />
+    }
     <strong id="Contents">
     </strong>
 
 
-
-    <div class="fb-share-button" data-href=" " data-layout="button" data-size="large">
-        <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">
-            <img src="~/img/fb.jpg" style="width:5%; margin-right:5px">
-            Facebook Share
-        </a>
-    </div>
 </div>
-
-<main id="main">
-    <section id="team" class="team" style="padding:6    0px 0">
-        <div class="container">
-
-            <div class="section-title" data-aos="fade-up">
-
-                <p>HOW IT WORKS</p>
-            </div>
-
-            <div class="row" data-aos="fade-left">
-
-                <div class="col-lg-4 col-md-6">
-                    <div class="member" data-aos="zoom-in" data-aos-delay="100">
-                        <div class="pic"><img src="../../img/explore.jpg" class="img-fluid" alt=""></div>
-                        <div class="member-info">
-                            <h4>EXPLORE PLACES</h4>
-                            <div class="social">
-                                <p id="paragraphedit2" style="color:#01036f;">Explore places all over Melbourne along with nearest facilities.    </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6 mt-5 mt-md-0">
-                    <div class="member" data-aos="zoom-in" data-aos-delay="200">
-                        <div class="pic"><img src="../../img/create.jpg" class="img-fluid" alt=""></div>
-                        <div class="member-info">
-                            <h4>CREATE EVENTS</h4>
-                            <p id="paragraphedit2" style="color:#01036f;">Create Social Events or activities based on your interest.    </p>
-                            <div class="social">
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6 mt-5 mt-lg-0">
-                    <div class="member" data-aos="zoom-in" data-aos-delay="300">
-                        <div class="pic"><img src="../../img/envelope.jpg" class="img-fluid" alt=""></div>
-                        <div class="member-info">
-                            <h4>SHARE EVENTS</h4>
-                            <div class="social">
-                                <p id="paragraphedit2" style="color:#01036f;">Share your Social Events with friends. Invite them to your Events.        </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
-        </div>
-    </section>
-</main>
 
 <script>
     window.onload = function () {
@@ -120,7 +77,7 @@
 
 
             for (var i = 0; i < textArray.length; i += 2) {
-                text += `<strong>${textArray[i]}</strong>:  ${textArray[i + 1]} <br/>\n`
+                text += `<div><h4 style="font-size: 22px;font-weight: 600;color: #010483;">${textArray[i]} : <h4 style="font-size: 18px;font-weight: 500;margin-bottom: 3px;color: #010101;font-weight:bold;"> ${textArray[i + 1]} </h4><br/>\n`
 
             }
         } catch (err) {

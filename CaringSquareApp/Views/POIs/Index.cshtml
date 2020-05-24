@@ -1,7 +1,7 @@
 ﻿@model IEnumerable<CaringSquareApp.Models.POIs>
 
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Explore Places";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 <br />
@@ -166,7 +166,6 @@
 <script>
     window.onload = function () {
        var table =  $('#myTable').DataTable();
-       // $('#myTable tbody tr:even').css('background-color', '#aecb91');
 
 
         var prevMapbox = null;
@@ -176,50 +175,19 @@
 
             var selectedValues = $(event.target).serializeArray().map(el => el.name);
 
-            console.log(selectedValues)
-
             table.destroy();
 
             $(`#myTable tr[data-type="cinema"] `).hide();
-      // var table =  $('#myTable').DataTable();
-
-
-
-
-    /*        var filteredData = table
-    .rows()
-    .indexes()
-                .filter(function (value, index) {
-        console.log(table.row(value).data()[6])
-       return table.row(value).data()[6].includes('sport'); 
-    } );*/
-
-         /*       table
-    .columns( 6 )
-    .data()
-   // .flatten()
-                 .filter(function (value, index) {
-                     console.log(value, selectedValues.some(sv => sv.includes(value)))
-                     return selectedValues.some(sv => sv.includes(value))//value?.contains('park') ? true : false;
-                 });*/
-
-     /*       console.log(filteredData)
-
-            table.rows( filteredData )
-.remove()
-.draw();*/
+     
         })
 
         $('.mapcentre').on('click', function (e) {
             var elementExists = document.getElementById("find-me");
             var trsText = Array.from($(this).closest('tr').find('td').map((i, el) => $(el).text().trim()).slice(0, 3));
             var placeName = trsText[0];
-            //var placeName = $(this).closest('.coordinates').find('td').first().text().trim();
             var loc = locations.find(item => item.description === placeName) || { longitude: 0, latitude: 0 };
                 
             prevMapbox?.remove()
-
-            console.log(trsText)
 
             map.flyTo({
                 center: [
