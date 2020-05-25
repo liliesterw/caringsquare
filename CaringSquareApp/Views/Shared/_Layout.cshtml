@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title - Caring Square</title>
-    <link rel="icon" href="~/CaringSquareLogo.ico" />
+    <link rel="icon" href="~/img/CaringSquareLogo1.png" />
     @Styles.Render("~/Content/bootstrap.min.css")
 
     @Styles.Render("~/Content/icofont.min.css")
@@ -35,6 +35,8 @@
 
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
     <link rel="stylesheet" href='https://cdnjs.cloudflare.com/ajax/libs/jquery-timepicker/1.10.0/jquery.timepicker.css'>
+    <link rel="stylesheet" href='https://cdn.datatables.net/rowreorder/1.2.7/css/rowReorder.dataTables.min.css'>
+    <link rel="stylesheet" href='https://cdn.datatables.net/responsive/2.2.4/css/responsive.dataTables.min.css'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-timepicker/1.10.0/jquery.timepicker.min.css.map" />
     <script src="https://kit.fontawesome.com/34c1b3fc06.js" crossorigin="anonymous"></script>
 
@@ -85,11 +87,11 @@
                     <li>@Html.ActionLink("Knowledge Hub", "About", "Home")</li>
                     @if (User.Identity.IsAuthenticated)
                     {
-                        <li>@Html.ActionLink("Places List", "Index", "POIs")</li>
+                        <li>@Html.ActionLink("Explore Places", "Index", "POIs")</li>
                     }
                     else
                     {
-                        <li>@Html.ActionLink("Places List", "Index", "POIs")</li>
+                        <li>@Html.ActionLink("Explore Places", "Index", "POIs")</li>
                     }
 
 
@@ -113,8 +115,8 @@
         <footer id="footer">
             <div class="container">
                 <div class="copyright">
-                    <strong><span>&copy; @DateTime.Now.Year -Caring Square</span></strong>
-             
+                    &copy; Copyright <strong><span> CaringSquare @DateTime.Now.Year</span></strong>
+
                     <div class="credits" style="font:10px">
                         <!-- All the links in the footer should remain intact. -->
                         <!-- You can delete the links only if you purchased the pro version. -->
@@ -124,7 +126,7 @@
                         Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
                     </div>
                 </div>
-            </div>  
+            </div>
         </footer><!-- End Footer -->
     </div>
 
@@ -145,6 +147,9 @@
     @Scripts.Render("~/Scripts/venobox.min.js")
     @Scripts.Render("~/Scripts/jquery.waypoints.min.js")
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-timepicker/1.10.0/jquery.timepicker.min.js"></script>
+    <script src="https://cdn.datatables.net/rowreorder/1.2.7/js/dataTables.rowReorder.min.js"></script>
+    <script src="https://cdn.datatables.net/responsive/2.2.4/js/dataTables.responsive.min.js"></script>
+
 
     @Scripts.Render("~/Scripts/counterup.min.js")
     @Scripts.Render("~/Scripts/owl.carousel.min.js")
