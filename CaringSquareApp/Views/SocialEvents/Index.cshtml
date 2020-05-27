@@ -11,17 +11,17 @@
 <br />
 
 <div class="container">
-    <h2 id="freshtitle">Your Social Events Page</h2>
-
-
-    <hr />
-    <p>
-        <div class="text-center text-lg-left">
+    <div class="section-title aos-init aos-animate" style="margin-bottom:-20px;" data-aos="fade-up">
+        <p>Social Events</p>
+        <h2>Create and Share your Social Events</h2>
+    </div>
+    <hr>
+    <div class="text-center text-lg-left row">
             <h5 style="font-weight:bold;margin-bottom:20px;">
             </h5>
-            <a href="/SocialEvents/Create" class="btn" style="background-color: #94d16a;font-weight:bold;"> <i class="ri-add-line"></i>  New Social Event</a>
-        </div>
-    </p>
+            <a href="/SocialEvents/Create" class="btn" style="margin-left:20px;background-color: #94d16a;font-weight:bold;"> <i class="ri-add-line"></i>  Create Social Event</a>
+            <h2 style="font-size: 12px;color:#010483;font-weight:bold;padding: 0;line-height: 1px;margin-left:15px;margin-top:10px;text-transform: uppercase;"><i class="fas fa-info-circle" style="color:#010483;font-size: 1.4em;margin-right:3px;"></i>Click here to create a New Event</h2>
+   </div>
     <div id="spaceForAlert">
 
     </div>
@@ -77,7 +77,7 @@
             if (place == 'Delete') {
                 alertStr = 'Event Deleted Successfully';
             }
-            var str = ` <div class="alert alert-success alert-dismissible fade show" role="alert">`;
+            var str = ` <br/><div class="alert alert-success alert-dismissible fade show" role="alert">`;
             
             str += alertStr +  `<button type="button" class="close" data-dismiss="alert" aria-label="Close">
                 <span aria-hidden="true">&times;</span>

@@ -10,7 +10,7 @@
     text-transform: uppercase;
 }
 .new-Button {
-    box-shadow: -3px 3px black, -2px 2px orange, -1px 1px orange;
+    box-shadow: -3px 3px #dee1e3, -2px 2px orange, -1px 1px orange;
     border: 1px solid grey;
 }
 </style>
@@ -182,8 +182,8 @@
                                     @Html.DisplayFor(modelItem => item.Category).ToString().ToUpperInvariant()
                                 </td>
                                 <td>
-                                    <a href="/POIs/Details/@item.PlaceId" style="background-color: #0f15a3; color: #ffffff;margin-bottom:10px; border-radius:50px" class="btn btn-default new-Button"><i class="fas fa-plus-square"></i> Create Event</a>
-                                    <a style="background-color: #31943b; color: #ffffff;  border-radius:50px" class=" btn new-Button"
+                                    <a href="/POIs/Details/@item.PlaceId" style="background-color: #94d16a;color: #111111;font-weight:bold;margin-bottom:10px; border-radius:50px" class="btn btn-default new-Button"><i class="fas fa-plus-square"></i> Create Event</a>
+                                    <a style="background-color: #f7f7f7;color: #010483;font-weight:bold;  border-radius:50px" class=" btn new-Button"
                                        onclick="pinOnMap('@Html.DisplayFor(modelItem => item.Latitude)','@Html.DisplayFor(modelItem => item.Longitude)','<strong>Name:</strong>@Html.DisplayFor(modelItem => item.Name)<br/> <strong>Theme:</strong> @Html.DisplayFor(modelItem => item.SubTheme)<br/> <strong>Address:</strong> @Html.DisplayFor(modelItem => item.Address)')"><i class="fas fa-map-marked-alt"></i> View on Map</a>
                                 </td>
                             </tr>
@@ -220,7 +220,6 @@
         $('input.form-check-input').on('keyup click', function () {
             yourArray = [];
             $("input.form-check-input:checked").each(function () {
-                //console.log($(this));
                 yourArray.push($(this).val());
             });
 
@@ -230,8 +229,6 @@
             element.dispatchEvent(event);
         });
 
-
-        console.log(yourArray);
 
         var table = $('#myTable').DataTable({
             rowReorder: {

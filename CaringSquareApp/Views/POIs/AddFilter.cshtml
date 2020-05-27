@@ -104,14 +104,10 @@
             var elementExists = document.getElementById("find-me");
             var trsText = Array.from($(this).closest('tr').find('td').map((i, el) => $(el).text().trim()).slice(0, 3));
             var placeName = trsText[0];
-            console.log(trsText);
             var placeName = $(this).closest('.coordinates').find('td').first().text().trim();
-            console.log(placeName);
             var loc = locations.find(item => item.description === placeName) || { longitude: 0, latitude: 0 };
 
             prevMapbox?.remove()
-
-            console.log(trsText)
 
             map.flyTo({
                 center: [

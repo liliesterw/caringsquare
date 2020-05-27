@@ -45,7 +45,7 @@ var map = new mapboxgl.Map({
     center: [locations[0].longitude, locations[0].latitude]
 });
 map.on('load', function () {
-    map.loadImage("https://i.imgur.com/MK4NUzI.png", function (error, image) {
+    map.loadImage("img/map-marker.png", function (error, image) {
         if (error) throw error;
         map.addImage("custom-marker", image);
     // Add a layer showing the places.

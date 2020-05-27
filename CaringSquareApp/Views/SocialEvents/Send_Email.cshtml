@@ -12,6 +12,10 @@
 <br />
 <div class="container" style="margin-left:80px;">
     <h2 id="freshtitle">Share Event by Email</h2>
+    <hr>
+    <h2 style="font-size: 12px;color:#010483;font-weight:bold;padding: 0;line-height: 1px;margin-bottom:20px;text-transform: uppercase;"><i class="fas fa-info-circle" style="color:#010483;font-size: 1.4em;margin-right:3px;"></i>Enter recepient email address</h2>
+    <h2 style="font-size: 12px;color:#010483;font-weight:bold;padding: 0;line-height: 1px;margin-bottom:20px;text-transform: uppercase;"><i class="fas fa-info-circle" style="color:#010483;font-size: 1.4em;margin-right:3px;"></i>Subject is prefilled for your convenience, feel free to update</h2>
+    <h2 style="font-size: 12px;color:#010483;font-weight:bold;padding: 0;line-height: 1px;margin-bottom:20px;text-transform: uppercase;"><i class="fas fa-info-circle" style="color:#010483;font-size: 1.4em;margin-right:3px;"></i>Content with Event Details is prefilled for your convenience, feel free to update sender and receiver names</h2>
 
     @using (Html.BeginForm("Send_Email", "SocialEvents", FormMethod.Post, new { enctype = "multipart/form-data" }))
     {
@@ -29,7 +33,7 @@
             <div class="form-group">
                 @Html.LabelFor(model => model.ToEmail, htmlAttributes: new { @class = "control-label col-md-2" })
                 <div class="col-md-10">
-                    @Html.EditorFor(model => model.ToEmail, new { htmlAttributes = new { @class = "form-control", placeholder = "Enter the recipient email" } })
+                    @Html.EditorFor(model => model.ToEmail, new { htmlAttributes = new { @class = "form-control", placeholder = "Enter the recipient email eg. abc@xyz.com" } })
                     @Html.ValidationMessageFor(model => model.ToEmail, "", new { @class = "text-danger" })
                 </div>
             </div>
@@ -71,10 +75,10 @@
     function init() {
         var result = document.getElementById('Contents');
 
-        result.value = `Dear [Recipient Name],<br/>
+        result.value = `Dear <b style="colour:#54a6d6;">[Update Recipient Name]</b>,<br/>
          Please find below the details of the Social Event. I would like to invite you to join me for the same.<br/>
          Regards,<br/>
-         [Sender Name]<br/><br/>`;
+         <b style="colour:#54a6d6;">[Update Sender Name]</b><br/><br/>`;
 
         var text = "";
 
@@ -90,7 +94,6 @@
         } catch (err) {
         }
 
-        console.log(text)
 
         result.value += `\n ${text}`
 

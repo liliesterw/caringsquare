@@ -25,7 +25,7 @@
 
         <div class="section-title" data-aos="fade-up" style="padding:0px">
             <p>Create New Event</p>
-            <breadcrumbs><a href="/SocialEvents/">Event</a>  &nbsp; /&nbsp;    Edit Event</breadcrumbs>
+            <breadcrumbs><a href="/SocialEvents/">Event</a>  &nbsp; /&nbsp;    Create Event</breadcrumbs>
         </div>
         <br />
         <div class="row">
@@ -55,6 +55,7 @@
                             <div class="col-md-4">
                                 <a href="/POIs" class="btn btn-default" style="display: block;color:#010483;background-color: #f7f7f7;border-color:#000000; font-weight:bold;"> Explore Places</a>
                             </div>
+
                         </div>
                         </div>
 
@@ -94,11 +95,11 @@
             </div>
             <div class="col-lg-4 col-md-6" data-aos="fade-right" data-aos-delay="100">
                 <div class="faq-list ">
-                    <b style="color:#01036f">Check Whether Forecast here:</b>
+                    <h4 style="color:#01036f;font-weight:bold;">Check Whether Forecast:</h4>
                     <ul>
                         <li data-aos="fade-up">
 
-                            <div id="date-data"></div>
+                         <div id="date-data"></div>
 
                     </ul>
                 </div>
@@ -107,8 +108,6 @@
         </div>
         
         <div>
-           
-           
 
         </div>
         </div>
@@ -119,7 +118,6 @@
         @section Scripts {
             @Scripts.Render("~/bundles/jqueryval")
         }
-    </div>
     <script>
         window.onload = function () {
             function weather_to_icon(weather_id) {
@@ -164,7 +162,7 @@
             }
             function get_weather() {
                 $.get("https://api.openweathermap.org/data/2.5/forecast?q=Melbourne,AU&appid=45b1b01ef280889b43b44defbb0933ad&units=metric", function (response) {
-                    //console.log(response.list);
+               
 
                     var data = response.list;
                     var days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
@@ -191,7 +189,7 @@
                         if (date.getHours() < 6 || date.getHours() > 18) {
                             continue;
                         }
-                        console.log(obj);
+              
                         if (dataString != dates[idx]) {
                             // Set up footer
                             if (tempDate != '') {

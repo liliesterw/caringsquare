@@ -99,7 +99,7 @@
             </div>
             <div class="col-lg-4 col-md-6" data-aos="fade-right" data-aos-delay="100">
                 <div class="faq-list ">
-                    <b style="color:#01036f">Check Whether Forecast here:</b>
+                    <h4 style="color:#01036f;font-weight:bold;">Check Whether Forecast:</h4>
                     <ul>
                         <li data-aos="fade-up">
 
@@ -166,7 +166,7 @@
                 }
                 function get_weather() {
                     $.get("https://api.openweathermap.org/data/2.5/forecast?q=Melbourne,AU&appid=45b1b01ef280889b43b44defbb0933ad&units=metric", function (response) {
-                        //console.log(response.list);
+     
 
                         var data = response.list;
                         var days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
@@ -193,7 +193,6 @@
                             if (date.getHours() < 6 || date.getHours() > 18) {
                                 continue;
                             }
-                            console.log(obj);
                             if (dataString != dates[idx]) {
                                 // Set up footer
                                 if (tempDate != '') {

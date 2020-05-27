@@ -72,7 +72,6 @@
             var decode = atob(sp.searchParams.get('data'));
             var textArray = JSON.parse(decode);
 
-            console.log(textArray)
             textArray = textArray[0].split('\n').map(g => g.trim()).filter(Boolean);
 
 
