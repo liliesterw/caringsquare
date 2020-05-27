@@ -44,8 +44,8 @@
                                 <input style="background-color:#94d16a;font-weight:bold;color:#000000;margin-bottom:20px;" type="submit" id="buttonedit" value="Log in" class="btn btn-default" />
                             </div>
                         </div>
-                        <p>
-                            <a href="/Account/Register" style="font-weight:bold;">Register as a new user</a>
+                        <p>    
+                            <a id="register-url" href="/POIs/Register" style="font-weight:bold;">Register as a new user</a>
                         </p>
                             @* Enable this once you have account confirmation enabled for password reset functionality
                 <p>
@@ -60,3 +60,15 @@
 @section Scripts {
     @Scripts.Render("~/bundles/jqueryval")
 }
+
+<script>
+    window.onload = function () {
+        var place = new URL(location.href).searchParams.get('place');
+
+        $('#register-url').on("click", event => {
+            event.preventDefault()
+            var place = new URL(location.href).searchParams.get('place');
+            document.location.href = event.target.href + "?place=" + place;
+        })
+    }
+</script>

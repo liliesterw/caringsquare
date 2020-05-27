@@ -22,6 +22,7 @@ namespace CaringSquareApp.Controllers
         {
             var userId = User.Identity.GetUserId();
             var eventLists = db.SocialEvents.Where(s => s.UserUserId == userId).ToList();
+            ViewBag.result = "He;lo";
             //var socialEvents = db.SocialEvents.Include(s => s.AspNetUser).Include(s => s.POIs);
             return View(eventLists);
         }
@@ -79,11 +80,12 @@ namespace CaringSquareApp.Controllers
             {
                 db.SocialEvents.Add(socialEvent);
                 db.SaveChanges();
-                return RedirectToAction("Index");
+                return Redirect("/SocialEvents?Success=Create");
             }
 
             ViewBag.UserUserId = new SelectList(db.AspNetUsers, "Id", "Email", socialEvent.UserUserId);
             ViewBag.POIPlaceId = new SelectList(db.POIs, "PlaceId", "Name", socialEvent.POIPlaceId);
+            
             return View(socialEvent);
         }
 
@@ -130,10 +132,11 @@ namespace CaringSquareApp.Controllers
             {
                 db.Entry(socialEvent).State = EntityState.Modified;
                 db.SaveChanges();
-                return RedirectToAction("Index");
+                return Redirect("/SocialEvents?Success=Edit");
             }
             ViewBag.UserUserId = new SelectList(db.AspNetUsers, "Id", "Email", socialEvent.UserUserId);
             ViewBag.POIPlaceId = new SelectList(db.POIs, "PlaceId", "Name", socialEvent.POIPlaceId);
+ 
             return View(socialEvent);
         }
 
@@ -172,7 +175,7 @@ namespace CaringSquareApp.Controllers
             SocialEvent socialEvent = db.SocialEvents.Find(id);
             db.SocialEvents.Remove(socialEvent);
             db.SaveChanges();
-            return RedirectToAction("Index");
+            return Redirect("/SocialEvents?Success=Delete");
         }
 
         [Authorize]
@@ -201,7 +204,7 @@ namespace CaringSquareApp.Controllers
                     EmailSender es = new EmailSender();
                     es.Send(toEmail, subject, contents);
 
-                    ViewBag.Result = "Email has been send.";
+                    ViewBag.Result = "Email has been sent successfully!";
 
                     ModelState.Clear();
 

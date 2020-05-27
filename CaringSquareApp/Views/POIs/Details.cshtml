@@ -148,7 +148,6 @@ Layout = "~/Views/Shared/_Layout.cshtml";
             var longitude = $(".longitude", this).text().trim();
             var latitude = $(".latitude", this).text().trim();
             var description_obj = $(".toilet_name", this).text().trim().split(/-(.+)/);
-            console.log("d:",description_obj);
             var description = description_obj[1];
             var item_icon = "circle-15";
             if (description_obj[0] == "W") {
@@ -209,8 +208,6 @@ Layout = "~/Views/Shared/_Layout.cshtml";
             }
         };
         data.push(main_feature);
-
-        console.log(data);
 
 
         mapboxgl.accessToken = TOKEN;

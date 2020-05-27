@@ -10,7 +10,7 @@
 
 <section id="contact" class="contact" hidden>
     <div class="container">
-        <h2 id="freshtitle">Details of your Social Event</h2>
+        
 
         <div id="element">
             <hr />
@@ -82,8 +82,9 @@
 </section>
 <section id="contact" class="contact">
     <div class="container">
-        <div class="section-title" data-aos="fade-up">
-            <h2>Event Detail</h2>
+        <div class="section-title aos-init aos-animate" data-aos="fade-up">
+            <p>Share your Event</p>
+            <h2>Share by Email or Facebook</h2>
         </div>
 
         <div class="row">
@@ -158,11 +159,11 @@
                 <br />
                 @if (User.Identity.IsAuthenticated)
                 {
-            <div>
-                <a href="/SocialEvents/Send_Email" id="share-event" class="btn" style="background-color: #94d16a; margin-right:20px;margin-left:60px;font-weight:bold;"> <i class="ri-share-line"></i> Share by Email</a>
-                <a href="/SocialEvents/Share_Facebook" id="share-event-fb" class="btn" style="background-color: #4267B2;color:aliceblue; margin-right:20px;margin-left:60px;font-weight:bold;"> <i class="fab fa-facebook"></i> Share by Facebook</a>
+                    <div>
+                        <a href="/SocialEvents/Send_Email" id="share-event" class="btn" style="background-color: #94d16a; margin-right:20px;margin-left:60px;font-weight:bold;"> <i class="ri-share-line"></i> Share by Email</a>
+                        <a href="/SocialEvents/Share_Facebook" id="share-event-fb" class="btn" style="background-color: #4267B2;color:aliceblue; margin-right:20px;margin-left:60px;font-weight:bold;"> <i class="fab fa-facebook"></i> Share by Facebook</a>
 
-            </div>
+                    </div>
                 }
 
             </div>
@@ -252,7 +253,7 @@
             var longitude = $(".longitude", this).text().trim();
             var latitude = $(".latitude", this).text().trim();
             var description_obj = $(".toilet_name", this).text().trim().split(/-(.+)/);
-            console.log("d:", description_obj);
+  
             var description = description_obj[1];
             var item_icon = "circle-15";
             if (description_obj[0] == "W") {
@@ -313,8 +314,6 @@
             }
         };
         data.push(main_feature);
-
-        console.log(data);
 
 
         mapboxgl.accessToken = TOKEN;
@@ -385,8 +384,6 @@
 
             const dd = [...document.querySelectorAll('dl')].map(el => el.textContent).filter(Boolean).map(s => s.trim());
 
-            console.log(dd);
-
             localStorage.setItem('__pageCache1', JSON.stringify(dd));
 
             document.location.href = event.target.getAttribute('href')
@@ -401,11 +398,6 @@
 
             var str = JSON.stringify(dd);
             var base64Str = btoa(str);
-
-            console.log(str);
-            console.log(btoa(str));
-
-           // localStorage.setItem('__pageCache2', JSON.stringify(dd));
 
             document.location.href = event.target.getAttribute('href') + `?data=${base64Str}`
         });
