@@ -121,11 +121,11 @@ h1, h2, h3, h4, h5, h6 {
     transition: all 0.5s;
 }
 
-    #header.header-scrolled {
-        //background: rgba(1, 4, 136, 0.9);
-        background: #66AC53;//change or not
-        height: 60px;
-    }
+        #header.header-scrolled {
+        
+            background: #66AC53;
+            height: 60px;
+        }
 
 #header .logo h1 {
   font-size: 28px;
@@ -640,6 +640,17 @@ section {
   color: #aaaaaa;
   font-family: "Poppins", sans-serif;
 }
+    .section-title breadcrumbs {
+        font-size: 14px;
+        font-weight: 500;
+        padding: 0;
+        line-height: 1px;
+        margin: 0 0 5px 0;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: #aaaaaa;
+        font-family: "Poppins", sans-serif;
+    }
 
 .section-title h2::after {
   content: "";
@@ -1312,6 +1323,7 @@ section {
 --------------------------------------------------------------*/
 .faq .faq-list {
   padding: 0;
+  background-color: #fff;
 }
 
 .faq .faq-list ul {
@@ -1320,26 +1332,27 @@ section {
 }
 
 .faq .faq-list li + li {
-  margin-top: 15px;
+  margin-top: 5px;
 }
 
-.faq .faq-list li {
-  padding: 20px;
-  background: #fff;
-  border-radius: 4px;
-  position: relative;
-}
+    .faq .faq-list li {
+        padding: 5px;
+        border-color: #BDF7FF;
+        border-radius: 4px;
+        position: relative;
+    }
 
-.faq .faq-list a {
-  display: block;
-  position: relative;
-  font-family: "Poppins", sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 500;
-  padding: 0 30px;
-  outline: none;
-}
+    .faq .faq-list a {
+        display: block;
+        position: relative;
+        font-family: "Poppins", sans-serif;
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 500;
+        padding: 0 15px;
+        outline: none;
+        color: #01036f;
+    }
 
 .faq .faq-list .icon-help {
   font-size: 24px;
@@ -1365,9 +1378,9 @@ section {
   display: none;
 }
 
-.faq .faq-list a.collapsed {
-  color: #343a40;
-}
+    .faq .faq-list a.collapsed {
+        color: #01036f;
+    }
 
 .faq .faq-list a.collapsed:hover {
   color: #1acc8d;

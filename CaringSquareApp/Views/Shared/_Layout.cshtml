@@ -45,7 +45,7 @@
         padding-bottom: 0px;">
     <!-- ======= Header ======= -->
     <header id="header" class="fixed-top d-flex align-items-center"
-            style="background-color:#31943b">
+           >
 
         <br />
         <div class="container d-flex align-items-center">
@@ -75,7 +75,8 @@
             <nav class="nav-menu d-none d-lg-block">
                 <ul>
                     <li class="@(ViewBag.Title == "Home Page" ? "active" : "")">@Html.ActionLink("Home", "Index", "Home")</li>
-                    <li class="@(ViewContext.RouteData.Values["Action"].ToString() == "About" ? "active" : "")">@Html.ActionLink("Knowledge Hub", "About", "Home")</li>
+                    
+                    <li class="@(ViewBag.Title == "Knowledge Hub" ? "active" : "")">@Html.ActionLink("Knowledge Hub", "About", "Home")</li>
                     @if (User.Identity.IsAuthenticated)
                     {
                         <li class="@(ViewBag.Title == "Explore Places" ? "active" : "")">@Html.ActionLink("Explore Places", "Index", "POIs")</li>
@@ -89,7 +90,7 @@
                     @if (User.Identity.IsAuthenticated)
                     {
 
-                        <li  class="@(ViewBag.Title == "Social Events" ? "active" : "")">@Html.ActionLink("Your Events", "Index", "SocialEvents")</li>
+                        <li class="@(ViewBag.Title == "Social Events" ? "active" : "")">@Html.ActionLink("Your Events", "Index", "SocialEvents")</li>
                     }
                     @if (User.Identity.IsAuthenticated)
                     {
@@ -127,7 +128,7 @@
 
 
     @Scripts.Render("~/bundles/jquery")
-    @Scripts.Render("~/Scripts/jquery-3.5.0.js")
+    @Scripts.Render("~/Scripts/jquery-3.3.1.min.js")
     @Scripts.Render("~/Scripts/jquery.dataTables.min.js")
     @Scripts.Render("~/Scripts/dataTables.bootstrap4.min.js")
     @Scripts.Render("~/Scripts/jquery-ui-1.12.1.min.js")
