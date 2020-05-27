@@ -9,22 +9,22 @@
 <br />
 <br />
 <br />
+
 <div class="container">
     <h2 id="freshtitle">Your Social Events Page</h2>
     <hr />
     <p>
         <div class="text-center text-lg-left">
             <h5 style="font-weight:bold;margin-bottom:20px;">
-                
             </h5>
-             <a href="/SocialEvents/Create" class="btn" style="background-color: #94d16a;font-weight:bold;"> <i class="ri-add-line"></i>  New Social Event</a>
+            <a href="/SocialEvents/Create" class="btn" style="background-color: #94d16a;font-weight:bold;"> <i class="ri-add-line"></i>  New Social Event</a>
             <a href="/POIs" class="btn" style="color:#010483;background-color: #f7f7f7;border-color:#000000; margin-left:10px;font-weight:bold;">Explore Places</a>
         </div>
     </p>
 
     <table class="table" id="myTable">
-        <thead hidden >
-            <tr >
+        <thead hidden>
+            <tr>
                 <th style="width:90%">
                     @Html.DisplayNameFor(model => model.EventName)
                 </th>
@@ -42,17 +42,17 @@
                         <b>@Html.DisplayFor(modelItem => item.EventName)</b><br />
                         <i class="ri-map-2-fill"></i>  :  @Html.DisplayFor(modelItem => item.POIs.Name)<br />
                         <i class="ri-calendar-2-fill"></i> :  @Html.DisplayFor(modelItem => item.EventDate) -  @Html.DisplayFor(modelItem => item.EventTime)<br />
-                        
+
                     </td>
                     <td hidden>
                         @Html.DisplayFor(modelItem => item.EventDate)
                     </td>
-         
+
                     <td>
-                        <a href="/SocialEvents/Edit/@item.EventId" style="font-weight:bold"><i class="ri-pencil-fill"></i> Edit</a> | 
-                        <a href="/SocialEvents/Details/@item.EventId" style="font-weight:bold"><i class="ri-share-fill"></i> Share</a> | 
+                        <a href="/SocialEvents/Edit/@item.EventId" style="font-weight:bold"><i class="ri-pencil-fill"></i> Edit</a> |
+                        <a href="/SocialEvents/Details/@item.EventId" style="font-weight:bold"><i class="ri-share-fill"></i> Share</a> |
                         <a href="/SocialEvents/Delete/@item.EventId" style="font-weight:bold"><i class="ri-delete-bin-2-fill"></i> Delete</a>
-                     
+
                     </td>
                 </tr>
             }
@@ -66,7 +66,7 @@
             "bLengthChange": false,
             "bInfo": false,
             "order": [[1, "desc"]]
-   
+
         });
     };
 

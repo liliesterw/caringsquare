@@ -201,7 +201,7 @@ namespace CaringSquareApp.Controllers
                     EmailSender es = new EmailSender();
                     es.Send(toEmail, subject, contents);
 
-                    ViewBag.Result = "Email has been send.";
+                    ViewBag.Result = "Email has been sent successfully!";
 
                     ModelState.Clear();
 

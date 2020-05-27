@@ -5,6 +5,15 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
+<style>
+    .uppercase {
+    text-transform: uppercase;
+}
+.new-Button {
+    box-shadow: -3px 3px black, -2px 2px orange, -1px 1px orange;
+    border: 1px solid grey;
+}
+</style>
 
 <section id="pricing" class="pricing">
     <div class="container">
@@ -19,10 +28,12 @@
             <div class="col-lg-3 col-md-12">
                 <div class="box" data-aos="zoom-in" data-aos-delay="100">
                     <h3 style="font-weight:bold">
-                        Filter:
+                        Filter Places List:
                     </h3>
                     <div class="text-center text-lg-left">
-
+                        <h5 style="font-weight:bold;margin-bottom:20px;">
+                            Search:
+                        </h5>
                     </div>
                     <div id="filter">
                         <b>Find Place Name:</b>
@@ -35,7 +46,7 @@
                     <hr />
                     <div class="text-center text-lg-left">
                         <h5 style="font-weight:bold;margin-bottom:20px;">
-                            Category:
+                            Filter by Interest:
                         </h5>
                     </div>
                     <div class="form-check form-check-inline" style="text-align:left">
@@ -85,29 +96,31 @@
 
 
                     <!--@using (Html.BeginForm("AdvancedSearch", "POIs", FormMethod.Post))
-    {
-        @Html.AntiForgeryToken()
-        <div class="text-center text-lg-left">
-            <h5 style="font-weight:bold;margin-bottom:15px;margin-top:15px;">
-                Search for Places of Interest:
-            </h5>
-        </div>
-        <div class="form-row">
-            <div class="col">
-                <input class="form-control" id="PlaceName" name="PlaceName" placeholder="Enter a Place name eg. Eureka, Zoo, Garden" type="text" />
-            </div>
-            <h5 style="margin-top:5px;">OR</h5>
-            <div class="col">
-                <input class="form-control" id="StreetName" name="StreetName" placeholder="Enter a Street name eg. Bourke St, Swanston St" type="text" />
-            </div>
-        </div>
+            {
+                @Html.AntiForgeryToken()
+                <div class="text-center text-lg-left">
+                    <h5 style="font-weight:bold;margin-bottom:15px;margin-top:15px;">
+                        Search for Places of Interest:
+                    </h5>
+                </div>
+                <div class="form-row">
+                    <div class="col">
+                        <input class="form-control" id="PlaceName" name="PlaceName" placeholder="Enter a Place name eg. Eureka, Zoo, Garden" type="text" />
+                    </div>
+                    <h5 style="margin-top:5px;">OR</h5>
+                    <div class="col">
+                        <input class="form-control" id="StreetName" name="StreetName" placeholder="Enter a Street name eg. Bourke St, Swanston St" type="text" />
+                    </div>
+                </div>
 
-        <input class="btn btn-default" style="background-color: #94d16a;margin-top:20px;margin-bottom:15px; color: #000000;font-weight:bold;" type="submit" value="Search" />
-    }-->
+                <input class="btn btn-default" style="background-color: #94d16a;margin-top:20px;margin-bottom:15px; color: #000000;font-weight:bold;" type="submit" value="Search" />
+            }-->
                     <input class="column_filter form-control" id="searchCategory" hidden />
                 </div>
             </div>
+            
             <div class="col-lg-9 col-md-12">
+                <h2 style="font-size: 12px;color:#010483;font-weight:bold;padding: 0;line-height: 1px;margin-bottom:20px;text-transform: uppercase;"><i class="fas fa-info-circle" style="color:#010483;font-size: 1.4em;margin-right:3px;"></i>Explore places below to Find the one you like and create an event</h2>
                 <table class="display " id="myTable" style="width:100%">
 
                     <thead>
@@ -118,7 +131,7 @@
                             </th>
                             <th hidden>
                             </th>
-                            <th style="width:60%">
+                            <th style="width:400px;">
                                 @Html.DisplayNameFor(model => model.Name)
                             </th>
                             <th hidden>
@@ -140,7 +153,7 @@
 
 
                             <tr class="coordinates" date-type="@(item.Category)">
-                                <td class="description" hidden>
+                                <td hidden>
                                     @Html.DisplayFor(modelItem => item.Name)
 
                                 </td>
@@ -152,7 +165,7 @@
                                     @Html.DisplayFor(modelItem => item.Address)
 
                                 </td>
-                                <td>
+                                <td class="description">
                                     <strong style="font-size:1.2em">@Html.DisplayFor(modelItem => item.Name)</strong> <br />
                                     <i class="ri-information-line"></i>  @Html.DisplayFor(modelItem => item.SubTheme) <br />
                                     <i class="ri-map-pin-2-fill"></i>  @Html.DisplayFor(modelItem => item.Address) <br /><br />
@@ -166,12 +179,12 @@
                                 </td>
 
                                 <td>
-                                    @Html.DisplayFor(modelItem => item.Category)
+                                    @Html.DisplayFor(modelItem => item.Category).ToString().ToUpperInvariant()
                                 </td>
                                 <td>
-                                    <a href="/POIs/Details/@item.PlaceId" style="background-color: #31943b; color: #ffffff; border-radius:50px" class="btn btn-default"><i class="fas fa-plus-square"></i> Create Event</a>
-                                    <a style="background-color: #0f15a3; color: #ffffff;  border-radius:50px" class=" btn"
-                                       onclick="pinOnMap('@Html.DisplayFor(modelItem => item.Latitude)','@Html.DisplayFor(modelItem => item.Longitude)','@Html.DisplayFor(modelItem => item.Name)')"><i class="fas fa-map-marked-alt"></i> Pin on Map</a>
+                                    <a href="/POIs/Details/@item.PlaceId" style="background-color: #0f15a3; color: #ffffff;margin-bottom:10px; border-radius:50px" class="btn btn-default new-Button"><i class="fas fa-plus-square"></i> Create Event</a>
+                                    <a style="background-color: #31943b; color: #ffffff;  border-radius:50px" class=" btn new-Button"
+                                       onclick="pinOnMap('@Html.DisplayFor(modelItem => item.Latitude)','@Html.DisplayFor(modelItem => item.Longitude)','<strong>Name:</strong>@Html.DisplayFor(modelItem => item.Name)<br/> <strong>Theme:</strong> @Html.DisplayFor(modelItem => item.SubTheme)<br/> <strong>Address:</strong> @Html.DisplayFor(modelItem => item.Address)')"><i class="fas fa-map-marked-alt"></i> View on Map</a>
                                 </td>
                             </tr>
                         }
@@ -263,6 +276,7 @@
         prevMapbox?.remove()
 
         map.flyTo({
+            zoom: 16,
             center: [
                 loc.longitude,
                 loc.latitude

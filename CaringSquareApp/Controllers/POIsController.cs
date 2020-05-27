@@ -17,7 +17,6 @@ namespace CaringSquareApp.Controllers
         // GET: POIs
         public ActionResult Index()
         {
-
             return View(db.POIs.ToList());
         }
 
@@ -247,6 +246,11 @@ namespace CaringSquareApp.Controllers
         public ActionResult Login(string returnUrl)
         {
             ViewBag.ReturnUrl = returnUrl;
+            return View();
+        }
+
+        public ActionResult Register()
+        {
             return View();
         }
 

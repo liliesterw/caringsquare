@@ -22,14 +22,13 @@ $(".coordinates").each(function () {
     // Push them all into an array.
     locations.push(point);
 });
-console.log(locations);
 var data = [];
 for (i = 0; i < locations.length; i++) {
     var feature = {
         "type": "Feature",
         "properties": {
             "description": locations[i].description,
-            "icon": "circle-15"
+            "icon": "marker-15"
         },
         "geometry": {
             "type": "Point",
@@ -46,6 +45,9 @@ var map = new mapboxgl.Map({
     center: [locations[0].longitude, locations[0].latitude]
 });
 map.on('load', function () {
+    map.loadImage("https://i.imgur.com/MK4NUzI.png", function (error, image) {
+        if (error) throw error;
+        map.addImage("custom-marker", image);
     // Add a layer showing the places.
     map.addLayer({
         "id": "places",
@@ -58,9 +60,10 @@ map.on('load', function () {
             }
         },
         "layout": {
-            "icon-image": "{icon}",
+            "icon-image": "custom-marker",
             "icon-allow-overlap": true
         }
+    });
     });
 
     map.addControl(new MapboxGeocoder({
