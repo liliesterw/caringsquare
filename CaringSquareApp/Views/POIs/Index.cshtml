@@ -153,7 +153,7 @@
 
 
                             <tr class="coordinates" date-type="@(item.Category)">
-                                <td hidden>
+                                <td class="description" hidden>
                                     @Html.DisplayFor(modelItem => item.Name)
 
                                 </td>
@@ -165,7 +165,7 @@
                                     @Html.DisplayFor(modelItem => item.Address)
 
                                 </td>
-                                <td class="description">
+                                <td>
                                     <strong style="font-size:1.2em">@Html.DisplayFor(modelItem => item.Name)</strong> <br />
                                     <i class="ri-information-line"></i>  @Html.DisplayFor(modelItem => item.SubTheme) <br />
                                     <i class="ri-map-pin-2-fill"></i>  @Html.DisplayFor(modelItem => item.Address) <br /><br />

@@ -10,7 +10,7 @@
 @if (Request.IsAuthenticated)
 {
     <main id="main">
-        <section id="pricing" class="pricing" style="padding:100px 0px 0px">
+        <section id="pricing" class="pricing" style="">
             <!-- ======= UPCOMING EVENT Section ======= -->
             <div class="container">
                 <div class="section-title" data-aos="fade-up">
@@ -27,7 +27,7 @@
             </div>
         </section>
 
-        <section id="testimonials" class="testimonials">
+        <section id="testimonials" class="testimonials" style="margin-top:-150px">
             <div class="container">
 
                 @if (Model.Count() != 0)

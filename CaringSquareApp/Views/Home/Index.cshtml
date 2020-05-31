@@ -3,27 +3,28 @@
 }
 
 <!-- ======= Hero Section ======= -->
-<section id="hero">
+<section id="hero" style="background-image: url(&quot;/img/homepage_explore.png&quot;); background-repeat: no-repeat; background-size: cover;">
     <div class="container">
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
                 <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                 <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
             </ol>
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <div class="container" style="font-family: sans-serif;margin:0% 25% 0% 15%  ;text-align:justify;color: #fff;font-weight: bold;background-size: cover;">
                         <br />
                         <h2 style="margin:0 ;">
-                            <b style="color:#AECB91">Let's Fight</b><br />
-                            <b style="color:#AECB91">Loneliness together.</b><br />
-                            Explore the <br />
-                            <b style="color:#AECB91">perfect</b>  place to <br />
-                            plan your own <br />
-                            <b style="color:#AECB91">social event</b> <br /><br />
+                            <br />
+                            <b style="color:#AECB91">Loneliness</b><br />and
+                            <b style="color:#AECB91">Social Isolation</b> are <br />
+                            <b style="color:#AECB91">serious</b> <br />
+                            <b>public health problems</b> <br /><br />
+                            <br />
                         </h2>
 
-                        <a href="/POIs" class="btn-get-started scrollto " style="background-color: #31943b;">Explore places here</a>
+                        <a href="/Home/About/" class="btn-get-started scrollto " style="background-color: #31943b;">Know More</a>
                         <br /><br /><br />
                     </div>
                 </div>
@@ -43,6 +44,24 @@
                         <br /><br /><br />
                     </div>
                 </div>
+                <div class="carousel-item">
+                    <div class="container" style="font-family: sans-serif;margin:0% 25% 0% 15%  ;text-align:justify;color: #fff;font-weight: bold;background-size: cover;">
+                        <br />
+                        <h2 style="margin:0 ;">
+                            <b style="color:#AECB91">Let's Fight Loneliness.</b><br />
+
+                            Explore the <br />
+                            <b style="color:#AECB91">perfect</b>  place to <br />
+                            plan your own <br />
+                            <b style="color:#AECB91">social event</b> <br /><br />
+                            <b style="color:#AECB91"></b><br />
+                        </h2>
+
+                        <a href="/POIs" class="btn-get-started scrollto " style="background-color: #31943b;">Get Started</a>
+                        <br /><br /><br />
+                    </div>
+                </div>
+
             </div>
             <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -83,35 +102,42 @@
 
     <svg class="hero-waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28 " preserveAspectRatio="none">
         <defs>
-            <path id="wave-path" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z">
+            <path id="wave-path" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
         </defs>
         <g class="wave1">
-            <use xlink:href="#wave-path" x="50" y="3" fill="rgba(255,255,255, .1)">
+            <use xlink:href="#wave-path" x="50" y="3" fill="rgba(255,255,255, .1)" />
         </g>
         <g class="wave2">
-            <use xlink:href="#wave-path" x="50" y="0" fill="rgba(255,255,255, .2)">
+            <use xlink:href="#wave-path" x="50" y="0" fill="rgba(255,255,255, .2)" />
         </g>
         <g class="wave3">
-            <use xlink:href="#wave-path" x="50" y="9" fill="#fff">
+            <use xlink:href="#wave-path" x="50" y="9" fill="#fff" />
         </g>
     </svg>
 
 </section><!-- End Hero -->
 <!-- ======= Team Section ======= -->
 <style>
-    .issue-text{
-     color: #01036f;
-    margin-left: 15px;
-    text-align: left;
+    .issue-text {
+        color: #01036f;
+        margin-left: 15px;
+        text-align: left;
     }
-    .section-edit .member-info
-    {
-        position:relative !important;
-        bottom:0px !important;
+
+    .section-edit .member-info {
+        position: relative !important;
+        bottom: 0px !important;
+    }
+
+    .img-thumbnail {
+        width: 450px;
+        height: 235px;
+        object-fit: cover;
+        margin-top: -10px;
     }
 </style>
 <section id="why-section" class="team" style="padding:60px 0">
-    <div class="container section-edit" >
+    <div class="container section-edit">
 
         <div class="section-title aos-init aos-animate" data-aos="fade-up">
             <p>Why Caring Square ?</p>
@@ -119,93 +145,105 @@
         </div>
         <div style="margin-bottom:30px;">
         </div>
-            <div class="row" data-aos="fade-left">
-                <div class="col-lg-6 d-flex">
-                    <div class="align-items-center aos-animate aos-init d-flex flex-fill justify-content-center member" data-aos="zoom-in" data-aos-delay="100" style="width:250px;">   
-                        <span style="font-size: 2.2rem;color: #010483;opacity: .8;">Factor</span>
-                            <span style="font-size: 5rem;font-weight: 700;color: #010483;opacity: .8;">1</span> 
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="member" data-aos="zoom-in" data-aos-delay="100" style="width:250px;">
-                        <div class="member-info" style="width:450px;border-radius:30px;">
-                            <h4 style="text-transform: uppercase;">Busy lifestyle of family</h4>
-                            <div class="social" style="align-content:start;">
-                                <p class="issue-text"><i class="far fa-frown" style="color:#010483;font-size: 1.4em;margin-right:3px;"></i>Haven't connected with your family</p>
-                                <p class="issue-text"><i class="far fa-frown" style="color:#010483;font-size: 1.4em;margin-right:3px;"></i>Haven't spend time with your grandchildren</p>
-                                <p class="issue-text"><i class="far fa-frown" style="color:#010483;font-size: 1.4em;margin-right:3px;"></i>Haven't spoken to your daughter</p>
-                                <p class="issue-text"><i class="far fa-frown" style="color:#010483;font-size: 1.4em;margin-right:3px;"></i>Haven't met your family for a while</p>
-                            </div>
+        <div class="row" data-aos="fade-left">
+            <div class="col-lg-6">
+                <div class="member" data-aos="zoom-in" data-aos-delay="100" style="text-align:left">
+                    <div style="width:450px;border-radius:30px;">
+                        <div class="social">
+                            <img class="img-thumbnail" src="../img/image1.jpg" alt="" style="border-radius:30px;">
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="row" data-aos="fade-left">
-                <div class="col-lg-6">
-                    <div class="member" data-aos="zoom-in" data-aos-delay="100" style="width:250px;">
-                        <div class="member-info" style="width:450px;border-radius:30px;">
-                            <h4 style="text-transform: uppercase;">Lack of social interaction</h4>
-                            <div class="social">
-                                <p class="issue-text"><i class="far fa-frown" style="color:#010483;font-size: 1.4em;margin-right:3px;"></i>Haven't met your school friend</p>
-                                <p class="issue-text"><i class="far fa-frown" style="color:#010483;font-size: 1.4em;margin-right:3px;"></i>Haven't hanged out with your mate</p>
-                                <p class="issue-text"><i class="far fa-frown" style="color:#010483;font-size: 1.4em;margin-right:3px;"></i>Haven't gone for a barbeque party</p>
-                                <p class="issue-text"><i class="far fa-frown" style="color:#010483;font-size: 1.4em;margin-right:3px;"></i>Haven't had a drink with your buddy</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 d-flex">
-                    <div class="align-items-center aos-animate aos-init d-flex flex-fill justify-content-center member" data-aos="zoom-in" data-aos-delay="100" style="width:250px;">
-                        <span style="font-size: 2.2rem;color: #010483;opacity: .8;">Factor</span>
-                        <span style="font-size: 5rem;font-weight: 700;color: #010483;opacity: .8;">2</span>
-                    </div>
-                </div>
-            </div>
-            <div class="row" data-aos="fade-left">
-                <div class="col-lg-6 d-flex">
-                    <div class="align-items-center aos-animate aos-init d-flex flex-fill justify-content-center member" data-aos="zoom-in" data-aos-delay="100" style="width:250px;">
-                        <span style="font-size: 2.2rem;color: #010483;opacity: .8;">Factor</span>
-                        <span style="font-size: 5rem;font-weight: 700;color: #010483;opacity: .8;">3</span>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="member" data-aos="zoom-in" data-aos-delay="100" style="width:250px;">
-                        <div class="member-info" style="width:450px;border-radius:30px;">
-                            <h4 style="text-transform: uppercase;">Disconnected from community</h4>
-                            <div class="social">
-                                <p class="issue-text"><i class="far fa-frown" style="color:#010483;font-size: 1.4em;margin-right:3px;"></i>Haven't organised a meditation session</p>
-                                <p class="issue-text"><i class="far fa-frown" style="color:#010483;font-size: 1.4em;margin-right:3px;"></i>Haven't organized a group prayer</p>
-                                <p class="issue-text"><i class="far fa-frown" style="color:#010483;font-size: 1.4em;margin-right:3px;"></i>Haven't organised a yoga session</p>
-                                <p class="issue-text"><i class="far fa-frown" style="color:#010483;font-size: 1.4em;margin-right:3px;"></i>Haven't spent time with your community members</p>
-                            </div>
+            <div class="col-lg-6">
+                <div class="member" data-aos="zoom-in" data-aos-delay="100" style="width:250px;">
+                    <div class="member-info" style="width:450px;border-radius:30px;">
+                        <h4 style="text-transform: uppercase;">Busy lifestyle of family</h4>
+                        <div class="social" style="align-content:start;">
+                            <p class="issue-text"><i class="far fa-frown" style="color:#010483;font-size: 1.4em;margin-right:3px;"></i>Haven't connected with your family</p>
+                            <p class="issue-text"><i class="far fa-frown" style="color:#010483;font-size: 1.4em;margin-right:3px;"></i>Haven't spend time with your grandchildren</p>
+                            <p class="issue-text"><i class="far fa-frown" style="color:#010483;font-size: 1.4em;margin-right:3px;"></i>Haven't spoken to your daughter</p>
+                            <p class="issue-text"><i class="far fa-frown" style="color:#010483;font-size: 1.4em;margin-right:3px;"></i>Haven't met your family for a while</p>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="row" data-aos="fade-left">
-                <div class="col-lg-6">
-                    <div class="member" data-aos="zoom-in" data-aos-delay="100" style="width:250px;">
-                        <div class="member-info" style="width:450px;border-radius:30px;">
-                            <h4 style="text-transform: uppercase;">Lack of new activities</h4>
-                            <div class="social">
-                                
-                                <p class="issue-text"><i class="far fa-frown" style="color:#010483;font-size: 1.4em;margin-right:3px;"></i>Haven't done some active exercises</p>
-                                <p class="issue-text"><i class="far fa-frown" style="color:#010483;font-size: 1.4em;margin-right:3px;"></i>Haven't found a dog friendly park</p>
-                                <p class="issue-text"><i class="far fa-frown" style="color:#010483;font-size: 1.4em;margin-right:3px;"></i>Haven't watched a new movie</p>
-                                <p class="issue-text"><i class="far fa-frown" style="color:#010483;font-size: 1.4em;margin-right:3px;"></i>Haven't done some shopping with family</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 d-flex">
-                    <div class="align-items-center aos-animate aos-init d-flex flex-fill justify-content-center member" data-aos="zoom-in" data-aos-delay="100" style="width:250px;">
-                        <span style="font-size: 2.2rem;color: #010483;opacity: .8;">Factor</span>
-                        <span style="font-size: 5rem;font-weight: 700;color: #010483;opacity: .8;">4</span>
-                    </div>
-                </div>
-            </div>
-
         </div>
+        <div class="row" data-aos="fade-left">
+            <div class="col-lg-6 order-1">
+                <div class="member" data-aos="zoom-in" data-aos-delay="100" style="width:250px;">
+                    <div class="member-info" style="width:450px;border-radius:30px;">
+                        <h4 style="text-transform: uppercase;">Lack of social interaction</h4>
+                        <div class="social">
+                            <p class="issue-text"><i class="far fa-frown" style="color:#010483;font-size: 1.4em;margin-right:3px;"></i>Haven't met your school friend</p>
+                            <p class="issue-text"><i class="far fa-frown" style="color:#010483;font-size: 1.4em;margin-right:3px;"></i>Haven't hanged out with your mate</p>
+                            <p class="issue-text"><i class="far fa-frown" style="color:#010483;font-size: 1.4em;margin-right:3px;"></i>Haven't gone for a barbeque party</p>
+                            <p class="issue-text"><i class="far fa-frown" style="color:#010483;font-size: 1.4em;margin-right:3px;"></i>Haven't had a drink with your buddy</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 order-2">
+                <div class="member" data-aos="zoom-in" data-aos-delay="100">
+                    <div style="width:450px;border-radius:30px;">
+                        <div class="social">
+                            <img class="img-thumbnail" src="../img/image2.jpg" alt="" style="border-radius:30px;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row" data-aos="fade-left">
+            <div class="col-lg-6">
+                <div class="member" data-aos="zoom-in" data-aos-delay="100">
+                    <div style="width:450px;border-radius:30px;">
+                        <div class="social">
+                            <img class="img-thumbnail" src="../img/image3.jpg" alt="" style="border-radius:30px;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="member" data-aos="zoom-in" data-aos-delay="100" style="width:250px;">
+                    <div class="member-info" style="width:450px;border-radius:30px;">
+                        <h4 style="text-transform: uppercase;">Disconnected from community</h4>
+                        <div class="social">
+                            <p class="issue-text"><i class="far fa-frown" style="color:#010483;font-size: 1.4em;margin-right:3px;"></i>Haven't organised a meditation session</p>
+                            <p class="issue-text"><i class="far fa-frown" style="color:#010483;font-size: 1.4em;margin-right:3px;"></i>Haven't organized a group prayer</p>
+                            <p class="issue-text"><i class="far fa-frown" style="color:#010483;font-size: 1.4em;margin-right:3px;"></i>Haven't organised a yoga session</p>
+                            <p class="issue-text"><i class="far fa-frown" style="color:#010483;font-size: 1.4em;margin-right:3px;"></i>Haven't spent time with your community members</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row" data-aos="fade-left">
+            <div class="col-lg-6">
+                <div class="member" data-aos="zoom-in" data-aos-delay="100" style="width:250px;">
+                    <div class="member-info" style="width:450px;border-radius:30px;">
+                        <h4 style="text-transform: uppercase;">Lack of new activities</h4>
+                        <div class="social">
+
+                            <p class="issue-text"><i class="far fa-frown" style="color:#010483;font-size: 1.4em;margin-right:3px;"></i>Haven't done some active exercises</p>
+                            <p class="issue-text"><i class="far fa-frown" style="color:#010483;font-size: 1.4em;margin-right:3px;"></i>Haven't found a dog friendly park</p>
+                            <p class="issue-text"><i class="far fa-frown" style="color:#010483;font-size: 1.4em;margin-right:3px;"></i>Haven't watched a new movie</p>
+                            <p class="issue-text"><i class="far fa-frown" style="color:#010483;font-size: 1.4em;margin-right:3px;"></i>Haven't done some shopping with family</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="member" data-aos="zoom-in" data-aos-delay="100">
+                    <div style="width:450px;border-radius:30px;">
+                        <div class="social">
+                            <img class="img-thumbnail" src="../img/image4.jpg" alt="" style="border-radius:30px;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
 </section><!-- End Team Section -->
 
 <section id="team" class="team" style="padding:60px 0;margin-top:-100px;">
@@ -226,7 +264,7 @@
                     </div>
                     <div class="pic"><img src="../../img/explore.jpg" class="img-fluid" alt=""></div>
                     <div class="member-info">
-                        <h4>EXPLORE PLACES</h4>
+                        <h4>FIND PLACES</h4>
                         <div class="social">
 
                         </div>
@@ -272,25 +310,19 @@
     </div>
 
 </section><!-- End Team Section -->
-
-
+<!--
 <script>
     window.onload = function () {
         var idx = 1
         $('#carouselExampleIndicators').bind('slide.bs.carousel', function (e) {
-            if (idx % 2 == 0) {
-                document.getElementById("hero").style.backgroundImage = "url('/img/homepage_explore.png')";
-            }
-            if (idx % 2 == 1) {
-                document.getElementById("hero").style.backgroundImage = "url('/img/home_facts.png')";
-            }
-            idx = idx + 1;
+            document.getElementById("hero").style.backgroundImage = "url('/img/homepage_explore.png')";
+            document.getElementById("hero").style.backgroundRepeat = "no-repeat";
+            document.getElementById("hero").style.backgroundSize = "cover";
 
         });
-
         // document.body.style.backgroundImage = "url('home_facts.png')";
     }
-</script>
+</script>-->
 <!--
 <script>
     var password;

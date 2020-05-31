@@ -10,6 +10,7 @@ using CaringSquareApp.Models;
 
 namespace CaringSquareApp.Controllers
 {
+    [Authorize(Roles = "Administrator")]
     public class InterestsController : Controller
     {
         private CaringSquareEntities db = new CaringSquareEntities();

@@ -17,6 +17,7 @@ namespace CaringSquareApp.Controllers
 
         // GET: FriendLists
         [Authorize]
+        [Authorize(Roles = "Administrator")]
         public ActionResult Index()
         {
             //var userId = User.Identity.GetUserId();
@@ -35,6 +36,7 @@ namespace CaringSquareApp.Controllers
             //return View(friendLists);
         }
 
+        [Authorize(Roles = "Administrator")]
         // GET: FriendLists/Details/5
         public ActionResult Details(int? id)
         {
@@ -50,6 +52,7 @@ namespace CaringSquareApp.Controllers
             return View(friendList);
         }
 
+        [Authorize(Roles = "Administrator")]
         // GET: FriendLists/Create
         public ActionResult Create()
         {
@@ -80,6 +83,7 @@ namespace CaringSquareApp.Controllers
             return View(friendList);
         }
 
+        [Authorize(Roles = "Administrator")]
         // GET: FriendLists/Edit/5
         public ActionResult Edit(int? id)
         {
@@ -113,6 +117,7 @@ namespace CaringSquareApp.Controllers
             return View(friendList);
         }
 
+        [Authorize(Roles = "Administrator")]
         // GET: FriendLists/Delete/5
         public ActionResult Delete(int? id)
         {

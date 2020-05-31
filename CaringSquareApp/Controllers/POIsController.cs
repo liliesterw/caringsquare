@@ -20,6 +20,7 @@ namespace CaringSquareApp.Controllers
             return View(db.POIs.ToList());
         }
 
+        [Authorize(Roles = "Administrator")]
         public ActionResult Shopping()
         {
             var shoppingLists = db.POIs.Where(s => s.Category == "shopping").ToList();
@@ -41,10 +42,12 @@ namespace CaringSquareApp.Controllers
             return View(pOIs);
         }
 
+        [Authorize(Roles = "Administrator")]
         public ActionResult Category()
         {
             return View();
         }
+        [Authorize(Roles = "Administrator")]
         public ActionResult POI(int? id)
         {
             //{ "library", "cinema", "sport","hangout","religious","museum","park","shopping","bbq" }
@@ -173,6 +176,7 @@ namespace CaringSquareApp.Controllers
             return RedirectToAction("Index");
         }
 
+        [Authorize(Roles = "Administrator")]
         public ActionResult AddFilter(bool category1 = false, bool category2 = false, bool category3 = false, bool category4 = false, bool category5 = false, bool category6 = false, bool category7 = false, bool category8 = false, bool category9 = false, bool category10 = false)
         {
             
@@ -231,6 +235,7 @@ namespace CaringSquareApp.Controllers
             return PartialView(newList);
         }
 
+        [Authorize(Roles = "Administrator")]
         public ActionResult AdvancedSearch(string PlaceName, string StreetName)
         {
             Console.WriteLine("Our total" + PlaceName);

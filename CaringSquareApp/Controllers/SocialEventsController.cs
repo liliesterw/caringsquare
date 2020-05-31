@@ -219,6 +219,7 @@ namespace CaringSquareApp.Controllers
             return View();
         }
 
+        [Authorize(Roles = "Administrator")]
         public ActionResult Send_Bulk_Email()
         {
             return View(new SendEmailViewModelMultipleRecepients());
