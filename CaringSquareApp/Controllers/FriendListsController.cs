@@ -11,6 +11,11 @@ using Microsoft.AspNet.Identity;
 
 namespace CaringSquareApp.Controllers
 {
+    /*
+         * Controller not Part of Application
+         * Can be used for Future Scope
+         * To Maintain Friend List for Users
+         */
     public class FriendListsController : Controller
     {
         private CaringSquareEntities db = new CaringSquareEntities();

@@ -15,11 +15,20 @@ namespace CaringSquareApp.Controllers
         private CaringSquareEntities db = new CaringSquareEntities();
 
         // GET: POIs
+        /*
+         * Name: Places Of Interest Page - Index()
+         * First Function implemented when Explore Places is clicked
+         * No Arguments
+         * Returns all Places as List from backend 
+         */
         public ActionResult Index()
         {
             return View(db.POIs.ToList());
         }
 
+        /*
+         * Not Part of Functionality
+         */
         [Authorize(Roles = "Administrator")]
         public ActionResult Shopping()
         {
@@ -27,6 +36,12 @@ namespace CaringSquareApp.Controllers
             return View(shoppingLists);
         }
 
+        /*
+         * Name: Place Of Interest Details Page - Details()
+         * Function implemented when Details of Place is clicked - Create Event in Front End
+         * Argument - Place Id
+         * Returns all Place details
+         */
         // GET: POIs/Details/5
         public ActionResult Details(int? id)
         {
@@ -42,11 +57,17 @@ namespace CaringSquareApp.Controllers
             return View(pOIs);
         }
 
+        /*
+         * Not Part of Functionality
+         */
         [Authorize(Roles = "Administrator")]
         public ActionResult Category()
         {
             return View();
         }
+        /*
+         * Not Part of Functionality
+         */
         [Authorize(Roles = "Administrator")]
         public ActionResult POI(int? id)
         {
@@ -93,6 +114,10 @@ namespace CaringSquareApp.Controllers
             return View(poi_list);
         }
 
+        /*
+         * Not Part of Functionality
+         * Prevent Users from creating Places
+         */
         [Authorize(Roles = "Administrator")]
         // GET: POIs/Create
         public ActionResult Create()
@@ -100,6 +125,10 @@ namespace CaringSquareApp.Controllers
             return View();
         }
 
+        /*
+         * Not Part of Functionality
+         * Prevent Users from creating Places Details
+         */
         // POST: POIs/Create
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
@@ -117,6 +146,10 @@ namespace CaringSquareApp.Controllers
             return View(pOIs);
         }
 
+        /*
+         * Not Part of Functionality
+         * Prevent Users from Editing Places Details
+         */
         [Authorize(Roles = "Administrator")]
         // GET: POIs/Edit/5
         public ActionResult Edit(int? id)
@@ -133,6 +166,10 @@ namespace CaringSquareApp.Controllers
             return View(pOIs);
         }
 
+        /*
+         * Not Part of Functionality
+         * Prevent Users from Editing Places Details
+         */
         // POST: POIs/Edit/5
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
@@ -149,6 +186,10 @@ namespace CaringSquareApp.Controllers
             return View(pOIs);
         }
 
+        /*
+         * Not Part of Functionality
+         * Prevent Users from Deleting Places Details
+         */
         [Authorize(Roles = "Administrator")]
         // GET: POIs/Delete/5
         public ActionResult Delete(int? id)
@@ -165,6 +206,10 @@ namespace CaringSquareApp.Controllers
             return View(pOIs);
         }
 
+        /*
+         * Not Part of Functionality
+         * Prevent Users from Deleting Places Details
+         */
         // POST: POIs/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
@@ -176,6 +221,9 @@ namespace CaringSquareApp.Controllers
             return RedirectToAction("Index");
         }
 
+        /*
+         * Not Part of Functionality
+         */
         [Authorize(Roles = "Administrator")]
         public ActionResult AddFilter(bool category1 = false, bool category2 = false, bool category3 = false, bool category4 = false, bool category5 = false, bool category6 = false, bool category7 = false, bool category8 = false, bool category9 = false, bool category10 = false)
         {
@@ -235,6 +283,9 @@ namespace CaringSquareApp.Controllers
             return PartialView(newList);
         }
 
+        /*
+         * Not Part of Functionality
+         */
         [Authorize(Roles = "Administrator")]
         public ActionResult AdvancedSearch(string PlaceName, string StreetName)
         {
@@ -248,12 +299,24 @@ namespace CaringSquareApp.Controllers
             return View(newList);
         }
 
+        /*
+         * Name: Place Of Interest Page - Login()
+         * Function implemented to save Place Id and Set as Default Value after Login 
+         * Argument - No arguments
+         * Returns Login Page - With Place Id in Session URL
+         */
         public ActionResult Login(string returnUrl)
         {
             ViewBag.ReturnUrl = returnUrl;
             return View();
         }
 
+        /*
+         * Name: Place Of Interest Page - Register()
+         * Function implemented to save Place Id and Set as Default Value after Register 
+         * Argument - No arguments
+         * Returns Register Page - With Place Id in Session URL
+         */
         public ActionResult Register()
         {
             return View();

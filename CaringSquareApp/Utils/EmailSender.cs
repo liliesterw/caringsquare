@@ -12,9 +12,15 @@ namespace CaringSquareApp.Utils
     public class EmailSender
     {
 
-       
-        private const String API_KEY = "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";
+       //Enter your SendGrid API below
+        private const String API_KEY = "{YOUR API KEY}";
 
+        /*
+         * Name: Send Email Page - Send()
+         * Function implemented when Send Email is Clicked
+         * Argument list - Email Address, Subject and Email Content
+         * Uses SendGrid API Key to Send out Email 
+         */
         public void Send(String toEmail, String subject, String contents)
         {
             var client = new SendGridClient(API_KEY);
@@ -29,6 +35,11 @@ namespace CaringSquareApp.Utils
             var response = client.SendEmailAsync(msg);
         }
 
+        /*
+         * Not Part of Functionality
+         * Added for Future Scope
+         * Send out Bulk Email to Multiple Recepient
+         */
         public void SendBulkEmail(List<String> toEmail, String subject, String contents)
         {
             var client = new SendGridClient(API_KEY);

@@ -42,15 +42,19 @@
                                 <input style="background-color:#94d16a;font-weight:bold;color:#000000;margin-bottom:20px;" type="submit" id="buttonedit" value="Log in" class="btn btn-default" />
                             </div>
                         </div>
-                        <p>    
-                            <a id="register-url" href="/POIs/Register" style="font-weight:bold;">Register as a new user</a>
-                        </p>
-                            @* Enable this once you have account confirmation enabled for password reset functionality
-                <p>
-                    @Html.ActionLink("Forgot your password?", "ForgotPassword")
-                </p>*@
-                            }
-                    </section>
+                        <div class="col-lg-8">
+                            <h2 id="freshtitle">New User? Register Now</h2>
+                            <hr />
+                            <p>
+                                <a id="register-url" href="/POIs/Register" class = "btn" style="color:#010483;background-color: #f7f7f7; border-color:#000000;font-weight:bold; ">Register as a new user</a>
+                            </p>
+                        </div>
+                        @* Enable this once you have account confirmation enabled for password reset functionality
+            <p>
+                @Html.ActionLink("Forgot your password?", "ForgotPassword")
+            </p>*@
+                    }
+                </section>
             </div>
     </div>
     </div>

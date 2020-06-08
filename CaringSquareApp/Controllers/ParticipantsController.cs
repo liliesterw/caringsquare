@@ -10,6 +10,11 @@ using CaringSquareApp.Models;
 
 namespace CaringSquareApp.Controllers
 {
+    /*
+         * Controller not Part of Application
+         * Can be used for Future Scope
+         * To Maintain Participant List for a Created Event
+         */
     [Authorize(Roles = "Administrator")]
     public class ParticipantsController : Controller
     {

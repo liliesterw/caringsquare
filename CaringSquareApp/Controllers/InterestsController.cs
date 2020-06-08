@@ -10,6 +10,12 @@ using CaringSquareApp.Models;
 
 namespace CaringSquareApp.Controllers
 {
+    /*
+         * Controller not Part of Application
+         * Can be used for Future Scope
+         * To Maintain Interest List for Users
+         * To be able to provide recommended events
+         */
     [Authorize(Roles = "Administrator")]
     public class InterestsController : Controller
     {

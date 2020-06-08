@@ -13,11 +13,23 @@ namespace CaringSquareApp.Controllers
     {
         private CaringSquareEntities db = new CaringSquareEntities();
 
+        /*
+         * Name: Home Page - Index()
+         * First Function implemented when application is launched
+         * No Arguments
+         * Returns Home Page to User
+         */
         public ActionResult Index()
         {
             return View();
         }
 
+        /*
+         * Name: Knowledge Hub - About()
+         * Function implemented when Knowledge Hub is Clicked
+         * No Arguments
+         * Returns Knowledge Hub Page to User
+         */
         public ActionResult About()
         {
             ViewBag.Message = "Your application description page.";
@@ -25,6 +37,9 @@ namespace CaringSquareApp.Controllers
             return View();
         }
 
+        /*
+         * No Usage in Application         
+         */
         public ActionResult Contact()
         {
             ViewBag.Message = "Your contact page.";
@@ -32,6 +47,13 @@ namespace CaringSquareApp.Controllers
             return View();
         }
 
+        /*
+         * Name: For Dashboard of Logged In user  - Dashboard()
+         * Function implemented when Dashboard is Clicked
+         * No Arguments
+         * Returns Dashboard Page to Logged In User
+         * Returns Event Date in Recent first Order
+         */
         public ActionResult Dashboard()
         {
             ViewBag.Message = "Your contact page.";

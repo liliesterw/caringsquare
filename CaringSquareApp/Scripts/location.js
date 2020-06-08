@@ -5,7 +5,8 @@
 * Copyrights Holder - Credits for the code
 * @author Jian Liew <jian.liew@monash.edu>
 */
-const TOKEN = "pk.eyJ1IjoiaGFyaXNoMTE1MCIsImEiOiJjazFndDJxMHMwMXBtM2JqdWNqMmpkdWozIn0.yspP5Uu6LV65-0HgIpNVUw";
+//Enter your Map Box API Key below
+const TOKEN = "{Your_API_Key}";
 var locations = [];
 // The first step is obtain all the latitude and longitude from the HTML
 // The below is a simple jQuery selector

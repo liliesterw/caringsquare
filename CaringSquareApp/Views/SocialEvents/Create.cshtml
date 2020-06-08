@@ -161,7 +161,8 @@
                 return icon_text;
             }
             function get_weather() {
-                $.get("https://api.openweathermap.org/data/2.5/forecast?q=Melbourne,AU&appid=45b1b01ef280889b43b44defbb0933ad&units=metric", function (response) {
+                //Enter Your Open Weather API Key URL or APP Id
+                $.get("https://api.openweathermap.org/data/2.5/forecast?q=Melbourne,AU&appid={Your_API_Key}&units=metric", function (response) {
                
 
                     var data = response.list;
