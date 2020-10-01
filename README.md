@@ -18,7 +18,7 @@ Complete Data preparation code can be access from the jupyter notebook code (.ip
 Also, provided the complete dataset file under Dataset folder
 
 
-Have a look at our complete idea [here](bit.ly/CaringSquare)
+Have a look at our complete idea [here](https://bit.ly/CaringSquare)
 
 
 ## Our Team Member:
